@@ -25,8 +25,8 @@ const reducer = (state, action) => {
         case 'AGREGAR_PRODUCTO':
             return { ...state, data: [...state.data, action.payload] };
 
-        case 'REMOVER_PRODUCTO':
-            return { ...state, data: state.data.filter(elem => elem.id !== action.payload) };
+        case 'BORRAR_PRODUCTO':
+            return { ...state, data: state.data.filter(elem => elem.nombre !== action.payload) };
 
         default:
             return state;
@@ -42,14 +42,19 @@ export const DataContextProvider = ({ children }) => {
 
     //*Función para agregar productos desde el administrador
     const agregarProducto = (data) => {
+        //TODO Mostrar mensaje de nombre ya utilizado usando TOAST
         if (!state.data.some(item => item.nombre === data.nombre)) {
             dispatch({ type: "AGREGAR_PRODUCTO", payload: data })
         } return
     }
+    //*Función para eliminar productos desde el administrador
+    const borrarProducto = (nombre) => {
+        if (!state.data.some(item => item.nombre === nombre)) return;
+        dispatch({ type: "BORRAR_PRODUCTO", payload: nombre })
+    }
 
-    
     return (
-        <DataContext.Provider value={{state, agregarProducto}}>
+        <DataContext.Provider value={{ state, agregarProducto, borrarProducto }}>
             {children}
         </DataContext.Provider>
     )

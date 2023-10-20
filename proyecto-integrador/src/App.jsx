@@ -1,6 +1,6 @@
 // Shadcn dark mode provider
-import { ThemeProvider } from "@/components/theme-provider";
-import { ThemeToggle } from "./components/theme-toogle";
+import { ThemeProvider } from "@/components/theme/theme-provider";
+import { ThemeToggle } from "./components/theme/theme-toogle";
 // Shadcn
 import { Button } from "@/components/ui/button";
 

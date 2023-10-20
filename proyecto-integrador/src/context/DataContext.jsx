@@ -21,27 +21,35 @@ const initialState = {
 //* FUNCIÓN REDUCER PARA MANEJAR LA DATA, DESPUÉS VEMOS COMO INTEGRAMOS TODO.
 
 const reducer = (state, action) => {
-    switch (action.type) {  
-      case 'AGREGAR-PRODUCTO':
-        return { ...state, favs: [...state.favs, action.payload] };
-  
-      case 'REMOVER-PRODUCTO':
-        return { ...state, favs: state.favs.filter(elem => elem.id !== action.payload) };
-  
-      default:
-        return state;
+    switch (action.type) {
+        case 'AGREGAR_PRODUCTO':
+            return { ...state, data: [...state.data, action.payload] };
+
+        case 'REMOVER_PRODUCTO':
+            return { ...state, data: state.data.filter(elem => elem.id !== action.payload) };
+
+        default:
+            return state;
     }
-  };
+};
 
 //* CONTEXT API
-const DataContext = createContext()
+export const DataContext = createContext()
 
 export const DataContextProvider = ({ children }) => {
 
     const [state, dispatch] = useReducer(reducer, initialState)
 
+    //*Función para agregar productos desde el administrador
+    const agregarProducto = (data) => {
+        if (!state.data.some(item => item.nombre === data.nombre)) {
+            dispatch({ type: "AGREGAR_PRODUCTO", payload: data })
+        } return
+    }
+
+    
     return (
-        <DataContext.Provider value={data}>
+        <DataContext.Provider value={{state, agregarProducto}}>
             {children}
         </DataContext.Provider>
     )

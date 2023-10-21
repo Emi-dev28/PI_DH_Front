@@ -1,10 +1,13 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+import { useWindowSize } from '@uidotdev/usehooks'
+
 import { Button } from '@/components/ui/button'
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { useDataContext } from '@/context/DataContext'
-import { useNavigate } from 'react-router-dom'
-import { useWindowSize } from '@uidotdev/usehooks'
+import { Label } from '@/components/ui/label'
+import { subirImagen } from '@/helpers/subirImagen'
 
 
 
@@ -22,6 +25,24 @@ export const Administrador = () => {
 
   const navigate = useNavigate()
 
+  //* Función para subir imágenes a Cloudinary y colocarlas en el state local para luego enviarlas al reducer
+  const subirImagenInput = async({ target }) => {
+    if (target.files === 0) return;
+
+    //* Subir varias imágenes al mismo tiempo. Guardo todas las promesas en un arreglo.
+    const promesasDeImagenesParaSubir = []
+    for (const file of target.files) {
+      promesasDeImagenesParaSubir.push(subirImagen(file))
+    }
+    //* El Promise.all viene ya ej javascript y me sirve para disparar múltiples promesas de forma simultánea
+    const imagenesUrls = await Promise.all(promesasDeImagenesParaSubir)
+
+    setNewData({...newData, img: imagenesUrls})
+  }
+
+  // const click = () => {
+  //   console.log(newData);
+  // }
 
   if (size.width < 1024) {
     //*LO QUE SE DEVUELVE PARA CELULAR
@@ -56,6 +77,17 @@ export const Administrador = () => {
             value={newData.descripcion}
             onChange={(e) => setNewData({ ...newData, descripcion: e.target.value })}
           />
+
+          <div className="grid w-full max-w-sm items-center gap-1.5 mb-5">
+            <Label htmlFor="picture">Subir imágenes</Label>
+            <Input
+              className="hover:bg-slate-700"
+              id="picture"
+              type="file"
+              multiple
+              onChange={subirImagenInput}
+            />
+          </div>
 
           <Button
             className="text-lg bg-indigo-600 text-white hover:bg-indigo-500"

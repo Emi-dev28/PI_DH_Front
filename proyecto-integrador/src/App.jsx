@@ -3,6 +3,7 @@
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import { ThemeToggle } from "./components/theme/theme-toogle";
 import { AppRouter } from "./router/AppRouter";
+import { Toaster } from "@/components/ui/toaster"
 
 
 export default function App() {
@@ -13,7 +14,8 @@ export default function App() {
         <ThemeToggle />
       </div> 
       */}
-        <AppRouter/>
+      <AppRouter />
+      <Toaster />
     </ThemeProvider>
   );
 }

@@ -10,6 +10,7 @@ export const AppRouter = () => {
     //const {theme} = useContext(ThemeToggle)
     return (
         <div>
+<<<<<<< HEAD
         <Routes>
             <Route path="/*" element={<Home/>}></Route>
             <Route path="/detalle" element={<Detalle/>}></Route>
@@ -17,6 +18,14 @@ export const AppRouter = () => {
             <Route path="/lista-productos" element={<ListaDeProductos/>}></Route>
         </Routes>
     
+=======
+            <Routes>
+                <Route path="/*" element={<Home />}></Route>
+                <Route path="/detalle" element={<Detalle />}></Route>
+                <Route path="/administrador" element={<Administrador />}></Route>
+                <Route path="/lista-productos" element={<ListaDeProductos />}></Route>
+            </Routes>
+>>>>>>> e41d257d5b1f24f8549752926ec30363f4203796
         </div>
     )
 }

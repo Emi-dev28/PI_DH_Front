@@ -1,4 +1,5 @@
 import { createContext, useContext, useReducer } from "react";;
+import { useToast } from "@/components/ui/use-toast"
 
 //* EN ESTE FUNCTIONAL COMPONENT MANEJAMOS EL ESTADO Y EL CONTEXT, PROBABLEMENTE TAMBIÉN
 //* LA CONEXIÓN A BASE DE DATOS PARA RECUPERAR LA DATA Y LAS FUNCIONES PRINCIPALES.
@@ -15,6 +16,7 @@ import { createContext, useContext, useReducer } from "react";;
 //* ESTADO INICIAL
 
 const initialState = {
+    // isLoading: true,
     data: []
 }
 
@@ -40,17 +42,27 @@ export const DataContextProvider = ({ children }) => {
 
     const [state, dispatch] = useReducer(reducer, initialState)
 
-    //*Función para agregar productos desde el administrador
+    //* Alertas propias del shadcn
+    const { toast } = useToast()
+
+    //* Función para agregar productos desde el administrador
     const agregarProducto = (data) => {
-        //TODO Mostrar mensaje de nombre ya utilizado usando TOAST
         if (!state.data.some(item => item.nombre === data.nombre)) {
             dispatch({ type: "AGREGAR_PRODUCTO", payload: data })
-        } return
+            toast({ description: "El producto se ha guardado" })
+        } else {
+            toast({ description: "Este producto ya existe", variant: "destructive" })
+        }
     }
-    //*Función para eliminar productos desde el administrador
+
+    //* Función para eliminar productos desde el administrador
     const borrarProducto = (nombre) => {
-        if (!state.data.some(item => item.nombre === nombre)) return;
-        dispatch({ type: "BORRAR_PRODUCTO", payload: nombre })
+        if (!state.data.some(item => item.nombre === nombre)) {
+            toast({ description: "Este producto no existe", variant: "destructive" })
+        } else {
+            dispatch({ type: "BORRAR_PRODUCTO", payload: nombre })
+            toast({ description: "Producto eliminado" })
+        }
     }
 
     return (

@@ -17,8 +17,10 @@ export default function App() {
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <Toaster />
       {/* Acá va el header */}
+
       <AppRouter />
-      <Footer />;
+
+      {!isAdminPages && <Footer />}
     </ThemeProvider>
   );
 }

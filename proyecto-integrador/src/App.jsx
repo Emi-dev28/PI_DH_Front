@@ -11,10 +11,12 @@ import Footer from "@/components/Footer";
 
 export default function App() {
   const location = useLocation();
-  const isAdminPages = ["/administrador"].includes(location.pathname);
+  const isAdminPages = ["/administrador", "/lista-productos"].includes(
+    location.pathname
+  );
 
   return (
-    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+    <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
       <Toaster />
       {/* Acá va el header */}
 

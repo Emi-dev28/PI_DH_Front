@@ -1,5 +1,5 @@
 import { Administrador } from "@/pages/Administrador";
-import { Home } from "../pages/Home";
+import Home from "../pages/Home";
 import { Route, Routes } from "react-router-dom";
 import { Detalle } from "@/pages/Detalle";
 import { ListaDeProductos } from "@/pages/ListaDeProductos";

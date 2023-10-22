@@ -9,10 +9,13 @@ export const AppRouter = () => {
   //const {theme} = useContext(ThemeToggle)
   return (
     <Routes>
+      {/* Public routes */}
       <Route path="/*" element={<Home />}></Route>
       <Route path="/detalle" element={<Detalle />}></Route>
-      <Route path="/administrador" element={<Administrador />}></Route>
       <Route path="/lista-productos" element={<ListaDeProductos />}></Route>
+
+      {/* Admin routes: */}
+      <Route path="/administrador" element={<Administrador />}></Route>
     </Routes>
   );
 };

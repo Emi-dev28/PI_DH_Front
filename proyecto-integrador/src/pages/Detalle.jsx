@@ -1,7 +1,3 @@
-import React from 'react'
-
 export const Detalle = () => {
-  return (
-    <div>Detalle</div>
-  )
-}
+  return <div>Detalle</div>;
+};

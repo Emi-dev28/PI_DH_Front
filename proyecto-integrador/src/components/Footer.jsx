@@ -1,52 +1,38 @@
-export default function Footer() {
-  return (
-    <div className="bg-gradient-to-t from-[#0951be] to-[#021736] h-64 ">
-      <div className="h-5/6 flex justify-around items-center">
-        <div>
-          <ul>
-            <li>rrrrr</li>
-            <li>rrrrr</li>
-            <li>rrrrr</li>
-            <li>rrrrr</li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li>rrrrr</li>
-            <li>rrrrr</li>
-            <li>rrrrr</li>
-            <li>rrrrr</li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li>rrrrr</li>
-            <li>rrrrr</li>
-            <li>rrrrr</li>
-            <li>rrrrr</li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li>rrrrr</li>
-            <li>rrrrr</li>
-            <li>rrrrr</li>
-            <li>rrrrr</li>
-          </ul>
-        </div>
-      </div>
+import React from 'react'
 
-      <div className="bg-[#052e6d] h-1/6 flex justify-between items-center px-3 ">
-        <div>
-          <span>gggggggggg</span>
+export const Footer = () => {
+    return (
+        <footer className="w-full bg-white p-8">
+        <div className="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 bg-white text-center md:justify-between">
+            <img src="../../public/logo-editor1.png" alt="logo-ct" className="w-60" />
+                <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
+            <li>
+                About Us
+            </li>
+            <li>
+                License
+            </li>
+            <li>
+                Contribute
+            </li>
+            <li>
+                Contact Us
+            </li>
+        </ul>
         </div>
-        <div className="flex gap-2">
-          <span>gggggggggg</span>
-          <span>gggggggggg</span>
-          <span>gggggggggg</span>
-          <span>gggggggggg</span>
+        <div className=''>
+            <ul>
+                <li>
+        <hr className="my-8 border-blue-gray-50" />
+        © 2021 DH Technology All Rights Reserved 
+        </li>
+        <li>
+        Fake 123, Buenos Aires , Argentina
+        </li>
+        </ul>
         </div>
-      </div>
-    </div>
-  );
+    </footer>   
+    )
 }
+
+export default Footer

@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Footer = () => {
     return (
-        <div className='bg-gradient-to-t from-[#0951be] to-[#021736] h-64 '>
+        <div className='bg-gradient-to-t from-[#0951be] to-[#021736] h-64 fixed bottom-0 w-full'>
 
 
             <div className='h-5/6 flex justify-around items-center'>

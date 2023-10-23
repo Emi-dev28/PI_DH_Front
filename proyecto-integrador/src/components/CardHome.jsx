@@ -15,20 +15,26 @@ CardHome.propTypes = {
 
 export default function CardHome({ product }) {
   return (
-    <div className="max-w-[500px] h-[360px] place-self-center">
+    <div className="w-[500px] h-[360px] place-self-center">
       <Card>
         <div className="gap-3 flex flex-col p-6">
           <div className="flex justify-center h-[180px]">
-            <img src="/monitor.png" />
+            <img
+              src={
+                product.images[0]
+                  ? product.images[0].image
+                  : "http://dummyimage.com/283x430.png/5fa2dd/ffffff"
+              }
+            />
           </div>
           <div className="border"></div>
           <div className="flex gap-5">
-            <p>{product.title}</p>
+            <p>{product.name}</p>
           </div>
           <div className="flex items-center gap-5">
             <p>{product.price}</p>
             <Button>Alquilar</Button>
-            <div>⭐{product.score}</div>
+            <div>⭐{product.rating}</div>
           </div>
         </div>
       </Card>

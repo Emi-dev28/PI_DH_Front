@@ -6,7 +6,6 @@ import { Toaster } from "@/components/ui/toaster";
 // React Router
 import { useLocation } from "react-router-dom";
 import { AppRouter } from "./router/AppRouter";
-
 import { Navbar }  from "./components/Navbar";
 import { Footer } from "./components/Footer";
 

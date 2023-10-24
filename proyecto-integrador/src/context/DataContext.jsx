@@ -26,7 +26,7 @@ import { useToast } from "@/components/ui/use-toast"
 
 const initialState = {
     // isLoading: true,
-    data: iniciarStateDeProductos
+    data: []
 }
 
 //* FUNCIÓN REDUCER PARA MANEJAR LA DATA, DESPUÉS VEMOS COMO INTEGRAMOS TODO.

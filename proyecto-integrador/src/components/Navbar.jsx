@@ -1,6 +1,6 @@
 
 import React from 'react';
-import logo from '/public/img/wallpaper_1546x261.png'
+import logo from '/img/wallpaper_1546x261.png'
 
 export const Navbar = () => {
   return (

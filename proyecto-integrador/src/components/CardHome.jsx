@@ -8,6 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 
 CardHome.propTypes = {
   product: PropTypes.object.isRequired,
@@ -35,6 +36,7 @@ export default function CardHome({ product }) {
             <p>{product.price}</p>
             <Button>Alquilar</Button>
             <div>⭐{product.rating}</div>
+            <Link to={"/detalle/" + product.nombre}>Ver detalle</Link>
           </div>
         </div>
       </Card>

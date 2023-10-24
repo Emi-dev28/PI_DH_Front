@@ -9,16 +9,18 @@ import { useDataContext } from "@/context/DataContext";
 import { Label } from "@/components/ui/label";
 import { subirImagen } from "@/helpers/subirImagen";
 
+const initialState = {
+  nombre: "",
+  descripcion: "",
+  img: "",
+}
+
 export const Administrador = () => {
   //** Función para capturar el width y saber si se está accediendo desde celular
   const size = useWindowSize();
 
   const { agregarProducto } = useDataContext();
-  const [newData, setNewData] = useState({
-    nombre: "",
-    descripcion: "",
-    img: "",
-  });
+  const [newData, setNewData] = useState(initialState);
 
   const navigate = useNavigate();
 
@@ -37,9 +39,13 @@ export const Administrador = () => {
     setNewData({ ...newData, img: imagenesUrls });
   };
 
-  // const click = () => {
-  //   console.log(newData);
-  // }
+  //* Función para resetear los inputs una vez hecho el submit
+  const submitAgregarProducto = (newData) => {
+    agregarProducto(newData)
+    setNewData(initialState)
+  }
+
+
 
   if (size.width < 1024) {
     //*LO QUE SE DEVUELVE PARA CELULAR
@@ -87,7 +93,7 @@ export const Administrador = () => {
 
           <Button
             className="text-lg bg-indigo-600 text-white hover:bg-indigo-500"
-            onClick={() => agregarProducto(newData)}
+            onClick={() => submitAgregarProducto(newData)}
           >
             Agregar producto
           </Button>
@@ -97,7 +103,7 @@ export const Administrador = () => {
           <Button
             className="text-lg bg-cyan-600 text-white mt-5 hover:bg-cyan-500"
             onClick={() => navigate("/lista-productos")}
-            // onClick={() => agregarProducto(newData)}
+          // onClick={() => agregarProducto(newData)}
           >
             Ir a la lista de productos
           </Button>

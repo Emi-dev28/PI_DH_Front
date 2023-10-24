@@ -1,4 +1,4 @@
-import { createContext, useContext, useReducer } from "react";;
+import { createContext, useContext, useEffect, useReducer } from "react";;
 import { useToast } from "@/components/ui/use-toast"
 
 //* EN ESTE FUNCTIONAL COMPONENT MANEJAMOS EL ESTADO Y EL CONTEXT, PROBABLEMENTE TAMBIÉN
@@ -13,11 +13,20 @@ import { useToast } from "@/components/ui/use-toast"
 //********
 //******
 
+//* GUARDANDO LA DATA EN EL LOCALSTORAGE PROVISORIAMENTE SOLO PARA HACER ARRANCAR AL HOME, LUEGO HAY QUE CONECTAR AL BACK
+
+const guardarProductoEnStorage = (producto) => {
+    localStorage.setItem("productos", JSON.stringify(producto));
+}
+
+const productosGuardados = JSON.parse(localStorage.getItem("productos"))
+const iniciarStateDeProductos = productosGuardados ? productosGuardados : []
+
 //* ESTADO INICIAL
 
 const initialState = {
     // isLoading: true,
-    data: []
+    data: iniciarStateDeProductos
 }
 
 //* FUNCIÓN REDUCER PARA MANEJAR LA DATA, DESPUÉS VEMOS COMO INTEGRAMOS TODO.
@@ -64,6 +73,11 @@ export const DataContextProvider = ({ children }) => {
             toast({ description: "Producto eliminado" })
         }
     }
+
+    useEffect(() => {
+        guardarProductoEnStorage(state.data)
+    }, [state.data])
+
 
     return (
         <DataContext.Provider value={{ state, agregarProducto, borrarProducto }}>

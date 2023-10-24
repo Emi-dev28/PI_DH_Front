@@ -5,7 +5,7 @@ import logo from '/img/wallpaper_1546x261.png'
 export const Navbar = () => {
   return (
 
-    <nav className="bg-white p-4 flex items-center justify-between fixed w-full z-10 top-0">
+    <nav className="bg-white flex items-center justify-between sticky w-full z-10 top-0 p-4 mb-6">
       {/* Logo y texto a la izquierda */}
       <div className="flex items-center">
         <img src={logo} alt="Logo" className="h-10 h w-auto object-contain mr-2" />

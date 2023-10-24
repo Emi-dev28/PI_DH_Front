@@ -36,7 +36,6 @@ export const ListaDeProductos = () => {
 
         <TableHeader>
           <TableRow>
-            {/* <TableHead className="w-[100px]">ID</TableHead> */}
             <TableHead>Nombre</TableHead>
             <TableHead>Descripción</TableHead>
             <TableHead className="text-right">Acciones</TableHead>

@@ -15,12 +15,12 @@ import { useToast } from "@/components/ui/use-toast"
 
 //* GUARDANDO LA DATA EN EL LOCALSTORAGE PROVISORIAMENTE SOLO PARA HACER ARRANCAR AL HOME, LUEGO HAY QUE CONECTAR AL BACK
 
-const guardarProductoEnStorage = (producto) => {
-    localStorage.setItem("productos", JSON.stringify(producto));
-}
+// const guardarProductoEnStorage = (producto) => {
+//     localStorage.setItem("productos", JSON.stringify(producto));
+// }
 
-const productosGuardados = JSON.parse(localStorage.getItem("productos"))
-const iniciarStateDeProductos = productosGuardados ? productosGuardados : []
+// const productosGuardados = JSON.parse(localStorage.getItem("productos"))
+// const iniciarStateDeProductos = productosGuardados ? productosGuardados : []
 
 //* ESTADO INICIAL
 
@@ -74,9 +74,9 @@ export const DataContextProvider = ({ children }) => {
         }
     }
 
-    useEffect(() => {
-        guardarProductoEnStorage(state.data)
-    }, [state.data])
+    // useEffect(() => {
+    //     guardarProductoEnStorage(state.data)
+    // }, [state.data])
 
 
     return (

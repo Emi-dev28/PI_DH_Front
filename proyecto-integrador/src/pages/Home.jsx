@@ -10,11 +10,11 @@ export default function Home() {
 
   useEffect(() => {
     // Clonar la lista de productos original para no modificarla directamente
-    // const clonedProducts = [...products];
+    const clonedProducts = [...products];
 
     // Ordenar aleatoriamente los productos
     //* Colocamos el state que obtimos con el useContext 
-    const shuffledProducts = products.sort(() => Math.random() - 0.5);
+    const shuffledProducts = clonedProducts.sort(() => Math.random() - 0.5);
 
     // Tomar solo los primeros 10 productos
     const selectedProducts = shuffledProducts.slice(0, 10);

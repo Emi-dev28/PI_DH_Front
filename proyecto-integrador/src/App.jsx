@@ -20,7 +20,7 @@ export default function App() {
   return (
     <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
 
-      <div className="flex flex-col items-center min-h-screen">
+      <div className="flex flex-col items-center min-h-screen bg-slate-50">
         <Toaster />
         <Navbar />
         {/* Acá va el header */}

@@ -25,7 +25,7 @@ export default function Wrapper(props) {
                 ))}
             </div>
 
-            <div className="self-center flex items-center gap-8">
+            <div className="self-center flex items-center gap-8 mt-8">
                 <Button
                     onClick={props.prevHandler}
                     className="w-32 bg-gradient-to-b from-btnPink to-btnPinkDarker text-white px-4 py-2 rounded-md mr-2 hover:text-gray-300 duration-400 focus:shadow-outline-grey shadow-xl"

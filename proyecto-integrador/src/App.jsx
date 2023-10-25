@@ -6,7 +6,7 @@ import { Toaster } from "@/components/ui/toaster";
 // React Router
 import { useLocation } from "react-router-dom";
 import { AppRouter } from "./router/AppRouter";
-import { Navbar }  from "./components/Navbar";
+import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
 
 
@@ -19,15 +19,18 @@ export default function App() {
 
   return (
     <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
-      <Toaster />
-      <Navbar />
-      {/* Acá va el header */}
 
-      <AppRouter />
+      <div className="flex flex-col items-center min-h-screen">
+        <Toaster />
+        <Navbar />
+        {/* Acá va el header */}
 
-      {!isAdminPages && <Footer />}
+        <AppRouter />
+
+        {!isAdminPages && <Footer />}
+      </div>
 
     </ThemeProvider>
-    
+
   );
 }

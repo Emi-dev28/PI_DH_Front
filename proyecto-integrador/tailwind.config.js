@@ -19,7 +19,6 @@ module.exports = {
       colors: {
         btnPink: '#E83F57',
         btnPinkDarker: '#8C3945',
-
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

@@ -20,16 +20,14 @@ export const Footer = () => {
                     </li>
                 </ul>
             </div>
-            <div className=''>
-                <ul>
-                    <li>
-                        <hr className="my-8 border-blue-gray-50" />
-                        © 2021 DH Technology All Rights Reserved
-                    </li>
-                    <li>
-                        Fake 123, Buenos Aires , Argentina
-                    </li>
-                </ul>
+
+            <div className='flex justify-between border-t-2 border-red-600 mt-2'>
+                <span>
+                    © 2021 DH Technology All Rights Reserved
+                </span>
+                <span>
+                    Fake 123, Buenos Aires , Argentina
+                </span>
             </div>
         </footer>
     )

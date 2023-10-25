@@ -56,17 +56,17 @@ export default function Home() {
       <div className="h-96 w-[96%] flex justify-center items-center mt-24">
 
         <div className="w-1/2 p-24 ">
-            <div className="flex flex-col pb-4 text-lg">
-              <span>WHO</span>
-              <span>WE ARE</span>
-              <i className="fa-solid fa-arrow-right-long text-rose-500 text-3xl"></i>
-            </div>
-            <h2 className="text-2xl text-rose-500 font-semibold mb-2">Technology investments as a differentiator</h2>
-            <p>No forced partnership technology here. We focus on the right solution to drive our clients’ business forward and employ a technology-agnostic approach for all needed stages of the activity cycle, allowing access to current, robust, and advanced solutions. Paramount to this is ensuring the security and compliant use of all information. In the end, it’s not just technology; we ensure our methodologies, staff, industry knowledge, and governance align with the technology to drive the right client results.</p>
+          <div className="flex flex-col pb-4 text-lg">
+            <span>WHO</span>
+            <span>WE ARE</span>
+            <i className="fa-solid fa-arrow-right-long text-rose-500 text-3xl"></i>
+          </div>
+          <h2 className="text-2xl text-rose-500 font-semibold mb-2">Technology investments as a differentiator</h2>
+          <p>No forced partnership technology here. We focus on the right solution to drive our clients’ business forward and employ a technology-agnostic approach for all needed stages of the activity cycle, allowing access to current, robust, and advanced solutions. Paramount to this is ensuring the security and compliant use of all information. In the end, it’s not just technology; we ensure our methodologies, staff, industry knowledge, and governance align with the technology to drive the right client results.</p>
         </div>
-        
+
         <div className="flex justify-end w-1/2 ">
-          <img src="/img/home2.png" alt="home-secondary-image"/>
+          <img src="/img/home2.png" alt="home-secondary-image" />
         </div>
       </div>
 

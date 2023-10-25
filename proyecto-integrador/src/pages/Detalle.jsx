@@ -10,6 +10,8 @@ import {
 import { Button } from "@/components/ui/button";
 import { useNavigate, useParams } from "react-router-dom";
 import { useDataContext } from "@/context/DataContext";
+import products from "@/mocks/products.json";
+
 
 export const Detalle = () => {
 
@@ -23,7 +25,8 @@ export const Detalle = () => {
 
 
   return (
-    <div className=" m-5 rounded-lg">
+    <div>
+
       <div className="flex justify-between items-center mb-3 mx-3">
         <span className="text-3xl">Detalle del producto</span>
 
@@ -42,32 +45,25 @@ export const Detalle = () => {
 
         <TableHeader>
           <TableRow>
-            {/* <TableHead className="w-[100px]">ID</TableHead> */}
-            <TableHead>Nombre</TableHead>
-            <TableHead>Descripción</TableHead>
-            <TableHead>xxxxx</TableHead>
-            <TableHead>xxxxx</TableHead>
-            <TableHead>xxxxx</TableHead>
-            <TableHead>xxxxx</TableHead>
+            <TableHead className="w-32 bg-slate-200 border-white border-b-[1px]">Nombre</TableHead>
+            <TableHead className="w-96">Descripción</TableHead>
+            <TableHead className="bg-slate-200 border-white border-b-[1px]">Categoría</TableHead>
+            <TableHead>Precio</TableHead>
+            <TableHead className="bg-slate-200 border-white border-b-[1px]">Cantidad</TableHead>
+            <TableHead>Puntuación</TableHead>
           </TableRow>
         </TableHeader>
 
-
-        <TableBody>
-          {
-            state.data.map(producto => (
-
-              <TableRow key={producto.nombre}>
-                <TableCell>{producto.nombre}</TableCell>
-                <TableCell>{producto.descripcion}</TableCell>
-                <TableCell>xxxxx</TableCell>
-                <TableCell>xxxxx</TableCell>
-                <TableCell>xxxxx</TableCell>
-                <TableCell>xxxxx</TableCell>
-              </TableRow>
-            ))
-          }
-        </TableBody>
+        <TableHeader>
+          <TableRow>
+            <TableHead className="w-32 bg-slate-200">{products[0].name}</TableHead>
+            <TableHead className="w-1/3">{products[0].description}</TableHead>
+            <TableHead className="bg-slate-200">{products[0].price}</TableHead>
+            <TableHead>{products[0].category}</TableHead>
+            <TableHead className="bg-slate-200">{products[0].quantity}</TableHead>
+            <TableHead>{products[0].rating}</TableHead>
+          </TableRow>
+        </TableHeader>
 
       </Table>
 

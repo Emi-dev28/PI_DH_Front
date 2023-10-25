@@ -45,10 +45,10 @@ export default function Home() {
   }
 
   return (
-    <>
-      <div className="h-[39rem] bg-[url('/img/home1.png')] flex justify-center items-center">
-        <div className="w-3/5 text-center mb-24 ">
-          <h1 className="text-rose-600 font-bold text-4xl">Servicio de alquiler de alta tecnología</h1>
+    <div>
+      <div className="h-[39rem] bg-[url('/img/home1.png')] flex justify-center items-center saturate-200">
+        <div className="w-3/5 text-center mb-24 backdrop-opacity-95">
+          <h1 className="text-red-700 font-bold text-4xl">Servicio de alquiler de alta tecnología</h1>
           <p className="text-white text-xl mt-4">Explora un mundo de oportunidades usando la última tecnología a nivel mundial. Cumple tus sueños, diviértete, emprende, eso es lo que te ofrecemos en DH Technology. Estás a un click de distancia.</p>
         </div>
       </div>
@@ -71,6 +71,6 @@ export default function Home() {
       </div>
 
       <Wrapper products={randomProducts} prevHandler={prevHandler} nextHandler={nextHandler} currentPage={currentPage} />
-    </>
+    </div>
   );
 }

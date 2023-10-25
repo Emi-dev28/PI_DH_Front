@@ -1,6 +1,6 @@
 
 import React from 'react';
-import logo from '/img/wallpaper_1546x261.png'
+import logo from '/logo-editor1.png'
 
 export const Navbar = () => {
   return (
@@ -13,8 +13,8 @@ export const Navbar = () => {
 
       {/* Botones a la derecha */}
       <div className="flex items-center">
-        <button className="bg-transparent text-black px-4 py-2 rounded-md mr-2 hover:text-gray-300 duration-400 focus:shadow-outline-grey shadow-xl">Crear cuenta</button>
-        <button className="bg-transparent text-black px-4 py-2 rounded-md mr-2 hover:text-gray-300 duration-400 focus:shadow-outline-grey shadow-xl">Iniciar sesión</button>
+        <button className="bg-gradient-to-b from-btnPink to-btnPinkDarker text-white px-4 py-2 rounded-md mr-2 hover:text-gray-300 duration-400 focus:shadow-outline-grey shadow-xl">Crear cuenta</button>
+        <button className="bg-gradient-to-b from-btnPink to-btnPinkDarker text-white px-4 py-2 rounded-md mr-2 hover:text-gray-300 duration-400 focus:shadow-outline-grey shadow-xl">Iniciar sesión</button>
       </div>
     </nav>
 

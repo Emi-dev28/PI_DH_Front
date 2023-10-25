@@ -8,11 +8,10 @@ import {
 } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
-import { useDataContext } from "@/context/DataContext";
-import { TableRowLocal } from "@/components/TableRowLocal";
+import { useDataContext } from "@/context/useDataContext";
+import TableRowLocal from "@/components/TableRowLocal";
 
 export const ListaDeProductos = () => {
-  
   const { state, borrarProducto } = useDataContext();
 
   const navigate = useNavigate();
@@ -31,7 +30,6 @@ export const ListaDeProductos = () => {
       </div>
 
       <Table>
-
         <TableCaption>High Technologie Software Company</TableCaption>
 
         <TableHeader>
@@ -42,19 +40,15 @@ export const ListaDeProductos = () => {
           </TableRow>
         </TableHeader>
 
-
         <TableBody>
-
-          {
-            state.data.map(producto => (
-              <TableRowLocal key={producto.nombre} producto={producto} borrarProducto={borrarProducto}/>
-            ))
-          }
-
+          {state.data.map((product) => (
+            <TableRowLocal
+              key={product.id}
+              product={product}
+              handleClickDeleteProduct={borrarProducto}
+            />
+          ))}
         </TableBody>
-
-
-
       </Table>
     </div>
   );

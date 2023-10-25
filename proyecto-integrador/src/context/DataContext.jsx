@@ -1,5 +1,10 @@
-import { createContext, useContext, useEffect, useReducer } from "react";;
-import { useToast } from "@/components/ui/use-toast"
+// React
+import { createContext, useReducer } from "react";
+import PropTypes from "prop-types";
+// Shadcn components
+import { useToast } from "@/components/ui/use-toast";
+// Mock products
+import products from "@/mocks/products.json";
 
 //* EN ESTE FUNCTIONAL COMPONENT MANEJAMOS EL ESTADO Y EL CONTEXT, PROBABLEMENTE TAMBIÉN
 //* LA CONEXIÓN A BASE DE DATOS PARA RECUPERAR LA DATA Y LAS FUNCIONES PRINCIPALES.
@@ -25,69 +30,70 @@ import { useToast } from "@/components/ui/use-toast"
 //* ESTADO INICIAL
 
 const initialState = {
-    // isLoading: true,
-    data: []
-}
+  // isLoading: true,
+  data: products,
+};
 
 //* FUNCIÓN REDUCER PARA MANEJAR LA DATA, DESPUÉS VEMOS COMO INTEGRAMOS TODO.
 
 const reducer = (state, action) => {
-    switch (action.type) {
-        case 'AGREGAR_PRODUCTO':
-            return { ...state, data: [...state.data, action.payload] };
+  switch (action.type) {
+    case "AGREGAR_PRODUCTO":
+      return { ...state, data: [...state.data, action.payload] };
 
-        case 'BORRAR_PRODUCTO':
-            return { ...state, data: state.data.filter(elem => elem.nombre !== action.payload) };
+    case "BORRAR_PRODUCTO":
+      return {
+        ...state,
+        data: state.data.filter((elem) => elem.id !== action.payload),
+      };
 
-        default:
-            return state;
-    }
+    default:
+      return state;
+  }
 };
 
 //* CONTEXT API
-export const DataContext = createContext()
+export const DataContext = createContext();
 
-export const DataContextProvider = ({ children }) => {
+DataContextProvider.propTypes = {
+  children: PropTypes.node,
+};
 
-    const [state, dispatch] = useReducer(reducer, initialState)
+export default function DataContextProvider({ children }) {
+  const [state, dispatch] = useReducer(reducer, initialState);
 
-    //* Alertas propias del shadcn
-    const { toast } = useToast()
+  //* Alertas propias del shadcn
+  const { toast } = useToast();
 
-    //* Función para agregar productos desde el administrador
-    const agregarProducto = (data) => {
-        if (!state.data.some(item => item.nombre === data.nombre)) {
-            dispatch({ type: "AGREGAR_PRODUCTO", payload: data })
-            toast({ description: "El producto se ha guardado" })
-        } else {
-            toast({ description: "Este producto ya existe", variant: "destructive" })
-        }
+  //* Función para agregar productos desde el administrador
+  const agregarProducto = (data) => {
+    if (!state.data.some((item) => item.id === data.id)) {
+      dispatch({ type: "AGREGAR_PRODUCTO", payload: data });
+      toast({ description: "El producto se ha guardado" });
+    } else {
+      toast({ description: "Este producto ya existe", variant: "destructive" });
     }
+  };
 
-    //* Función para eliminar productos desde el administrador
-    const borrarProducto = (nombre) => {
-        if (!state.data.some(item => item.nombre === nombre)) {
-            toast({ description: "Este producto no existe", variant: "destructive" })
-        } else {
-            dispatch({ type: "BORRAR_PRODUCTO", payload: nombre })
-            toast({ description: "Producto eliminado" })
-        }
+  //* Función para eliminar productos desde el administrador
+  const borrarProducto = (id) => {
+    if (!state.data.some((item) => item.id === id)) {
+      toast({ description: "Este producto no existe", variant: "destructive" });
+    } else {
+      dispatch({ type: "BORRAR_PRODUCTO", payload: id });
+      toast({ description: "Producto eliminado" });
     }
+  };
 
-    // useEffect(() => {
-    //     guardarProductoEnStorage(state.data)
-    // }, [state.data])
+  // useEffect(() => {
+  //     guardarProductoEnStorage(state.data)
+  // }, [state.data])
 
-
-    return (
-        <DataContext.Provider value={{ state, agregarProducto, borrarProducto }}>
-            {children}
-        </DataContext.Provider>
-    )
+  return (
+    <DataContext.Provider value={{ state, agregarProducto, borrarProducto }}>
+      {children}
+    </DataContext.Provider>
+  );
 }
 
-//* Función para utilizarlo sin llamar al useContext todo el tiempo. Así nos enseño Julián pero no es
-//* estrictamente necesario.
-export const useDataContext = () => useContext(DataContext)
-
-
+// La función useDataContext está en un archivo separado abajo de este mismo en la carpeta context.

@@ -1,10 +1,10 @@
 import CardHome from "@/components/CardHome";
 import PropTypes from "prop-types";
 
-import { Button } from "@/componets/ui/button";
+import { Button } from "@/components/ui/button";
 
 Wrapper.propTypes = {
-  products: PropTypes.object,
+  products: PropTypes.array,
   prevHandler: PropTypes.func,
   nextHandler: PropTypes.func,
   currentPage: PropTypes.number,

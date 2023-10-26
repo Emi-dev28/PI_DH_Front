@@ -36,7 +36,7 @@ export default function CardHome({ product }) {
             <p>{product.price}</p>
             <Button>Alquilar</Button>
             <div>⭐{product.rating}</div>
-            <Link to={"/detalle/" + product.nombre}>Ver detalle</Link>
+            <Link to={"/detalle/" + product.id}>Ver detalle</Link>
           </div>
         </div>
       </Card>

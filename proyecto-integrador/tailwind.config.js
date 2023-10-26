@@ -17,6 +17,8 @@ module.exports = {
     },
     extend: {
       colors: {
+        navColorDark: '#EB3F711A',
+        navColor: '#EB3F7100',
         btnPink: '#E83F57',
         btnPinkDarker: '#8C3945',
         border: "hsl(var(--border))",

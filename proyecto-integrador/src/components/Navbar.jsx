@@ -1,14 +1,17 @@
 
 import React from 'react';
 import logo from '/logo-editor1.png'
+import { Link } from 'react-router-dom';
 
 export const Navbar = () => {
   return (
 
-    <nav className="bg-white flex items-center justify-between sticky w-full z-10 top-0 p-4">
+    <nav className="bg-gradient-to-r from-navColorDark to-navColor flex items-center justify-between sticky w-full z-10 top-0 p-4 shadow-lg">
       {/* Logo y texto a la izquierda */}
       <div className="flex items-center">
+      <Link to="/">
         <img src={logo} alt="Logo" className="h-10 h w-auto object-contain mr-2" />
+      </Link>
       </div>
 
       {/* Botones a la derecha */}

@@ -17,7 +17,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 export const Detalle = () => {
-  const { state } = useDataContext();
+  const { state: products } = useDataContext();
   const [product, setProduct] = useState({});
 
   const navigate = useNavigate();
@@ -26,25 +26,15 @@ export const Detalle = () => {
   //* guardados en la Api, pero todavía no la tenemos
   const { id } = useParams();
 
-  console.log(state.data);
-
   useEffect(() => {
     const selectedProductId = parseInt(id);
 
-    console.log(selectedProductId);
-
-    console.log(state.data);
-
-    const selectedProduct = state.data.find(
+    const selectedProduct = products.data.find(
       (product) => product.id === selectedProductId
     );
 
-    console.log(selectedProduct);
-
-    console.log(product);
-
     setProduct(selectedProduct);
-  }, []);
+  }, [id, products.data]);
 
   return (
     <div>

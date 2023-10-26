@@ -1,15 +1,11 @@
 // Shadcn components
 import {
   Table,
-  TableBody,
-  TableCaption,
-  TableCell,
   TableHead,
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
-import { toast } from "@/components/ui/use-toast";
 // Context
 import { useDataContext } from "@/context/useDataContext";
 // React
@@ -37,7 +33,7 @@ export const Detalle = () => {
   }, [id, products.data]);
 
   return (
-    <div>
+    <div className="flex flex-col">
       <div className="flex justify-between items-center mb-3 mx-3">
         <span className="text-3xl">Detalle del producto</span>
 
@@ -51,7 +47,7 @@ export const Detalle = () => {
 
       {product ? (
         <Table>
-          <TableCaption>High Technologie Software Company</TableCaption>
+          {/* <TableCaption>High Technologie Software Company</TableCaption> */}
 
           <TableHeader>
             <TableRow>
@@ -88,9 +84,27 @@ export const Detalle = () => {
       )}
 
       {/* Renderizar las imágenes y un Link que lleve a una página aparte <GaleriaDeImagenes/>  */}
-      {/* <div>
-         <img src={state.data[0].img} alt="" />
-       </div>  */}
+      <div className="flex items-center mt-4">
+        <div className="w-1/2">
+          <img src="/img/drone2.png" alt="product-img" className="w-full border-0 rounded-lg" />
+        </div>
+
+        <div className="flex flex-wrap w-1/2 justify-center gap-4">
+          <img src="/img/drone2.png" alt="product-img" className="w-[45%] border-0 rounded-lg" />
+          <img src="/img/drone2.png" alt="product-img" className="w-[45%] border-0 rounded-lg" />
+          <img src="/img/drone2.png" alt="product-img" className="w-[45%] border-0 rounded-lg" />
+          <img src="/img/drone2.png" alt="product-img" className="w-[45%] border-0 rounded-lg" />
+        </div>
+      </div>
+
+      <Button
+        className="bg-gradient-to-b from-btnPink to-btnPinkDarker text-white 
+        px-4 py-2 rounded-md mr-8 hover:text-gray-300 duration-400 focus:shadow-outline-grey shadow-xl
+        place-self-end"
+      >
+        Ver galería de imágenes
+      </Button>
+
     </div>
   );
 };

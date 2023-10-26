@@ -16,30 +16,49 @@ CardHome.propTypes = {
 
 export default function CardHome({ product }) {
   return (
-    <div className="w-[500px] h-[360px] place-self-center">
-      <Card>
-        <div className="gap-3 flex flex-col p-6">
-          <div className="flex justify-center h-[180px]">
-            <img
-              src={
-                product.images[0]
-                  ? product.images[0].image
-                  : "http://dummyimage.com/283x430.png/5fa2dd/ffffff"
-              }
-            />
-          </div>
-          <div className="border"></div>
-          <div className="flex gap-5">
-            <p>{product.name}</p>
-          </div>
-          <div className="flex items-center gap-5">
-            <p>{product.price}</p>
-            <Button>Alquilar</Button>
-            <div>⭐{product.rating}</div>
-            <Link to={"/detalle/" + product.id}>Ver detalle</Link>
-          </div>
+
+    <Card className="w-[500px] h-[460px] relative flex flex-col p-6">
+
+      <div className="flex justify-center">
+
+        <img
+          src={
+            product.images[0]
+              ? product.images[0].image
+              : "http://dummyimage.com/283x430.png/5fa2dd/ffffff"
+          }
+          className="w-[400px] h-[260px]"
+        />
+      </div>
+
+      <Link to={"/detalle/" + product.id} className="absolute right-10">
+        <i className="fa-solid fa-eye text-2xl hover:text-green-600"></i>
+      </Link>
+
+      <div className="border"></div>
+
+      <CardHeader className="flex flex-row justify-between mt-[-10px]">
+        <div>
+          <CardTitle className="text-lg mt-[5px]">
+            {product.name}
+          </CardTitle>
+          <CardDescription className="text-lg">
+            {"$" + product.price + " /semanal"}
+          </CardDescription>
         </div>
-      </Card>
-    </div>
+        <div>⭐{product.rating}</div>
+      </CardHeader>
+
+
+      <Button
+        className="bg-gradient-to-b from-btnPink to-btnPinkDarker text-white 
+            rounded-md hover:text-gray-300 duration-400 focus:shadow-outline-grey 
+            shadow-xl text-md mx-4"
+      >
+        Alquilar
+      </Button>
+
+    </Card>
+
   );
 }

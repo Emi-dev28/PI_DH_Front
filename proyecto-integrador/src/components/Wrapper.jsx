@@ -23,7 +23,7 @@ export default function Wrapper(props) {
         <i className="fa-solid fa-arrow-right-long text-rose-500 text-3xl"></i>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 w-5/6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-12">
         {/* Tenemos que ver cómo crear los id, por ahora sirve el nombre porque no se pueden repetir */}
         {props.products.map((product) => (
           <CardHome key={product.id} product={product} />

@@ -1,19 +1,19 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import { useWindowSize } from "@uidotdev/usehooks";
 
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
+import { NewProductsForm } from "@/components/NewProductsForm";
+
 import { useDataContext } from "@/context/useDataContext";
-import { Label } from "@/components/ui/label";
 import { subirImagen } from "@/helpers/subirImagen";
 
 const initialProduct = {
   id: "",
   name: "",
   description: "",
-  img: "",
+  price: "",
+  category: "",
+  quantity: "",
+  img: ""
 };
 
 export const Administrador = () => {
@@ -23,7 +23,6 @@ export const Administrador = () => {
   const { state, agregarProducto } = useDataContext();
   const [newProduct, setNewProduct] = useState(initialProduct);
 
-  const navigate = useNavigate();
 
   //* Función para subir imágenes a Cloudinary y colocarlas en el state local para luego enviarlas al reducer
   const subirImagenInput = async ({ target }) => {
@@ -55,6 +54,8 @@ export const Administrador = () => {
     setNewProduct(initialProduct);
   };
 
+
+
   if (size.width < 1024) {
     //*LO QUE SE DEVUELVE PARA CELULAR
     return (
@@ -67,58 +68,12 @@ export const Administrador = () => {
   } else {
     //*LO QUE SE DEVUELVE PARA ESCRITORIO
     return (
-      <div className="flex justify-center items-center h-screen">
-        <div className="flex flex-col border-2 border-slate-100 rounded-lg	p-7">
-          <h2 className="text-2xl">Panel de administración</h2>
-
-          <Input
-            className="my-5"
-            type="text"
-            placeholder="Nombre del producto"
-            value={newProduct.name}
-            onChange={(e) =>
-              setNewProduct({ ...newProduct, name: e.target.value })
-            }
-          />
-
-          <Textarea
-            className="mb-5"
-            placeholder="Descripción del producto"
-            value={newProduct.description}
-            onChange={(e) =>
-              setNewProduct({ ...newProduct, description: e.target.value })
-            }
-          />
-
-          <div className="grid w-full max-w-sm items-center gap-1.5 mb-5">
-            <Label htmlFor="picture">Subir imágenes</Label>
-            <Input
-              className="hover:bg-slate-700"
-              id="picture"
-              type="file"
-              multiple
-              onChange={subirImagenInput}
-            />
-          </div>
-
-          <Button
-            className="text-lg bg-indigo-600 text-white hover:bg-indigo-500"
-            onClick={() => submitAgregarProducto(newProduct)}
-          >
-            Agregar producto
-          </Button>
-
-          <hr className="border-cyan-100 mt-5" />
-
-          <Button
-            className="text-lg bg-cyan-600 text-white mt-5 hover:bg-cyan-500"
-            onClick={() => navigate("/lista-productos")}
-            // onClick={() => agregarProducto(newProduct)}
-          >
-            Ir a la lista de productos
-          </Button>
-        </div>
-      </div>
+        <NewProductsForm 
+        newProduct={newProduct}
+        setNewProduct={setNewProduct}
+        submitAgregarProducto={submitAgregarProducto}
+        subirImagenInput={subirImagenInput}
+        />
     );
   }
 };

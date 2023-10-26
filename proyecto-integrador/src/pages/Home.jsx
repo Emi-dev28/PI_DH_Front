@@ -54,38 +54,38 @@ export default function Home() {
 
   return (
     <div>
-      <div className="h-[39rem] bg-[url('/img/section-1.webp')] bg-no-repeat flex justify-center items-center saturate-150">
-       {/* <div className="w-3/5 text-center mb-24 backdrop-opacity-95">
-          <h1 className="text-red-700 font-bold text-4xl">
+
+      <div className="h-[29rem] bg-[url('/img/home3.png')] bg-[length:1382px_465px] flex justify-center items-center saturate-150">
+       
+        <div
+          className="w-3/5 h-36 grid place-items-center mb-24  py-4 text-center"
+        >
+          <h1 className="text-rose-600 font-bold text-3xl uppercase drop-shadow-md">
             Servicio de alquiler de alta tecnología
           </h1>
-          <p className="text-white text-xl mt-4">
+          <p className="text-white text-md mt-4 font-medium drop-shadow-md">
             Explora un mundo de oportunidades usando la última tecnología a
             nivel mundial. Cumple tus sueños, diviértete, emprende, eso es lo
             que te ofrecemos en DH Technology. Estás a un click de distancia.
           </p>
-        </div>*/}
+        </div>
       </div>
 
-      <div className="h-96 w-[96%] flex justify-center items-center mt-18">
-        <div className="w-1/2 p-24 ">
+      <div className="flex mt-14 px-12">
+
+        <div className="w-1/2 px-24 py-10 ">
           <div className="flex flex-col pb-4 text-lg">
             <span>WHO</span>
             <span>WE ARE</span>
             <i className="fa-solid fa-arrow-right-long text-rose-500 text-3xl"></i>
           </div>
-          <h2 className="text-2xl text-rose-500 font-semibold mb-2">
-            Technology investments as a differentiator
+          <h2 className="text-4xl text-rose-500 font-semibold mb-4">
+            Servicio de alquiler de alta tecnología
           </h2>
-          <p>
-            No forced partnership technology here. We focus on the right
-            solution to drive our clients’ business forward and employ a
-            technology-agnostic approach for all needed stages of the activity
-            cycle, allowing access to current, robust, and advanced solutions.
-            Paramount to this is ensuring the security and compliant use of all
-            information. In the end, it’s not just technology; we ensure our
-            methodologies, staff, industry knowledge, and governance align with
-            the technology to drive the right client results.
+          <p className="text-xl">
+            Explora un mundo de oportunidades usando la última tecnología a
+            nivel mundial. Cumple tus sueños, diviértete, emprende, eso es lo
+            que te ofrecemos en DH Technology. Estás a un click de distancia.
           </p>
         </div>
 

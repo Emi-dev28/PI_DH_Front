@@ -4,7 +4,7 @@ export const Footer = () => {
     return (
         <footer className="w-full p-8 mt-auto">
             <div className="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 text-center md:justify-between">
-                <img src="/logo-editor1.png" alt="logo-ct" className="w-60 border-red-300 border-[1px]" />
+                <img src="/public/img/default_transparent_765x625.png" alt="logo-ct" className="h-40 h w-auto object-contain mr-2" />
                 <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
                     <li>
                         About Us

@@ -7,19 +7,28 @@ export default function Home() {
 
   const [randomProducts, setRandomProducts] = useState([]);
   const [currentPage, setCurrentPage] = useState(0);
-
-  const clonedProducts = [...products.data];
-
-  // Ordenar aleatoriamente los productos
-  const shuffledProducts = clonedProducts.sort(() => Math.random() - 0.5);
-
-  // Tomar solo los primeros 10 productos
-  const selectedProducts = shuffledProducts.splice(0, 10);
+  const [shuffledProducts, setShuffledProducts] = useState([]);
 
   useEffect(() => {
-    // Actualizar el estado con los productos aleatorios
-    setRandomProducts(selectedProducts);
-  }, []); // La dependencia vacía asegura que esto solo se ejecute una vez al montar el componente
+    const updateRandomProducts = () => {
+      // Clonamos los productos para no modificar el estado directamente
+      const clonedProducts = [...products.data];
+
+      // Ordenar aleatoriamente los productos
+      const shuffledProducts = clonedProducts.sort(() => Math.random() - 0.5);
+
+      setShuffledProducts(shuffledProducts);
+
+      // Tomar solo los primeros 10 productos
+      const newSelectedProducts = shuffledProducts.slice(0, 10);
+
+      // Actualizar el estado con los productos aleatorios
+      setRandomProducts(newSelectedProducts);
+    };
+
+    // Llamamos a la función de actualización al montar el componente
+    updateRandomProducts();
+  }, [products.data]); // Dependencia actualizada a products.data
 
   const nextHandler = () => {
     const elementsAmount = products.data.length;

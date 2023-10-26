@@ -1,6 +1,6 @@
 
 import React from 'react';
-import logo from '/logo-editor1.png'
+import logo from '/logo-editor1.webp'
 import { Link } from 'react-router-dom';
 
 export const Navbar = () => {
@@ -10,7 +10,7 @@ export const Navbar = () => {
       {/* Logo y texto a la izquierda */}
       <div className="flex items-center">
       <Link to="/">
-        <img src={logo} alt="Logo" className="h-10 h w-auto object-contain mr-2" />
+        <img src={logo} alt="Logo" className="h-10 w-auto object-contain mr-2" />
       </Link>
       </div>
 

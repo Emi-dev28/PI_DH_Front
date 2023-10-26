@@ -58,6 +58,8 @@ export default function Home() {
         </div>*/}
       </div>
 
+      
+
       <div className="h-96 w-[96%] flex justify-center items-center mt-18">
         <div className="w-1/2 p-24 ">
           <div className="flex flex-col pb-4 text-lg">

@@ -8,8 +8,10 @@ export default function Home() {
   const [randomProducts, setRandomProducts] = useState([]);
   const [currentPage, setCurrentPage] = useState(0);
 
+  const clonedProducts = [...products.data];
+
   // Ordenar aleatoriamente los productos
-  const shuffledProducts = products.data.sort(() => Math.random() - 0.5);
+  const shuffledProducts = clonedProducts.sort(() => Math.random() - 0.5);
 
   // Tomar solo los primeros 10 productos
   const selectedProducts = shuffledProducts.splice(0, 10);

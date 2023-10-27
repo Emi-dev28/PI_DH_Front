@@ -45,7 +45,7 @@ export default function Home() {
 
   return (
     <div>
-      <div className="h-[39rem] bg-[url('/img/section-1.webp')] bg-no-repeat flex justify-center items-center saturate-150">
+      <div className="h-[26rem] bg-[url('/img/section-1.webp')] bg-no-repeat flex justify-center items-center saturate-150">
        {/* <div className="w-3/5 text-center mb-24 backdrop-opacity-95">
           <h1 className="text-red-700 font-bold text-4xl">
             Servicio de alquiler de alta tecnología
@@ -58,9 +58,32 @@ export default function Home() {
         </div>*/}
       </div>
 
-      
+      <div className="mt-4 flex justify-center">
+        <select className="px-8 py-2 border border-gray-300 rounded-md ml-1 cursor-pointer">
+          <option value="" disabled selected>Selecciona una categoría</option>
+          <option value="categoria1">Drones</option>
+          <option value="categoria2">Equipamiento de oficina</option>
+          <option value="categoria3">Hardware</option>
+          <option value="categoria4">Iluminación</option>
+          <option value="categoria5">Monitores y pantallas</option>
+          <option value="categoria6">Perifericos</option>
+          <option value="categoria7">Streaming</option>
+          <option value="categoria8">Varios</option>
+         </select>
+        <button className="bg-gradient-to-b from-btnPink to-btnPinkDarker text-white px-4 py-2 rounded-r-md ml-1 hover:text-gray-300 duration-400 focus:shadow-outline-grey shadow-xl">
+          Ir
+        </button>
 
-      <div className="h-96 w-[96%] flex justify-center items-center mt-18">
+       <input type="text" placeholder="Buscar..." className="px-4 py-2 border border-gray-300 rounded-l-md"/>
+    
+      <button className="bg-gradient-to-b from-btnPink to-btnPinkDarker text-white px-4 py-2 rounded-r-md ml-1 hover:text-gray-300 duration-400 focus:shadow-outline-grey shadow-xl">
+        Buscar
+      </button> 
+    
+  </div>
+
+
+   {/*   <div className="h-96 w-[96%] flex justify-center items-center mt-18">
         <div className="w-1/2 p-24 ">
           <div className="flex flex-col pb-4 text-lg">
             <span>WHO</span>
@@ -86,6 +109,7 @@ export default function Home() {
           <img src="/img/home2.png" alt="home-secondary-image" />
         </div>
       </div>
+        */}
 
       <Wrapper
         products={randomProducts}

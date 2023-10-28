@@ -32,7 +32,7 @@ export default function CardHome({ product }) {
       </div>
 
       <Link to={"/detalle/" + product.id} className="absolute right-10">
-        <i className="fa-solid fa-eye text-2xl hover:text-green-600"></i>
+        <i className="fa-solid fa-eye text-4xl hover:text-green-600"></i>
       </Link>
 
       <div className="border"></div>

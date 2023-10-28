@@ -1,10 +1,5 @@
 // Shadcn components
-import {
-  Table,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
+import { Table, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
 // Context
 import { useDataContext } from "@/context/useDataContext";
@@ -86,14 +81,34 @@ export const Detalle = () => {
       {/* Renderizar las imágenes y un Link que lleve a una página aparte <GaleriaDeImagenes/>  */}
       <div className="flex items-center mt-4">
         <div className="w-1/2">
-          <img src="/img/drone2.png" alt="product-img" className="w-full border-0 rounded-lg" />
+          <img
+            src="/img/drone2.webp"
+            alt="product-img"
+            className="w-full border-0 rounded-lg"
+          />
         </div>
 
         <div className="flex flex-wrap w-1/2 justify-center gap-4">
-          <img src="/img/drone2.png" alt="product-img" className="w-[45%] border-0 rounded-lg" />
-          <img src="/img/drone2.png" alt="product-img" className="w-[45%] border-0 rounded-lg" />
-          <img src="/img/drone2.png" alt="product-img" className="w-[45%] border-0 rounded-lg" />
-          <img src="/img/drone2.png" alt="product-img" className="w-[45%] border-0 rounded-lg" />
+          <img
+            src="/img/drone2.webp"
+            alt="product-img"
+            className="w-[45%] border-0 rounded-lg"
+          />
+          <img
+            src="/img/drone2.webp"
+            alt="product-img"
+            className="w-[45%] border-0 rounded-lg"
+          />
+          <img
+            src="/img/drone2.webp"
+            alt="product-img"
+            className="w-[45%] border-0 rounded-lg"
+          />
+          <img
+            src="/img/drone2.webp"
+            alt="product-img"
+            className="w-[45%] border-0 rounded-lg"
+          />
         </div>
       </div>
 
@@ -104,7 +119,6 @@ export const Detalle = () => {
       >
         Ver galería de imágenes
       </Button>
-
     </div>
   );
 };

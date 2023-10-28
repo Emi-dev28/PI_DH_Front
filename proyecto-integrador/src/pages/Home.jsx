@@ -54,13 +54,11 @@ export default function Home() {
 
   return (
     <div>
-
-      <div className="h-[29rem] bg-[url('/img/home3.png')] bg-[length:1382px_465px] 
-      flex justify-center items-center saturate-150">
-       
-        <div
-          className="w-3/5 h-36 grid place-items-center mb-24  py-4 text-center"
-        >
+      <div
+        className="h-[29rem] bg-[url('/img/home3.webp')] bg-[length:1382px_465px] 
+      flex justify-center items-center saturate-150"
+      >
+        <div className="w-3/5 h-36 grid place-items-center mb-24  py-4 text-center">
           <h1 className="text-rose-600 font-bold text-3xl uppercase drop-shadow-md">
             Servicio de alquiler de alta tecnología
           </h1>
@@ -73,7 +71,6 @@ export default function Home() {
       </div>
 
       <div className="flex mt-14 px-12">
-
         <div className="w-1/2 px-24 py-10 ">
           <div className="flex flex-col pb-4 text-lg">
             <span>WHO</span>
@@ -91,7 +88,7 @@ export default function Home() {
         </div>
 
         <div className="flex justify-end w-1/2 ">
-          <img src="/img/home2.png" alt="home-secondary-image" />
+          <img src="/img/home2.webp" alt="home-secondary-image" />
         </div>
       </div>
 

@@ -1,6 +1,6 @@
 import Modal from 'react-modal'
 
-//* Posicionamiento del midal en la pantalla
+//* Posicionamiento del modal en la pantalla
 const customStyles = {
     content: {
         height: "70%",

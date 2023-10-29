@@ -18,7 +18,7 @@ export default function Wrapper(props) {
           className="bg-gradient-to-b from-btnPink to-btnPinkDarker text-white 
                     px-4 py-2 rounded-md mr-2 hover:text-gray-300 duration-400 focus:shadow-outline-grey shadow-xl"
         >
-          Our products
+          Nuestros productos
         </button>
         <i className="fa-solid fa-arrow-right-long text-rose-500 text-3xl"></i>
       </div>
@@ -33,16 +33,18 @@ export default function Wrapper(props) {
       <div className="self-center flex items-center gap-8 mt-8">
         <Button
           onClick={props.prevHandler}
-          className="w-32 bg-gradient-to-b from-btnPink to-btnPinkDarker text-white px-4 py-2 rounded-md mr-2 hover:text-gray-300 duration-400 focus:shadow-outline-grey shadow-xl"
+          className="w-32 bg-gradient-to-b from-btnPink to-btnPinkDarker text-white px-4 py-2 rounded-md hover:text-gray-300 duration-400 focus:shadow-outline-grey shadow-xl"
         >
           Prev
         </Button>
 
-        <span>Página {props.currentPage + 1}</span>
+        <span
+          className="py-[6px] px-6 bg-gradient-to-b from-stone-100 to-stone-300 border-none rounded-md "
+        >Página {props.currentPage + 1}</span>
 
         <Button
           onClick={props.nextHandler}
-          className="w-32 bg-gradient-to-b from-btnPink to-btnPinkDarker text-white px-4 py-2 rounded-md mr-2 hover:text-gray-300 duration-400 focus:shadow-outline-grey shadow-xl"
+          className="w-32 bg-gradient-to-b from-btnPink to-btnPinkDarker text-white px-4 py-2 rounded-md hover:text-gray-300 duration-400 focus:shadow-outline-grey shadow-xl"
         >
           Next
         </Button>

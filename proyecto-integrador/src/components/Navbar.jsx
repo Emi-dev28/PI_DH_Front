@@ -1,5 +1,5 @@
 import { ThemeToggle } from "./theme/theme-toogle";
-import logo from "/logo-editor1.webp";
+import logo from "/default_transparent_1000x1000.png";
 import { Link, useLocation } from "react-router-dom";
 
 export const Navbar = () => {

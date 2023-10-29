@@ -73,8 +73,8 @@ export default function Home() {
       <div className="flex mt-14 px-12">
         <div className="w-1/2 px-24 py-10 ">
           <div className="flex flex-col pb-4 text-lg">
-            <span>WHO</span>
-            <span>WE ARE</span>
+            <span>QUIÉNES</span>
+            <span>SOMOS</span>
             <i className="fa-solid fa-arrow-right-long text-rose-500 text-3xl"></i>
           </div>
           <h2 className="text-4xl text-rose-500 font-semibold mb-4">

@@ -1,6 +1,6 @@
 import Wrapper from "@/components/Wrapper";
 import { useDataContext } from "@/context/useDataContext";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function Home() {
   const { state: products } = useDataContext();
@@ -8,6 +8,11 @@ export default function Home() {
   const [randomProducts, setRandomProducts] = useState([]);
   const [currentPage, setCurrentPage] = useState(0);
   const [shuffledProducts, setShuffledProducts] = useState([]);
+
+  //* Establecer la referencia a un elemento de forma dinámica para hacer el scroll automático
+  //* hacia esa posición en cualquier tipo de pantalla
+  const productsRef = useRef()
+  let coords = productsRef.current?.getBoundingClientRect()
 
   useEffect(() => {
     const updateRandomProducts = () => {
@@ -53,7 +58,7 @@ export default function Home() {
   };
 
   return (
-    <div>
+    <div className="flex flex-col">
       <div
         className="w-full h-[29rem] bg-[url('/img/home3.webp')] bg-cover 
       flex justify-center items-center saturate-150"
@@ -67,6 +72,14 @@ export default function Home() {
             nivel mundial. Cumple tus sueños, diviértete, emprende, eso es lo
             que te ofrecemos en DH Technology. Estás a un click de distancia.
           </p>
+          <button
+            onClick={() => window.scroll({ top: coords.y, behavior: "smooth" })}
+            className="bg-gradient-to-b from-btnPink to-btnPinkDarker text-white 
+                    px-4 py-2 rounded-md mr-2 mt-4 hover:text-gray-300 duration-400 
+                    focus:shadow-outline-grey shadow-xl"
+          >
+            Ver nuestros productos
+          </button>
         </div>
       </div>
 
@@ -92,12 +105,21 @@ export default function Home() {
         </div>
       </div>
 
+
+      <div ref={productsRef}></div>
       <Wrapper
         products={randomProducts}
         prevHandler={prevHandler}
         nextHandler={nextHandler}
         currentPage={currentPage}
       />
+    
+      <button 
+      onClick={() => window.scroll({top: "0", behavior: "smooth"})}
+      className="py-2 px-4 self-end bg-gradient-to-b from-lime-400 to-lime-600 
+      border-none rounded-md mr-8">
+        <i className="fa-solid fa-arrow-turn-up text-5xl"></i>
+      </button>
     </div>
   );
 }

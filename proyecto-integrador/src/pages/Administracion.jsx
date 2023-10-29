@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useWindowSize } from "@uidotdev/usehooks";
 
-import { NewProductsForm } from "@/components/NewProductsForm";
+import NewProductsForm from "@/components/NewProductsForm";
 
 import { useDataContext } from "@/context/useDataContext";
 import { subirImagen } from "@/helpers/subirImagen";
@@ -13,16 +13,15 @@ const initialProduct = {
   price: "",
   category: "",
   quantity: "",
-  img: ""
+  img: "",
 };
 
-export const Administrador = () => {
+export const Administracion = () => {
   //** Función para capturar el width y saber si se está accediendo desde celular
   const size = useWindowSize();
 
   const { state, agregarProducto } = useDataContext();
   const [newProduct, setNewProduct] = useState(initialProduct);
-
 
   //* Función para subir imágenes a Cloudinary y colocarlas en el state local para luego enviarlas al reducer
   const subirImagenInput = async ({ target }) => {
@@ -54,8 +53,6 @@ export const Administrador = () => {
     setNewProduct(initialProduct);
   };
 
-
-
   if (size.width < 1024) {
     //*LO QUE SE DEVUELVE PARA CELULAR
     return (
@@ -68,12 +65,12 @@ export const Administrador = () => {
   } else {
     //*LO QUE SE DEVUELVE PARA ESCRITORIO
     return (
-        <NewProductsForm 
+      <NewProductsForm
         newProduct={newProduct}
         setNewProduct={setNewProduct}
         submitAgregarProducto={submitAgregarProducto}
         subirImagenInput={subirImagenInput}
-        />
+      />
     );
   }
 };

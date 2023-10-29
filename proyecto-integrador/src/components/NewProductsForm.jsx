@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { useNavigate } from "react-router-dom";
 
 import { Button } from "@/components/ui/button";
@@ -5,12 +6,19 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 
-export const NewProductsForm = ({
+NewProductsForm.propTypes = {
+  newProduct: PropTypes.object.isRequired,
+  setNewProduct: PropTypes.func,
+  submitAgregarProducto: PropTypes.func,
+  subirImagenInput: PropTypes.func,
+};
+
+export default function NewProductsForm({
   newProduct,
   setNewProduct,
   submitAgregarProducto,
   subirImagenInput,
-}) => {
+}) {
   const navigate = useNavigate();
 
   return (
@@ -109,4 +117,4 @@ export const NewProductsForm = ({
       </div>
     </div>
   );
-};
+}

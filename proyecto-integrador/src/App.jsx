@@ -1,6 +1,6 @@
 // Shadcn dark mode provider
 import { ThemeProvider } from "@/components/theme/theme-provider";
-import { ThemeToggle } from "./components/theme/theme-toogle";
+// import { ThemeToggle } from "./components/theme/theme-toogle";
 // Shadcn components
 import { Toaster } from "@/components/ui/toaster";
 // React Router
@@ -9,17 +9,14 @@ import { AppRouter } from "./router/AppRouter";
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
 
-
-
 export default function App() {
   const location = useLocation();
-  const isAdminPages = ["/administrador", "/lista-productos"].includes(
+  const isAdminPages = ["/admin", "/lista-productos"].includes(
     location.pathname
   );
 
   return (
     <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
-
       <div className="flex flex-col min-h-screen bg-[#F5F5FA] ">
         <Toaster />
         <Navbar />
@@ -29,8 +26,6 @@ export default function App() {
 
         {!isAdminPages && <Footer />}
       </div>
-
     </ThemeProvider>
-
   );
 }

@@ -2,7 +2,8 @@ import Wrapper from "@/components/home/Wrapper";
 import { Button } from "@/components/ui/button";
 import { useDataContext } from "@/context/useDataContext";
 import { useEffect, useRef, useState } from "react";
-import { MdArrowUpward } from "react-icons/md";
+
+import { MdOutlineArrowUpward } from "react-icons/md";
 
 export default function Home() {
   const { state: products } = useDataContext();
@@ -119,10 +120,10 @@ export default function Home() {
         variant="outline"
         size="icon"
         onClick={() => window.scroll({ top: "0", behavior: "smooth" })}
-        className="p-1 self-end bg-gradient-to-b from-lime-400 to-lime-600 
-      border-none rounded-md mr-8"
+        className="p-2 self-end bg-gradient-to-b from-lime-400 to-lime-600 
+      border-none rounded-xl mr-8"
       >
-        <MdArrowUpward className="text-4xl text-white" />
+        <MdOutlineArrowUpward className="text-2xl text-white" />
       </Button>
     </div>
   );

@@ -16,7 +16,7 @@ const initialProduct = {
   img: "",
 };
 
-export const Administrador = () => {
+export const Administracion = () => {
   //** Función para capturar el width y saber si se está accediendo desde celular
   const size = useWindowSize();
 

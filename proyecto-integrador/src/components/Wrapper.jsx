@@ -12,7 +12,7 @@ Wrapper.propTypes = {
 
 export default function Wrapper(props) {
   return (
-    <div className="mb-16 flex flex-col items-center mt-36">
+    <div className="mb-16 flex flex-col items-center mt-16">
       <div className="flex place-self-start flex-col mb-12 ml-24">
         <button
           className="bg-gradient-to-b from-btnPink to-btnPinkDarker text-white 

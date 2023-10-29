@@ -58,7 +58,7 @@ export default function Home() {
         className="w-full h-[29rem] bg-[url('/img/home3.webp')] bg-cover 
       flex justify-center items-center saturate-150"
       >
-        <div className="w-3/5 h-36 grid place-items-center mb-24  py-4 text-center">
+        <div className="w-3/5 h-36 grid place-items-center mb-24 py-4 text-center">
           <h1 className="text-rose-600 font-bold text-3xl uppercase drop-shadow-md">
             Servicio de alquiler de alta tecnología
           </h1>
@@ -67,28 +67,6 @@ export default function Home() {
             nivel mundial. Cumple tus sueños, diviértete, emprende, eso es lo
             que te ofrecemos en DH Technology. Estás a un click de distancia.
           </p>
-        </div>
-      </div>
-
-      <div className="flex mt-14 px-12">
-        <div className="w-1/2 px-24 py-10 ">
-          <div className="flex flex-col pb-4 text-lg">
-            <span>QUIÉNES</span>
-            <span>SOMOS</span>
-            <i className="fa-solid fa-arrow-right-long text-rose-500 text-3xl"></i>
-          </div>
-          <h2 className="text-4xl text-rose-500 font-semibold mb-4">
-            Servicio de alquiler de alta tecnología
-          </h2>
-          <p className="text-xl">
-            Explora un mundo de oportunidades usando la última tecnología a
-            nivel mundial. Cumple tus sueños, diviértete, emprende, eso es lo
-            que te ofrecemos en DH Technology. Estás a un click de distancia.
-          </p>
-        </div>
-
-        <div className="flex justify-end w-1/2 ">
-          <img src="/img/home2.webp" alt="home-secondary-image" />
         </div>
       </div>
 

@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { useDataContext } from "@/context/useDataContext";
 import { useEffect, useRef, useState } from "react";
 
-import { MdOutlineArrowUpward } from "react-icons/md";
+import { MdArrowUpward } from "react-icons/md";
 
 export default function Home() {
   const { state: products } = useDataContext();
@@ -62,51 +62,23 @@ export default function Home() {
 
   return (
     <div className="flex flex-col">
-      <div
-        className="w-full h-[29rem] bg-[url('/img/home3.webp')] bg-cover 
-      flex justify-center items-center saturate-150"
-      >
-        <div className="w-3/5 h-36 grid place-items-center mb-24 py-4 text-center">
-          <h1 className="text-rose-600 font-bold text-3xl uppercase drop-shadow-md">
-            Servicio de alquiler de alta tecnología
-          </h1>
-          <p className="text-white text-md mt-4 font-medium drop-shadow-md">
-            Explora un mundo de oportunidades usando la última tecnología a
-            nivel mundial. Cumple tus sueños, diviértete, emprende, eso es lo
-            que te ofrecemos en DH Technology. Estás a un click de distancia.
-          </p>
-          <button
-            onClick={() => window.scroll({ top: coords.y, behavior: "smooth" })}
-            className="bg-gradient-to-b from-btnPink to-btnPinkDarker text-white 
-                    px-4 py-2 rounded-md mr-2 mt-4 hover:text-gray-300 duration-400 
-                    focus:shadow-outline-grey shadow-xl"
-          >
-            Ver nuestros productos
-          </button>
-        </div>
+
+      <div className="w-full saturate-150">
+        <img src="/img/home-11.webp" alt="" />
       </div>
 
-      {/* <div className="flex mt-14 px-12">
-        <div className="w-1/2 px-24 py-10 ">
-          <div className="flex flex-col pb-4 text-lg">
-            <span>QUIÉNES</span>
-            <span>SOMOS</span>
-            <i className="fa-solid fa-arrow-right-long text-rose-500 text-3xl"></i>
-          </div>
-          <h2 className="text-4xl text-rose-500 font-semibold mb-4">
-            Servicio de alquiler de alta tecnología
-          </h2>
-          <p className="text-xl">
-            Explora un mundo de oportunidades usando la última tecnología a
-            nivel mundial. Cumple tus sueños, diviértete, emprende, eso es lo
-            que te ofrecemos en DH Technology. Estás a un click de distancia.
-          </p>
-        </div>
+      {/* <button
+        onClick={() => window.scroll({ top: coords.y, behavior: "smooth" })}
+        className="bg-gradient-to-b from-btnPink to-btnPinkDarker text-white 
+                    px-4 py-2 rounded-md mr-2 mt-4 hover:text-gray-300 duration-400 
+                    focus:shadow-outline-grey shadow-xl"
+      >
+        Ver nuestros productos
+      </button> */}
 
-        <div className="flex justify-end w-1/2 ">
-          <img src="/img/home2.webp" alt="home-secondary-image" />
-        </div>
-      </div> */}
+      <h1 className="mt-6 text-rose-600 font-bold text-2xl uppercase drop-shadow-md self-center">
+        Hacemos realidad tu proyecto
+      </h1>
 
       <div ref={productsRef}></div>
       <Wrapper
@@ -119,11 +91,11 @@ export default function Home() {
       <Button
         variant="outline"
         size="icon"
+        className="self-end bg-gradient-to-b from-lime-400 to-lime-600 
+        border-none rounded-md mr-8"
         onClick={() => window.scroll({ top: "0", behavior: "smooth" })}
-        className="p-2 self-end bg-gradient-to-b from-lime-400 to-lime-600 
-      border-none rounded-xl mr-8"
       >
-        <MdOutlineArrowUpward className="text-2xl text-white" />
+        <MdArrowUpward className="text-xl text-white" />
       </Button>
     </div>
   );

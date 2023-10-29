@@ -2,7 +2,7 @@ import Wrapper from "@/components/home/Wrapper";
 import { Button } from "@/components/ui/button";
 import { useDataContext } from "@/context/useDataContext";
 import { useEffect, useRef, useState } from "react";
-import { MdArrowCircleUp } from "react-icons/md";
+import { MdArrowUpward } from "react-icons/md";
 
 export default function Home() {
   const { state: products } = useDataContext();
@@ -74,14 +74,14 @@ export default function Home() {
             nivel mundial. Cumple tus sueños, diviértete, emprende, eso es lo
             que te ofrecemos en DH Technology. Estás a un click de distancia.
           </p>
-          {/* <button
+          <button
             onClick={() => window.scroll({ top: coords.y, behavior: "smooth" })}
             className="bg-gradient-to-b from-btnPink to-btnPinkDarker text-white 
                     px-4 py-2 rounded-md mr-2 mt-4 hover:text-gray-300 duration-400 
                     focus:shadow-outline-grey shadow-xl"
           >
             Ver nuestros productos
-          </button> */}
+          </button>
         </div>
       </div>
 
@@ -122,7 +122,7 @@ export default function Home() {
         className="p-1 self-end bg-gradient-to-b from-lime-400 to-lime-600 
       border-none rounded-md mr-8"
       >
-        <MdArrowCircleUp className="text-4xl text-white" />
+        <MdArrowUpward className="text-4xl text-white" />
       </Button>
     </div>
   );

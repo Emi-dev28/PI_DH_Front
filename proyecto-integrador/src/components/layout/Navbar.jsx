@@ -1,5 +1,5 @@
-import { ThemeToggle } from "../theme/theme-toogle";
-import logo from "/default_transparent_1000x1000.png";
+import { ThemeToggle } from "@/components/theme/theme-toogle";
+import logo from "/img/logo/logo-editor.svg";
 import { Link, useLocation } from "react-router-dom";
 
 export const Navbar = () => {
@@ -20,7 +20,6 @@ export const Navbar = () => {
           />
         </Link>
       </div>
-
 
       {/* Botones a la derecha */}
       {/* En "/admin" y "/listado-productos" no se ven estos botones:  */}

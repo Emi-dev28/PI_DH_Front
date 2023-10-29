@@ -1,20 +1,19 @@
-
 import { Button } from "@/components/ui/button";
 // Context
 import { useDataContext } from "@/context/useDataContext";
 // React
 import { useNavigate, useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { ImgGalleryModal } from "@/components/ImgGalleryModal";
-import { Carousel } from "@/components/Carousel";
-import { DetailTable } from "@/components/DetailTable";
+import { ImgGalleryModal } from "@/components/detalle/ImgGalleryModal";
+import { Carousel } from "@/components/detalle/Carousel";
+import { DetailTable } from "@/components/detalle/DetailTable";
 
 export const Detalle = () => {
   const { state: products } = useDataContext();
   const [product, setProduct] = useState({});
 
   //* State para abrir o cerrar el modal
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
   const navigate = useNavigate();
 
@@ -23,8 +22,8 @@ export const Detalle = () => {
   const { id } = useParams();
 
   const onCloseModal = () => {
-    setIsOpen(false)
-  }
+    setIsOpen(false);
+  };
 
   useEffect(() => {
     const selectedProductId = parseInt(id);
@@ -38,7 +37,6 @@ export const Detalle = () => {
 
   return (
     <div className="flex flex-col">
-
       <div className="flex justify-between items-center mb-3 mx-3">
         <span className="text-3xl">Detalle del producto</span>
 

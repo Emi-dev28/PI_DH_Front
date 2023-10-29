@@ -9,9 +9,9 @@ import {
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import { useDataContext } from "@/context/useDataContext";
-import TableRowLocal from "@/components/TableRowLocal";
+import TableRowLocal from "@/components/admin/listado-productos/TableRowLocal";
 
-export const ListaDeProductos = () => {
+export default function ListadoProductos() {
   const { state, borrarProducto } = useDataContext();
 
   const navigate = useNavigate();
@@ -23,7 +23,7 @@ export const ListaDeProductos = () => {
 
         <Button
           className="text-lg bg-cyan-600 text-white mt-5 hover:bg-cyan-500"
-          onClick={() => navigate("/administrador")}
+          onClick={() => navigate("/admin")}
         >
           Regresar
         </Button>
@@ -52,4 +52,4 @@ export const ListaDeProductos = () => {
       </Table>
     </div>
   );
-};
+}

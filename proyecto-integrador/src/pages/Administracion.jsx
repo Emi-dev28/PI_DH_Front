@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useWindowSize } from "@uidotdev/usehooks";
 
-import NewProductsForm from "@/components/NewProductsForm";
+import NewProductsForm from "@/components/admin/NewProductsForm";
 
 import { useDataContext } from "@/context/useDataContext";
 import { subirImagen } from "@/helpers/subirImagen";

@@ -109,7 +109,7 @@ export default function NewProductsForm({
 
         <Button
           className="text-lg bg-indigo-600 text-white mt-2 hover:bg-cyan-500 w-2/3"
-          onClick={() => navigate("/lista-productos")}
+          onClick={() => navigate("/admin/listado-productos")}
           // onClick={() => agregarProducto(newProduct)}
         >
           Ir a la lista de productos

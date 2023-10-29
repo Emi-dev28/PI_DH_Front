@@ -11,7 +11,7 @@ import { Footer } from "./components/Footer";
 
 export default function App() {
   const location = useLocation();
-  const isAdminPages = ["/admin", "/lista-productos"].includes(
+  const isAdminPages = ["/admin", "/admin/listado-productos"].includes(
     location.pathname
   );
 

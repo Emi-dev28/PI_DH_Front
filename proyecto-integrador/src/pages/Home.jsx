@@ -1,6 +1,8 @@
-import Wrapper from "@/components/Wrapper";
+import Wrapper from "@/components/home/Wrapper";
+import { Button } from "@/components/ui/button";
 import { useDataContext } from "@/context/useDataContext";
 import { useEffect, useRef, useState } from "react";
+import { MdArrowCircleUp } from "react-icons/md";
 
 export default function Home() {
   const { state: products } = useDataContext();
@@ -72,18 +74,18 @@ export default function Home() {
             nivel mundial. Cumple tus sueños, diviértete, emprende, eso es lo
             que te ofrecemos en DH Technology. Estás a un click de distancia.
           </p>
-          <button
+          {/* <button
             onClick={() => window.scroll({ top: coords.y, behavior: "smooth" })}
             className="bg-gradient-to-b from-btnPink to-btnPinkDarker text-white 
                     px-4 py-2 rounded-md mr-2 mt-4 hover:text-gray-300 duration-400 
                     focus:shadow-outline-grey shadow-xl"
           >
             Ver nuestros productos
-          </button>
+          </button> */}
         </div>
       </div>
 
-      <div className="flex mt-14 px-12">
+      {/* <div className="flex mt-14 px-12">
         <div className="w-1/2 px-24 py-10 ">
           <div className="flex flex-col pb-4 text-lg">
             <span>QUIÉNES</span>
@@ -103,7 +105,7 @@ export default function Home() {
         <div className="flex justify-end w-1/2 ">
           <img src="/img/home2.webp" alt="home-secondary-image" />
         </div>
-      </div>
+      </div> */}
 
       <div ref={productsRef}></div>
       <Wrapper
@@ -113,13 +115,15 @@ export default function Home() {
         currentPage={currentPage}
       />
 
-      <button
+      <Button
+        variant="outline"
+        size="icon"
         onClick={() => window.scroll({ top: "0", behavior: "smooth" })}
-        className="py-2 px-4 self-end bg-gradient-to-b from-lime-400 to-lime-600 
+        className="p-1 self-end bg-gradient-to-b from-lime-400 to-lime-600 
       border-none rounded-md mr-8"
       >
-        <i className="fa-solid fa-arrow-turn-up text-5xl"></i>
-      </button>
+        <MdArrowCircleUp className="text-4xl text-white" />
+      </Button>
     </div>
   );
 }

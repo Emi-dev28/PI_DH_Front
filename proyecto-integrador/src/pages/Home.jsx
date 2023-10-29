@@ -26,9 +26,9 @@ export default function Home() {
       setRandomProducts(newSelectedProducts);
     };
 
-    // Llamamos a la función de actualización al montar el componente
+    // Llamamos a la función de actualización al montar el componente y cuando products.data cambia
     updateRandomProducts();
-  }, [products.data]); // Dependencia actualizada a products.data
+  }, [products.data]);
 
   const nextHandler = () => {
     const elementsAmount = products.data.length;

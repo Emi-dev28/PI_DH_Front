@@ -21,6 +21,7 @@ export const Navbar = () => {
       </div>
 
       {/* Botones a la derecha */}
+      {/* En "/admin" y "/lista-productos" no se ven estos botones:  */}
       {!isAdminPages && (
         <div className="flex items-center">
           <button className="bg-gradient-to-b from-btnPink to-btnPinkDarker text-white px-4 py-2 rounded-md mr-2 hover:text-gray-300 duration-400 focus:shadow-outline-grey shadow-xl">

@@ -6,8 +6,8 @@ import { Toaster } from "@/components/ui/toaster";
 // React Router
 import { useLocation } from "react-router-dom";
 import { AppRouter } from "./router/AppRouter";
-import { Navbar } from "./components/Navbar";
-import { Footer } from "./components/Footer";
+import { Navbar } from "./components/layout/Navbar";
+import { Footer } from "./components/layout/Footer";
 
 export default function App() {
   const location = useLocation();

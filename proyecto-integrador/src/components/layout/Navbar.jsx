@@ -1,4 +1,4 @@
-import { ThemeToggle } from "./theme/theme-toogle";
+import { ThemeToggle } from "../theme/theme-toogle";
 import logo from "/logo-editor1.webp";
 import { Link, useLocation } from "react-router-dom";
 

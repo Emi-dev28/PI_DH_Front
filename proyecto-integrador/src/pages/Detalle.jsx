@@ -1,21 +1,30 @@
-// Shadcn components
-import { Table, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+
 import { Button } from "@/components/ui/button";
 // Context
 import { useDataContext } from "@/context/useDataContext";
 // React
 import { useNavigate, useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { ImgGalleryModal } from "@/components/ImgGalleryModal";
+import { Carousel } from "@/components/Carousel";
+import { DetailTable } from "@/components/DetailTable";
 
 export const Detalle = () => {
   const { state: products } = useDataContext();
   const [product, setProduct] = useState({});
+
+  //* State para abrir o cerrar el modal
+  const [isOpen, setIsOpen] = useState(false)
 
   const navigate = useNavigate();
 
   //* Esto hay que utilizarlos para obtener los datos específicos de cada producto
   //* guardados en la Api, pero todavía no la tenemos
   const { id } = useParams();
+
+  const onCloseModal = () => {
+    setIsOpen(false)
+  }
 
   useEffect(() => {
     const selectedProductId = parseInt(id);
@@ -29,6 +38,7 @@ export const Detalle = () => {
 
   return (
     <div className="flex flex-col">
+
       <div className="flex justify-between items-center mb-3 mx-3">
         <span className="text-3xl">Detalle del producto</span>
 
@@ -40,45 +50,14 @@ export const Detalle = () => {
         </Button>
       </div>
 
+      {/* TABLA */}
       {product ? (
-        <Table>
-          {/* <TableCaption>High Technologie Software Company</TableCaption> */}
-
-          <TableHeader>
-            <TableRow>
-              <TableHead className="w-32 bg-slate-200 border-white border-b-[1px]">
-                Nombre
-              </TableHead>
-              <TableHead className="w-96">Descripción</TableHead>
-              <TableHead className="bg-slate-200 border-white border-b-[1px]">
-                Categoría
-              </TableHead>
-              <TableHead>Precio</TableHead>
-              <TableHead className="bg-slate-200 border-white border-b-[1px]">
-                Cantidad
-              </TableHead>
-              <TableHead>Puntuación</TableHead>
-            </TableRow>
-          </TableHeader>
-
-          <TableHeader>
-            <TableRow>
-              <TableHead className="w-32 bg-slate-200">
-                {product.name}
-              </TableHead>
-              <TableHead className="w-1/3">{product.description}</TableHead>
-              <TableHead className="bg-slate-200">{product.price}</TableHead>
-              <TableHead>{product.category}</TableHead>
-              <TableHead className="bg-slate-200">{product.quantity}</TableHead>
-              <TableHead>{product.rating}</TableHead>
-            </TableRow>
-          </TableHeader>
-        </Table>
+        <DetailTable product={product} />
       ) : (
         <div className="ml-4 mt-10 text-2xl">El producto no existe</div>
       )}
 
-      {/* Renderizar las imágenes y un Link que lleve a una página aparte <GaleriaDeImagenes/>  */}
+      {/* IMÁGENES  */}
       <div className="flex items-center mt-4">
         <div className="w-1/2">
           <img
@@ -88,6 +67,7 @@ export const Detalle = () => {
           />
         </div>
 
+        {/* //TODO terminar cuando tengamos la conexion a la API, hacer un .map */}
         <div className="flex flex-wrap w-1/2 justify-center gap-4">
           <img
             src="/img/drone2.webp"
@@ -116,9 +96,16 @@ export const Detalle = () => {
         className="bg-gradient-to-b from-btnPink to-btnPinkDarker text-white 
         px-4 py-2 rounded-md mr-8 hover:text-gray-300 duration-400 focus:shadow-outline-grey shadow-xl
         place-self-end"
+        onClick={() => setIsOpen(true)}
       >
         Ver galería de imágenes
       </Button>
+
+      {/* MODAL Y GALERÍA */}
+      <ImgGalleryModal isOpen={isOpen} onCloseModal={onCloseModal}>
+        {/* //TODO conectar con la api correctamente */}
+        <Carousel images={product.images} />
+      </ImgGalleryModal>
     </div>
   );
 };

@@ -55,7 +55,7 @@ export default function Home() {
   return (
     <div>
       <div
-        className="h-[29rem] bg-[url('/img/home3.webp')] bg-[length:1382px_465px] 
+        className="w-full h-[29rem] bg-[url('/img/home3.webp')] bg-cover 
       flex justify-center items-center saturate-150"
       >
         <div className="w-3/5 h-36 grid place-items-center mb-24  py-4 text-center">

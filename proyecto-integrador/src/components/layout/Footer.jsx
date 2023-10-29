@@ -1,6 +1,6 @@
 export const Footer = () => {
   return (
-    <footer className="w-full p-8 mt-auto">
+    <footer className="w-full py-8 px-2 mt-auto">
       <div className="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 text-center md:justify-between">
         <img
           src="/default_transparent_1000x1000.png"

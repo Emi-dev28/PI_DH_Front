@@ -64,7 +64,7 @@ export default function Home() {
     <div className="flex flex-col">
 
       <div className="w-full saturate-150">
-        <img src="/img/home-11.webp" alt="" />
+        <img src="/img/home-11.webp" alt="Top-home-img" />
       </div>
 
       {/* <button
@@ -88,15 +88,19 @@ export default function Home() {
         currentPage={currentPage}
       />
 
-      <Button
-        variant="outline"
-        size="icon"
-        className="self-end bg-gradient-to-b from-lime-400 to-lime-600 
-        border-none rounded-md mr-8"
-        onClick={() => window.scroll({ top: "0", behavior: "smooth" })}
-      >
-        <MdArrowUpward className="text-xl text-white" />
-      </Button>
+      <div className="w-full saturate-150 relative">
+        <img src="/img/Component.webp" alt="Bottom-home-img" className="pr-2" />
+
+        <Button
+          variant="outline"
+          size="icon"
+          className="absolute right-8 bottom-5 bg-gradient-to-b from-lime-400 to-lime-600 
+          border-none rounded-md"
+          onClick={() => window.scroll({ top: "0", behavior: "smooth" })}
+        >
+          <MdArrowUpward className="text-xl text-white" />
+        </Button>
+      </div>
     </div>
   );
 }

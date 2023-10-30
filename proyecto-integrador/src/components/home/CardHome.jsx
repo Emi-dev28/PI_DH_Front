@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { FaEye } from "react-icons/fa6";
+import PrimaryButton from "../PrimaryButton";
 
 CardHome.propTypes = {
   product: PropTypes.object.isRequired,
@@ -43,13 +44,7 @@ export default function CardHome({ product }) {
         <div>⭐{product.rating}</div>
       </CardHeader>
 
-      <Button
-        className="bg-gradient-to-b from-btnPink to-btnPinkDarker text-white 
-            rounded-md hover:text-gray-300 duration-400 focus:shadow-outline-grey 
-            shadow-xl text-md mx-4"
-      >
-        Alquilar
-      </Button>
+      <PrimaryButton>Alquilar</PrimaryButton>
     </Card>
   );
 }

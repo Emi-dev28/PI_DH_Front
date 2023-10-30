@@ -26,25 +26,24 @@ export default function Wrapper(props) {
       </div>
 
       <div className="self-center flex items-center gap-6 mt-8">
-        <Button
-          variant="outline"
-          size="icon"
-          onClick={props.prevHandler}
-          className="bg-gradient-to-b from-btnPink to-btnPinkDarker text-white  hover:text-gray-300 duration-400 focus:shadow-outline-grey shadow-xl"
-        >
-          <MdChevronLeft className="text-3xl" />
-        </Button>
+        {props.currentPage !== 0 ? (
+          <Button variant="outline" size="icon" onClick={props.prevHandler}>
+            <MdChevronLeft className="text-3xl" />
+          </Button>
+        ) : (
+          <Button
+            variant="outline"
+            size="icon"
+            className="invisible"
+            onClick={props.prevHandler}
+          ></Button>
+        )}
 
-        <span className=" py-[6px] px-6 bg-gradient-to-b from-stone-100 to-stone-300 border-none rounded-md ">
-          Página {props.currentPage + 1}
+        <span className=" h-9 w-9 border border-input inline-flex items-center justify-center rounded-md font-medium">
+          {props.currentPage + 1}
         </span>
 
-        <Button
-          variant="outline"
-          size="icon"
-          onClick={props.nextHandler}
-          className="bg-gradient-to-b from-btnPink to-btnPinkDarker text-white hover:text-gray-300 duration-400 focus:shadow-outline-grey shadow-xl"
-        >
+        <Button variant="outline" size="icon" onClick={props.nextHandler}>
           <MdChevronRight className="text-3xl" />
         </Button>
       </div>

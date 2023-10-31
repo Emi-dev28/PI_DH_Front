@@ -37,7 +37,7 @@ export const Navbar = () => {
             <PrimaryButton>Crear cuenta</PrimaryButton>
           </Link>
 
-          <Link to={"/auth/register"}>
+          <Link to={"/auth/login"}>
             <PrimaryButton>Iniciar sesión</PrimaryButton>
           </Link>
         </div>

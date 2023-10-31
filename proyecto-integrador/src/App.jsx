@@ -19,6 +19,7 @@ export default function App() {
   );
 
   return (
+ 
     <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
 
       <div className="flex flex-col min-h-screen bg-[#F5F5FA] ">

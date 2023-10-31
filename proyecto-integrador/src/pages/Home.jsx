@@ -1,7 +1,7 @@
 import { Marquee } from "@/components/home/Marquee";
 import Wrapper from "@/components/home/Wrapper";
 import { Button } from "@/components/ui/button";
-import { useDataContext } from "@/context/useDataContext";
+import { useDataContext } from "@/context/dataContext/useDataContext";
 import { useEffect, useRef, useState } from "react";
 
 import { MdArrowUpward } from "react-icons/md";

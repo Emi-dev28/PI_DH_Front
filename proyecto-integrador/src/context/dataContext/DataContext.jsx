@@ -96,4 +96,3 @@ export default function DataContextProvider({ children }) {
   );
 }
 
-// La función useDataContext está en un archivo separado abajo de este mismo en la carpeta context.

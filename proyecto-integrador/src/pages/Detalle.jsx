@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 // Context
-import { useDataContext } from "@/context/useDataContext";
+import { useDataContext } from "@/context/dataContext/useDataContext";
 // React
 import { useNavigate, useParams } from "react-router-dom";
 import { useState, useEffect } from "react";

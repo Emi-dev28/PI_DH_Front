@@ -14,18 +14,28 @@ export default function App() {
   const isAdminPages = ["/admin", "/admin/listado-productos"].includes(
     location.pathname
   );
+  const isAuthPages = ["/auth/login", "/auth/register"].includes(
+    location.pathname
+  );
 
   return (
     <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
-      <div className="flex flex-col min-h-screen bg-[#F5F5FA] ">
-        <Toaster />
-        <Navbar />
-        {/* Acá va el header */}
 
+      <div className="flex flex-col min-h-screen bg-[#F5F5FA] ">
+
+        <Toaster />
+
+        {/* En las páginas de login y register no muestra el Navbar */}
+        {!isAuthPages && <Navbar />}
+
+        {/* Main de la página */}
         <AppRouter />
 
-        {!isAdminPages && <Footer />}
+        {/* En las páginas de login, register y admin no muestra el Footer */}
+        {(!isAdminPages && !isAuthPages) && <Footer />}
+
       </div>
+
     </ThemeProvider>
   );
 }

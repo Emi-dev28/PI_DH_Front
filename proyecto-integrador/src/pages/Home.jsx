@@ -64,7 +64,7 @@ export default function Home() {
   return (
     <div className="flex flex-col">
 
-      <div className="w-screen relative">
+      <div className="w-full relative">
         <Marquee styles={"absolute"} />
         <img src="/img/home-13.jpg" alt="Top-home-img" className="w-full" />
         <div className="absolute bottom-[15%] left-8">

@@ -33,8 +33,13 @@ export const Navbar = () => {
           {/* <div className="mr-4">
             <ThemeToggle />
           </div> */}
-          <PrimaryButton>Crear cuenta</PrimaryButton>
-          <PrimaryButton>Iniciar sesión</PrimaryButton>
+          <Link to={"/auth/register"}>
+            <PrimaryButton>Crear cuenta</PrimaryButton>
+          </Link>
+
+          <Link to={"/auth/register"}>
+            <PrimaryButton>Iniciar sesión</PrimaryButton>
+          </Link>
         </div>
       )}
     </nav>

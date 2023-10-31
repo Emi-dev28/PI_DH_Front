@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import PrimaryButton from "../PrimaryButton";
 
 NewProductsForm.propTypes = {
   newProduct: PropTypes.object.isRequired,
@@ -88,14 +89,9 @@ export default function NewProductsForm({
               />
             </div>
 
-            <Button
-              className="bg-gradient-to-b from-btnPink to-btnPinkDarker text-white 
-                            rounded-md hover:text-gray-300 duration-400 focus:shadow-outline-grey 
-                            shadow-xl text-md"
-              onClick={() => submitAgregarProducto(newProduct)}
-            >
+            <PrimaryButton onClick={() => submitAgregarProducto(newProduct)}>
               Agregar producto
-            </Button>
+            </PrimaryButton>
           </div>
 
           <div>

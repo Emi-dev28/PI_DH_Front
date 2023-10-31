@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   darkMode: ["class"],
   content: [
     "./pages/**/*.{js,jsx}",
@@ -18,10 +18,10 @@ module.exports = {
     },
     extend: {
       colors: {
-        navColorDark: '#EB3F711A',
-        navColor: '#EB3F7100',
-        btnPink: '#E83F57',
-        btnPinkDarker: '#8C3945',
+        navColorDark: "#EB3F711A",
+        navColor: "#EB3F7100",
+        btnPink: "#E83F57",
+        btnPinkDarker: "#8C3945",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

@@ -11,15 +11,15 @@ export const AppRouter = () => {
   return (
     <Routes>
       {/* Public routes */}
-      <Route path="/*" element={<Home />}></Route>
-      <Route path="/detalle/:id" element={<Detalle />}></Route>
+      <Route path="/*" element={<Home />}/>
+      <Route path="/detalle/:id" element={<Detalle />}/>
       <Route
         path="/admin/listado-productos"
         element={<ListadoProductos />}
-      ></Route>
+      />
 
       {/* Admin routes: */}
-      <Route path="/admin" element={<Administracion />}></Route>
+      <Route path="/admin" element={<Administracion />}/>
     </Routes>
   );
 };

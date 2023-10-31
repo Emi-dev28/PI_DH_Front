@@ -1,3 +1,4 @@
+import { Marquee } from "@/components/home/Marquee";
 import Wrapper from "@/components/home/Wrapper";
 import { Button } from "@/components/ui/button";
 import { useDataContext } from "@/context/useDataContext";
@@ -63,8 +64,13 @@ export default function Home() {
   return (
     <div className="flex flex-col">
 
-      <div className="w-full saturate-150">
-        <img src="/img/home-11.webp" alt="Top-home-img" />
+      <div className="w-screen relative">
+        <Marquee styles={"absolute"} />
+        <img src="/img/home-13.jpg" alt="Top-home-img" className="w-full" />
+        <div className="absolute bottom-[15%] left-8">
+          <h1 className="text-6xl text-white">DH Technology</h1>
+          <h4 className="text-white text-2xl mt-2">Hacemos realidad tu proyecto</h4>
+        </div>
       </div>
 
       {/* <button
@@ -76,9 +82,9 @@ export default function Home() {
         Ver nuestros productos
       </button> */}
 
-      <h1 className="mt-6 text-rose-600 font-bold text-2xl uppercase drop-shadow-md self-center">
+      {/* <h1 className="mt-6 text-rose-600 font-bold text-2xl uppercase drop-shadow-md self-center">
         Hacemos realidad tu proyecto
-      </h1>
+      </h1> */}
 
       <div ref={productsRef}></div>
       <Wrapper

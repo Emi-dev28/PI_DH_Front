@@ -1,4 +1,5 @@
 import { AuthLayout } from "./AuthLayout"
+import { Link, useNavigate } from "react-router-dom"
 import { useForm } from "react-hook-form"
 import * as z from "zod"
 import { zodResolver } from "@hookform/resolvers/zod"
@@ -13,10 +14,17 @@ import {
     FormMessage,
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
-import { Link } from "react-router-dom"
 
 const formSchema = z.object({
-    username: z.string({
+    name: z.string({
+        required_error: "Se requiere una nombre de usuario",
+    }).min(5, {
+        message: "Cinco (5) caracteres mínimo"
+    }).max(12, {
+        message: "Doce (12) caracteres mínimo"
+    }).trim().toLowerCase(),
+
+    lastname: z.string({
         required_error: "Se requiere una nombre de usuario",
     }).min(5, {
         message: "Cinco (5) caracteres mínimo"
@@ -43,10 +51,13 @@ const formSchema = z.object({
 
 export const RegisterPage = () => {
 
+    const navigate = useNavigate()
+
     const form = useForm({
         resolver: zodResolver(formSchema),
         defaultValues: {
-            username: "",
+            name: "",
+            lastname: "",
             email: "",
             password: ""
         },
@@ -57,6 +68,12 @@ export const RegisterPage = () => {
         console.log(values);
         
         form.reset()
+
+        // if(resp.ok) {
+        //     navigate("/")
+        // } else {
+        //     <ErrorMessage/>
+        // }
     }
 
     return (
@@ -65,10 +82,24 @@ export const RegisterPage = () => {
                 <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6 flex flex-col">
                     <FormField
                         control={form.control}
-                        name="username"
+                        name="name"
                         render={({ field }) => (
                             <FormItem>
-                                <FormLabel>Nombre de usuario</FormLabel>
+                                <FormLabel>Nombre</FormLabel>
+                                <FormControl>
+                                    <Input placeholder="persona feliz" {...field} />
+                                </FormControl>
+                                <FormMessage />
+                            </FormItem>
+                        )}
+                    />
+
+                    <FormField
+                        control={form.control}
+                        name="lastname"
+                        render={({ field }) => (
+                            <FormItem>
+                                <FormLabel>Apellido</FormLabel>
                                 <FormControl>
                                     <Input placeholder="persona feliz" {...field} />
                                 </FormControl>
@@ -102,7 +133,7 @@ export const RegisterPage = () => {
                             </FormItem>
                         )}
                     />
-                    <Button type="submit" className="">Login</Button>
+                    <Button type="submit" className="">Registrar</Button>
                     <div className="text-end">
                         <span>¿Ya tenés una cuenta?</span>
                         <Link to={"/auth/login"} className="text-blue-700 underline ml-2">Logear</Link>

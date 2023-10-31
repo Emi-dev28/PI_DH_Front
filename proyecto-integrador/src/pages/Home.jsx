@@ -1,7 +1,7 @@
 import { Marquee } from "@/components/home/Marquee";
 import Wrapper from "@/components/home/Wrapper";
 import { Button } from "@/components/ui/button";
-import { useDataContext } from "@/context/useDataContext";
+import { useDataContext } from "@/context/dataContext/useDataContext";
 import { useEffect, useRef, useState } from "react";
 
 import { MdArrowUpward } from "react-icons/md";
@@ -66,7 +66,6 @@ export default function Home() {
 
       <div className="w-full relative">
         <Marquee />
-        
         <img src="/img/home-13.jpg" alt="Top-home-img" className="w-full" />
         <div className="absolute bottom-[15%] left-8">
           <h1 className="text-6xl text-white">DH Technology</h1>

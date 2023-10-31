@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
-import { useDataContext } from "@/context/useDataContext";
+import { useDataContext } from "@/context/dataContext/useDataContext";
 import TableRowLocal from "@/components/admin/listado-productos/TableRowLocal";
 
 export default function ListadoProductos() {

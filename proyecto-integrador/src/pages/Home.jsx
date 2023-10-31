@@ -82,9 +82,6 @@ export default function Home() {
         Ver nuestros productos
       </button> */}
 
-      {/* <h1 className="mt-6 text-rose-600 font-bold text-2xl uppercase drop-shadow-md self-center">
-        Hacemos realidad tu proyecto
-      </h1> */}
 
       <div ref={productsRef}></div>
       <Wrapper

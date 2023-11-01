@@ -1,21 +1,26 @@
 // import { ThemeToggle } from "@/components/theme/theme-toogle";
 import logo from "/img/logo/logo-letters.svg";
 import icon from "/img/logo/logo-favicon.svg";
-import { Link, useLocation } from "react-router-dom";
-import PrimaryButton from "../PrimaryButton";
+import { Link } from "react-router-dom";
+import PrimaryButton from "../custom-ui/PrimaryButton";
 import { useWindowSize } from "@uidotdev/usehooks";
+import { useAuthStore } from "@/context/authContext/hooks/useAuthStore";
+import { UserSessionMenu } from "./UserSessionMenu";
 
 export const Navbar = () => {
-  const location = useLocation();
 
+  const { status, name } = useAuthStore()
   const size = useWindowSize();
-  const isAdminPages = ["/admin", "/admin/listado-productos"].includes(
-    location.pathname
-  );
+
+  //* Extraer inicial
+  // const firstLetter = name.substring(0, 1)
+
 
   return (
-    <nav className="bg-gradient-to-r from-navColorDark to-navColor flex items-center justify-between sticky w-full z-10 top-0 p-4 shadow-lg">
-      {/* Logo y texto a la izquierda */}
+    <nav className="bg-gradient-to-r from-navColorDark to-navColor 
+    flex items-center justify-between sticky w-full z-10 top-0 p-4 shadow-lg"
+    >
+
       <div className="flex items-center">
         <Link to="/">
           <img
@@ -26,22 +31,27 @@ export const Navbar = () => {
         </Link>
       </div>
 
-      {/* Botones a la derecha */}
-      {/* En "/admin" y "/listado-productos" no se ven estos botones:  */}
-      {!isAdminPages && (
-        <div className="flex items-center gap-4">
-          {/* <div className="mr-4">
-            <ThemeToggle />
-          </div> */}
-          <Link to={"/auth/register"}>
-            <PrimaryButton>Crear cuenta</PrimaryButton>
-          </Link>
+      {
+        (status === "authenticated")
+        
+          // <UserSessionMenu name={name} firstLetter={firstLetter} /> //TODO: Aplicar cuando estén los datos
+          ? <UserSessionMenu />
 
-          <Link to={"/auth/login"}>
-            <PrimaryButton>Iniciar sesión</PrimaryButton>
-          </Link>
-        </div>
-      )}
+          : (
+            <div className="flex items-center gap-4">
+              {/* <div className="mr-4">
+                    <ThemeToggle />
+                  </div> */}
+              <Link to={"/auth/register"}>
+                <PrimaryButton>Crear cuenta</PrimaryButton>
+              </Link>
+
+              <Link to={"/auth/login"}>
+                <PrimaryButton>Iniciar sesión</PrimaryButton>
+              </Link>
+            </div>
+          )
+      }
     </nav>
   );
 };

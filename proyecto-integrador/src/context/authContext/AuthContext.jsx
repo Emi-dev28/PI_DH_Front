@@ -1,4 +1,3 @@
-import { useToast } from "@/components/ui/use-toast";
 import { createContext, useReducer } from "react";
 
 
@@ -8,19 +7,17 @@ const initialState = {
     email: null,
     name: null,
     lastname: null,
-    errorMessage: null,
 }
 
-const reducer = (state, { payload }) => {
+const reducer = (state, action) => {
     switch (action.type) {
         case "LOGIN":
             return {
                 status: "authenticated",
-                uid: payload.uid,
-                email: payload.email,
-                name: payload.name,
-                lastname: payload.lastname,
-                errorMessage: null,
+                uid: action.payload.uid,
+                email: action.payload.email,
+                name: action.payload.name,
+                lastname: action.payload.lastname,
             }
 
         case "LOGOUT":
@@ -30,7 +27,6 @@ const reducer = (state, { payload }) => {
                 email: null,
                 name: null,
                 lastname: null,
-                errorMessage: null,
             }
 
         case "CHECKING_CREDENTIALS":
@@ -47,26 +43,23 @@ export const AuthContextProvider = ({ children }) => {
 
     const [state, dispatch] = useReducer(reducer, initialState)
 
-    const { toast } = useToast();
-
     //* Functions
     const loginUser = (payload) => {
         dispatch({type: "LOGIN", payload: payload})
     }
 
     const logoutUser = () => {
-        dispatch({type: "CHECKING_CREDENTIALS"})
-
+        dispatch({type: "LOGOUT"})
     }
 
     const checkingAuthentication = () => {
-        dispatch({type: "LOGOUT"})
+        dispatch({type: "CHECKING_CREDENTIALS"})
     }
 
 
     //*******************************************/
     return (
-        <AuthContext.Provider value={state}>
+        <AuthContext.Provider value={{state, loginUser, logoutUser, checkingAuthentication}}>
             {children}
         </AuthContext.Provider>
     )

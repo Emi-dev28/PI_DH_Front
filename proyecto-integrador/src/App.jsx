@@ -1,6 +1,5 @@
 // Shadcn dark mode provider
-import { ThemeProvider } from "@/components/theme/theme-provider";
-// import { ThemeToggle } from "./components/theme/theme-toogle";
+import { ThemeProvider } from "@/components/theme/ThemeProvider";
 // Shadcn components
 import { Toaster } from "@/components/ui/toaster";
 // React Router
@@ -11,10 +10,10 @@ import { Footer } from "./components/layout/Footer";
 
 export default function App() {
   const location = useLocation();
-  const isAdminPages = ["/admin", "/admin/listado-productos"].includes(
+  const isAdminPages = ["/admin", "/admin/listado-productos", "/user/edit"].includes(
     location.pathname
   );
-  const isAuthPages = ["/auth/login", "/auth/register"].includes(
+  const isAuthPages = ["/auth/login", "/auth/register", ].includes(
     location.pathname
   );
 

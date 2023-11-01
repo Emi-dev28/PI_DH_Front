@@ -1,4 +1,4 @@
-import { AuthLayout } from "./AuthLayout"
+import { AuthLayout } from "../layout/AuthLayout"
 import { Link, useNavigate } from "react-router-dom"
 import { useForm } from "react-hook-form"
 import * as z from "zod"
@@ -14,6 +14,7 @@ import {
     FormMessage,
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
+import { useAuthStore } from "@/context/authContext/hooks/useAuthStore"
 
 const formSchema = z.object({
     name: z.string({
@@ -52,6 +53,7 @@ const formSchema = z.object({
 export const RegisterPage = () => {
 
     const navigate = useNavigate()
+    const {registeringUser} = useAuthStore()
 
     const form = useForm({
         resolver: zodResolver(formSchema),
@@ -65,15 +67,15 @@ export const RegisterPage = () => {
     })
 
     const onSubmit = (values) => {
-        console.log(values);
+
+        registeringUser({
+            name: values.name,
+            lastname: values.lastname,
+            email: values.email,
+            password: values.password
+        })
         
         form.reset()
-
-        // if(resp.ok) {
-        //     navigate("/")
-        // } else {
-        //     <ErrorMessage/>
-        // }
     }
 
     return (

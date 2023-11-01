@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { FaEye } from "react-icons/fa6";
-import PrimaryButton from "../PrimaryButton";
+import PrimaryButton from "../custom-ui/PrimaryButton";
 
 CardHome.propTypes = {
   product: PropTypes.object.isRequired,

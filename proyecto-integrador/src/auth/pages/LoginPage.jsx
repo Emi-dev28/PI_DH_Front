@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form"
 import * as z from "zod"
 import { zodResolver } from "@hookform/resolvers/zod"
-import { AuthLayout } from "./AuthLayout"
+import { AuthLayout } from "../layout/AuthLayout"
 
 import { Button } from "@/components/ui/button"
 import {
@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 import { Link } from "react-router-dom"
+import { useAuthStore } from "@/context/authContext/hooks/useAuthStore"
 
 const formSchema = z.object({
     email: z.string().email("Debe ser un email válido"),
@@ -30,11 +31,13 @@ const formSchema = z.object({
         message: "Al menos una letra minúscula"
     }).regex(new RegExp(".*\\d.*"), {
         message: "Al menos un número"
-    }).trim().toLowerCase(),
+    }).trim()
 })
 
 
 export const LoginPage = () => {
+
+    const {status, name, errorMessage, loginWithEmailAndPassword} = useAuthStore();
 
     const form = useForm({
         resolver: zodResolver(formSchema),
@@ -46,8 +49,9 @@ export const LoginPage = () => {
     })
 
     const onSubmit = (values) => {
-        console.log(values);
+        loginWithEmailAndPassword({email: values.email, password: values.password})
 
+        //* Recuperar datos de usuario y colocarlos
         form.reset()
     }
 

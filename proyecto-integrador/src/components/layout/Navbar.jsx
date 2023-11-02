@@ -22,11 +22,7 @@ export const Navbar = () => {
 
       <div className="flex items-center">
         <Link to="/">
-          <img
-            src={size.width > 600 ? logo : icon}
-            alt="Logo"
-            className="h-10 h w-auto object-contain mr-2"
-          />
+          <img src={size.width > 600 ? logo : icon} alt="Logo" className="h-10 h w-auto object-contain mr-2"/>
         </Link>
       </div>
 
@@ -39,14 +35,7 @@ export const Navbar = () => {
           <option value="3">Categoría 3</option>
         </select>
         <div className="relative">
-          <input
-            type="text"
-            placeholder="Buscar..."
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            className="p-2 pl-8 border rounded"
-          />
-          
+          <input type="text" placeholder="Buscar..." value={search} onChange={(e) => setSearch(e.target.value)} className="p-2 pl-8 border rounded"/>          
         </div>
       </div>
 

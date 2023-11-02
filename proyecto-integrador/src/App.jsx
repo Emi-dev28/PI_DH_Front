@@ -10,12 +10,12 @@ import { Footer } from "./components/layout/Footer";
 
 export default function App() {
   const location = useLocation();
-  const isAdminPages = ["/admin/", "/admin/listado-productos/", "/user/edit/", "/admin/permission/"].includes(
-    location.pathname
-  );
-  const isAuthPages = ["/auth/login/", "/auth/register/",].includes(
-    location.pathname
-  );
+
+  const isAdminPages = location.pathname.startsWith("/admin");
+
+  const isUserPages = location.pathname.startsWith("/user");
+
+  const isAuthPages = location.pathname.startsWith("/auth");
 
   return (
 
@@ -26,13 +26,13 @@ export default function App() {
         <Toaster />
 
         {/* En las páginas de login y register no muestra el Navbar */}
-        {(!isAdminPages && !isAuthPages) && <Navbar />}
+        {(!isAdminPages && !isAuthPages && !isUserPages) && <Navbar />}
 
         {/* Main de la página */}
         <AppRouter />
 
         {/* En las páginas de login, register y admin no muestra el Footer */}
-        {(!isAdminPages && !isAuthPages) && <Footer />}
+        {(!isAdminPages && !isAuthPages && !isUserPages) && <Footer />}
 
       </div>
 

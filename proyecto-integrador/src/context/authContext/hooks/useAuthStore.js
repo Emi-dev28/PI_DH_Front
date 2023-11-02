@@ -7,7 +7,7 @@ const URL = ""
 export const useAuthStore = () => {
 
     const { loginUser, logoutUser, checkingAuthentication, state } = useAuthContext()
-    const { status, name, errorMessage } = state
+    const { status, name } = state
 
     const { toast } = useToast();
 
@@ -118,7 +118,7 @@ export const useAuthStore = () => {
 
     return {
         //* state
-        status, name, errorMessage,
+        status, name, 
 
         //* Methods
         registeringUser,

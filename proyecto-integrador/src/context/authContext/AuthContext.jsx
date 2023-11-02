@@ -2,11 +2,12 @@ import { createContext, useReducer } from "react";
 
 
 const initialState = {
-    status: "not-authenticated", //checking, not-authenticated, authenticated
+    status: "authenticated", //checking, not-authenticated, authenticated
     uid: null,
     email: null,
     name: null,
     lastname: null,
+    rol: 2
 }
 
 const reducer = (state, action) => {
@@ -18,6 +19,7 @@ const reducer = (state, action) => {
                 email: action.payload.email,
                 name: action.payload.name,
                 lastname: action.payload.lastname,
+                rol: 1
             }
 
         case "LOGOUT":
@@ -27,6 +29,7 @@ const reducer = (state, action) => {
                 email: null,
                 name: null,
                 lastname: null,
+                rol: 0
             }
 
         case "CHECKING_CREDENTIALS":
@@ -41,6 +44,7 @@ export const AuthContext = createContext();
 
 export const AuthContextProvider = ({ children }) => {
 
+    //TODO: llamar el tercer argumento del reducer, el init, con el checkAuthToken
     const [state, dispatch] = useReducer(reducer, initialState)
 
     //* Functions

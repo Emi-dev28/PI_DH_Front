@@ -30,13 +30,9 @@ export const Carousel = ({ images }) => {
             key={img.image}
             src={img.image}
             alt="drone"
-            className="w-full h-full inline-flex 
-                        justify-center items-center duration-1000 
-                        whitespace-normal border-0 rounded-md"
+            className="w-full h-full inline-flex justify-center items-center duration-1000 whitespace-normal border-0 rounded-md"
           />)
         }
-
-
 
       </div>
 

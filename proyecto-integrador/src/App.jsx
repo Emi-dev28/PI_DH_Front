@@ -10,7 +10,7 @@ import { Footer } from "./components/layout/Footer";
 
 export default function App() {
   const location = useLocation();
-  const isAdminPages = ["/admin", "/admin/listado-productos", "/user/edit"].includes(
+  const isAdminPages = ["/admin", "/admin/listado-productos", "/user/edit", "/admin/permission"].includes(
     location.pathname
   );
   const isAuthPages = ["/auth/login", "/auth/register", ].includes(

@@ -1,16 +1,14 @@
-import { useEffect } from "react";
-import { useAuthStore } from "@/context/authContext/hooks/useAuthStore";
-
-import { Administracion } from "@/pages/Administracion";
-import Home from "../pages/Home";
+import { Administracion } from "@/pages/privatePages/Administracion";
+import Home from "../pages/publicPages/Home";
 import { Route, Routes } from "react-router-dom";
-import { Detalle } from "@/pages/Detalle";
-import ListadoProductos from "@/pages/ListadoProductos";
+import { Detalle } from "@/pages/publicPages/Detalle";
+import ListadoProductos from "@/pages/privatePages/ListadoProductos";
 import { LoginPage } from "@/auth/pages/LoginPage";
 import { RegisterPage } from "@/auth/pages/RegisterPage";
-import { UserEditionPage } from "@/pages/UserEditionPage";
+import { UserEditionPage } from "@/pages/privatePages/UserEditionPage";
 import { AdminPrivateRoutes } from "./AdminPrivateRoutes";
 import { UserPrivateRoutes } from "./UserPrivateRoutes";
+import { AdminPermissionPage } from "@/pages/privatePages/AdminPermissionPage";
 
 
 export const AppRouter = () => {
@@ -31,6 +29,7 @@ export const AppRouter = () => {
           <Routes>
             <Route path="/" element={<Administracion />} />
             <Route path="/listado-productos" element={<ListadoProductos />} />
+            <Route path="/permission" element={<AdminPermissionPage />} />
           </Routes>
         </AdminPrivateRoutes>
       } />

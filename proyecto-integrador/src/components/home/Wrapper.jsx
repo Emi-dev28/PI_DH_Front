@@ -18,7 +18,7 @@ export default function Wrapper(props) {
         Recomendados
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-12">
+      <div className="grid grid-cols-1 gap-x-20 gap-y-12 md:grid-cols-2 ">
         {/* Tenemos que ver cómo crear los id, por ahora sirve el nombre porque no se pueden repetir */}
         {props.products.map((product) => (
           <CardHome key={product.id} product={product} />

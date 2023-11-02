@@ -2,7 +2,7 @@
 import { useState } from "react"
 import { Link } from "react-router-dom";
 
-export default function Sidebar() {
+export default function SidebarMenu() {
   const [open, setOpen] = useState(false)
   return (
     <div className="flex">

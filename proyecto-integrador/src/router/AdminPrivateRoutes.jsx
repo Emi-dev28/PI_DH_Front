@@ -1,4 +1,4 @@
-import Sidebar from "@/components/admin/SideBard"
+import SidebarMenu from "@/components/admin/SidebarMenu"
 import { useAuthContext } from "@/context/authContext/useAuthContext"
 import { Navigate } from "react-router-dom"
 
@@ -9,7 +9,7 @@ export const AdminPrivateRoutes = ({ children }) => {
 
     return (state.rol === 2)
         ? <div className="flex">
-            <Sidebar />
+            <SidebarMenu />
             {children}
         </div>
         : <Navigate to={"/"} />

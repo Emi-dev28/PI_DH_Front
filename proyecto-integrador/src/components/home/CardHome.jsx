@@ -1,14 +1,13 @@
 import PropTypes from "prop-types";
-import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
+import { FaEye } from "react-icons/fa6";
+import PrimaryButton from "../custom-ui/PrimaryButton";
 import {
   Card,
   CardDescription,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Link } from "react-router-dom";
-import { FaEye } from "react-icons/fa6";
-import PrimaryButton from "../custom-ui/PrimaryButton";
 
 CardHome.propTypes = {
   product: PropTypes.object.isRequired,
@@ -16,7 +15,7 @@ CardHome.propTypes = {
 
 export default function CardHome({ product }) {
   return (
-    <Card className="w-[500px] h-[460px] relative flex flex-col p-6">
+    <Card className="w-full sm:w-[400px] lg:w-[500px] h-[460px] relative flex flex-col p-6">
       <div className="flex justify-center">
         <img
           src={
@@ -24,12 +23,12 @@ export default function CardHome({ product }) {
               ? product.images[0].image
               : "http://dummyimage.com/283x430.png/5fa2dd/ffffff"
           }
-          className="w-[400px] h-[260px]"
+          className="w-full h-[260px] object-cover"
         />
       </div>
 
-      <Link to={"/detalle/" + product.id} className="absolute right-10">
-        <FaEye className="text-4xl hover:text-green-600" />
+      <Link to={"/detalle/" + product.id} className="absolute right-4 top-4">
+        <FaEye className="text-2xl sm:text-4xl hover:text-green-600" />
       </Link>
 
       <div className="border"></div>
@@ -41,10 +40,10 @@ export default function CardHome({ product }) {
             {"$" + product.price + " /semanal"}
           </CardDescription>
         </div>
-        <div>⭐{product.rating}</div>
+        <div className="mt-2 sm:mt-0">⭐{product.rating}</div>
       </CardHeader>
 
-      <PrimaryButton>Alquilar</PrimaryButton>
+      <PrimaryButton className="mt-auto">Alquilar</PrimaryButton>
     </Card>
   );
 }

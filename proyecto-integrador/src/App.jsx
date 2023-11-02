@@ -32,7 +32,7 @@ export default function App() {
         <AppRouter />
 
         {/* En las páginas de login, register y admin no muestra el Footer */}
-        {(!isAdminPages || !isAuthPages) && <Footer />}
+        {(!isAdminPages && !isAuthPages) && <Footer />}
 
       </div>
 

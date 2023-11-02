@@ -8,11 +8,13 @@ import {
 } from '@/components/ui/dropdown-menu'
 
 import { useAuthStore } from '@/context/authContext/hooks/useAuthStore'
+import { useNavigate } from 'react-router-dom'
 
 
 export const UserSessionMenu = ({ firstLetter, name }) => {
 
     const {logoutSession} = useAuthStore()
+    const navigate = useNavigate()
 
     return (
 
@@ -34,7 +36,7 @@ export const UserSessionMenu = ({ firstLetter, name }) => {
                 <DropdownMenuLabel>Mi cuenta</DropdownMenuLabel>
 
                 <DropdownMenuSeparator />
-                <DropdownMenuItem>
+                <DropdownMenuItem onClick={() => navigate("user/edit")}>
                     Editar
                 </DropdownMenuItem>
 

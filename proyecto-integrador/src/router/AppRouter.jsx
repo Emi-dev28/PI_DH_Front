@@ -9,34 +9,40 @@ import ListadoProductos from "@/pages/ListadoProductos";
 import { LoginPage } from "@/auth/pages/LoginPage";
 import { RegisterPage } from "@/auth/pages/RegisterPage";
 import { UserEditionPage } from "@/pages/UserEditionPage";
+import { AdminPrivateRoutes } from "./AdminPrivateRoutes";
+import { UserPrivateRoutes } from "./UserPrivateRoutes";
 
 
 export const AppRouter = () => {
 
-  //TODO: En principio el validación de sesión iría acá, pero podría cambiar el lugar
-  //TODO: Manjear el acceso a las rutas dependiente del status
-  // const { status, checkAuthToken } = useAuthStore()
-
-  // useEffect(() => {
-  //   checkAuthToken()
-  // }, [])
-
-
 
   return (
     <Routes>
-      {/* Authentication */}
-      <Route path="/auth/login" element={<LoginPage />} />
-      <Route path="/auth/register" element={<RegisterPage />} />
-
       {/* Public routes */}
       <Route path="/*" element={<Home />} />
+      <Route path="/auth/login" element={<LoginPage />} />
+      <Route path="/auth/register" element={<RegisterPage />} />
       <Route path="/detalle/:id" element={<Detalle />} />
-      <Route path="/admin/listado-productos" element={<ListadoProductos />} />
-      <Route path="/user/edit" element={<UserEditionPage />} />
 
-      {/* Admin routes: */}
-      <Route path="/admin" element={<Administracion />} />
+
+      {/* Admin private routes: solo se puede entrar si el rol es 2*/}
+      <Route path="/admin/*" element={
+        <AdminPrivateRoutes>
+          <Routes>
+            <Route path="/" element={<Administracion />} />
+            <Route path="/listado-productos" element={<ListadoProductos />} />
+          </Routes>
+        </AdminPrivateRoutes>
+      } />
+
+      {/* User private routes: solo se puede entrar si el rol es 1*/}
+      <Route path="/user/*" element={
+        <UserPrivateRoutes>
+          <Routes>
+            <Route path="/edit" element={<UserEditionPage/>}/>
+          </Routes>
+        </UserPrivateRoutes>
+      } />
     </Routes>
   );
 };

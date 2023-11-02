@@ -13,12 +13,12 @@ export default function App() {
   const isAdminPages = ["/admin", "/admin/listado-productos", "/user/edit", "/admin/permission"].includes(
     location.pathname
   );
-  const isAuthPages = ["/auth/login", "/auth/register", ].includes(
+  const isAuthPages = ["/auth/login", "/auth/register",].includes(
     location.pathname
   );
 
   return (
- 
+
     <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
 
       <div className="flex flex-col min-h-screen bg-[#F5F5FA] ">
@@ -26,7 +26,7 @@ export default function App() {
         <Toaster />
 
         {/* En las páginas de login y register no muestra el Navbar */}
-        {!isAuthPages && <Navbar />}
+        {!isAdminPages && !isAuthPages && <Navbar />}
 
         {/* Main de la página */}
         <AppRouter />

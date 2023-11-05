@@ -24,7 +24,7 @@ export default function SidebarMenu() {
           <div className="flex-1">
             <ul className="pt-2 pb-4 space-y-1 text-sm">
               {/* HOME */}
-              <li className="rounded-sm">
+              {/* <li className="rounded-sm">
                 <Link
                   to="/"
                   className="flex items-center p-2 space-x-3 rounded-md"
@@ -32,7 +32,7 @@ export default function SidebarMenu() {
                   <MdHome className="w-6 h-6 text-primary" />
                   {open && <span className="text-primary">Inicio</span>}
                 </Link>
-              </li>
+              </li> */}
               {/* LISTADO DE PRODUCTOS */}
               <li className="rounded-sm">
                 <Link
@@ -46,7 +46,7 @@ export default function SidebarMenu() {
               {/* LISTADO DE CATEGORÍAS */}
               <li className="rounded-sm">
                 <Link
-                  to="/listado-categorias"
+                  to="/admin/listado-categorias"
                   className="flex items-center p-2 space-x-3 rounded-md"
                 >
                   <MdInterests className="w-6 h-6 text-primary" />
@@ -57,11 +57,11 @@ export default function SidebarMenu() {
               {/* CONFIGURACIÓN */}
               <li className="rounded-sm">
                 <Link
-                  to="/settings"
+                  to="/admin/permission"
                   className="flex items-center p-2 space-x-3 rounded-md"
                 >
                   <MdSettings className="w-6 h-6 text-primary" />
-                  {open && <span className="text-primary">Configuraciones</span>}
+                  {open && <span className="text-primary">Usuarios</span>}
 
                 </Link>
               </li>

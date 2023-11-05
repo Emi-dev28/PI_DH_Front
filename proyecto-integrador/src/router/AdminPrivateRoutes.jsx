@@ -10,7 +10,9 @@ export const AdminPrivateRoutes = ({ children }) => {
     return (state.rol === 2)
         ? <div className="flex">
             <SidebarMenu />
-            {children}
+            <main className="w-screen m-5">
+                {children}
+            </main>
         </div>
         : <Navigate to={"/"} />
 }

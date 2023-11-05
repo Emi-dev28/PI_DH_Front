@@ -3,6 +3,7 @@ import Home from "../pages/publicPages/Home";
 import { Route, Routes } from "react-router-dom";
 import { Detalle } from "@/pages/publicPages/Detalle";
 import ListadoProductos from "@/pages/privatePages/ListadoProductos";
+import ListadoCategorias from "@/pages/privatePages/ListadoCategorias";
 import { LoginPage } from "@/auth/pages/LoginPage";
 import { RegisterPage } from "@/auth/pages/RegisterPage";
 import { UserEditionPage } from "@/pages/privatePages/UserEditionPage";
@@ -29,7 +30,7 @@ export const AppRouter = () => {
           <Routes>
             <Route path="/" element={<Administracion />} />
             <Route path="/listado-productos" element={<ListadoProductos />} />
-            <Route path="/listado-productos" element={<ListadoProductos />} />
+            <Route path="/listado-categorias" element={<ListadoCategorias />} />
             <Route path="/permission" element={<AdminPermissionPage />} />
           </Routes>
         </AdminPrivateRoutes>

@@ -1,3 +1,26 @@
-{
-  "categories": ["electronics", "clothing", "home", "decor", "beauty", "sports"]
-}
+[{
+  "id": 1,
+  "name": "Electrónica",
+  "description": "Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.\n\nPraesent id massa id nisl venenatis lacinia. Aenean sit amet justo..",
+  "image": "/img/drone2.webp"
+}, {
+  "id": 2,
+  "name": "Ropa",
+  "description": "Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.\n\nPraesent id massa id nisl venenatis lacinia. Aenean sit amet justo..",
+  "image": "/img/drone2.webp"
+}, {
+  "id": 3,
+  "name": "Hogar",
+  "description": "Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.\n\nPraesent id massa id nisl venenatis lacinia. Aenean sit amet justo..",
+  "image": "/img/drone2.webp"
+}, {
+  "id": 4,
+  "name": "Belleza",
+  "description": "Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.\n\nPraesent id massa id nisl venenatis lacinia. Aenean sit amet justo..",
+  "image": "/img/drone2.webp"
+}, {
+  "id": 5,
+  "name": "Deportes",
+  "description": "Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.\n\nPraesent id massa id nisl venenatis lacinia. Aenean sit amet justo..",
+  "image": "/img/drone2.webp"
+}]

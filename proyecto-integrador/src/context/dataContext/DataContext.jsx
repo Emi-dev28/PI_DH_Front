@@ -50,6 +50,15 @@ const reducer = (state, action) => {
         data: state.data.filter((elem) => elem.id !== action.payload),
       };
 
+    case "AGREGAR_CATEGORIA":
+      return { ...state, categories: [...state.categories, action.payload] };
+
+    case "BORRAR_CATEGORIA":
+      return {
+        ...state,
+        categories: state.categories.filter((elem) => elem.id !== action.payload),
+      };
+
     default:
       return state;
   }
@@ -88,12 +97,32 @@ export default function DataContextProvider({ children }) {
     }
   };
 
+  //* Función para agregar categorías desde el administrador
+  const agregarCategoria = (data) => {
+    if (!state.categories.some((item) => item.id === data.id)) {
+      dispatch({ type: "AGREGAR_CATEGORIA", payload: data });
+      toast({ description: "El categoría se ha guardado" });
+    } else {
+      toast({ description: "Este categoría ya existe", variant: "destructive" });
+    }
+  };
+
+  //* Función para eliminar categorías desde el administrador
+  const borrarCategoria = (id) => {
+    if (!state.categories.some((item) => item.id === id)) {
+      toast({ description: "Esta categoría no existe", variant: "destructive" });
+    } else {
+      dispatch({ type: "BORRAR_CATEGORIA", payload: id });
+      toast({ description: "Categoría eliminada" });
+    }
+  };
+
   // useEffect(() => {
   //     guardarProductoEnStorage(state.data)
   // }, [state.data])
 
   return (
-    <DataContext.Provider value={{ state, agregarProducto, borrarProducto }}>
+    <DataContext.Provider value={{ state, categories, agregarProducto, borrarProducto, agregarCategoria, borrarCategoria }}>
       {children}
     </DataContext.Provider>
   );

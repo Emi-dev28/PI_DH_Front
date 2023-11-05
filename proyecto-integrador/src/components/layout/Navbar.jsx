@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import logo from "/img/logo/logo-letters.svg";
 import icon from "/img/logo/logo-favicon.svg";
 import { Link } from "react-router-dom";
@@ -6,7 +6,7 @@ import PrimaryButton from "../custom-ui/PrimaryButton";
 import { useWindowSize } from "@uidotdev/usehooks";
 import { useAuthStore } from "@/context/authContext/hooks/useAuthStore";
 import { UserSessionMenu } from "./UserSessionMenu";
-import {FaAlignJustify} from "react-icons/fa";
+import { FaAlignJustify } from "react-icons/fa";
 
 
 export const Navbar = () => {
@@ -22,7 +22,7 @@ export const Navbar = () => {
 
       <div className="flex items-center">
         <Link to="/">
-          <img src={size.width > 600 ? logo : icon} alt="Logo" className="h-10 h w-auto object-contain mr-2"/>
+          <img src={size.width > 600 ? logo : icon} alt="Logo" className="h-10 h w-auto object-contain mr-2" />
         </Link>
       </div>
 
@@ -35,7 +35,7 @@ export const Navbar = () => {
           <option value="3">Categoría 3</option>
         </select>
         <div className="relative">
-          <input type="text" placeholder="Buscar..." value={search} onChange={(e) => setSearch(e.target.value)} className="p-2 pl-8 border rounded"/>          
+          <input type="text" placeholder="Buscar..." value={search} onChange={(e) => setSearch(e.target.value)} className="p-2 pl-8 border rounded" />
         </div>
       </div>
 
@@ -54,7 +54,7 @@ export const Navbar = () => {
 
       {/* Menú hamburguesa para dispositivos pequeños */}
       <div className="md:hidden">
-      <FaAlignJustify/>
+        <FaAlignJustify />
         {/* Agrega aquí tu código para el menú hamburguesa */}
       </div>
     </nav>

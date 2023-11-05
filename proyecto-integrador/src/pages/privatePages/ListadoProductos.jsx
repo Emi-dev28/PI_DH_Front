@@ -1,23 +1,26 @@
 import {
+  TableCell,
+  TableRow,
   Table,
-  TableBody,
   TableCaption,
   TableHead,
   TableHeader,
-  TableRow,
+  TableBody,
 } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import { useDataContext } from "@/context/dataContext/useDataContext";
-import TableRowLocal from "@/components/admin/listado-productos/TableRowLocal";
+import { MdDelete } from "react-icons/md";
 
 export default function ListadoProductos() {
   const { state, borrarProducto } = useDataContext();
 
+  const productKeys = ['Nombre', 'Descripción', 'Precio', 'Cantidad', 'Categoría']
+
   const navigate = useNavigate();
 
   return (
-    <div className=" m-5 rounded-lg">
+    <div className=" m-5 w-screen rounded-lg">
       <div className="flex justify-between items-center mb-3 mx-3">
         <span className="text-3xl">Lista de productos en venta</span>
 
@@ -34,19 +37,25 @@ export default function ListadoProductos() {
 
         <TableHeader>
           <TableRow>
-            <TableHead>Nombre</TableHead>
-            <TableHead>Descripción</TableHead>
-            <TableHead className="text-right">Acciones</TableHead>
+            {productKeys.map((key, i) => <TableHead key={i}>{key}</TableHead>)}
+
           </TableRow>
         </TableHeader>
 
         <TableBody>
           {state.data.map((product) => (
-            <TableRowLocal
-              key={product.id}
-              product={product}
-              handleClickDeleteProduct={borrarProducto}
-            />
+            <TableRow key={product.id}>
+              <TableCell className="p-3">{product.name} </TableCell>
+              <TableCell className="p-3">{product.description} </TableCell>
+              <TableCell className="text-center p-3">{product.price} </TableCell>
+              <TableCell className="text-center p-3">{product.quantity} </TableCell>
+              <TableCell className="text-center p-3">{product.category} </TableCell>
+              <TableCell className="text-center p-3">
+                <Button variant="ghost" size="icon" onClick={() => borrarProducto(product.id)}>
+                  <MdDelete className="h-5 w-5" />
+                </Button>
+              </TableCell>
+            </TableRow>
           ))}
         </TableBody>
       </Table>

@@ -5,6 +5,8 @@ import PropTypes from "prop-types";
 import { useToast } from "@/components/ui/use-toast";
 // Mock products
 import products from "@/mocks/products.json";
+// Mock categories
+import categories from "@/mocks/categories.json";
 
 //* EN ESTE FUNCTIONAL COMPONENT MANEJAMOS EL ESTADO Y EL CONTEXT, PROBABLEMENTE TAMBIÉN
 //* LA CONEXIÓN A BASE DE DATOS PARA RECUPERAR LA DATA Y LAS FUNCIONES PRINCIPALES.
@@ -32,6 +34,7 @@ import products from "@/mocks/products.json";
 const initialState = {
   // isLoading: true,
   data: products,
+  categories: categories
 };
 
 //* FUNCIÓN REDUCER PARA MANEJAR LA DATA, DESPUÉS VEMOS COMO INTEGRAMOS TODO.

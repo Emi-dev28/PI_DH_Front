@@ -1,13 +1,12 @@
+import { Marquee } from "@/components/home/Marquee";
 import Wrapper from "@/components/home/Wrapper";
 import { Button } from "@/components/ui/button";
-import { useDataContext } from "@/context/useDataContext";
+import { useDataContext } from "@/context/dataContext/useDataContext";
 import { useEffect, useRef, useState } from "react";
-
 import { MdArrowUpward } from "react-icons/md";
 
 export default function Home() {
   const { state: products } = useDataContext();
-
   const [randomProducts, setRandomProducts] = useState([]);
   const [currentPage, setCurrentPage] = useState(0);
   const [shuffledProducts, setShuffledProducts] = useState([]);
@@ -63,9 +62,16 @@ export default function Home() {
   return (
     <div className="flex flex-col">
 
-      <div className="w-full saturate-150">
-        <img src="/img/home-11.webp" alt="Top-home-img" />
-      </div>
+<div className="w-full relative">
+  <Marquee />
+  <img src="/img/home-13.jpg" alt="Top-home-img" className="w-full" />
+  <div className="absolute bottom-10 md:bottom-15 lg:bottom-20 left-8">
+    <h1 className="text-4xl md:text-6xl lg:text-7xl text-white">DH Technology</h1>
+    <h4 className="text-white text-lg md:text-2xl lg:text-3xl mt-2">
+      Hacemos realidad tu proyecto
+    </h4>
+  </div>
+</div>
 
       {/* <button
         onClick={() => window.scroll({ top: coords.y, behavior: "smooth" })}
@@ -76,9 +82,6 @@ export default function Home() {
         Ver nuestros productos
       </button> */}
 
-      <h1 className="mt-6 text-rose-600 font-bold text-2xl uppercase drop-shadow-md self-center">
-        Hacemos realidad tu proyecto
-      </h1>
 
       <div ref={productsRef}></div>
       <Wrapper

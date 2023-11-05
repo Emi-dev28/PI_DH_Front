@@ -3,7 +3,7 @@ import { useWindowSize } from "@uidotdev/usehooks";
 
 import NewProductsForm from "@/components/admin/NewProductsForm";
 
-import { useDataContext } from "@/context/useDataContext";
+import { useDataContext } from "@/context/dataContext/useDataContext";
 import { subirImagen } from "@/helpers/subirImagen";
 
 const initialProduct = {

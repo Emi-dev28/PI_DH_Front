@@ -1,6 +1,5 @@
 // Shadcn dark mode provider
-import { ThemeProvider } from "@/components/theme/theme-provider";
-// import { ThemeToggle } from "./components/theme/theme-toogle";
+import { ThemeProvider } from "@/components/theme/ThemeProvider";
 // Shadcn components
 import { Toaster } from "@/components/ui/toaster";
 // React Router
@@ -11,21 +10,32 @@ import { Footer } from "./components/layout/Footer";
 
 export default function App() {
   const location = useLocation();
-  const isAdminPages = ["/admin", "/admin/listado-productos"].includes(
-    location.pathname
-  );
+
+  const isAdminPages = location.pathname.startsWith("/admin");
+
+  const isUserPages = location.pathname.startsWith("/user");
+
+  const isAuthPages = location.pathname.startsWith("/auth");
 
   return (
-    <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
-      <div className="flex flex-col min-h-screen bg-[#F5F5FA] ">
-        <Toaster />
-        <Navbar />
-        {/* Acá va el header */}
 
+    <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
+
+      <div className="flex flex-col min-h-screen bg-[#F5F5FA] ">
+
+        <Toaster />
+
+        {/* En las páginas de login y register no muestra el Navbar */}
+        {(!isAdminPages && !isAuthPages && !isUserPages) && <Navbar />}
+
+        {/* Main de la página */}
         <AppRouter />
 
-        {!isAdminPages && <Footer />}
+        {/* En las páginas de login, register y admin no muestra el Footer */}
+        {(!isAdminPages && !isAuthPages && !isUserPages) && <Footer />}
+
       </div>
+
     </ThemeProvider>
   );
 }

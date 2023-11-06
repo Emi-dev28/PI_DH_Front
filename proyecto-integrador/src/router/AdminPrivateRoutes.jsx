@@ -1,9 +1,14 @@
 import SidebarMenu from "@/components/admin/SidebarMenu";
 import { useAuthContext } from "@/context/authContext/useAuthContext";
 import { useWindowSize } from "@uidotdev/usehooks";
+import PropTypes from "prop-types";
 import { Navigate } from "react-router-dom";
 
-export const AdminPrivateRoutes = ({ children }) => {
+AdminPrivateRoutes.propTypes = {
+  children: PropTypes.node,
+};
+
+export default function AdminPrivateRoutes(props) {
   const { state } = useAuthContext();
 
   //** Función para capturar el width y saber si se está accediendo desde celular
@@ -13,7 +18,7 @@ export const AdminPrivateRoutes = ({ children }) => {
     size.width > 900 ? (
       <div className="flex">
         <SidebarMenu />
-        <main className="w-screen m-5">{children}</main>
+        <main className="w-screen m-5">{props.children}</main>
       </div>
     ) : (
       <div className="flex justify-center items-center h-screen">
@@ -25,4 +30,4 @@ export const AdminPrivateRoutes = ({ children }) => {
   ) : (
     <Navigate to={"/"} />
   );
-};
+}

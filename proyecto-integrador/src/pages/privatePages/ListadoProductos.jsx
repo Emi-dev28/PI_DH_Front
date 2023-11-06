@@ -1,55 +1,168 @@
 import {
+  TableCell,
+  TableRow,
   Table,
-  TableBody,
   TableCaption,
   TableHead,
   TableHeader,
-  TableRow,
+  TableBody,
 } from "@/components/ui/table";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+  DialogFooter,
+} from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import { useDataContext } from "@/context/dataContext/useDataContext";
-import TableRowLocal from "@/components/admin/listado-productos/TableRowLocal";
+import { MdDelete } from "react-icons/md";
+//
+import {
+  Form,
+  FormControl,
+  FormDescription,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+import * as z from "zod";
+
+const formSchema = z.object({
+  username: z.string().min(2, {
+    message: "Username must be at least 2 characters.",
+  }),
+  description: z.string().min(2, {
+    message: "Username must be at least 2 characters.",
+  }),
+});
 
 export default function ListadoProductos() {
   const { state, borrarProducto } = useDataContext();
 
+  const productKeys = [
+    "Nombre",
+    "Descripción",
+    "Categoría",
+    "Precio",
+    "Cantidad",
+  ];
+
   const navigate = useNavigate();
 
-  return (
-    <div className=" m-5 rounded-lg">
-      <div className="flex justify-between items-center mb-3 mx-3">
-        <span className="text-3xl">Lista de productos en venta</span>
+  // Form Dialog create product
+  const form = useForm({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      username: "",
+      description: "",
+    },
+  });
 
-        <Button
-          className="text-lg bg-cyan-600 text-white mt-5 hover:bg-cyan-500"
-          onClick={() => navigate("/admin")}
-        >
-          Regresar
-        </Button>
+  // 2. Define a submit handler.
+  function onSubmit(values) {
+    // createProduct({ email: values.email, password: values.password });
+    console.log(values);
+  }
+
+  return (
+    <>
+      <div className="flex justify-between items-center mb-3 mx-3">
+        <span className="text-2xl">Lista de productos</span>
+        {/* Dialog Form Crear Producto */}
+        <Dialog>
+          <DialogTrigger asChild>
+            <Button className="text-base bg-primary text-white">Crear</Button>
+          </DialogTrigger>
+          <DialogContent>
+            <DialogHeader>
+              <DialogTitle>Nuevo producto</DialogTitle>
+              <DialogDescription></DialogDescription>
+            </DialogHeader>
+            <Form {...form}>
+              <form
+                onSubmit={form.handleSubmit(onSubmit)}
+                className="space-y-4"
+              >
+                <FormField
+                  control={form.control}
+                  name="username"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Nombre</FormLabel>
+                      <FormControl>
+                        <Input placeholder="shadcn" {...field} />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+                <FormField
+                  control={form.control}
+                  name="description"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Descripción</FormLabel>
+                      <FormControl>
+                        <Input placeholder="shadcn" {...field} />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+              </form>
+            </Form>
+            <DialogFooter>
+              <Button onClick={form.handleSubmit(onSubmit)}>Crear</Button>
+            </DialogFooter>
+          </DialogContent>
+        </Dialog>
       </div>
 
+      {/* Tabla de productos */}
       <Table>
-        <TableCaption>High Technologie Software Company</TableCaption>
+        <TableCaption>DH Technology</TableCaption>
 
         <TableHeader>
           <TableRow>
-            <TableHead>Nombre</TableHead>
-            <TableHead>Descripción</TableHead>
-            <TableHead className="text-right">Acciones</TableHead>
+            {productKeys.map((key, i) => (
+              <TableHead key={i}>{key}</TableHead>
+            ))}
           </TableRow>
         </TableHeader>
 
         <TableBody>
           {state.data.map((product) => (
-            <TableRowLocal
-              key={product.id}
-              product={product}
-              handleClickDeleteProduct={borrarProducto}
-            />
+            <TableRow key={product.id}>
+              <TableCell className="p-3">{product.name} </TableCell>
+              <TableCell className="p-3">{product.description} </TableCell>
+              <TableCell className="p-3">{product.category} </TableCell>
+              <TableCell className="text-center p-3">
+                {product.price}{" "}
+              </TableCell>
+              <TableCell className="text-center p-3">
+                {product.quantity}{" "}
+              </TableCell>
+              <TableCell className="text-center p-3">
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  onClick={() => borrarProducto(product.id)}
+                >
+                  <MdDelete className="h-5 w-5" />
+                </Button>
+              </TableCell>
+            </TableRow>
           ))}
         </TableBody>
       </Table>
-    </div>
+    </>
   );
 }

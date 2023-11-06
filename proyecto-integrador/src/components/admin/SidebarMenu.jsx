@@ -1,16 +1,23 @@
-
-import { useState } from "react"
-import { MdHome, MdInterests, MdMenu, MdSettings, MdShoppingBag } from "react-icons/md";
+import { useState } from "react";
+import {
+  MdHome,
+  MdInterests,
+  MdMenu,
+  MdSettings,
+  MdShoppingBag,
+} from "react-icons/md";
 import { Link } from "react-router-dom";
 import logo from "/img/logo/logo-letters.svg";
 
 export default function SidebarMenu() {
-  const [open, setOpen] = useState(true)
+  const [open, setOpen] = useState(true);
 
   return (
     <div className="flex">
       <div
-        className={` ${open ? "w-72" : "w-18"} flex flex-col p-3 h-screen shadow`}
+        className={` ${
+          open ? "w-72" : "w-18"
+        } flex flex-col p-3 h-screen shadow`}
       >
         <div className="space-y-3">
           <div className="flex items-center justify-between p-2">
@@ -61,8 +68,9 @@ export default function SidebarMenu() {
                   className="flex items-center p-2 space-x-3 rounded-md"
                 >
                   <MdSettings className="w-6 h-6 text-primary" />
-                  {open && <span className="text-primary">Usuarios</span>}
-
+                  {open && (
+                    <span className="text-primary">Permisos de usuarios</span>
+                  )}
                 </Link>
               </li>
             </ul>
@@ -70,5 +78,5 @@ export default function SidebarMenu() {
         </div>
       </div>
     </div>
-  )
+  );
 }

@@ -1,5 +1,11 @@
 import { useState } from "react";
-import { MdInterests, MdMenu, MdSettings, MdShoppingBag } from "react-icons/md";
+import {
+  MdHome,
+  MdInterests,
+  MdMenu,
+  MdSettings,
+  MdShoppingBag,
+} from "react-icons/md";
 import { Link } from "react-router-dom";
 import logo from "/img/logo/logo-letters.svg";
 
@@ -25,7 +31,7 @@ export default function SidebarMenu() {
           <div className="flex-1">
             <ul className="pt-2 pb-4 space-y-2 text-sm">
               {/* HOME */}
-              {/* <li className="rounded-sm">
+              <li className="rounded-sm">
                 <Link
                   to="/"
                   className="flex items-center p-2 space-x-3 rounded-md"
@@ -33,7 +39,7 @@ export default function SidebarMenu() {
                   <MdHome className="w-6 h-6 text-primary" />
                   {open && <span className="text-primary">Inicio</span>}
                 </Link>
-              </li> */}
+              </li>
               {/* LISTADO DE PRODUCTOS */}
               <li className="rounded-sm">
                 <Link

@@ -1,11 +1,5 @@
 import { useState } from "react";
-import {
-  MdHome,
-  MdInterests,
-  MdMenu,
-  MdSettings,
-  MdShoppingBag,
-} from "react-icons/md";
+import { MdInterests, MdMenu, MdSettings, MdShoppingBag } from "react-icons/md";
 import { Link } from "react-router-dom";
 import logo from "/img/logo/logo-letters.svg";
 

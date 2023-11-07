@@ -17,7 +17,6 @@ import {
   DialogFooter,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import { useNavigate } from "react-router-dom";
 import { useDataContext } from "@/context/dataContext/useDataContext";
 import { MdDelete } from "react-icons/md";
 //
@@ -54,8 +53,6 @@ export default function ListadoProductos() {
     "Precio",
     "Cantidad",
   ];
-
-  const navigate = useNavigate();
 
   // Form Dialog create product
   const form = useForm({

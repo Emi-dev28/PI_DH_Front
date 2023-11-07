@@ -74,7 +74,7 @@ export default function ListadoProductos() {
 
   return (
     <>
-      <div className="flex justify-between items-center mb-3 mx-3">
+      <div className="flex justify-between items-center p-5 pb-8">
         <span className="text-2xl">Lista de productos</span>
         {/* Dialog Form Crear Producto */}
         <Dialog>

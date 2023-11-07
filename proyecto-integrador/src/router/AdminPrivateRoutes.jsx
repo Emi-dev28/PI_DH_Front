@@ -8,17 +8,17 @@ AdminPrivateRoutes.propTypes = {
   children: PropTypes.node,
 };
 
-export default function AdminPrivateRoutes(props) {
+export default function AdminPrivateRoutes({children}) {
   const { state } = useAuthContext();
 
   //** Función para capturar el width y saber si se está accediendo desde celular
   const size = useWindowSize();
 
-  return state.rol === 2 ? (
+  return state.role === "ADMIN" ? (
     size.width > 900 ? (
       <div className="flex">
         <SidebarMenu />
-        <main className="w-screen m-5">{props.children}</main>
+        <main className="w-screen m-5">{children}</main>
       </div>
     ) : (
       <div className="flex justify-center items-center h-screen">

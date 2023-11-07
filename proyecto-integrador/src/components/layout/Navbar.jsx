@@ -15,6 +15,8 @@ export const Navbar = () => {
   const [category, setCategory] = useState('');
   const [search, setSearch] = useState('');
 
+  const firstLetter = "user".substring(0, 1).toUpperCase()
+
   return (
     <nav className="bg-gradient-to-r from-navColorDark to-navColor 
       flex items-center justify-between sticky w-full z-10 top-0 p-4 shadow-lg"
@@ -40,7 +42,7 @@ export const Navbar = () => {
       </div>
 
       {status === "authenticated" ? (
-        <UserSessionMenu />
+        <UserSessionMenu name={name} firstLetter={firstLetter} />
       ) : (
         <div className="hidden md:flex items-center gap-5"> {/* Oculta en dispositivos pequeños */}
           <Link to={"/auth/register"}>

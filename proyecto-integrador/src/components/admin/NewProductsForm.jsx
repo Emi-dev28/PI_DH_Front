@@ -24,7 +24,7 @@ export default function NewProductsForm({
 
   return (
     <div className="flex justify-center pt-4">
-      <div className="w-1/2 flex flex-col items-center">
+      <div className="flex flex-col items-center">
         <h2 className="text-2xl">Panel de administración</h2>
 
         <div className="flex gap-x-2">

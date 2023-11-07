@@ -76,6 +76,7 @@ export const RegisterPage = () => {
         })
         
         form.reset()
+        navigate("/")
     }
 
     return (

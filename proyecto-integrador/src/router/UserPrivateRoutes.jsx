@@ -6,7 +6,7 @@ export const UserPrivateRoutes = ({ children }) => {
     const { state } = useAuthContext()
 
 
-    return (state.rol === 1)
+    return (state.role === "USER")
         ? children
         : <Navigate to={"/"}/>
 }

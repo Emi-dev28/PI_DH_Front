@@ -13,7 +13,7 @@ import {
     FormMessage,
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { useAuthStore } from "@/context/authContext/hooks/useAuthStore"
 
 const formSchema = z.object({
@@ -37,7 +37,8 @@ const formSchema = z.object({
 
 export const LoginPage = () => {
 
-    const {status, name, errorMessage, loginWithEmailAndPassword} = useAuthStore();
+    const {loginWithEmailAndPassword} = useAuthStore();
+    const navigate = useNavigate()
 
     const form = useForm({
         resolver: zodResolver(formSchema),
@@ -50,9 +51,8 @@ export const LoginPage = () => {
 
     const onSubmit = (values) => {
         loginWithEmailAndPassword({email: values.email, password: values.password})
-
-        //* Recuperar datos de usuario y colocarlos
         form.reset()
+        navigate("/")
     }
 
     return (

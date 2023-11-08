@@ -20,19 +20,10 @@ import categories from "@/mocks/categories.json";
 //********
 //******
 
-//* GUARDANDO LA DATA EN EL LOCALSTORAGE PROVISORIAMENTE SOLO PARA HACER ARRANCAR AL HOME, LUEGO HAY QUE CONECTAR AL BACK
-
-// const guardarProductoEnStorage = (producto) => {
-//     localStorage.setItem("productos", JSON.stringify(producto));
-// }
-
-// const productosGuardados = JSON.parse(localStorage.getItem("productos"))
-// const iniciarStateDeProductos = productosGuardados ? productosGuardados : []
-
 //* ESTADO INICIAL
 
 const initialState = {
-  // isLoading: true,
+  isLoading: false,
   data: products,
   categories: categories
 };
@@ -41,8 +32,26 @@ const initialState = {
 
 const reducer = (state, action) => {
   switch (action.type) {
+    case "CARGAR_PRODUCTOS":
+      return {
+        ...state,
+        isLoading: false,
+        data: [action.payload]
+      };
+
+    case "CARGAR_CATEGORIAS":
+      return {
+        ...state,
+        isLoading: false,
+        categories: [action.payload]
+      };
+
     case "AGREGAR_PRODUCTO":
-      return { ...state, data: [...state.data, action.payload] };
+      return {
+        ...state,
+        isLoading: false,
+        data: [...state.data, action.payload]
+      };
 
     case "BORRAR_PRODUCTO":
       return {
@@ -58,6 +67,9 @@ const reducer = (state, action) => {
         ...state,
         categories: state.categories.filter((elem) => elem.id !== action.payload),
       };
+
+    case "IS_LOADING":
+      return { ...state, isLoading: true }
 
     default:
       return state;
@@ -76,6 +88,16 @@ export default function DataContextProvider({ children }) {
 
   //* Alertas propias del shadcn
   const { toast } = useToast();
+
+  //* Función para cargar productos desde el back
+  const handleFetchProducts = (data) => {
+      dispatch({ type: "CARGAR_PRODUCTOS", payload: data });
+  };
+
+  //* Función para cargar categorias desde el back
+  const handleFetchCategories = (data) => {
+      dispatch({ type: "CARGAR_CATEGORIAS", payload: data });
+  };
 
   //* Función para agregar productos desde el administrador
   const agregarProducto = (data) => {
@@ -97,11 +119,16 @@ export default function DataContextProvider({ children }) {
     }
   };
 
+  //* Controlar el loading
+  const handleLoading = () => {
+    dispatch({ type: "IS_LOADING" })
+  }
+
   //* Función para agregar categorías desde el administrador
   const agregarCategoria = (data) => {
     if (!state.categories.some((item) => item.id === data.id)) {
       dispatch({ type: "AGREGAR_CATEGORIA", payload: data });
-      toast({ description: "El categoría se ha guardado" });
+      toast({ description: "La categoría se ha guardado" });
     } else {
       toast({ description: "Este categoría ya existe", variant: "destructive" });
     }
@@ -117,12 +144,19 @@ export default function DataContextProvider({ children }) {
     }
   };
 
-  // useEffect(() => {
-  //     guardarProductoEnStorage(state.data)
-  // }, [state.data])
 
   return (
-    <DataContext.Provider value={{ state, categories, agregarProducto, borrarProducto, agregarCategoria, borrarCategoria }}>
+    <DataContext.Provider value={{
+      state,
+      categories,
+      agregarProducto,
+      borrarProducto,
+      agregarCategoria,
+      borrarCategoria,
+      handleLoading,
+      handleFetchProducts,
+      handleFetchCategories
+    }}>
       {children}
     </DataContext.Provider>
   );

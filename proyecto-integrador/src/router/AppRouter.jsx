@@ -10,8 +10,37 @@ import { UserEditionPage } from "@/pages/privatePages/UserEditionPage";
 import AdminPrivateRoutes from "./AdminPrivateRoutes";
 import { UserPrivateRoutes } from "./UserPrivateRoutes";
 import { AdminPermissionPage } from "@/pages/privatePages/AdminPermissionPage";
+import { useAuthStore } from "@/context/authContext/hooks/useAuthStore";
+import { useEffect, useState } from "react";
+import { Progress } from "@/components/ui/progress";
 
 export const AppRouter = () => {
+
+  //* Función para mantener sesión iniciada si es que el token no expiró
+  const { checkAuthToken, status } = useAuthStore()
+
+  const [progress, setProgress] = useState(13)
+ 
+  useEffect(() => {
+    const timer = setTimeout(() => setProgress(80), 1000)
+    return () => clearTimeout(timer)
+  }, [])
+
+  //* Comentar este effect para poder acceder a ADMIN y USER
+  // useEffect(() => {
+  //   checkAuthToken()
+  // }, [])
+
+  if (status === "checking") {
+    return (
+      <div className="h-full flex flex-col justify-center items-center">
+        <h3>Cargando</h3>
+        <Progress value={progress} className="w-56 mt-4" />
+      </div>
+    )
+  }
+
+
   return (
     <Routes>
       {/* Public routes */}

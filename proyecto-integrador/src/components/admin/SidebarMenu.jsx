@@ -17,9 +17,9 @@ export default function SidebarMenu() {
       <div
         className={` ${
           open ? "w-72" : "w-18"
-        } flex flex-col p-3 h-screen shadow`}
+        } flex flex-col p-3 pt-6 h-screen shadow`}
       >
-        <div className="space-y-3">
+        <div className="space-y-6">
           <div className="flex items-center justify-between p-2">
             {open && <img src={logo} alt="Logo" className="h-9" />}
 
@@ -29,9 +29,9 @@ export default function SidebarMenu() {
           </div>
 
           <div className="flex-1">
-            <ul className="pt-2 pb-4 space-y-1 text-sm">
+            <ul className="pt-2 pb-4 space-y-2 text-sm">
               {/* HOME */}
-              {/* <li className="rounded-sm">
+              <li className="rounded-sm">
                 <Link
                   to="/"
                   className="flex items-center p-2 space-x-3 rounded-md"
@@ -39,7 +39,7 @@ export default function SidebarMenu() {
                   <MdHome className="w-6 h-6 text-primary" />
                   {open && <span className="text-primary">Inicio</span>}
                 </Link>
-              </li> */}
+              </li>
               {/* LISTADO DE PRODUCTOS */}
               <li className="rounded-sm">
                 <Link

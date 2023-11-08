@@ -17,7 +17,6 @@ import {
   DialogFooter,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import { useNavigate } from "react-router-dom";
 import { useDataContext } from "@/context/dataContext/useDataContext";
 import { MdDelete } from "react-icons/md";
 //
@@ -55,8 +54,6 @@ export default function ListadoProductos() {
     "Cantidad",
   ];
 
-  const navigate = useNavigate();
-
   // Form Dialog create product
   const form = useForm({
     resolver: zodResolver(formSchema),
@@ -74,7 +71,7 @@ export default function ListadoProductos() {
 
   return (
     <>
-      <div className="flex justify-between items-center mb-3 mx-3">
+      <div className="flex justify-between items-center p-5 pb-8">
         <span className="text-2xl">Lista de productos</span>
         {/* Dialog Form Crear Producto */}
         <Dialog>

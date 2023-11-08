@@ -2,7 +2,7 @@ import { useToast } from "@/components/ui/use-toast"
 import { useAuthContext } from "../useAuthContext"
 
 //TODO: PONER LOS ENDPOINT CORRECTAMENTE
-const URL = ""
+const URL = "http://localhost:8080/api/v1"
 
 export const useAuthStore = () => {
 
@@ -25,13 +25,14 @@ export const useAuthStore = () => {
 
         try {
 
-            const resp = await fetch(URL + "/auth/login", requestBody)
+            const resp = await fetch(URL + "/auth/authenticate", requestBody)
             const data = await resp.json()
 
             //*Establecer el token que viene del back en el localStorage
             localStorage.setItem("token", JSON.stringify(data.token))
-
+            console.log(data);
             loginUser(data)
+            console.log("Autenticación exitosa");
 
         } catch (error) {
             console.log(error);
@@ -54,19 +55,20 @@ export const useAuthStore = () => {
                 name: name,
                 lastname: lastname,
                 email: email,
-                password: password
+                password: password,
+                role: "USER"
             })
         }
 
         try {
 
-            const resp = await fetch(URL + "/auth/login", requestBody)
+            const resp = await fetch(URL + "/auth/register", requestBody)
             const data = await resp.json()
 
             //*Establecer el token que viene del back en el localStorage
             localStorage.setItem("token", JSON.stringify(data.token))
-
             loginUser(data)
+            console.log("Se ha registrado el usuario");
 
         } catch (error) {
             console.log(error);
@@ -79,22 +81,26 @@ export const useAuthStore = () => {
 
     //* Revisar token para mantener sesión o cerrarla
     const checkAuthToken = async () => {
-        const token = localStorage.getItem("token")
+
+        checkingAuthentication();
+
+        const token = JSON.parse(localStorage.getItem("token"))
         if (!token) return logoutUser()
 
+        console.log(token);
         const requestBody = {
-            method: "GET",
+            method: "POST",
             headers: {
+                'Authorization': `Bearer ${token}`,
                 'Content-Type': 'application/json',
-                "token": token
-            },
+              },
         }
 
         try {
-            const resp = await fetch(URL + "/auth/validate", requestBody)
+            const resp = await fetch(URL + "/auth/refresh-token", requestBody)
             const data = await resp.json()
             localStorage.setItem("token", JSON.stringify(data.token))
-
+            console.log(data);
             loginUser(data)
 
         } catch (error) {
@@ -108,17 +114,14 @@ export const useAuthStore = () => {
     const logoutSession = async () => {
 
         console.log("Cerrando sesión");
-        // localStorage.clear()
-        // logoutUser()
-
-        //TODO: request para cerrar sesión
-
+        localStorage.clear()
+        logoutUser()
     }
 
 
     return {
         //* state
-        status, name, 
+        status, name,
 
         //* Methods
         registeringUser,

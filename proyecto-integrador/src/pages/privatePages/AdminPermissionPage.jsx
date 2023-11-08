@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 
 import {
     Table,
@@ -20,7 +20,7 @@ export const AdminPermissionPage = () => {
 
     const toast = useToast()
 
-    //* Traer usuarios de la base de datos
+    //* Traer usuarios de la base de datos, buscar por id
     const fetchUserData = async () => {
 
         setIsLoading(true)
@@ -43,7 +43,7 @@ export const AdminPermissionPage = () => {
         }
 
         try {
-            const resp = await fetch("/api/v1/user/edit", requestBody)
+            const resp = await fetch("/api/v1/user/permission", requestBody)
             const data = await resp.json()
 
             toast({ description: "Se han dado permisos de admin al usuario" });
@@ -53,10 +53,6 @@ export const AdminPermissionPage = () => {
         }
 
     }
-
-    // useEffect(() => {
-    //   fetchUserData()
-    // }, [])
 
 
 
@@ -90,11 +86,11 @@ export const AdminPermissionPage = () => {
                                     <TableCell>{user.email}</TableCell>
                                     <TableCell>
                                         <select
-                                            className={`text-lg font-semibold px-2 border-none rounded-sm ${user.rol === "1" ? "bg-green-300" : "bg-yellow-400"}`}
+                                            className={`text-lg font-semibold px-2 border-none rounded-sm ${user.role === "1" ? "bg-green-300" : "bg-yellow-400"}`}
                                             name="select"
-                                            defaultValue={user.rol}
+                                            defaultValue={user.role}
                                             value={newRol}
-                                            onChange={({ target }) => setNewRol({ id: user.id, rol: target.value })}
+                                            onChange={({ target }) => setNewRol({ id: user.id, role: target.value })}
                                         >
                                             <option value="1" className="bg-white">User</option>
                                             <option value="2" className="bg-white">Admin</option>

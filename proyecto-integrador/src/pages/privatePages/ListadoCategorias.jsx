@@ -15,13 +15,13 @@ import { MdDelete } from "react-icons/md";
 export default function ListadoProductos() {
   const { state, borrarCategoria } = useDataContext();
 
-  const categoryKeys = ['Titulo', 'Descripción', 'Imagen']
+  const categoryKeys = ["Titulo", "Descripción", "Imagen"];
 
   const navigate = useNavigate();
 
   return (
     <>
-      <div className="flex justify-between items-center mb-3 mx-3">
+      <div className="flex justify-between items-center p-5 pb-8">
         <span className="text-2xl">Lista de categorías</span>
 
         <Button
@@ -37,8 +37,9 @@ export default function ListadoProductos() {
 
         <TableHeader>
           <TableRow>
-            {categoryKeys.map((key, i) => <TableHead key={i}>{key}</TableHead>)}
-
+            {categoryKeys.map((key, i) => (
+              <TableHead key={i}>{key}</TableHead>
+            ))}
           </TableRow>
         </TableHeader>
 
@@ -47,9 +48,19 @@ export default function ListadoProductos() {
             <TableRow key={category.id}>
               <TableCell className="p-3">{category.name} </TableCell>
               <TableCell className="p-3">{category.description} </TableCell>
-              <TableCell className="p-3"><img src={category.image} className="h-14" alt="Imagen categoría" /> </TableCell>
+              <TableCell className="p-3">
+                <img
+                  src={category.image}
+                  className="h-14"
+                  alt="Imagen categoría"
+                />
+              </TableCell>
               <TableCell className="text-center p-3">
-                <Button variant="ghost" size="icon" onClick={() => borrarCategoria(category.id)}>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  onClick={() => borrarCategoria(category.id)}
+                >
                   <MdDelete className="h-5 w-5" />
                 </Button>
               </TableCell>

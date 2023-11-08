@@ -26,7 +26,7 @@ export default function App() {
         <Toaster />
 
         {/* En las páginas de login y register no muestra el Navbar */}
-        {(!isAdminPages && !isAuthPages && !isUserPages) && <Navbar />}
+        {(!isAdminPages && !isAuthPages) && <Navbar />}
 
         {/* Main de la página */}
         <AppRouter />

@@ -93,7 +93,7 @@ export const useAuthStore = () => {
             headers: {
                 'Authorization': `Bearer ${token}`,
                 'Content-Type': 'application/json',
-              },
+            },
         }
 
         try {
@@ -119,15 +119,64 @@ export const useAuthStore = () => {
     }
 
 
+    //* Editar características de usuario, dar permiso de ADMIN
+    const editUserPermission = async (email, rol) => {
+
+        const requestBody = {
+            method: "PUT",
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(rol)
+        }
+
+        try {
+            const resp = await fetch(URL + "/users/update/" + email, requestBody)
+            const data = await resp.json()
+
+            if (data.ok) {
+                toast({ description: "Se han dado permisos de admin al usuario" });
+            }
+        } catch (error) {
+            console.log(error);
+            toast({ description: "No se ha podido realizar la acción", variant: "destructive" })
+        }
+
+    }
+
+    //* Editar características de usuario, dar permiso de ADMIN
+    const editUserInfoByUser = async (data) => {
+
+        const requestBody = {
+            method: "PUT",
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
+        }
+
+        try {
+            const resp = await fetch(URL + "/users/edit/" + data.id, requestBody)
+            const data = await resp.json()
+
+            if (data.ok) {
+                toast({ description: "Se han modificado los datos" });
+            }
+        } catch (error) {
+            console.log(error);
+            toast({ description: "No se ha podido realizar la acción", variant: "destructive" })
+        }
+
+    }
+
+
     return {
         //* state
-        status, name,
+        status, name, state,
 
         //* Methods
         registeringUser,
         loginWithEmailAndPassword,
         logoutSession,
-        checkAuthToken
+        checkAuthToken,
+        editUserPermission,
+        editUserInfoByUser
     }
 }
 

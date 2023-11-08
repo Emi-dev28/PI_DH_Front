@@ -1,4 +1,5 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
+import { useAuthStore } from "@/context/authContext/hooks/useAuthStore"
 
 import {
     Table,
@@ -8,52 +9,42 @@ import {
     TableHeader,
     TableRow,
 } from "@/components/ui/table"
-import { Progress } from "@/components/ui/progress"
-import { useToast } from "@/components/ui/use-toast"
+import { Button } from "@/components/ui/button"
 
 
 export const AdminPermissionPage = () => {
 
+    const { editUserPermission } = useAuthStore()
+    const [users, setUsers] = useState([])
+    const [isLoading, setIsLoading] = useState(true)
     const [newRol, setNewRol] = useState({})
-    const [userData, setUserData] = useState([])
-    const [isLoading, setIsLoading] = useState(false)
 
-    const toast = useToast()
-
-    //* Traer usuarios de la base de datos, buscar por id
-    const fetchUserData = async () => {
-
-        setIsLoading(true)
-
-        const resp = await fetch("/api/v1/users")
-        const data = await resp.json()
-
-        setUserData(data)
-        setIsLoading(false)
+    console.log(newRol);
+    const handleSelectOptionValue = (user) => {
+        if (user === "ADMIN") {
+            return "USER"
+        } else {
+            return "ADMIN"
+        }
     }
 
-    //* Editar con petición PUT
-    //* Esta petición probablemente esté mal hecha, revisar qué recibe el endpoint y qué información enviar
-    const editUserInfo = async () => {
-
-        const requestBody = {
-            method: "PUT",
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(newRol)
-        }
-
+    //* Traer todos los usuarios, este fetch puede estar acá porque se maneja con un useState local
+    const fetchForUsers = async () => {
+        setIsLoading(true)
         try {
-            const resp = await fetch("/api/v1/user/permission", requestBody)
+            const resp = await fetch("http://localhost:8080/api/v1/users")
             const data = await resp.json()
 
-            toast({ description: "Se han dado permisos de admin al usuario" });
+            setUsers(data)
+            setIsLoading(false)
         } catch (error) {
             console.log(error);
-            toast({ description: "No se ha podido realizar la acción", variant: "destructive" })
         }
-
     }
 
+    useEffect(() => {
+        fetchForUsers()
+    }, [])
 
 
     return (
@@ -69,6 +60,7 @@ export const AdminPermissionPage = () => {
                         <TableHead>Apellido</TableHead>
                         <TableHead>Email</TableHead>
                         <TableHead>Rol</TableHead>
+                        <TableHead>Editar</TableHead>
                     </TableRow>
                 </TableHeader>
                 <TableBody>
@@ -76,25 +68,33 @@ export const AdminPermissionPage = () => {
                     {
                         isLoading
 
-                            ? <Progress value={33} />
+                            ? <TableRow>
+                                <TableCell className="text-2xl">Cargando...</TableCell>
+                            </TableRow>
 
-                            : userData.map(user => (
+                            : users.map(user => (
                                 <TableRow key={user.id}>
-                                    <TableCell className="font-medium">1</TableCell>
-                                    <TableCell>{user.name}</TableCell>
+                                    <TableCell className="font-medium">{user.id}</TableCell>
+                                    <TableCell>{user.firstname}</TableCell>
                                     <TableCell>{user.lastname}</TableCell>
                                     <TableCell>{user.email}</TableCell>
                                     <TableCell>
                                         <select
-                                            className={`text-lg font-semibold px-2 border-none rounded-sm ${user.role === "1" ? "bg-green-300" : "bg-yellow-400"}`}
+                                            className={`text-sm font-semibold px-2 border-none rounded-sm bg-amber-200`}
                                             name="select"
-                                            defaultValue={user.role}
-                                            value={newRol}
-                                            onChange={({ target }) => setNewRol({ id: user.id, role: target.value })}
+                                            onChange={({ target }) => setNewRol({ rol: target.value })}
                                         >
-                                            <option value="1" className="bg-white">User</option>
-                                            <option value="2" className="bg-white">Admin</option>
+                                            <option value={user.rol} className="bg-white">{user.rol}</option>
+                                            <option value={handleSelectOptionValue(user.rol)} className="bg-white">{handleSelectOptionValue(user.rol)}</option>
                                         </select>
+                                    </TableCell>
+                                    <TableCell>
+                                        <Button
+                                            className="bg-slate-100 text-green-600 hover:text-white hover:bg-green-600 h-[25px] rounded-sm"
+                                            onClick={() => editUserPermission(user.email, newRol)}
+                                        >
+                                            Dar permiso
+                                        </Button>
                                     </TableCell>
                                 </TableRow>
                             ))

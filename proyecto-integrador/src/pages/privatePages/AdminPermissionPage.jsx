@@ -9,22 +9,31 @@ import {
     TableHeader,
     TableRow,
 } from "@/components/ui/table"
-import { Progress } from "@/components/ui/progress"
+import { Button } from "@/components/ui/button"
 
 
 export const AdminPermissionPage = () => {
 
     const { editUserInfo } = useAuthStore()
     const [users, setUsers] = useState([])
-    const [isLoading, setIsLoading] = useState(false)
+    const [isLoading, setIsLoading] = useState(true)
     const [newRol, setNewRol] = useState({})
 
-    //* Traer todos los usuarios
+    console.log(newRol);
+    const handleSelectOptionValue = (user) => {
+        if (user === "ADMIN") {
+            return "USER"
+        } else {
+            return "ADMIN"
+        }
+    }
+
+    //* Traer todos los usuarios, este fetch puede estar acá porque se maneja con un useState local
     const fetchForUsers = async () => {
         setIsLoading(true)
         try {
-            const resp = fetch("http://localhost:8080/api/v1/users")
-            const data = resp.json()
+            const resp = await fetch("http://localhost:8080/api/v1/users")
+            const data = await resp.json()
 
             setUsers(data)
             setIsLoading(false)
@@ -32,6 +41,10 @@ export const AdminPermissionPage = () => {
             console.log(error);
         }
     }
+
+    useEffect(() => {
+        fetchForUsers()
+    }, [])
 
 
     return (
@@ -47,6 +60,7 @@ export const AdminPermissionPage = () => {
                         <TableHead>Apellido</TableHead>
                         <TableHead>Email</TableHead>
                         <TableHead>Rol</TableHead>
+                        <TableHead>Editar</TableHead>
                     </TableRow>
                 </TableHeader>
                 <TableBody>
@@ -54,25 +68,33 @@ export const AdminPermissionPage = () => {
                     {
                         isLoading
 
-                            ? <Progress value={66} />
+                            ? <TableRow>
+                                <TableCell className="text-2xl">Cargando...</TableCell>
+                            </TableRow>
 
                             : users.map(user => (
                                 <TableRow key={user.id}>
-                                    <TableCell className="font-medium">1</TableCell>
-                                    <TableCell>{user.name}</TableCell>
+                                    <TableCell className="font-medium">{user.id}</TableCell>
+                                    <TableCell>{user.firstname}</TableCell>
                                     <TableCell>{user.lastname}</TableCell>
                                     <TableCell>{user.email}</TableCell>
                                     <TableCell>
                                         <select
-                                            className={`text-lg font-semibold px-2 border-none rounded-sm ${user.role === "1" ? "bg-green-300" : "bg-yellow-400"}`}
+                                            className={`text-sm font-semibold px-2 border-none rounded-sm bg-yellow-400`}
                                             name="select"
-                                            defaultValue={user.role}
-                                            value={newRol}
-                                            onChange={({ target }) => setNewRol({ id: user.id, role: target.value })}
+                                            onChange={({ target }) => setNewRol({ rol: target.value })}
                                         >
-                                            <option value="1" className="bg-white">User</option>
-                                            <option value="2" className="bg-white">Admin</option>
+                                            <option value={user.rol} className="bg-white">{user.rol}</option>
+                                            <option value={handleSelectOptionValue(user.rol)} className="bg-white">{handleSelectOptionValue(user.rol)}</option>
                                         </select>
+                                    </TableCell>
+                                    <TableCell>
+                                        <Button
+                                            className="bg-slate-100 text-green-600 hover:text-white hover:bg-green-600 h-[25px] rounded-sm"
+                                            onClick={() => editUserInfo(user.email, newRol)}
+                                        >
+                                            Dar permiso
+                                        </Button>
                                     </TableCell>
                                 </TableRow>
                             ))

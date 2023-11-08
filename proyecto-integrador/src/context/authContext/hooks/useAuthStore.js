@@ -120,16 +120,16 @@ export const useAuthStore = () => {
 
 
     //* Editar características de usuario, dar permiso de ADMIN
-    const editUserInfo = async (data) => {
+    const editUserInfo = async (email, rol) => {
 
         const requestBody = {
             method: "PUT",
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(data)
+            body: JSON.stringify(rol)
         }
 
         try {
-            const resp = await fetch("/api/v1/user/permission", requestBody)
+            const resp = await fetch(URL + "/users/update/" + email, requestBody)
             const data = await resp.json()
 
             if (data.ok) {

@@ -7,7 +7,7 @@ const URL = "http://localhost:8080/api/v1"
 export const useAuthStore = () => {
 
     const { state, handleFetchProducts, handleLoading, handleFetchCategories } = useDataContext()
-    const { status, name } = state
+    const { status } = state
 
     //* Función para traer los pruductos del back y colocarlos en el state
     const fetchForProducts = () => {

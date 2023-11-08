@@ -14,7 +14,7 @@ import { Button } from "@/components/ui/button"
 
 export const AdminPermissionPage = () => {
 
-    const { editUserInfo } = useAuthStore()
+    const { editUserPermission } = useAuthStore()
     const [users, setUsers] = useState([])
     const [isLoading, setIsLoading] = useState(true)
     const [newRol, setNewRol] = useState({})
@@ -91,7 +91,7 @@ export const AdminPermissionPage = () => {
                                     <TableCell>
                                         <Button
                                             className="bg-slate-100 text-green-600 hover:text-white hover:bg-green-600 h-[25px] rounded-sm"
-                                            onClick={() => editUserInfo(user.email, newRol)}
+                                            onClick={() => editUserPermission(user.email, newRol)}
                                         >
                                             Dar permiso
                                         </Button>

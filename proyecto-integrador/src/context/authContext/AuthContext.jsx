@@ -8,7 +8,7 @@ const initialState = {
     email: null,
     name: "user",
     lastname: null,
-    role: "ADMIN",
+    role: "USER",
     terms: true
 }
 

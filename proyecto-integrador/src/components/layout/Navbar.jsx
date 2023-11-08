@@ -14,6 +14,7 @@ export const Navbar = () => {
   const [category, setCategory] = useState("");
   const [search, setSearch] = useState("");
 
+  //const firstLetter = name.substring(0, 1).toUpperCase();
   const firstLetter = "user".substring(0, 1).toUpperCase();
 
   return (

@@ -93,7 +93,7 @@ export const useAuthStore = () => {
             headers: {
                 'Authorization': `Bearer ${token}`,
                 'Content-Type': 'application/json',
-              },
+            },
         }
 
         try {
@@ -119,6 +119,30 @@ export const useAuthStore = () => {
     }
 
 
+    //* Editar características de usuario, dar permiso de ADMIN
+    const editUserInfo = async (data) => {
+
+        const requestBody = {
+            method: "PUT",
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
+        }
+
+        try {
+            const resp = await fetch("/api/v1/user/permission", requestBody)
+            const data = await resp.json()
+
+            if (data.ok) {
+                toast({ description: "Se han dado permisos de admin al usuario" });
+            }
+        } catch (error) {
+            console.log(error);
+            toast({ description: "No se ha podido realizar la acción", variant: "destructive" })
+        }
+
+    }
+
+
     return {
         //* state
         status, name,
@@ -127,7 +151,8 @@ export const useAuthStore = () => {
         registeringUser,
         loginWithEmailAndPassword,
         logoutSession,
-        checkAuthToken
+        checkAuthToken,
+        editUserInfo
     }
 }
 

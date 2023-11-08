@@ -14,7 +14,7 @@ export const useAuthStore = () => {
         handleLoading()
 
         try {
-            const resp = fetch(URL + "/api/v1/productos")
+            const resp = fetch(URL + "/productos")
             const data = resp.json()
 
             handleFetchProducts(data)
@@ -29,7 +29,7 @@ export const useAuthStore = () => {
         handleLoading()
 
         try {
-            const resp = fetch(URL + "/api/v1/categorias")
+            const resp = fetch(URL + "/categorias")
             const data = resp.json()
 
             handleFetchCategories(data)

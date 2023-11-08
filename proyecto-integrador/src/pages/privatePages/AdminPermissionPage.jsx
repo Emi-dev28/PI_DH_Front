@@ -1,4 +1,5 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
+import { useAuthStore } from "@/context/authContext/hooks/useAuthStore"
 
 import {
     Table,
@@ -9,51 +10,28 @@ import {
     TableRow,
 } from "@/components/ui/table"
 import { Progress } from "@/components/ui/progress"
-import { useToast } from "@/components/ui/use-toast"
 
 
 export const AdminPermissionPage = () => {
 
-    const [newRol, setNewRol] = useState({})
-    const [userData, setUserData] = useState([])
+    const { editUserInfo } = useAuthStore()
+    const [users, setUsers] = useState([])
     const [isLoading, setIsLoading] = useState(false)
+    const [newRol, setNewRol] = useState({})
 
-    const toast = useToast()
-
-    //* Traer usuarios de la base de datos, buscar por id
-    const fetchUserData = async () => {
-
+    //* Traer todos los usuarios
+    const fetchForUsers = async () => {
         setIsLoading(true)
-
-        const resp = await fetch("/api/v1/users")
-        const data = await resp.json()
-
-        setUserData(data)
-        setIsLoading(false)
-    }
-
-    //* Editar con petición PUT
-    //* Esta petición probablemente esté mal hecha, revisar qué recibe el endpoint y qué información enviar
-    const editUserInfo = async () => {
-
-        const requestBody = {
-            method: "PUT",
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(newRol)
-        }
-
         try {
-            const resp = await fetch("/api/v1/user/permission", requestBody)
-            const data = await resp.json()
+            const resp = fetch("http://localhost:8080/api/v1/users")
+            const data = resp.json()
 
-            toast({ description: "Se han dado permisos de admin al usuario" });
+            setUsers(data)
+            setIsLoading(false)
         } catch (error) {
             console.log(error);
-            toast({ description: "No se ha podido realizar la acción", variant: "destructive" })
         }
-
     }
-
 
 
     return (
@@ -76,9 +54,9 @@ export const AdminPermissionPage = () => {
                     {
                         isLoading
 
-                            ? <Progress value={33} />
+                            ? <Progress value={66} />
 
-                            : userData.map(user => (
+                            : users.map(user => (
                                 <TableRow key={user.id}>
                                     <TableCell className="font-medium">1</TableCell>
                                     <TableCell>{user.name}</TableCell>

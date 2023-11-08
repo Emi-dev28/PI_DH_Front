@@ -1,5 +1,4 @@
 import { createContext, useReducer } from "react";
-import { useAuthStore } from "./hooks/useAuthStore";
 
 //* Si quieren entrar a /user pongan role: "USER" o "ADMIN"
 const initialState = {
@@ -8,7 +7,7 @@ const initialState = {
     email: null,
     name: "user",
     lastname: null,
-    role: "USER",
+    role: "ADMIN",
     terms: true
 }
 

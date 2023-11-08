@@ -80,7 +80,7 @@ export const AdminPermissionPage = () => {
                                     <TableCell>{user.email}</TableCell>
                                     <TableCell>
                                         <select
-                                            className={`text-sm font-semibold px-2 border-none rounded-sm bg-yellow-400`}
+                                            className={`text-sm font-semibold px-2 border-none rounded-sm bg-amber-200`}
                                             name="select"
                                             onChange={({ target }) => setNewRol({ rol: target.value })}
                                         >

@@ -8,8 +8,6 @@ import { useNavigate } from 'react-router-dom'
 
 export const UserEditionPage = () => {
 
-    //* Quedan por hacer las peticiones PUT.
-    //* Todas las request se hacen en el useAuthStore.js
     const { state, editUserInfoByUser } = useAuthStore()
 
     const navigate = useNavigate()

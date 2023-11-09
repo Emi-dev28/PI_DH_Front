@@ -13,7 +13,7 @@ import { useDataContext } from "@/context/dataContext/useDataContext";
 import { MdDelete } from "react-icons/md";
 
 export default function ListadoProductos() {
-  const { state, borrarCategoria } = useDataContext();
+  const { categories, borrarCategoria } = useDataContext();
 
   const categoryKeys = ["Titulo", "Descripción", "Imagen"];
 
@@ -44,7 +44,7 @@ export default function ListadoProductos() {
         </TableHeader>
 
         <TableBody>
-          {state.categories.map((category) => (
+          {categories.map((category) => (
             <TableRow key={category.id}>
               <TableCell className="p-3">{category.name} </TableCell>
               <TableCell className="p-3">{category.description} </TableCell>

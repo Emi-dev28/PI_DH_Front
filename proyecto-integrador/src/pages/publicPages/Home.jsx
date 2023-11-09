@@ -1,4 +1,5 @@
 import { Marquee } from "@/components/home/Marquee";
+import Slider from "@/components/home/Slider";
 import Wrapper from "@/components/home/Wrapper";
 import { Button } from "@/components/ui/button";
 import { useDataContext } from "@/context/dataContext/useDataContext";
@@ -82,6 +83,11 @@ export default function Home() {
         Ver nuestros productos
       </button> */}
 
+      
+      <Slider
+        products={randomProducts}
+        
+      />
 
       <div ref={productsRef}></div>
       <Wrapper

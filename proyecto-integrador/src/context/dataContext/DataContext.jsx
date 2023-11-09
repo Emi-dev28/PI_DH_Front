@@ -24,8 +24,8 @@ import categories from "@/mocks/categories.json";
 
 const initialState = {
   isLoading: false,
-  data: products,
-  categories: categories
+  products: products,
+  categories: categories,
 };
 
 //* FUNCIÓN REDUCER PARA MANEJAR LA DATA, DESPUÉS VEMOS COMO INTEGRAMOS TODO.
@@ -36,27 +36,27 @@ const reducer = (state, action) => {
       return {
         ...state,
         isLoading: false,
-        data: [action.payload]
+        products: [action.payload],
       };
 
     case "CARGAR_CATEGORIAS":
       return {
         ...state,
         isLoading: false,
-        categories: [action.payload]
+        categories: [action.payload],
       };
 
     case "AGREGAR_PRODUCTO":
       return {
         ...state,
         isLoading: false,
-        data: [...state.data, action.payload]
+        products: [...state.products, action.payload],
       };
 
     case "BORRAR_PRODUCTO":
       return {
         ...state,
-        data: state.data.filter((elem) => elem.id !== action.payload),
+        products: state.products.filter((elem) => elem.id !== action.payload),
       };
 
     case "AGREGAR_CATEGORIA":
@@ -65,11 +65,13 @@ const reducer = (state, action) => {
     case "BORRAR_CATEGORIA":
       return {
         ...state,
-        categories: state.categories.filter((elem) => elem.id !== action.payload),
+        categories: state.categories.filter(
+          (elem) => elem.id !== action.payload
+        ),
       };
 
     case "IS_LOADING":
-      return { ...state, isLoading: true }
+      return { ...state, isLoading: true };
 
     default:
       return state;
@@ -90,19 +92,19 @@ export default function DataContextProvider({ children }) {
   const { toast } = useToast();
 
   //* Función para cargar productos desde el back
-  const handleFetchProducts = (data) => {
-      dispatch({ type: "CARGAR_PRODUCTOS", payload: data });
+  const handleFetchProducts = (products) => {
+    dispatch({ type: "CARGAR_PRODUCTOS", payload: products });
   };
 
   //* Función para cargar categorias desde el back
-  const handleFetchCategories = (data) => {
-      dispatch({ type: "CARGAR_CATEGORIAS", payload: data });
+  const handleFetchCategories = (products) => {
+    dispatch({ type: "CARGAR_CATEGORIAS", payload: products });
   };
 
   //* Función para agregar productos desde el administrador
-  const agregarProducto = (data) => {
-    if (!state.data.some((item) => item.id === data.id)) {
-      dispatch({ type: "AGREGAR_PRODUCTO", payload: data });
+  const agregarProducto = (product) => {
+    if (!state.products.some((item) => item.id === product.id)) {
+      dispatch({ type: "AGREGAR_PRODUCTO", payload: product });
       toast({ description: "El producto se ha guardado" });
     } else {
       toast({ description: "Este producto ya existe", variant: "destructive" });
@@ -111,7 +113,7 @@ export default function DataContextProvider({ children }) {
 
   //* Función para eliminar productos desde el administrador
   const borrarProducto = (id) => {
-    if (!state.data.some((item) => item.id === id)) {
+    if (!state.products.some((item) => item.id === id)) {
       toast({ description: "Este producto no existe", variant: "destructive" });
     } else {
       dispatch({ type: "BORRAR_PRODUCTO", payload: id });
@@ -121,44 +123,51 @@ export default function DataContextProvider({ children }) {
 
   //* Controlar el loading
   const handleLoading = () => {
-    dispatch({ type: "IS_LOADING" })
-  }
+    dispatch({ type: "IS_LOADING" });
+  };
 
   //* Función para agregar categorías desde el administrador
-  const agregarCategoria = (data) => {
-    if (!state.categories.some((item) => item.id === data.id)) {
-      dispatch({ type: "AGREGAR_CATEGORIA", payload: data });
+  const agregarCategoria = (category) => {
+    if (!state.categories.some((item) => item.id === category.id)) {
+      dispatch({ type: "AGREGAR_CATEGORIA", payload: category });
       toast({ description: "La categoría se ha guardado" });
     } else {
-      toast({ description: "Este categoría ya existe", variant: "destructive" });
+      toast({
+        description: "Este categoría ya existe",
+        variant: "destructive",
+      });
     }
   };
 
   //* Función para eliminar categorías desde el administrador
   const borrarCategoria = (id) => {
     if (!state.categories.some((item) => item.id === id)) {
-      toast({ description: "Esta categoría no existe", variant: "destructive" });
+      toast({
+        description: "Esta categoría no existe",
+        variant: "destructive",
+      });
     } else {
       dispatch({ type: "BORRAR_CATEGORIA", payload: id });
       toast({ description: "Categoría eliminada" });
     }
   };
 
-
   return (
-    <DataContext.Provider value={{
-      state,
-      categories,
-      agregarProducto,
-      borrarProducto,
-      agregarCategoria,
-      borrarCategoria,
-      handleLoading,
-      handleFetchProducts,
-      handleFetchCategories
-    }}>
+    <DataContext.Provider
+      value={{
+        state,
+        products,
+        categories,
+        agregarProducto,
+        borrarProducto,
+        agregarCategoria,
+        borrarCategoria,
+        handleLoading,
+        handleFetchProducts,
+        handleFetchCategories,
+      }}
+    >
       {children}
     </DataContext.Provider>
   );
 }
-

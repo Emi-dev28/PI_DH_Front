@@ -9,7 +9,7 @@ import { Carousel } from "@/components/detalle/Carousel";
 import { DetailTable } from "@/components/detalle/DetailTable";
 
 export const Detalle = () => {
-  const { state: products } = useDataContext();
+  const { products } = useDataContext();
   const [product, setProduct] = useState({});
 
   //* State para abrir o cerrar el modal
@@ -28,12 +28,12 @@ export const Detalle = () => {
   useEffect(() => {
     const selectedProductId = parseInt(id);
 
-    const selectedProduct = products.data.find(
+    const selectedProduct = products.find(
       (product) => product.id === selectedProductId
     );
 
     setProduct(selectedProduct);
-  }, [id, products.data]);
+  }, [id, products]);
 
   return (
     <div className="flex flex-col">

@@ -12,11 +12,8 @@ import { useDataContext } from "@/context/dataContext/useDataContext";
 import { MdDelete } from "react-icons/md";
 import { DialogCreateProduct } from "../../components/admin/DialogCreateProduct";
 
-
-
 export default function ListadoProductos() {
-  const { state, borrarProducto } = useDataContext();
-
+  const { products, borrarProducto } = useDataContext();
 
   const productKeys = [
     "Nombre",
@@ -28,7 +25,6 @@ export default function ListadoProductos() {
 
   return (
     <>
-
       {/* Dialog Form Crear Producto */}
       <div className="flex justify-between items-center p-5 pb-8">
         <span className="text-2xl">Lista de productos</span>
@@ -48,7 +44,7 @@ export default function ListadoProductos() {
         </TableHeader>
 
         <TableBody>
-          {state.data.map((product) => (
+          {products.map((product) => (
             <TableRow key={product.id}>
               <TableCell className="p-3">{product.name} </TableCell>
               <TableCell className="p-3">{product.description} </TableCell>

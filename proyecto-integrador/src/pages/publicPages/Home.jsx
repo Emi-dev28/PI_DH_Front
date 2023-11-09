@@ -7,7 +7,7 @@ import { useEffect, useRef, useState } from "react";
 import { MdArrowUpward } from "react-icons/md";
 
 export default function Home() {
-  const { state: products } = useDataContext();
+  const { products } = useDataContext();
   const [randomProducts, setRandomProducts] = useState([]);
   const [currentPage, setCurrentPage] = useState(0);
   const [shuffledProducts, setShuffledProducts] = useState([]);
@@ -20,7 +20,7 @@ export default function Home() {
   useEffect(() => {
     const updateRandomProducts = () => {
       // Clonamos los productos para no modificar el estado directamente
-      const clonedProducts = [...products.data];
+      const clonedProducts = [...products];
 
       // Ordenar aleatoriamente los productos
       const shuffledProducts = clonedProducts.sort(() => Math.random() - 0.5);
@@ -34,12 +34,12 @@ export default function Home() {
       setRandomProducts(newSelectedProducts);
     };
 
-    // Llamamos a la función de actualización al montar el componente y cuando products.data cambia
+    // Llamamos a la función de actualización al montar el componente y cuando products cambia
     updateRandomProducts();
-  }, [products.data]);
+  }, [products]);
 
   const nextHandler = () => {
-    const elementsAmount = products.data.length;
+    const elementsAmount = products.length;
     const nextPage = currentPage + 1;
     const index = nextPage * 10;
 

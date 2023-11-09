@@ -7,44 +7,16 @@ import {
   TableHeader,
   TableBody,
 } from "@/components/ui/table";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-  DialogFooter,
-} from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { useDataContext } from "@/context/dataContext/useDataContext";
 import { MdDelete } from "react-icons/md";
-//
-import {
-  Form,
-  FormControl,
-  FormDescription,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
-import * as z from "zod";
+import { DialogCreateProduct } from "../../components/admin/DialogCreateProduct";
 
-const formSchema = z.object({
-  username: z.string().min(2, {
-    message: "Username must be at least 2 characters.",
-  }),
-  description: z.string().min(2, {
-    message: "Username must be at least 2 characters.",
-  }),
-});
+
 
 export default function ListadoProductos() {
   const { state, borrarProducto } = useDataContext();
+
 
   const productKeys = [
     "Nombre",
@@ -54,73 +26,13 @@ export default function ListadoProductos() {
     "Cantidad",
   ];
 
-  // Form Dialog create product
-  const form = useForm({
-    resolver: zodResolver(formSchema),
-    defaultValues: {
-      username: "",
-      description: "",
-    },
-  });
-
-  // 2. Define a submit handler.
-  function onSubmit(values) {
-    // createProduct({ email: values.email, password: values.password });
-    console.log(values);
-  }
-
   return (
     <>
+
+      {/* Dialog Form Crear Producto */}
       <div className="flex justify-between items-center p-5 pb-8">
         <span className="text-2xl">Lista de productos</span>
-        {/* Dialog Form Crear Producto */}
-        <Dialog>
-          <DialogTrigger asChild>
-            <Button className="text-base bg-primary text-white">Crear</Button>
-          </DialogTrigger>
-          <DialogContent>
-            <DialogHeader>
-              <DialogTitle>Nuevo producto</DialogTitle>
-              <DialogDescription></DialogDescription>
-            </DialogHeader>
-            <Form {...form}>
-              <form
-                onSubmit={form.handleSubmit(onSubmit)}
-                className="space-y-4"
-              >
-                <FormField
-                  control={form.control}
-                  name="username"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Nombre</FormLabel>
-                      <FormControl>
-                        <Input placeholder="shadcn" {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <FormField
-                  control={form.control}
-                  name="description"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Descripción</FormLabel>
-                      <FormControl>
-                        <Input placeholder="shadcn" {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-              </form>
-            </Form>
-            <DialogFooter>
-              <Button onClick={form.handleSubmit(onSubmit)}>Crear</Button>
-            </DialogFooter>
-          </DialogContent>
-        </Dialog>
+        <DialogCreateProduct />
       </div>
 
       {/* Tabla de productos */}

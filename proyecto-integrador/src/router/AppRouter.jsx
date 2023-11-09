@@ -1,4 +1,3 @@
-import { Administracion } from "@/pages/privatePages/Administracion";
 import Home from "../pages/publicPages/Home";
 import { Route, Routes } from "react-router-dom";
 import { Detalle } from "@/pages/publicPages/Detalle";
@@ -20,7 +19,7 @@ export const AppRouter = () => {
   const { checkAuthToken, status } = useAuthStore()
 
   const [progress, setProgress] = useState(13)
- 
+
   useEffect(() => {
     const timer = setTimeout(() => setProgress(80), 1000)
     return () => clearTimeout(timer)
@@ -55,8 +54,7 @@ export const AppRouter = () => {
         element={
           <AdminPrivateRoutes>
             <Routes>
-              <Route path="/" element={<Administracion />} />
-              <Route path="/listado-productos" element={<ListadoProductos />} />
+              <Route path="/" element={<ListadoProductos />} />
               <Route
                 path="/listado-categorias"
                 element={<ListadoCategorias />}

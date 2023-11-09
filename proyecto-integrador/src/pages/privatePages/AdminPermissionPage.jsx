@@ -42,9 +42,9 @@ export const AdminPermissionPage = () => {
         }
     }
 
-    useEffect(() => {
-        fetchForUsers()
-    }, [])
+    // useEffect(() => {
+    //     fetchForUsers()
+    // }, [])
 
 
     return (

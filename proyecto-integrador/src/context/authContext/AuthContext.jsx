@@ -5,7 +5,7 @@ const initialState = {
     status: "not-authenticated", //checking, not-authenticated, authenticated
     uid: null,
     email: null,
-    name: "user",
+    name: "User",
     lastname: null,
     role: "ADMIN",
     terms: true
@@ -28,7 +28,7 @@ const reducer = (state, action) => {
                 status: "not-authenticated",
                 uid: null,
                 email: null,
-                name: null,
+                name: "",
                 lastname: null,
                 role: null
             }
@@ -60,8 +60,8 @@ export const AuthContextProvider = ({ children }) => {
         dispatch({ type: "CHECKING_CREDENTIALS" })
     }
 
-
     console.log(state);
+
     //*******************************************/
     return (
         <AuthContext.Provider value={{ state, loginUser, logoutUser, checkingAuthentication }}>

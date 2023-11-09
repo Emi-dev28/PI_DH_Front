@@ -7,7 +7,7 @@ const URL = "http://localhost:8080/api/v1"
 export const useAuthStore = () => {
 
     const { loginUser, logoutUser, checkingAuthentication, state } = useAuthContext()
-    const { status, name } = state
+    const { status, name, role } = state
 
     const { toast } = useToast();
 
@@ -87,7 +87,6 @@ export const useAuthStore = () => {
         const token = JSON.parse(localStorage.getItem("token"))
         if (!token) return logoutUser()
 
-        console.log(token);
         const requestBody = {
             method: "POST",
             headers: {
@@ -100,7 +99,6 @@ export const useAuthStore = () => {
             const resp = await fetch(URL + "/auth/refresh-token", requestBody)
             const data = await resp.json()
             localStorage.setItem("token", JSON.stringify(data.token))
-            console.log(data);
             loginUser(data)
 
         } catch (error) {
@@ -168,7 +166,7 @@ export const useAuthStore = () => {
 
     return {
         //* state
-        status, name, state,
+        status, name, state, role,
 
         //* Methods
         registeringUser,

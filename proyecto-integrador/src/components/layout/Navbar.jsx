@@ -9,13 +9,12 @@ import { UserSessionMenu } from "./UserSessionMenu";
 import { FaAlignJustify } from "react-icons/fa";
 
 export const Navbar = () => {
-  const { status, name } = useAuthStore();
+  const { role, name } = useAuthStore();
   const size = useWindowSize();
   const [category, setCategory] = useState("");
   const [search, setSearch] = useState("");
 
-  //const firstLetter = name.substring(0, 1).toUpperCase();
-  const firstLetter = "user".substring(0, 1).toUpperCase();
+  const firstLetter = name.substring(0, 1).toUpperCase();
 
   return (
     <nav
@@ -52,7 +51,7 @@ export const Navbar = () => {
         </div>
       </div>
 
-      {status === "authenticated" ? (
+      {(role === "USER" || role === "ADMIN") ? (
         <UserSessionMenu name={name} firstLetter={firstLetter} />
       ) : (
         <div className="hidden md:flex items-center gap-5">

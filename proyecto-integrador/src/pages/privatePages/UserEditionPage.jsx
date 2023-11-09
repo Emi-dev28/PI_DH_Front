@@ -55,7 +55,7 @@ export const UserEditionPage = () => {
                         <div className='relative'>
                             <Input
                                 className=""
-                                type="text"
+                                type="email"
                                 placeholder={state.email}
                                 value={userData.email}
                                 onChange={(e) =>

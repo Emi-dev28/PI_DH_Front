@@ -17,7 +17,7 @@ export const UserEditionPage = () => {
 
 
     return (
-        <div className="flex justify-center ">
+        <div className="flex justify-center h-screen">
             <div className="w-1/2 flex flex-col items-center ">
 
                 <div className="flex justify-center items-center gap-x-2">

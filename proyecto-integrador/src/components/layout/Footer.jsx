@@ -4,7 +4,7 @@ import { FaSquareFacebook, FaInstagram, FaTiktok, FaYoutube } from 'react-icons/
 
 export const Footer = () => {
   return (
-    <footer className="w-full py-8 px-2">
+    <footer className="w-full py-8 px-2 mt-auto">
       <div className="py-6 flex flex-col md:flex-row items-center justify-center md:justify-between text-center gap-y-6 gap-x-12">
         <img src={logo} alt="Logo DH Technology" className="w-60 mb-4 md:mb-0" />
 

@@ -32,7 +32,7 @@ export const AppRouter = () => {
 
   if (status === "checking") {
     return (
-      <div className="h-full flex flex-col justify-center items-center">
+      <div className="h-full flex flex-col justify-center items-center mt-[13%]">
         <h3>Cargando</h3>
         <Progress value={progress} className="w-56 mt-4" />
       </div>

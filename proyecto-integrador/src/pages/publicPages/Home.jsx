@@ -6,17 +6,16 @@ import { useDataStore } from "@/context/dataContext/hooks/useDataStore";
 import { useEffect, useState } from "react";
 import { MdArrowUpward } from "react-icons/md";
 
-export default function Home() {
+import categories from "@/mocks/categories.json";
 
-  const { state } = useDataStore()
+export default function Home() {
+  const { state } = useDataStore();
   const [randomProducts, setRandomProducts] = useState([]);
   const [currentPage, setCurrentPage] = useState(0);
   const [shuffledProducts, setShuffledProducts] = useState([]);
 
-
   useEffect(() => {
     const updateRandomProducts = () => {
-
       // Ordenar aleatoriamente los productos
       const shuffledProducts = state.products.sort(() => Math.random() - 0.5);
 
@@ -32,7 +31,6 @@ export default function Home() {
     // Llamamos a la función de actualización al montar el componente y cuando products cambia
     updateRandomProducts();
   }, [state.products]);
-
 
   const nextHandler = () => {
     const elementsAmount = state.products.length;
@@ -71,8 +69,10 @@ export default function Home() {
         </div>
       </div>
 
-      {/* <Slider products={randomProducts} /> */}
+      {/* CATEGORÍAS */}
+      <Slider categories={categories} />
 
+      {/* PRODUCTOS */}
       <Wrapper
         products={randomProducts}
         prevHandler={prevHandler}

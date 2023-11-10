@@ -7,9 +7,11 @@ import { useState, useEffect } from "react";
 import { ImgGalleryModal } from "@/components/detalle/ImgGalleryModal";
 import { Carousel } from "@/components/detalle/Carousel";
 import { DetailTable } from "@/components/detalle/DetailTable";
+// Para usar el mock:
+import products from "@/mocks/products.json";
 
 export const Detalle = () => {
-  const { products } = useDataContext();
+  // const { products } = useDataContext();
   const [product, setProduct] = useState({});
 
   //* State para abrir o cerrar el modal

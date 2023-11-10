@@ -4,18 +4,15 @@ import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 
 import { Button } from "@/components/ui/button";
 
-// Wrapper.propTypes = {
-//   products: PropTypes.array,
-//   prevHandler: PropTypes.func,
-//   nextHandler: PropTypes.func,
-//   currentPage: PropTypes.number,
-// };
+Wrapper.propTypes = {
+  products: PropTypes.array,
+  prevHandler: PropTypes.func,
+  nextHandler: PropTypes.func,
+  currentPage: PropTypes.number,
+};
 
 export default function Wrapper(props) {
-
   console.log(props.products);
-
-
 
   return (
     <div className="mb-16 flex flex-col items-center mt-16">
@@ -23,7 +20,7 @@ export default function Wrapper(props) {
         Recomendados
       </div>
 
-      <div className="grid grid-cols-1 gap-x-20 gap-y-12 md:grid-cols-2 ">
+      <div className="grid grid-cols-1 gap-x-32 gap-y-12 md:grid-cols-2 ">
         {props.products.map((product) => (
           <CardHome key={product.id} product={product} />
         ))}

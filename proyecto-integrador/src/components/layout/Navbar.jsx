@@ -7,6 +7,7 @@ import { useWindowSize } from "@uidotdev/usehooks";
 import { useAuthStore } from "@/context/authContext/hooks/useAuthStore";
 import { UserSessionMenu } from "./UserSessionMenu";
 import { FaAlignJustify } from "react-icons/fa";
+import { MdSearch } from "react-icons/md";
 
 export const Navbar = () => {
   const { role, name } = useAuthStore();
@@ -39,11 +40,12 @@ export const Navbar = () => {
             placeholder="Buscar..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="p-2 pl-8 pr-4 border rounded-full focus:outline-none focus:border-blue-500 transition-all duration-300 ease-in-out hover:border-gray-400 bg-gray-100"
+            className="p-2 px-8 border rounded-full focus:outline-none focus:border-blue-500 transition-all duration-300 ease-in-out hover:border-gray-400 bg-gray-100"
             style={{ width: "450px" }} // Puedes ajustar el ancho según tus necesidades
           />
-          <div className="absolute inset-y-0 left-0 flex items-center pl-2">
-            <svg
+          <div className="absolute inset-y-0 left-[390px] flex items-center pl-2">
+            <MdSearch className="w-5 h-5 text-gray-600" />
+            {/* <svg
               className="w-4 h-4 text-gray-600"
               fill="none"
               strokeLinecap="round"
@@ -53,7 +55,7 @@ export const Navbar = () => {
               stroke="currentColor"
             >
               <path d="M21 21l-6-6M9 2a7 7 0 110 14 7 7 0 010-14z"></path>
-            </svg>
+            </svg> */}
           </div>
         </div>
       </div>

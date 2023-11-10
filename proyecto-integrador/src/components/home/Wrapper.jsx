@@ -4,14 +4,19 @@ import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 
 import { Button } from "@/components/ui/button";
 
-Wrapper.propTypes = {
-  products: PropTypes.array,
-  prevHandler: PropTypes.func,
-  nextHandler: PropTypes.func,
-  currentPage: PropTypes.number,
-};
+// Wrapper.propTypes = {
+//   products: PropTypes.array,
+//   prevHandler: PropTypes.func,
+//   nextHandler: PropTypes.func,
+//   currentPage: PropTypes.number,
+// };
 
 export default function Wrapper(props) {
+
+  console.log(props.products);
+
+
+
   return (
     <div className="mb-16 flex flex-col items-center mt-16">
       <div className="text-3xl border-b-2 pb-4  flex place-self-start flex-col mb-12 ml-24">
@@ -19,7 +24,6 @@ export default function Wrapper(props) {
       </div>
 
       <div className="grid grid-cols-1 gap-x-20 gap-y-12 md:grid-cols-2 ">
-        {/* Tenemos que ver cómo crear los id, por ahora sirve el nombre porque no se pueden repetir */}
         {props.products.map((product) => (
           <CardHome key={product.id} product={product} />
         ))}

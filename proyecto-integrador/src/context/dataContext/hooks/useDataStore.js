@@ -1,22 +1,22 @@
 
+import { useEffect } from "react"
 import { useDataContext } from "../useDataContext"
 
 //TODO: PONER LOS ENDPOINT CORRECTAMENTE
 const URL = "http://localhost:8080/api/v1"
 
-export const useAuthStore = () => {
+export const useDataStore = () => {
 
     const { state, handleFetchProducts, handleLoading, handleFetchCategories } = useDataContext()
     const { status } = state
 
     //* Función para traer los pruductos del back y colocarlos en el state
-    const fetchForProducts = () => {
+    const fetchForProducts = async () => {
         handleLoading()
 
         try {
-            const resp = fetch(URL + "/productos")
-            const data = resp.json()
-
+            const resp = await fetch(URL + "/productos")
+            const data = await resp.json()
             handleFetchProducts(data)
 
         } catch (error) {
@@ -25,12 +25,12 @@ export const useAuthStore = () => {
     }
 
     //* Función para traer los pruductos del back y colocarlos en el state
-    const fetchForCastegories = () => {
+    const fetchForCastegories = async () => {
         handleLoading()
 
         try {
-            const resp = fetch(URL + "/categorias")
-            const data = resp.json()
+            const resp = await fetch(URL + "/categorias")
+            const data = await resp.json()
 
             handleFetchCategories(data)
 
@@ -38,6 +38,10 @@ export const useAuthStore = () => {
             console.log(error);
         }
     }
+
+    useEffect(() => {
+        fetchForProducts()
+    }, [])
 
     return {
         //* state

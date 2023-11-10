@@ -1,30 +1,22 @@
 // React
-import { createContext, useReducer } from "react";
+import { createContext, useEffect, useReducer } from "react";
 import PropTypes from "prop-types";
 // Shadcn components
 import { useToast } from "@/components/ui/use-toast";
-// Mock products
-import products from "@/mocks/products.json";
 // Mock categories
 import categories from "@/mocks/categories.json";
 
 //* EN ESTE FUNCTIONAL COMPONENT MANEJAMOS EL ESTADO Y EL CONTEXT, PROBABLEMENTE TAMBIÉN
 //* LA CONEXIÓN A BASE DE DATOS PARA RECUPERAR LA DATA Y LAS FUNCIONES PRINCIPALES.
-//* EL FETCH PARA TRAER LA DATA SE PUEDE HACER APARTE CON UN CUSTOM HOOK, QUE ES LO QUE SE SUELE HACER.
-//* TAMBIÉN PODRÍAMOS TRABAJAR CON useState Y NO useReducer, VEMOS.
 
 //*****************
 //***************
-//************
-//**********
-//********
-//******
 
 //* ESTADO INICIAL
 
 const initialState = {
   isLoading: false,
-  products: products,
+  products: [],
   categories: categories,
 };
 
@@ -36,7 +28,7 @@ const reducer = (state, action) => {
       return {
         ...state,
         isLoading: false,
-        products: [action.payload],
+        products: [...action.payload],
       };
 
     case "CARGAR_CATEGORIAS":
@@ -152,11 +144,11 @@ export default function DataContextProvider({ children }) {
     }
   };
 
+
   return (
     <DataContext.Provider
       value={{
         state,
-        products,
         categories,
         agregarProducto,
         borrarProducto,

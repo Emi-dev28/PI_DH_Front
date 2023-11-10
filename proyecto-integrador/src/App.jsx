@@ -21,7 +21,7 @@ export default function App() {
 
     <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
 
-      <div className="flex flex-col bg-[#F5F5FA] ">
+      <div className="flex flex-col min-h-screen bg-[#F5F5FA] ">
 
         <Toaster />
 

@@ -11,10 +11,13 @@ import { Button } from "@/components/ui/button";
 import { useDataContext } from "@/context/dataContext/useDataContext";
 import { MdDelete } from "react-icons/md";
 import { DialogCreateProduct } from "../../components/admin/DialogCreateProduct";
+import { useDataStore } from "@/context/dataContext/hooks/useDataStore";
 
 export default function ListadoProductos() {
-  const { products, borrarProducto } = useDataContext();
+  const { borrarProducto } = useDataContext();
+  const { state } = useDataStore()
 
+  console.log(state);
   const productKeys = [
     "Nombre",
     "Descripción",
@@ -44,7 +47,7 @@ export default function ListadoProductos() {
         </TableHeader>
 
         <TableBody>
-          {products.map((product) => (
+          {state.products.map((product) => (
             <TableRow key={product.id}>
               <TableCell className="p-3">{product.name} </TableCell>
               <TableCell className="p-3">{product.description} </TableCell>
@@ -53,7 +56,7 @@ export default function ListadoProductos() {
                 {product.price}{" "}
               </TableCell>
               <TableCell className="text-center p-3">
-                {product.quantity}{" "}
+                {product.stock}{" "}
               </TableCell>
               <TableCell className="text-center p-3">
                 <Button

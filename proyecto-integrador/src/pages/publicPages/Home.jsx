@@ -2,28 +2,23 @@ import { Marquee } from "@/components/home/Marquee";
 import Slider from "@/components/home/Slider";
 import Wrapper from "@/components/home/Wrapper";
 import { Button } from "@/components/ui/button";
-import { useDataContext } from "@/context/dataContext/useDataContext";
-import { useEffect, useRef, useState } from "react";
+import { useDataStore } from "@/context/dataContext/hooks/useDataStore";
+import { useEffect, useState } from "react";
 import { MdArrowUpward } from "react-icons/md";
 
 export default function Home() {
-  const { products } = useDataContext();
+
+  const { state } = useDataStore()
   const [randomProducts, setRandomProducts] = useState([]);
   const [currentPage, setCurrentPage] = useState(0);
   const [shuffledProducts, setShuffledProducts] = useState([]);
 
-  //* Establecer la referencia a un elemento de forma dinámica para hacer el scroll automático
-  //* hacia esa posición en cualquier tipo de pantalla
-  const productsRef = useRef();
-  let coords = productsRef.current?.getBoundingClientRect();
 
   useEffect(() => {
     const updateRandomProducts = () => {
-      // Clonamos los productos para no modificar el estado directamente
-      const clonedProducts = [...products];
 
       // Ordenar aleatoriamente los productos
-      const shuffledProducts = clonedProducts.sort(() => Math.random() - 0.5);
+      const shuffledProducts = state.products.sort(() => Math.random() - 0.5);
 
       setShuffledProducts(shuffledProducts);
 
@@ -36,10 +31,11 @@ export default function Home() {
 
     // Llamamos a la función de actualización al montar el componente y cuando products cambia
     updateRandomProducts();
-  }, [products]);
+  }, [state.products]);
+
 
   const nextHandler = () => {
-    const elementsAmount = products.length;
+    const elementsAmount = state.products.length;
     const nextPage = currentPage + 1;
     const index = nextPage * 10;
 
@@ -75,25 +71,8 @@ export default function Home() {
         </div>
       </div>
 
-      {/* <button
-        onClick={() => window.scroll({ top: coords.y, behavior: "smooth" })}
-        className="bg-gradient-to-b from-btnPink to-btnPinkDarker text-white 
-                    px-4 py-2 rounded-md mr-2 mt-4 hover:text-gray-300 duration-400 
-                    focus:shadow-outline-grey shadow-xl"
-      >
-        Ver nuestros productos
-      </button> */}
+      {/* <Slider products={randomProducts} /> */}
 
-
-
-      <Slider
-        products={randomProducts}
-
-      />
-
-
-
-      <div ref={productsRef}></div>
       <Wrapper
         products={randomProducts}
         prevHandler={prevHandler}

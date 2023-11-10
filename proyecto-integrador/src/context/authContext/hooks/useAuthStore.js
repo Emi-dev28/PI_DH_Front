@@ -56,7 +56,7 @@ export const useAuthStore = () => {
                 lastname: lastname,
                 email: email,
                 password: password,
-                role: "USER"
+                rol: "USER"
             })
         }
 

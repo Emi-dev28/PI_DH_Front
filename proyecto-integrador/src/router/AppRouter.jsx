@@ -26,9 +26,9 @@ export const AppRouter = () => {
   }, [])
 
   //* Comentar este effect para poder acceder a ADMIN y USER
-  // useEffect(() => {
-  //   checkAuthToken()
-  // }, [])
+  useEffect(() => {
+    checkAuthToken()
+  }, [])
 
   if (status === "checking") {
     return (

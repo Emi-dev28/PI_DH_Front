@@ -39,7 +39,7 @@ export default function Home() {
     const nextPage = currentPage + 1;
     const index = nextPage * 10;
 
-    if (index === elementsAmount) return;
+    if (index >= elementsAmount) return;
 
     setRandomProducts([...shuffledProducts].splice(index, 10));
     setCurrentPage(nextPage);

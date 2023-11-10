@@ -13,9 +13,6 @@ import { Button } from "@/components/ui/button";
 
 export default function Wrapper(props) {
 
-  console.log(props.products);
-
-
 
   return (
     <div className="mb-16 flex flex-col items-center mt-16">

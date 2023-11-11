@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { Button } from "@/components/ui/button";
 // Context
 import { useDataContext } from "@/context/dataContext/useDataContext";
@@ -10,7 +11,11 @@ import { DetailTable } from "@/components/detalle/DetailTable";
 // Para usar el mock:
 import products from "@/mocks/products.json";
 
-export const Detalle = () => {
+Detalle.propTypes = {
+  product: PropTypes.object,
+};
+
+export default function Detalle() {
   // const { products } = useDataContext();
   const [product, setProduct] = useState({});
 
@@ -108,4 +113,4 @@ export const Detalle = () => {
       </ImgGalleryModal>
     </div>
   );
-};
+}

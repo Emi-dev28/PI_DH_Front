@@ -7,7 +7,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { ImgGalleryModal } from "@/components/detalle/ImgGalleryModal";
 import { Carousel } from "@/components/detalle/Carousel";
-import { DetailTable } from "@/components/detalle/DetailTable";
+import DetailTable from "@/components/detalle/DetailTable";
 // Para usar el mock:
 import products from "@/mocks/products.json";
 

@@ -1,6 +1,11 @@
+import PropTypes from "prop-types";
 import { Table, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
-export const DetailTable = ({ product }) => {
+DetailTable.propTypes = {
+  product: PropTypes.object,
+};
+
+export default function DetailTable({ product }) {
   return (
     <Table>
       <TableHeader>
@@ -32,4 +37,4 @@ export const DetailTable = ({ product }) => {
       </TableHeader>
     </Table>
   );
-};
+}

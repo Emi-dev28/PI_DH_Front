@@ -22,7 +22,7 @@
   "rating": 1.3,
   "images": [
     {
-      "image": "http://dummyimage.com/350x385.png/ff4444/ffffff"
+      "image": "/img/altavoz.webp"
     },
     {
       "image": "http://dummyimage.com/365x293.png/cc0000/ffffff"
@@ -100,7 +100,7 @@
   "rating": 2.1,
   "images": [
     {
-      "image": "http://dummyimage.com/293x374.png/cc0000/ffffff"
+      "image": "/img/drone2.webp"
     },
     {
       "image": "http://dummyimage.com/365x423.png/cc0000/ffffff"
@@ -139,7 +139,7 @@
   "rating": 3.2,
   "images": [
     {
-      "image": "http://dummyimage.com/396x255.png/5fa2dd/ffffff"
+      "image": "/img/iphone.webp"
     },
     {
       "image": "http://dummyimage.com/450x289.png/ff4444/ffffff"
@@ -181,7 +181,7 @@
   "rating": 1.3,
   "images": [
     {
-      "image": "http://dummyimage.com/362x390.png/dddddd/000000"
+      "image": "/img/drone2.webp"
     },
     {
       "image": "http://dummyimage.com/288x292.png/ff4444/ffffff"
@@ -220,7 +220,7 @@
   "rating": 1.6,
   "images": [
     {
-      "image": "http://dummyimage.com/269x383.png/cc0000/ffffff"
+      "image": "/img/altavoz.webp"
     },
     {
       "image": "http://dummyimage.com/384x445.png/5fa2dd/ffffff"
@@ -262,7 +262,7 @@
   "rating": 1.2,
   "images": [
     {
-      "image": "http://dummyimage.com/341x358.png/ff4444/ffffff"
+      "image": "/img/iphone.webp"
     },
     {
       "image": "http://dummyimage.com/292x431.png/cc0000/ffffff"
@@ -301,7 +301,7 @@
   "rating": 2.8,
   "images": [
     {
-      "image": "http://dummyimage.com/280x303.png/5fa2dd/ffffff"
+      "image": "/img/drone2.webp"
     },
     {
       "image": "http://dummyimage.com/444x277.png/cc0000/ffffff"
@@ -340,7 +340,7 @@
   "rating": 4.3,
   "images": [
     {
-      "image": "http://dummyimage.com/291x303.png/5fa2dd/ffffff"
+      "image": "/img/altavoz.webp"
     },
     {
       "image": "http://dummyimage.com/330x341.png/dddddd/000000"
@@ -379,7 +379,7 @@
   "rating": 4.7,
   "images": [
     {
-      "image": "http://dummyimage.com/322x344.png/ff4444/ffffff"
+      "image": "/img/altavoz.webp"
     },
     {
       "image": "http://dummyimage.com/353x429.png/ff4444/ffffff"
@@ -421,7 +421,7 @@
   "rating": 2.1,
   "images": [
     {
-      "image": "http://dummyimage.com/311x251.png/5fa2dd/ffffff"
+      "image": "/img/drone2.webp"
     },
     {
       "image": "http://dummyimage.com/315x333.png/5fa2dd/ffffff"
@@ -499,7 +499,7 @@
   "rating": 3.6,
   "images": [
     {
-      "image": "http://dummyimage.com/336x348.png/5fa2dd/ffffff"
+      "image": "/img/iphone.webp"
     },
     {
       "image": "http://dummyimage.com/444x384.png/5fa2dd/ffffff"
@@ -541,7 +541,7 @@
   "rating": 3.9,
   "images": [
     {
-      "image": "http://dummyimage.com/403x344.png/dddddd/000000"
+      "image": "/img/drone2.webp"
     },
     {
       "image": "http://dummyimage.com/279x316.png/ff4444/ffffff"
@@ -619,7 +619,7 @@
   "rating": 4.6,
   "images": [
     {
-      "image": "http://dummyimage.com/370x365.png/5fa2dd/ffffff"
+      "image": "/img/iphone.webp"
     },
     {
       "image": "http://dummyimage.com/268x424.png/cc0000/ffffff"
@@ -700,7 +700,7 @@
   "rating": 3.3,
   "images": [
     {
-      "image": "http://dummyimage.com/339x401.png/dddddd/000000"
+      "image": "/img/iphone.webp"
     },
     {
       "image": "http://dummyimage.com/447x251.png/5fa2dd/ffffff"
@@ -784,7 +784,7 @@
   "rating": 1.7,
   "images": [
     {
-      "image": "http://dummyimage.com/323x404.png/cc0000/ffffff"
+      "image": "/img/drone2.webp"
     },
     {
       "image": "http://dummyimage.com/349x379.png/dddddd/000000"
@@ -985,7 +985,7 @@
   "rating": 1.8,
   "images": [
     {
-      "image": "http://dummyimage.com/258x393.png/ff4444/ffffff"
+      "image": "/img/drone2.webp"
     },
     {
       "image": "http://dummyimage.com/364x448.png/ff4444/ffffff"
@@ -1105,7 +1105,7 @@
   "rating": 1.7,
   "images": [
     {
-      "image": "http://dummyimage.com/394x325.png/ff4444/ffffff"
+      "image": "/img/iphone.webp"
     },
     {
       "image": "http://dummyimage.com/417x434.png/dddddd/000000"
@@ -1147,7 +1147,7 @@
   "rating": 2.5,
   "images": [
     {
-      "image": "http://dummyimage.com/286x391.png/ff4444/ffffff"
+      "image": "/img/drone2.webp"
     },
     {
       "image": "http://dummyimage.com/295x419.png/cc0000/ffffff"
@@ -1186,7 +1186,7 @@
   "rating": 4.2,
   "images": [
     {
-      "image": "http://dummyimage.com/325x254.png/dddddd/000000"
+      "image": "/img/iphone.webp"
     },
     {
       "image": "http://dummyimage.com/420x293.png/cc0000/ffffff"
@@ -1348,7 +1348,7 @@
   "rating": 2.0,
   "images": [
     {
-      "image": "http://dummyimage.com/365x331.png/dddddd/000000"
+      "image": "/img/iphone.webp"
     },
     {
       "image": "http://dummyimage.com/429x395.png/cc0000/ffffff"
@@ -1390,7 +1390,7 @@
   "rating": 3.1,
   "images": [
     {
-      "image": "http://dummyimage.com/250x287.png/5fa2dd/ffffff"
+      "image": "/img/altavoz.webp"
     },
     {
       "image": "http://dummyimage.com/426x250.png/dddddd/000000"
@@ -1429,7 +1429,7 @@
   "rating": 1.8,
   "images": [
     {
-      "image": "http://dummyimage.com/286x365.png/cc0000/ffffff"
+      "image": "/img/altavoz.webp"
     },
     {
       "image": "http://dummyimage.com/346x283.png/dddddd/000000"
@@ -1591,7 +1591,7 @@
   "rating": 3.3,
   "images": [
     {
-      "image": "http://dummyimage.com/373x261.png/dddddd/000000"
+      "image": "/img/drone2.webp"
     },
     {
       "image": "http://dummyimage.com/377x355.png/dddddd/000000"
@@ -1630,7 +1630,7 @@
   "rating": 3.0,
   "images": [
     {
-      "image": "http://dummyimage.com/264x251.png/cc0000/ffffff"
+      "image": "/img/drone2.webp"
     },
     {
       "image": "http://dummyimage.com/255x261.png/dddddd/000000"
@@ -1672,7 +1672,7 @@
   "rating": 3.0,
   "images": [
     {
-      "image": "http://dummyimage.com/266x289.png/5fa2dd/ffffff"
+      "image": "/img/drone2.webp"
     },
     {
       "image": "http://dummyimage.com/328x363.png/ff4444/ffffff"
@@ -1714,7 +1714,7 @@
   "rating": 1.5,
   "images": [
     {
-      "image": "http://dummyimage.com/317x381.png/cc0000/ffffff"
+      "image": "/img/drone2.webp"
     },
     {
       "image": "http://dummyimage.com/394x382.png/cc0000/ffffff"
@@ -1798,7 +1798,7 @@
   "rating": 2.5,
   "images": [
     {
-      "image": "http://dummyimage.com/375x432.png/cc0000/ffffff"
+      "image": "/img/drone2.webp"
     },
     {
       "image": "http://dummyimage.com/326x443.png/dddddd/000000"
@@ -1918,7 +1918,7 @@
   "rating": 3.1,
   "images": [
     {
-      "image": "http://dummyimage.com/269x328.png/5fa2dd/ffffff"
+      "image": "/img/iphone.webp"
     },
     {
       "image": "http://dummyimage.com/314x362.png/5fa2dd/ffffff"
@@ -1960,10 +1960,10 @@
   "rating": 1.8,
   "images": [
     {
-      "image": "http://dummyimage.com/277x340.png/cc0000/ffffff"
+      "image": "/img/drone2.webp"
     },
     {
-      "image": "http://dummyimage.com/348x320.png/cc0000/ffffff"
+      "image": "/img/drone2.webp"
     },
     {
       "image": "http://dummyimage.com/298x442.png/cc0000/ffffff"

@@ -12,8 +12,6 @@ Wrapper.propTypes = {
 };
 
 export default function Wrapper(props) {
-  console.log(props.products);
-
   return (
     <div className="mb-16 flex flex-col items-center mt-16">
       <div className="text-3xl border-b-2 pb-4  flex place-self-start flex-col mb-12 ml-24">

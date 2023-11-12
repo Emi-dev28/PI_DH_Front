@@ -1,32 +1,49 @@
 [{
   "id": 1,
-  "name": "Wine - Two Oceans Sauvignon",
+  "name": "Pumpkin",
   "characteristics": [
     {
-      "characteristic": "loyal"
+      "characteristic": "intelligent"
     },
     {
       "characteristic": "adventurous"
     },
     {
-      "characteristic": "intelligent"
+      "characteristic": "adventurous"
     },
     {
-      "characteristic": "playful"
+      "characteristic": "adventurous"
     }
   ],
-  "description": "In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.",
-  "price": 604.37,
-  "quantity": 97,
-  "category": "Drones",
-  "rating": 4.4,
+  "description": "Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.",
+  "price": 988.59,
+  "quantity": 20,
+  "category": "Audio",
+  "rating": 1.3,
   "images": [
-
+    {
+      "image": "http://dummyimage.com/350x385.png/ff4444/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/365x293.png/cc0000/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/276x319.png/5fa2dd/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/317x253.png/ff4444/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/342x263.png/5fa2dd/ffffff"
+    }
   ]
 }, {
   "id": 2,
-  "name": "Chicken - Whole Roasting",
+  "name": "Chips - Assorted",
   "characteristics": [
+    {
+      "characteristic": "adventurous"
+    },
     {
       "characteristic": "curious"
     },
@@ -34,224 +51,238 @@
       "characteristic": "playful"
     },
     {
-      "characteristic": "loyal"
-    },
-    {
-      "characteristic": "intelligent"
+      "characteristic": "adventurous"
     }
   ],
-  "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.\n\nVestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.\n\nDuis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.",
-  "price": 384.79,
-  "quantity": 8,
-  "category": "Audio",
-  "rating": 2.5,
+  "description": "Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.",
+  "price": 234.2,
+  "quantity": 74,
+  "category": "Computación",
+  "rating": 3.4,
   "images": [
     {
-      "image": "http://dummyimage.com/351x287.png/cc0000/ffffff"
+      "image": "/img/monitor.webp"
     },
     {
-      "image": "http://dummyimage.com/391x376.png/ff4444/ffffff"
+      "image": "http://dummyimage.com/431x443.png/5fa2dd/ffffff"
     },
     {
-      "image": "http://dummyimage.com/205x264.png/ff4444/ffffff"
+      "image": "http://dummyimage.com/437x416.png/5fa2dd/ffffff"
     },
     {
-      "image": "http://dummyimage.com/266x324.png/ff4444/ffffff"
+      "image": "http://dummyimage.com/276x440.png/ff4444/ffffff"
     },
     {
-      "image": "http://dummyimage.com/358x325.png/ff4444/ffffff"
+      "image": "http://dummyimage.com/353x420.png/ff4444/ffffff"
     }
   ]
 }, {
   "id": 3,
-  "name": "Orange - Tangerine",
+  "name": "Syrup - Monin, Irish Cream",
   "characteristics": [
     {
-      "characteristic": "loyal"
+      "characteristic": "playful"
     },
     {
-      "characteristic": "intelligent"
-    },
-    {
-      "characteristic": "curious"
+      "characteristic": "playful"
     },
     {
       "characteristic": "adventurous"
     },
     {
-      "characteristic": "loyal"
+      "characteristic": "friendly"
     }
   ],
-  "description": "Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
-  "price": 397.39,
-  "quantity": 47,
-  "category": "Computación",
-  "rating": 2.5,
+  "description": "Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.\n\nCurabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.",
+  "price": 827.26,
+  "quantity": 98,
+  "category": "Drones",
+  "rating": 2.1,
   "images": [
-
+    {
+      "image": "http://dummyimage.com/293x374.png/cc0000/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/365x423.png/cc0000/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/384x340.png/cc0000/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/448x444.png/cc0000/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/303x394.png/cc0000/ffffff"
+    }
   ]
 }, {
   "id": 4,
-  "name": "Bay Leaf Fresh",
+  "name": "Cabbage Roll",
   "characteristics": [
     {
+      "characteristic": "adventurous"
+    },
+    {
       "characteristic": "loyal"
-    },
-    {
-      "characteristic": "friendly"
-    },
-    {
-      "characteristic": "intelligent"
     },
     {
       "characteristic": "curious"
     },
     {
-      "characteristic": "loyal"
+      "characteristic": "friendly"
     }
   ],
-  "description": "Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.",
-  "price": 629.32,
-  "quantity": 14,
-  "category": "Computación",
-  "rating": 4.8,
+  "description": "Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.\n\nFusce consequat. Nulla nisl. Nunc nisl.\n\nDuis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.",
+  "price": 213.14,
+  "quantity": 87,
+  "category": "Celulares",
+  "rating": 3.2,
   "images": [
     {
-      "image": "http://dummyimage.com/242x229.png/5fa2dd/ffffff"
+      "image": "http://dummyimage.com/396x255.png/5fa2dd/ffffff"
     },
     {
-      "image": "http://dummyimage.com/372x265.png/5fa2dd/ffffff"
+      "image": "http://dummyimage.com/450x289.png/ff4444/ffffff"
     },
     {
-      "image": "http://dummyimage.com/275x375.png/5fa2dd/ffffff"
+      "image": "http://dummyimage.com/367x268.png/5fa2dd/ffffff"
     },
     {
-      "image": "http://dummyimage.com/244x249.png/5fa2dd/ffffff"
+      "image": "http://dummyimage.com/322x367.png/5fa2dd/ffffff"
     },
     {
-      "image": "http://dummyimage.com/428x348.png/5fa2dd/ffffff"
+      "image": "http://dummyimage.com/290x334.png/cc0000/ffffff"
     }
   ]
 }, {
   "id": 5,
-  "name": "Food Colouring - Pink",
+  "name": "Wheat - Soft Kernal Of Wheat",
   "characteristics": [
     {
-      "characteristic": "intelligent"
+      "characteristic": "loyal"
     },
     {
-      "characteristic": "loyal"
+      "characteristic": "friendly"
     },
     {
       "characteristic": "adventurous"
     },
     {
-      "characteristic": "playful"
+      "characteristic": "loyal"
     },
     {
-      "characteristic": "loyal"
+      "characteristic": "playful"
     }
   ],
-  "description": "Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.\n\nMauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.",
-  "price": 100.23,
-  "quantity": 13,
-  "category": "Audio",
-  "rating": 2.2,
+  "description": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.\n\nMaecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.",
+  "price": 841.2,
+  "quantity": 7,
+  "category": "Drones",
+  "rating": 1.3,
   "images": [
     {
-      "image": "http://dummyimage.com/431x448.png/5fa2dd/ffffff"
+      "image": "http://dummyimage.com/362x390.png/dddddd/000000"
+    },
+    {
+      "image": "http://dummyimage.com/288x292.png/ff4444/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/336x375.png/dddddd/000000"
+    },
+    {
+      "image": "http://dummyimage.com/442x446.png/5fa2dd/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/448x256.png/cc0000/ffffff"
     }
   ]
 }, {
   "id": 6,
-  "name": "Tea - Decaf Lipton",
+  "name": "Orange - Blood",
   "characteristics": [
     {
-      "characteristic": "intelligent"
+      "characteristic": "adventurous"
     },
     {
       "characteristic": "curious"
     },
     {
-      "characteristic": "intelligent"
+      "characteristic": "playful"
     },
     {
-      "characteristic": "intelligent"
+      "characteristic": "friendly"
     }
   ],
-  "description": "Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.\n\nCurabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.",
-  "price": 929.49,
-  "quantity": 69,
-  "category": "Dispositivos móviles",
-  "rating": 2.7,
+  "description": "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
+  "price": 579.13,
+  "quantity": 10,
+  "category": "Audio",
+  "rating": 1.6,
   "images": [
     {
-      "image": "http://dummyimage.com/431x318.png/5fa2dd/ffffff"
+      "image": "http://dummyimage.com/269x383.png/cc0000/ffffff"
     },
     {
-      "image": "http://dummyimage.com/419x348.png/dddddd/000000"
+      "image": "http://dummyimage.com/384x445.png/5fa2dd/ffffff"
     },
     {
-      "image": "http://dummyimage.com/377x243.png/dddddd/000000"
+      "image": "http://dummyimage.com/264x393.png/5fa2dd/ffffff"
     },
     {
-      "image": "http://dummyimage.com/284x406.png/cc0000/ffffff"
+      "image": "http://dummyimage.com/274x274.png/ff4444/ffffff"
     },
     {
-      "image": "http://dummyimage.com/346x350.png/cc0000/ffffff"
+      "image": "http://dummyimage.com/388x348.png/cc0000/ffffff"
     }
   ]
 }, {
   "id": 7,
-  "name": "Cups 10oz Trans",
+  "name": "Butter - Pod",
   "characteristics": [
     {
-      "characteristic": "playful"
-    },
-    {
-      "characteristic": "curious"
+      "characteristic": "intelligent"
     },
     {
       "characteristic": "friendly"
     },
     {
-      "characteristic": "playful"
+      "characteristic": "curious"
     },
     {
-      "characteristic": "playful"
+      "characteristic": "adventurous"
+    },
+    {
+      "characteristic": "adventurous"
     }
   ],
-  "description": "Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.\n\nIn quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.\n\nMaecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.",
-  "price": 21.3,
-  "quantity": 24,
-  "category": "Cámaras",
-  "rating": 3.7,
+  "description": "Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.",
+  "price": 507.79,
+  "quantity": 42,
+  "category": "Celulares",
+  "rating": 1.2,
   "images": [
     {
-      "image": "http://dummyimage.com/288x408.png/5fa2dd/ffffff"
+      "image": "http://dummyimage.com/341x358.png/ff4444/ffffff"
     },
     {
-      "image": "http://dummyimage.com/288x210.png/ff4444/ffffff"
+      "image": "http://dummyimage.com/292x431.png/cc0000/ffffff"
     },
     {
-      "image": "http://dummyimage.com/390x418.png/5fa2dd/ffffff"
+      "image": "http://dummyimage.com/351x352.png/ff4444/ffffff"
     },
     {
-      "image": "http://dummyimage.com/304x395.png/cc0000/ffffff"
+      "image": "http://dummyimage.com/440x431.png/dddddd/000000"
     },
     {
-      "image": "http://dummyimage.com/243x421.png/ff4444/ffffff"
+      "image": "http://dummyimage.com/450x336.png/5fa2dd/ffffff"
     }
   ]
 }, {
   "id": 8,
-  "name": "Chocolate - Chips Compound",
+  "name": "Buffalo - Tenderloin",
   "characteristics": [
     {
-      "characteristic": "adventurous"
-    },
-    {
-      "characteristic": "friendly"
+      "characteristic": "intelligent"
     },
     {
       "characteristic": "curious"
@@ -260,571 +291,154 @@
       "characteristic": "curious"
     },
     {
-      "characteristic": "friendly"
+      "characteristic": "playful"
     }
   ],
-  "description": "Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.",
-  "price": 559.94,
-  "quantity": 41,
-  "category": "Computación",
-  "rating": 1.0,
+  "description": "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.\n\nIn sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.",
+  "price": 570.93,
+  "quantity": 78,
+  "category": "Drones",
+  "rating": 2.8,
   "images": [
     {
-      "image": "http://dummyimage.com/332x230.png/cc0000/ffffff"
+      "image": "http://dummyimage.com/280x303.png/5fa2dd/ffffff"
     },
     {
-      "image": "http://dummyimage.com/270x241.png/dddddd/000000"
+      "image": "http://dummyimage.com/444x277.png/cc0000/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/261x257.png/5fa2dd/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/405x250.png/ff4444/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/405x296.png/dddddd/000000"
     }
   ]
 }, {
   "id": 9,
-  "name": "Bacardi Breezer - Strawberry",
+  "name": "Bread - Rye",
   "characteristics": [
     {
-      "characteristic": "curious"
+      "characteristic": "adventurous"
     },
     {
-      "characteristic": "curious"
+      "characteristic": "loyal"
     },
     {
-      "characteristic": "playful"
+      "characteristic": "friendly"
     },
     {
       "characteristic": "loyal"
     }
   ],
-  "description": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.",
-  "price": 719.76,
-  "quantity": 96,
-  "category": "Cámaras",
-  "rating": 1.0,
+  "description": "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.\n\nIn sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.\n\nSuspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.",
+  "price": 950.15,
+  "quantity": 62,
+  "category": "Audio",
+  "rating": 4.3,
   "images": [
     {
-      "image": "http://dummyimage.com/276x433.png/cc0000/ffffff"
+      "image": "http://dummyimage.com/291x303.png/5fa2dd/ffffff"
     },
     {
-      "image": "http://dummyimage.com/226x216.png/ff4444/ffffff"
+      "image": "http://dummyimage.com/330x341.png/dddddd/000000"
     },
     {
-      "image": "http://dummyimage.com/266x307.png/dddddd/000000"
+      "image": "http://dummyimage.com/267x360.png/dddddd/000000"
     },
     {
-      "image": "http://dummyimage.com/424x407.png/5fa2dd/ffffff"
+      "image": "http://dummyimage.com/295x265.png/ff4444/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/269x401.png/5fa2dd/ffffff"
     }
   ]
 }, {
   "id": 10,
-  "name": "Flour - Corn, Fine",
+  "name": "Soup - Campbells Beef Strogonoff",
   "characteristics": [
     {
-      "characteristic": "intelligent"
-    },
-    {
-      "characteristic": "loyal"
+      "characteristic": "playful"
     },
     {
       "characteristic": "intelligent"
     },
     {
       "characteristic": "playful"
-    }
-  ],
-  "description": "Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.",
-  "price": 253.73,
-  "quantity": 39,
-  "category": "Drones",
-  "rating": 3.1,
-  "images": [
-    {
-      "image": "http://dummyimage.com/222x280.png/dddddd/000000"
     },
     {
-      "image": "http://dummyimage.com/279x347.png/dddddd/000000"
+      "characteristic": "loyal"
+    }
+  ],
+  "description": "Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.",
+  "price": 669.28,
+  "quantity": 48,
+  "category": "Audio",
+  "rating": 4.7,
+  "images": [
+    {
+      "image": "http://dummyimage.com/322x344.png/ff4444/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/353x429.png/ff4444/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/317x340.png/dddddd/000000"
+    },
+    {
+      "image": "http://dummyimage.com/417x283.png/ff4444/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/438x423.png/ff4444/ffffff"
     }
   ]
 }, {
   "id": 11,
-  "name": "French Pastry - Mini Chocolate",
+  "name": "Bread - White, Unsliced",
   "characteristics": [
     {
-      "characteristic": "intelligent"
+      "characteristic": "friendly"
     },
     {
-      "characteristic": "intelligent"
+      "characteristic": "friendly"
     },
     {
-      "characteristic": "adventurous"
+      "characteristic": "friendly"
+    },
+    {
+      "characteristic": "playful"
     },
     {
       "characteristic": "loyal"
     }
   ],
-  "description": "Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.",
-  "price": 480.51,
-  "quantity": 80,
-  "category": "Dispositivos móviles",
-  "rating": 3.5,
+  "description": "Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.\n\nQuisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.\n\nVestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.",
+  "price": 417.12,
+  "quantity": 94,
+  "category": "Drones",
+  "rating": 2.1,
   "images": [
     {
-      "image": "http://dummyimage.com/395x331.png/dddddd/000000"
+      "image": "http://dummyimage.com/311x251.png/5fa2dd/ffffff"
     },
     {
-      "image": "http://dummyimage.com/259x273.png/cc0000/ffffff"
+      "image": "http://dummyimage.com/315x333.png/5fa2dd/ffffff"
     },
     {
-      "image": "http://dummyimage.com/285x295.png/5fa2dd/ffffff"
+      "image": "http://dummyimage.com/288x309.png/ff4444/ffffff"
     },
     {
-      "image": "http://dummyimage.com/446x408.png/ff4444/ffffff"
+      "image": "http://dummyimage.com/292x288.png/5fa2dd/ffffff"
     },
     {
-      "image": "http://dummyimage.com/369x402.png/5fa2dd/ffffff"
+      "image": "http://dummyimage.com/276x268.png/5fa2dd/ffffff"
     }
   ]
 }, {
   "id": 12,
-  "name": "Pepsi, 355 Ml",
-  "characteristics": [
-    {
-      "characteristic": "adventurous"
-    },
-    {
-      "characteristic": "loyal"
-    },
-    {
-      "characteristic": "loyal"
-    },
-    {
-      "characteristic": "intelligent"
-    }
-  ],
-  "description": "Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.\n\nCras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
-  "price": 203.87,
-  "quantity": 82,
-  "category": "Dispositivos móviles",
-  "rating": 4.2,
-  "images": [
-    {
-      "image": "http://dummyimage.com/337x402.png/dddddd/000000"
-    },
-    {
-      "image": "http://dummyimage.com/277x323.png/5fa2dd/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/349x358.png/5fa2dd/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/206x214.png/dddddd/000000"
-    },
-    {
-      "image": "http://dummyimage.com/340x201.png/ff4444/ffffff"
-    }
-  ]
-}, {
-  "id": 13,
-  "name": "Yogurt - Blueberry, 175 Gr",
-  "characteristics": [
-    {
-      "characteristic": "loyal"
-    },
-    {
-      "characteristic": "adventurous"
-    },
-    {
-      "characteristic": "adventurous"
-    },
-    {
-      "characteristic": "loyal"
-    },
-    {
-      "characteristic": "friendly"
-    }
-  ],
-  "description": "In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.\n\nSuspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.\n\nMaecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.",
-  "price": 618.53,
-  "quantity": 16,
-  "category": "Audio",
-  "rating": 3.7,
-  "images": [
-    {
-      "image": "http://dummyimage.com/220x267.png/5fa2dd/ffffff"
-    }
-  ]
-}, {
-  "id": 14,
-  "name": "Bread - Malt",
-  "characteristics": [
-    {
-      "characteristic": "adventurous"
-    },
-    {
-      "characteristic": "loyal"
-    },
-    {
-      "characteristic": "intelligent"
-    },
-    {
-      "characteristic": "adventurous"
-    }
-  ],
-  "description": "In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.\n\nMaecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.",
-  "price": 771.36,
-  "quantity": 67,
-  "category": "Cámaras",
-  "rating": 3.1,
-  "images": [
-    {
-      "image": "http://dummyimage.com/392x350.png/cc0000/ffffff"
-    }
-  ]
-}, {
-  "id": 15,
-  "name": "Puree - Mango",
-  "characteristics": [
-    {
-      "characteristic": "loyal"
-    },
-    {
-      "characteristic": "playful"
-    },
-    {
-      "characteristic": "playful"
-    },
-    {
-      "characteristic": "curious"
-    }
-  ],
-  "description": "Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.\n\nSed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.",
-  "price": 168.24,
-  "quantity": 56,
-  "category": "Drones",
-  "rating": 1.5,
-  "images": [
-    {
-      "image": "http://dummyimage.com/450x239.png/dddddd/000000"
-    }
-  ]
-}, {
-  "id": 16,
-  "name": "Beans - Black Bean, Dry",
-  "characteristics": [
-    {
-      "characteristic": "curious"
-    },
-    {
-      "characteristic": "friendly"
-    },
-    {
-      "characteristic": "playful"
-    },
-    {
-      "characteristic": "loyal"
-    },
-    {
-      "characteristic": "intelligent"
-    }
-  ],
-  "description": "Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.\n\nDuis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.\n\nMauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.",
-  "price": 870.86,
-  "quantity": 67,
-  "category": "Cámaras",
-  "rating": 1.8,
-  "images": [
-    {
-      "image": "http://dummyimage.com/249x270.png/5fa2dd/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/237x276.png/ff4444/ffffff"
-    }
-  ]
-}, {
-  "id": 17,
-  "name": "Huck Towels White",
-  "characteristics": [
-    {
-      "characteristic": "adventurous"
-    },
-    {
-      "characteristic": "adventurous"
-    },
-    {
-      "characteristic": "adventurous"
-    },
-    {
-      "characteristic": "loyal"
-    }
-  ],
-  "description": "Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.\n\nIn congue. Etiam justo. Etiam pretium iaculis justo.\n\nIn hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.",
-  "price": 607.13,
-  "quantity": 57,
-  "category": "Drones",
-  "rating": 1.6,
-  "images": [
-    {
-      "image": "http://dummyimage.com/331x309.png/dddddd/000000"
-    },
-    {
-      "image": "http://dummyimage.com/377x346.png/5fa2dd/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/205x321.png/cc0000/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/416x389.png/5fa2dd/ffffff"
-    }
-  ]
-}, {
-  "id": 18,
-  "name": "Turnip - Wax",
-  "characteristics": [
-    {
-      "characteristic": "curious"
-    },
-    {
-      "characteristic": "friendly"
-    },
-    {
-      "characteristic": "curious"
-    },
-    {
-      "characteristic": "intelligent"
-    },
-    {
-      "characteristic": "playful"
-    }
-  ],
-  "description": "Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.",
-  "price": 359.69,
-  "quantity": 57,
-  "category": "Drones",
-  "rating": 1.0,
-  "images": [
-    {
-      "image": "http://dummyimage.com/285x379.png/dddddd/000000"
-    },
-    {
-      "image": "http://dummyimage.com/282x256.png/dddddd/000000"
-    },
-    {
-      "image": "http://dummyimage.com/397x381.png/5fa2dd/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/435x250.png/dddddd/000000"
-    }
-  ]
-}, {
-  "id": 19,
-  "name": "Dried Peach",
-  "characteristics": [
-    {
-      "characteristic": "friendly"
-    },
-    {
-      "characteristic": "curious"
-    },
-    {
-      "characteristic": "loyal"
-    },
-    {
-      "characteristic": "friendly"
-    }
-  ],
-  "description": "Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.\n\nCurabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.\n\nInteger tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.",
-  "price": 156.4,
-  "quantity": 51,
-  "category": "Cámaras",
-  "rating": 1.6,
-  "images": [
-    {
-      "image": "http://dummyimage.com/378x356.png/cc0000/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/241x383.png/cc0000/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/449x286.png/5fa2dd/ffffff"
-    }
-  ]
-}, {
-  "id": 20,
-  "name": "Lettuce - Mini Greens, Whole",
-  "characteristics": [
-    {
-      "characteristic": "friendly"
-    },
-    {
-      "characteristic": "loyal"
-    },
-    {
-      "characteristic": "loyal"
-    },
-    {
-      "characteristic": "loyal"
-    }
-  ],
-  "description": "Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.\n\nMorbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.",
-  "price": 960.14,
-  "quantity": 70,
-  "category": "Audio",
-  "rating": 1.4,
-  "images": [
-    {
-      "image": "http://dummyimage.com/418x434.png/5fa2dd/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/417x309.png/5fa2dd/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/291x442.png/cc0000/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/252x435.png/cc0000/ffffff"
-    }
-  ]
-}, {
-  "id": 21,
-  "name": "Smoked Tongue",
-  "characteristics": [
-    {
-      "characteristic": "friendly"
-    },
-    {
-      "characteristic": "playful"
-    },
-    {
-      "characteristic": "curious"
-    },
-    {
-      "characteristic": "adventurous"
-    },
-    {
-      "characteristic": "adventurous"
-    }
-  ],
-  "description": "Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.\n\nPraesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.\n\nMorbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.",
-  "price": 512.83,
-  "quantity": 13,
-  "category": "Audio",
-  "rating": 3.8,
-  "images": [
-    {
-      "image": "http://dummyimage.com/339x204.png/ff4444/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/426x339.png/cc0000/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/202x249.png/dddddd/000000"
-    },
-    {
-      "image": "http://dummyimage.com/375x306.png/5fa2dd/ffffff"
-    }
-  ]
-}, {
-  "id": 22,
-  "name": "Irish Cream - Baileys",
-  "characteristics": [
-    {
-      "characteristic": "loyal"
-    },
-    {
-      "characteristic": "curious"
-    },
-    {
-      "characteristic": "playful"
-    },
-    {
-      "characteristic": "intelligent"
-    },
-    {
-      "characteristic": "adventurous"
-    }
-  ],
-  "description": "Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.",
-  "price": 304.5,
-  "quantity": 20,
-  "category": "Audio",
-  "rating": 3.2,
-  "images": [
-    {
-      "image": "http://dummyimage.com/445x433.png/ff4444/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/323x419.png/cc0000/ffffff"
-    }
-  ]
-}, {
-  "id": 23,
-  "name": "Pears - Bosc",
-  "characteristics": [
-    {
-      "characteristic": "friendly"
-    },
-    {
-      "characteristic": "friendly"
-    },
-    {
-      "characteristic": "friendly"
-    },
-    {
-      "characteristic": "curious"
-    },
-    {
-      "characteristic": "loyal"
-    }
-  ],
-  "description": "Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.",
-  "price": 639.77,
-  "quantity": 75,
-  "category": "Audio",
-  "rating": 3.7,
-  "images": [
-    {
-      "image": "http://dummyimage.com/342x282.png/cc0000/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/252x389.png/cc0000/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/388x403.png/ff4444/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/202x267.png/cc0000/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/305x300.png/dddddd/000000"
-    }
-  ]
-}, {
-  "id": 24,
-  "name": "Doilies - 5, Paper",
-  "characteristics": [
-    {
-      "characteristic": "loyal"
-    },
-    {
-      "characteristic": "adventurous"
-    },
-    {
-      "characteristic": "playful"
-    },
-    {
-      "characteristic": "curious"
-    }
-  ],
-  "description": "Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.",
-  "price": 231.64,
-  "quantity": 12,
-  "category": "Audio",
-  "rating": 1.2,
-  "images": [
-    {
-      "image": "http://dummyimage.com/203x289.png/5fa2dd/ffffff"
-    }
-  ]
-}, {
-  "id": 25,
-  "name": "Flour Pastry Super Fine",
+  "name": "Coconut - Shredded, Unsweet",
   "characteristics": [
     {
       "characteristic": "adventurous"
@@ -833,457 +447,37 @@
       "characteristic": "friendly"
     },
     {
-      "characteristic": "intelligent"
-    },
-    {
-      "characteristic": "intelligent"
-    }
-  ],
-  "description": "Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.\n\nSed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.\n\nPellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.",
-  "price": 766.48,
-  "quantity": 40,
-  "category": "Cámaras",
-  "rating": 3.8,
-  "images": [
-    {
-      "image": "http://dummyimage.com/250x291.png/dddddd/000000"
-    },
-    {
-      "image": "http://dummyimage.com/344x310.png/ff4444/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/393x228.png/ff4444/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/313x372.png/5fa2dd/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/216x397.png/ff4444/ffffff"
-    }
-  ]
-}, {
-  "id": 26,
-  "name": "Towels - Paper / Kraft",
-  "characteristics": [
-    {
-      "characteristic": "intelligent"
-    },
-    {
-      "characteristic": "playful"
-    },
-    {
-      "characteristic": "loyal"
-    },
-    {
-      "characteristic": "playful"
-    }
-  ],
-  "description": "Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.",
-  "price": 381.51,
-  "quantity": 52,
-  "category": "Cámaras",
-  "rating": 2.2,
-  "images": [
-    {
-      "image": "http://dummyimage.com/285x389.png/cc0000/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/307x318.png/5fa2dd/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/440x376.png/dddddd/000000"
-    },
-    {
-      "image": "http://dummyimage.com/450x241.png/dddddd/000000"
-    },
-    {
-      "image": "http://dummyimage.com/207x261.png/cc0000/ffffff"
-    }
-  ]
-}, {
-  "id": 27,
-  "name": "Lamb - Shoulder",
-  "characteristics": [
-    {
-      "characteristic": "loyal"
-    },
-    {
-      "characteristic": "adventurous"
-    },
-    {
-      "characteristic": "intelligent"
-    },
-    {
-      "characteristic": "adventurous"
-    }
-  ],
-  "description": "Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
-  "price": 706.41,
-  "quantity": 53,
-  "category": "Audio",
-  "rating": 3.4,
-  "images": [
-    {
-      "image": "http://dummyimage.com/234x362.png/5fa2dd/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/387x381.png/ff4444/ffffff"
-    }
-  ]
-}, {
-  "id": 28,
-  "name": "Chocolate - Chips Compound",
-  "characteristics": [
-    {
-      "characteristic": "intelligent"
-    },
-    {
-      "characteristic": "playful"
-    },
-    {
-      "characteristic": "intelligent"
+      "characteristic": "friendly"
     },
     {
       "characteristic": "intelligent"
     }
   ],
   "description": "Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.",
-  "price": 882.18,
-  "quantity": 21,
-  "category": "Drones",
-  "rating": 3.2,
-  "images": [
-    {
-      "image": "http://dummyimage.com/396x286.png/5fa2dd/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/287x378.png/ff4444/ffffff"
-    }
-  ]
-}, {
-  "id": 29,
-  "name": "Spinach - Baby",
-  "characteristics": [
-    {
-      "characteristic": "friendly"
-    },
-    {
-      "characteristic": "playful"
-    },
-    {
-      "characteristic": "playful"
-    },
-    {
-      "characteristic": "adventurous"
-    }
-  ],
-  "description": "Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.\n\nInteger tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.",
-  "price": 496.09,
-  "quantity": 83,
-  "category": "Drones",
-  "rating": 1.5,
-  "images": [
-    {
-      "image": "http://dummyimage.com/222x406.png/ff4444/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/343x416.png/5fa2dd/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/220x445.png/ff4444/ffffff"
-    }
-  ]
-}, {
-  "id": 30,
-  "name": "Wooden Mop Handle",
-  "characteristics": [
-    {
-      "characteristic": "curious"
-    },
-    {
-      "characteristic": "friendly"
-    },
-    {
-      "characteristic": "friendly"
-    },
-    {
-      "characteristic": "playful"
-    },
-    {
-      "characteristic": "friendly"
-    }
-  ],
-  "description": "Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.",
-  "price": 883.84,
-  "quantity": 20,
+  "price": 436.87,
+  "quantity": 13,
   "category": "Cámaras",
-  "rating": 5.0,
+  "rating": 2.0,
   "images": [
     {
-      "image": "http://dummyimage.com/273x365.png/cc0000/ffffff"
+      "image": "/img/camara.webp"
     },
     {
-      "image": "http://dummyimage.com/414x219.png/5fa2dd/ffffff"
+      "image": "http://dummyimage.com/391x293.png/cc0000/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/338x301.png/cc0000/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/396x439.png/5fa2dd/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/291x339.png/5fa2dd/ffffff"
     }
   ]
 }, {
-  "id": 31,
-  "name": "Mushroom Morel Fresh",
-  "characteristics": [
-    {
-      "characteristic": "curious"
-    },
-    {
-      "characteristic": "playful"
-    },
-    {
-      "characteristic": "loyal"
-    },
-    {
-      "characteristic": "adventurous"
-    }
-  ],
-  "description": "Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.",
-  "price": 193.0,
-  "quantity": 54,
-  "category": "Computación",
-  "rating": 2.8,
-  "images": [
-    {
-      "image": "http://dummyimage.com/287x346.png/ff4444/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/335x221.png/dddddd/000000"
-    },
-    {
-      "image": "http://dummyimage.com/310x217.png/dddddd/000000"
-    }
-  ]
-}, {
-  "id": 32,
-  "name": "Energy Drink - Redbull 355ml",
-  "characteristics": [
-    {
-      "characteristic": "friendly"
-    },
-    {
-      "characteristic": "friendly"
-    },
-    {
-      "characteristic": "friendly"
-    },
-    {
-      "characteristic": "intelligent"
-    }
-  ],
-  "description": "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.",
-  "price": 598.88,
-  "quantity": 30,
-  "category": "Dispositivos móviles",
-  "rating": 2.1,
-  "images": [
-    {
-      "image": "http://dummyimage.com/298x333.png/ff4444/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/227x216.png/ff4444/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/383x421.png/5fa2dd/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/248x435.png/ff4444/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/312x259.png/5fa2dd/ffffff"
-    }
-  ]
-}, {
-  "id": 33,
-  "name": "Flour Pastry Super Fine",
-  "characteristics": [
-    {
-      "characteristic": "loyal"
-    },
-    {
-      "characteristic": "playful"
-    },
-    {
-      "characteristic": "curious"
-    },
-    {
-      "characteristic": "curious"
-    },
-    {
-      "characteristic": "friendly"
-    }
-  ],
-  "description": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.",
-  "price": 727.31,
-  "quantity": 6,
-  "category": "Computación",
-  "rating": 3.2,
-  "images": [
-    {
-      "image": "http://dummyimage.com/360x285.png/cc0000/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/235x388.png/5fa2dd/ffffff"
-    }
-  ]
-}, {
-  "id": 34,
-  "name": "Kellogs Special K Cereal",
-  "characteristics": [
-    {
-      "characteristic": "intelligent"
-    },
-    {
-      "characteristic": "adventurous"
-    },
-    {
-      "characteristic": "playful"
-    },
-    {
-      "characteristic": "loyal"
-    },
-    {
-      "characteristic": "intelligent"
-    }
-  ],
-  "description": "Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.\n\nIn quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.\n\nMaecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.",
-  "price": 151.8,
-  "quantity": 71,
-  "category": "Drones",
-  "rating": 4.3,
-  "images": [
-    {
-      "image": "http://dummyimage.com/273x355.png/cc0000/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/437x204.png/cc0000/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/268x317.png/dddddd/000000"
-    },
-    {
-      "image": "http://dummyimage.com/309x248.png/5fa2dd/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/240x212.png/dddddd/000000"
-    }
-  ]
-}, {
-  "id": 35,
-  "name": "Rabbit - Whole",
-  "characteristics": [
-    {
-      "characteristic": "curious"
-    },
-    {
-      "characteristic": "loyal"
-    },
-    {
-      "characteristic": "curious"
-    },
-    {
-      "characteristic": "intelligent"
-    }
-  ],
-  "description": "Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.\n\nSed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.\n\nPellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.",
-  "price": 455.84,
-  "quantity": 34,
-  "category": "Cámaras",
-  "rating": 1.1,
-  "images": [
-    {
-      "image": "http://dummyimage.com/319x357.png/5fa2dd/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/304x320.png/dddddd/000000"
-    },
-    {
-      "image": "http://dummyimage.com/429x436.png/ff4444/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/327x232.png/ff4444/ffffff"
-    }
-  ]
-}, {
-  "id": 36,
-  "name": "Vaccum Bag - 14x20",
-  "characteristics": [
-    {
-      "characteristic": "curious"
-    },
-    {
-      "characteristic": "playful"
-    },
-    {
-      "characteristic": "intelligent"
-    },
-    {
-      "characteristic": "playful"
-    }
-  ],
-  "description": "Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.",
-  "price": 638.8,
-  "quantity": 96,
-  "category": "Dispositivos móviles",
-  "rating": 2.9,
-  "images": [
-    {
-      "image": "http://dummyimage.com/321x241.png/5fa2dd/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/412x287.png/cc0000/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/233x417.png/5fa2dd/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/336x207.png/dddddd/000000"
-    }
-  ]
-}, {
-  "id": 37,
-  "name": "Veal - Slab Bacon",
-  "characteristics": [
-    {
-      "characteristic": "intelligent"
-    },
-    {
-      "characteristic": "playful"
-    },
-    {
-      "characteristic": "curious"
-    },
-    {
-      "characteristic": "loyal"
-    }
-  ],
-  "description": "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.\n\nMaecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.\n\nCurabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.",
-  "price": 647.84,
-  "quantity": 96,
-  "category": "Cámaras",
-  "rating": 1.8,
-  "images": [
-    {
-      "image": "http://dummyimage.com/329x237.png/ff4444/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/254x209.png/cc0000/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/279x258.png/ff4444/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/356x223.png/cc0000/ffffff"
-    }
-  ]
-}, {
-  "id": 38,
-  "name": "Pepper Squash",
+  "id": 13,
+  "name": "Spice - Greek 1 Step",
   "characteristics": [
     {
       "characteristic": "loyal"
@@ -1295,126 +489,41 @@
       "characteristic": "curious"
     },
     {
-      "characteristic": "adventurous"
-    }
-  ],
-  "description": "Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.\n\nPraesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.",
-  "price": 369.22,
-  "quantity": 79,
-  "category": "Audio",
-  "rating": 2.8,
-  "images": [
-    {
-      "image": "http://dummyimage.com/285x400.png/cc0000/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/372x235.png/5fa2dd/ffffff"
-    }
-  ]
-}, {
-  "id": 39,
-  "name": "Whmis - Spray Bottle Trigger",
-  "characteristics": [
-    {
-      "characteristic": "curious"
-    },
-    {
       "characteristic": "intelligent"
-    },
-    {
-      "characteristic": "adventurous"
-    },
-    {
-      "characteristic": "loyal"
-    },
-    {
-      "characteristic": "friendly"
     }
   ],
-  "description": "Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.",
-  "price": 77.52,
-  "quantity": 30,
-  "category": "Drones",
+  "description": "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.",
+  "price": 694.93,
+  "quantity": 87,
+  "category": "Celulares",
   "rating": 3.6,
   "images": [
     {
-      "image": "http://dummyimage.com/442x217.png/dddddd/000000"
+      "image": "http://dummyimage.com/336x348.png/5fa2dd/ffffff"
     },
     {
-      "image": "http://dummyimage.com/362x218.png/dddddd/000000"
+      "image": "http://dummyimage.com/444x384.png/5fa2dd/ffffff"
     },
     {
-      "image": "http://dummyimage.com/280x276.png/cc0000/ffffff"
+      "image": "http://dummyimage.com/370x374.png/ff4444/ffffff"
     },
     {
-      "image": "http://dummyimage.com/345x422.png/dddddd/000000"
+      "image": "http://dummyimage.com/315x404.png/cc0000/ffffff"
     },
     {
-      "image": "http://dummyimage.com/250x320.png/dddddd/000000"
+      "image": "http://dummyimage.com/339x287.png/5fa2dd/ffffff"
     }
   ]
 }, {
-  "id": 40,
-  "name": "Table Cloth 90x90 Colour",
+  "id": 14,
+  "name": "Coke - Diet, 355 Ml",
   "characteristics": [
-    {
-      "characteristic": "playful"
-    },
-    {
-      "characteristic": "curious"
-    },
-    {
-      "characteristic": "playful"
-    },
-    {
-      "characteristic": "friendly"
-    }
-  ],
-  "description": "Sed ante. Vivamus tortor. Duis mattis egestas metus.\n\nAenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.",
-  "price": 315.11,
-  "quantity": 43,
-  "category": "Computación",
-  "rating": 2.2,
-  "images": [
-    {
-      "image": "http://dummyimage.com/300x283.png/dddddd/000000"
-    },
-    {
-      "image": "http://dummyimage.com/416x439.png/dddddd/000000"
-    }
-  ]
-}, {
-  "id": 41,
-  "name": "Milk Powder",
-  "characteristics": [
-    {
-      "characteristic": "intelligent"
-    },
-    {
-      "characteristic": "intelligent"
-    },
-    {
-      "characteristic": "curious"
-    },
     {
       "characteristic": "friendly"
     },
     {
-      "characteristic": "playful"
-    }
-  ],
-  "description": "Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.\n\nCras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
-  "price": 456.63,
-  "quantity": 64,
-  "category": "Dispositivos móviles",
-  "rating": 5.0,
-  "images": [
-
-  ]
-}, {
-  "id": 42,
-  "name": "Cheese - Le Cheve Noir",
-  "characteristics": [
+      "characteristic": "curious"
+    },
     {
       "characteristic": "loyal"
     },
@@ -1422,88 +531,563 @@
       "characteristic": "friendly"
     },
     {
+      "characteristic": "adventurous"
+    }
+  ],
+  "description": "Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.",
+  "price": 280.38,
+  "quantity": 64,
+  "category": "Drones",
+  "rating": 3.9,
+  "images": [
+    {
+      "image": "http://dummyimage.com/403x344.png/dddddd/000000"
+    },
+    {
+      "image": "http://dummyimage.com/279x316.png/ff4444/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/282x251.png/cc0000/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/435x282.png/ff4444/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/402x260.png/dddddd/000000"
+    }
+  ]
+}, {
+  "id": 15,
+  "name": "Bread - Multigrain, Loaf",
+  "characteristics": [
+    {
+      "characteristic": "adventurous"
+    },
+    {
       "characteristic": "playful"
     },
     {
-      "characteristic": "curious"
+      "characteristic": "intelligent"
+    },
+    {
+      "characteristic": "loyal"
+    }
+  ],
+  "description": "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.",
+  "price": 467.4,
+  "quantity": 10,
+  "category": "Computación",
+  "rating": 3.4,
+  "images": [
+    {
+      "image": "/img/monitor.webp"
+    },
+    {
+      "image": "http://dummyimage.com/323x278.png/5fa2dd/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/411x434.png/cc0000/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/257x318.png/cc0000/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/378x293.png/dddddd/000000"
+    }
+  ]
+}, {
+  "id": 16,
+  "name": "Sauce - Mint",
+  "characteristics": [
+    {
+      "characteristic": "friendly"
     },
     {
       "characteristic": "curious"
+    },
+    {
+      "characteristic": "loyal"
+    },
+    {
+      "characteristic": "intelligent"
     }
   ],
-  "description": "Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.",
-  "price": 194.78,
-  "quantity": 19,
-  "category": "Cámaras",
-  "rating": 3.8,
+  "description": "Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.\n\nProin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.",
+  "price": 715.42,
+  "quantity": 95,
+  "category": "Celulares",
+  "rating": 4.6,
   "images": [
-
+    {
+      "image": "http://dummyimage.com/370x365.png/5fa2dd/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/268x424.png/cc0000/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/313x305.png/cc0000/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/262x331.png/5fa2dd/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/442x280.png/cc0000/ffffff"
+    }
   ]
 }, {
-  "id": 43,
-  "name": "Campari",
+  "id": 17,
+  "name": "Tart - Lemon",
   "characteristics": [
     {
       "characteristic": "playful"
     },
     {
+      "characteristic": "adventurous"
+    },
+    {
+      "characteristic": "adventurous"
+    },
+    {
+      "characteristic": "friendly"
+    },
+    {
+      "characteristic": "intelligent"
+    }
+  ],
+  "description": "Sed ante. Vivamus tortor. Duis mattis egestas metus.",
+  "price": 405.68,
+  "quantity": 44,
+  "category": "Computación",
+  "rating": 1.6,
+  "images": [
+    {
+      "image": "/img/monitor.webp"
+    },
+    {
+      "image": "http://dummyimage.com/338x433.png/ff4444/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/300x318.png/5fa2dd/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/427x377.png/cc0000/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/298x280.png/dddddd/000000"
+    }
+  ]
+}, {
+  "id": 18,
+  "name": "Cranberries - Dry",
+  "characteristics": [
+    {
+      "characteristic": "friendly"
+    },
+    {
+      "characteristic": "intelligent"
+    },
+    {
       "characteristic": "playful"
     },
     {
+      "characteristic": "intelligent"
+    }
+  ],
+  "description": "Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.",
+  "price": 896.16,
+  "quantity": 89,
+  "category": "Celulares",
+  "rating": 3.3,
+  "images": [
+    {
+      "image": "http://dummyimage.com/339x401.png/dddddd/000000"
+    },
+    {
+      "image": "http://dummyimage.com/447x251.png/5fa2dd/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/278x407.png/5fa2dd/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/263x405.png/cc0000/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/255x307.png/ff4444/ffffff"
+    }
+  ]
+}, {
+  "id": 19,
+  "name": "Sauce - Hp",
+  "characteristics": [
+    {
+      "characteristic": "friendly"
+    },
+    {
+      "characteristic": "intelligent"
+    },
+    {
+      "characteristic": "intelligent"
+    },
+    {
+      "characteristic": "adventurous"
+    },
+    {
+      "characteristic": "friendly"
+    }
+  ],
+  "description": "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.",
+  "price": 398.58,
+  "quantity": 97,
+  "category": "Cámaras",
+  "rating": 2.3,
+  "images": [
+    {
+      "image": "/img/camara.webp"
+    },
+    {
+      "image": "http://dummyimage.com/379x377.png/ff4444/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/257x317.png/cc0000/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/406x263.png/5fa2dd/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/262x361.png/ff4444/ffffff"
+    }
+  ]
+}, {
+  "id": 20,
+  "name": "Cheese - Fontina",
+  "characteristics": [
+    {
+      "characteristic": "playful"
+    },
+    {
+      "characteristic": "friendly"
+    },
+    {
       "characteristic": "curious"
+    },
+    {
+      "characteristic": "intelligent"
+    },
+    {
+      "characteristic": "playful"
+    }
+  ],
+  "description": "Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.\n\nNam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.",
+  "price": 479.57,
+  "quantity": 45,
+  "category": "Drones",
+  "rating": 1.7,
+  "images": [
+    {
+      "image": "http://dummyimage.com/323x404.png/cc0000/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/349x379.png/dddddd/000000"
+    },
+    {
+      "image": "http://dummyimage.com/333x253.png/dddddd/000000"
+    },
+    {
+      "image": "http://dummyimage.com/340x410.png/5fa2dd/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/293x285.png/ff4444/ffffff"
+    }
+  ]
+}, {
+  "id": 21,
+  "name": "Cinnamon - Ground",
+  "characteristics": [
+    {
+      "characteristic": "curious"
+    },
+    {
+      "characteristic": "intelligent"
+    },
+    {
+      "characteristic": "adventurous"
+    },
+    {
+      "characteristic": "loyal"
+    },
+    {
+      "characteristic": "adventurous"
+    }
+  ],
+  "description": "Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.",
+  "price": 610.35,
+  "quantity": 28,
+  "category": "Computación",
+  "rating": 3.9,
+  "images": [
+    {
+      "image": "/img/monitor.webp"
+    },
+    {
+      "image": "http://dummyimage.com/388x358.png/5fa2dd/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/279x449.png/cc0000/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/396x284.png/dddddd/000000"
+    },
+    {
+      "image": "http://dummyimage.com/372x250.png/cc0000/ffffff"
+    }
+  ]
+}, {
+  "id": 22,
+  "name": "Mahi Mahi",
+  "characteristics": [
+    {
+      "characteristic": "loyal"
+    },
+    {
+      "characteristic": "playful"
+    },
+    {
+      "characteristic": "loyal"
+    },
+    {
+      "characteristic": "playful"
+    }
+  ],
+  "description": "In congue. Etiam justo. Etiam pretium iaculis justo.\n\nIn hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.",
+  "price": 347.95,
+  "quantity": 34,
+  "category": "Cámaras",
+  "rating": 4.7,
+  "images": [
+    {
+      "image": "/img/camara.webp"
+    },
+    {
+      "image": "http://dummyimage.com/386x282.png/5fa2dd/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/369x257.png/dddddd/000000"
+    },
+    {
+      "image": "http://dummyimage.com/391x319.png/ff4444/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/391x440.png/ff4444/ffffff"
+    }
+  ]
+}, {
+  "id": 23,
+  "name": "Veal - Insides, Grains",
+  "characteristics": [
+    {
+      "characteristic": "intelligent"
+    },
+    {
+      "characteristic": "friendly"
+    },
+    {
+      "characteristic": "friendly"
+    },
+    {
+      "characteristic": "loyal"
+    }
+  ],
+  "description": "Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.",
+  "price": 651.72,
+  "quantity": 93,
+  "category": "Computación",
+  "rating": 4.2,
+  "images": [
+    {
+      "image": "/img/monitor.webp"
+    },
+    {
+      "image": "http://dummyimage.com/313x366.png/cc0000/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/372x253.png/ff4444/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/395x409.png/5fa2dd/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/428x294.png/cc0000/ffffff"
+    }
+  ]
+}, {
+  "id": 24,
+  "name": "Island Oasis - Banana Daiquiri",
+  "characteristics": [
+    {
+      "characteristic": "friendly"
+    },
+    {
+      "characteristic": "loyal"
+    },
+    {
+      "characteristic": "intelligent"
+    },
+    {
+      "characteristic": "adventurous"
+    }
+  ],
+  "description": "Sed ante. Vivamus tortor. Duis mattis egestas metus.\n\nAenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.",
+  "price": 643.78,
+  "quantity": 17,
+  "category": "Cámaras",
+  "rating": 1.2,
+  "images": [
+    {
+      "image": "/img/camara.webp"
+    },
+    {
+      "image": "http://dummyimage.com/438x390.png/cc0000/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/354x367.png/5fa2dd/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/402x283.png/cc0000/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/330x401.png/cc0000/ffffff"
+    }
+  ]
+}, {
+  "id": 25,
+  "name": "Dehydrated Kelp Kombo",
+  "characteristics": [
+    {
+      "characteristic": "intelligent"
+    },
+    {
+      "characteristic": "adventurous"
+    },
+    {
+      "characteristic": "adventurous"
+    },
+    {
+      "characteristic": "loyal"
+    },
+    {
+      "characteristic": "intelligent"
+    }
+  ],
+  "description": "Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.\n\nDuis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.\n\nDonec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.",
+  "price": 191.26,
+  "quantity": 39,
+  "category": "Drones",
+  "rating": 1.8,
+  "images": [
+    {
+      "image": "http://dummyimage.com/258x393.png/ff4444/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/364x448.png/ff4444/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/339x271.png/ff4444/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/261x334.png/dddddd/000000"
+    },
+    {
+      "image": "http://dummyimage.com/359x425.png/ff4444/ffffff"
+    }
+  ]
+}, {
+  "id": 26,
+  "name": "Sauce - Apple, Unsweetened",
+  "characteristics": [
+    {
+      "characteristic": "loyal"
+    },
+    {
+      "characteristic": "intelligent"
+    },
+    {
+      "characteristic": "friendly"
+    },
+    {
+      "characteristic": "loyal"
+    }
+  ],
+  "description": "Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.",
+  "price": 711.24,
+  "quantity": 81,
+  "category": "Computación",
+  "rating": 2.0,
+  "images": [
+    {
+      "image": "/img/monitor.webp"
+    },
+    {
+      "image": "http://dummyimage.com/339x337.png/5fa2dd/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/418x403.png/dddddd/000000"
+    },
+    {
+      "image": "http://dummyimage.com/397x446.png/5fa2dd/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/323x259.png/ff4444/ffffff"
+    }
+  ]
+}, {
+  "id": 27,
+  "name": "Pork - Loin, Center Cut",
+  "characteristics": [
+    {
+      "characteristic": "curious"
+    },
+    {
+      "characteristic": "playful"
+    },
+    {
+      "characteristic": "intelligent"
     },
     {
       "characteristic": "adventurous"
     }
   ],
   "description": "Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.\n\nVestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.",
-  "price": 785.31,
-  "quantity": 92,
-  "category": "Audio",
-  "rating": 3.5,
+  "price": 67.37,
+  "quantity": 95,
+  "category": "Cámaras",
+  "rating": 1.1,
   "images": [
     {
-      "image": "http://dummyimage.com/305x262.png/ff4444/ffffff"
+      "image": "/img/camara.webp"
     },
     {
-      "image": "http://dummyimage.com/296x237.png/cc0000/ffffff"
+      "image": "http://dummyimage.com/345x402.png/ff4444/ffffff"
     },
     {
-      "image": "http://dummyimage.com/291x234.png/ff4444/ffffff"
+      "image": "http://dummyimage.com/436x300.png/5fa2dd/ffffff"
     },
     {
-      "image": "http://dummyimage.com/320x358.png/dddddd/000000"
+      "image": "http://dummyimage.com/273x346.png/ff4444/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/343x287.png/dddddd/000000"
     }
   ]
 }, {
-  "id": 44,
-  "name": "Brandy Apricot",
+  "id": 28,
+  "name": "Pork Loin Cutlets",
   "characteristics": [
-    {
-      "characteristic": "curious"
-    },
-    {
-      "characteristic": "friendly"
-    },
     {
       "characteristic": "loyal"
     },
     {
-      "characteristic": "playful"
-    }
-  ],
-  "description": "Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.\n\nCras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.\n\nProin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
-  "price": 364.65,
-  "quantity": 40,
-  "category": "Cámaras",
-  "rating": 1.2,
-  "images": [
-
-  ]
-}, {
-  "id": 45,
-  "name": "Milk - Chocolate 500ml",
-  "characteristics": [
+      "characteristic": "loyal"
+    },
     {
       "characteristic": "adventurous"
     },
@@ -1512,66 +1096,39 @@
     },
     {
       "characteristic": "curious"
-    },
-    {
-      "characteristic": "friendly"
     }
   ],
-  "description": "Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.\n\nIn hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.",
-  "price": 509.85,
-  "quantity": 96,
-  "category": "Cámaras",
-  "rating": 2.3,
+  "description": "In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.\n\nMaecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.",
+  "price": 201.4,
+  "quantity": 34,
+  "category": "Celulares",
+  "rating": 1.7,
   "images": [
     {
-      "image": "http://dummyimage.com/277x248.png/5fa2dd/ffffff"
+      "image": "http://dummyimage.com/394x325.png/ff4444/ffffff"
     },
     {
-      "image": "http://dummyimage.com/407x427.png/5fa2dd/ffffff"
+      "image": "http://dummyimage.com/417x434.png/dddddd/000000"
+    },
+    {
+      "image": "http://dummyimage.com/255x343.png/dddddd/000000"
+    },
+    {
+      "image": "http://dummyimage.com/286x305.png/dddddd/000000"
+    },
+    {
+      "image": "http://dummyimage.com/447x295.png/dddddd/000000"
     }
   ]
 }, {
-  "id": 46,
-  "name": "Stainless Steel Cleaner Vision",
+  "id": 29,
+  "name": "Sprouts - Corn",
   "characteristics": [
-    {
-      "characteristic": "friendly"
-    },
-    {
-      "characteristic": "friendly"
-    },
     {
       "characteristic": "playful"
     },
     {
-      "characteristic": "curious"
-    }
-  ],
-  "description": "Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.\n\nIn congue. Etiam justo. Etiam pretium iaculis justo.",
-  "price": 831.08,
-  "quantity": 64,
-  "category": "Audio",
-  "rating": 1.3,
-  "images": [
-    {
-      "image": "http://dummyimage.com/391x366.png/dddddd/000000"
-    },
-    {
-      "image": "http://dummyimage.com/326x356.png/cc0000/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/278x334.png/dddddd/000000"
-    }
-  ]
-}, {
-  "id": 47,
-  "name": "Chinese Foods - Cantonese",
-  "characteristics": [
-    {
-      "characteristic": "friendly"
-    },
-    {
-      "characteristic": "curious"
+      "characteristic": "loyal"
     },
     {
       "characteristic": "curious"
@@ -1583,320 +1140,313 @@
       "characteristic": "loyal"
     }
   ],
-  "description": "Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.",
-  "price": 684.52,
-  "quantity": 79,
-  "category": "Computación",
-  "rating": 4.7,
-  "images": [
-    {
-      "image": "http://dummyimage.com/242x377.png/dddddd/000000"
-    },
-    {
-      "image": "http://dummyimage.com/243x242.png/cc0000/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/330x370.png/5fa2dd/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/322x237.png/dddddd/000000"
-    }
-  ]
-}, {
-  "id": 48,
-  "name": "Pasta - Gnocchi, Potato",
-  "characteristics": [
-    {
-      "characteristic": "playful"
-    },
-    {
-      "characteristic": "intelligent"
-    },
-    {
-      "characteristic": "intelligent"
-    },
-    {
-      "characteristic": "intelligent"
-    },
-    {
-      "characteristic": "friendly"
-    }
-  ],
-  "description": "Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
-  "price": 34.6,
-  "quantity": 82,
-  "category": "Audio",
-  "rating": 1.9,
-  "images": [
-    {
-      "image": "http://dummyimage.com/260x288.png/5fa2dd/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/306x294.png/ff4444/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/261x309.png/5fa2dd/ffffff"
-    }
-  ]
-}, {
-  "id": 49,
-  "name": "Pepper - Green, Chili",
-  "characteristics": [
-    {
-      "characteristic": "playful"
-    },
-    {
-      "characteristic": "playful"
-    },
-    {
-      "characteristic": "friendly"
-    },
-    {
-      "characteristic": "friendly"
-    }
-  ],
-  "description": "Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.",
-  "price": 185.64,
-  "quantity": 64,
-  "category": "Audio",
-  "rating": 4.4,
-  "images": [
-    {
-      "image": "http://dummyimage.com/317x269.png/5fa2dd/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/351x415.png/dddddd/000000"
-    },
-    {
-      "image": "http://dummyimage.com/306x432.png/ff4444/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/230x299.png/5fa2dd/ffffff"
-    }
-  ]
-}, {
-  "id": 50,
-  "name": "Duck - Legs",
-  "characteristics": [
-    {
-      "characteristic": "playful"
-    },
-    {
-      "characteristic": "friendly"
-    },
-    {
-      "characteristic": "playful"
-    },
-    {
-      "characteristic": "intelligent"
-    }
-  ],
-  "description": "Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.",
-  "price": 286.53,
-  "quantity": 80,
-  "category": "Audio",
+  "description": "Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.\n\nMauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.",
+  "price": 429.1,
+  "quantity": 77,
+  "category": "Drones",
   "rating": 2.5,
   "images": [
     {
-      "image": "http://dummyimage.com/364x351.png/5fa2dd/ffffff"
+      "image": "http://dummyimage.com/286x391.png/ff4444/ffffff"
     },
     {
-      "image": "http://dummyimage.com/304x349.png/5fa2dd/ffffff"
+      "image": "http://dummyimage.com/295x419.png/cc0000/ffffff"
     },
     {
-      "image": "http://dummyimage.com/240x385.png/cc0000/ffffff"
+      "image": "http://dummyimage.com/448x302.png/ff4444/ffffff"
     },
     {
-      "image": "http://dummyimage.com/288x251.png/dddddd/000000"
+      "image": "http://dummyimage.com/295x324.png/cc0000/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/378x315.png/5fa2dd/ffffff"
     }
   ]
 }, {
-  "id": 51,
-  "name": "Ginsing - Fresh",
+  "id": 30,
+  "name": "Sugar - Crumb",
   "characteristics": [
-    {
-      "characteristic": "adventurous"
-    },
-    {
-      "characteristic": "loyal"
-    },
-    {
-      "characteristic": "curious"
-    },
     {
       "characteristic": "loyal"
     },
     {
       "characteristic": "playful"
-    }
-  ],
-  "description": "Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.\n\nNullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.",
-  "price": 301.39,
-  "quantity": 43,
-  "category": "Audio",
-  "rating": 3.9,
-  "images": [
-    {
-      "image": "http://dummyimage.com/433x313.png/cc0000/ffffff"
     },
-    {
-      "image": "http://dummyimage.com/439x437.png/ff4444/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/397x236.png/5fa2dd/ffffff"
-    }
-  ]
-}, {
-  "id": 52,
-  "name": "Sauce - Sesame Thai Dressing",
-  "characteristics": [
     {
       "characteristic": "friendly"
     },
     {
+      "characteristic": "loyal"
+    }
+  ],
+  "description": "Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.",
+  "price": 355.99,
+  "quantity": 38,
+  "category": "Celulares",
+  "rating": 4.2,
+  "images": [
+    {
+      "image": "http://dummyimage.com/325x254.png/dddddd/000000"
+    },
+    {
+      "image": "http://dummyimage.com/420x293.png/cc0000/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/333x256.png/dddddd/000000"
+    },
+    {
+      "image": "http://dummyimage.com/326x252.png/dddddd/000000"
+    },
+    {
+      "image": "http://dummyimage.com/393x336.png/dddddd/000000"
+    }
+  ]
+}, {
+  "id": 31,
+  "name": "Bread - Olive",
+  "characteristics": [
+    {
+      "characteristic": "intelligent"
+    },
+    {
+      "characteristic": "playful"
+    },
+    {
+      "characteristic": "loyal"
+    },
+    {
+      "characteristic": "intelligent"
+    },
+    {
+      "characteristic": "playful"
+    }
+  ],
+  "description": "Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.\n\nAenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.",
+  "price": 466.05,
+  "quantity": 98,
+  "category": "Cámaras",
+  "rating": 2.4,
+  "images": [
+    {
+      "image": "/img/camara.webp"
+    },
+    {
+      "image": "http://dummyimage.com/350x427.png/cc0000/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/432x310.png/cc0000/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/392x291.png/dddddd/000000"
+    },
+    {
+      "image": "http://dummyimage.com/442x288.png/cc0000/ffffff"
+    }
+  ]
+}, {
+  "id": 32,
+  "name": "Tea - Camomele",
+  "characteristics": [
+    {
       "characteristic": "curious"
     },
     {
       "characteristic": "adventurous"
     },
     {
-      "characteristic": "adventurous"
+      "characteristic": "loyal"
     },
     {
-      "characteristic": "playful"
+      "characteristic": "loyal"
     }
   ],
-  "description": "In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.\n\nAliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.\n\nSed ante. Vivamus tortor. Duis mattis egestas metus.",
-  "price": 674.73,
-  "quantity": 42,
-  "category": "Cámaras",
+  "description": "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.",
+  "price": 642.79,
+  "quantity": 56,
+  "category": "Computación",
   "rating": 2.6,
   "images": [
     {
-      "image": "http://dummyimage.com/328x433.png/5fa2dd/ffffff"
+      "image": "/img/monitor.webp"
+    },
+    {
+      "image": "http://dummyimage.com/264x353.png/ff4444/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/329x280.png/5fa2dd/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/295x279.png/ff4444/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/399x334.png/ff4444/ffffff"
     }
   ]
 }, {
-  "id": 53,
-  "name": "Mushroom Morel Fresh",
+  "id": 33,
+  "name": "Crackers - Soda / Saltins",
+  "characteristics": [
+    {
+      "characteristic": "adventurous"
+    },
+    {
+      "characteristic": "playful"
+    },
+    {
+      "characteristic": "curious"
+    },
+    {
+      "characteristic": "adventurous"
+    },
+    {
+      "characteristic": "loyal"
+    }
+  ],
+  "description": "Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+  "price": 859.68,
+  "quantity": 94,
+  "category": "Cámaras",
+  "rating": 3.6,
+  "images": [
+    {
+      "image": "/img/camara.webp"
+    },
+    {
+      "image": "http://dummyimage.com/432x328.png/5fa2dd/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/255x260.png/dddddd/000000"
+    },
+    {
+      "image": "http://dummyimage.com/382x396.png/ff4444/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/419x373.png/5fa2dd/ffffff"
+    }
+  ]
+}, {
+  "id": 34,
+  "name": "Water - Spring Water 500ml",
   "characteristics": [
     {
       "characteristic": "friendly"
     },
     {
-      "characteristic": "curious"
+      "characteristic": "playful"
     },
     {
-      "characteristic": "curious"
+      "characteristic": "loyal"
     },
     {
       "characteristic": "friendly"
     }
   ],
-  "description": "Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.",
-  "price": 186.35,
-  "quantity": 20,
+  "description": "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.\n\nMorbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.",
+  "price": 754.68,
+  "quantity": 23,
+  "category": "Celulares",
+  "rating": 2.0,
+  "images": [
+    {
+      "image": "http://dummyimage.com/365x331.png/dddddd/000000"
+    },
+    {
+      "image": "http://dummyimage.com/429x395.png/cc0000/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/326x302.png/dddddd/000000"
+    },
+    {
+      "image": "http://dummyimage.com/443x367.png/5fa2dd/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/408x268.png/cc0000/ffffff"
+    }
+  ]
+}, {
+  "id": 35,
+  "name": "Trout Rainbow Whole",
+  "characteristics": [
+    {
+      "characteristic": "playful"
+    },
+    {
+      "characteristic": "loyal"
+    },
+    {
+      "characteristic": "adventurous"
+    },
+    {
+      "characteristic": "curious"
+    },
+    {
+      "characteristic": "loyal"
+    }
+  ],
+  "description": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.\n\nNullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.\n\nIn quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.",
+  "price": 314.96,
+  "quantity": 82,
   "category": "Audio",
-  "rating": 4.3,
-  "images": [
-
-  ]
-}, {
-  "id": 54,
-  "name": "Rosemary - Fresh",
-  "characteristics": [
-    {
-      "characteristic": "friendly"
-    },
-    {
-      "characteristic": "friendly"
-    },
-    {
-      "characteristic": "adventurous"
-    },
-    {
-      "characteristic": "curious"
-    }
-  ],
-  "description": "Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.\n\nVestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.\n\nIn congue. Etiam justo. Etiam pretium iaculis justo.",
-  "price": 382.31,
-  "quantity": 14,
-  "category": "Dispositivos móviles",
-  "rating": 1.8,
+  "rating": 3.1,
   "images": [
     {
-      "image": "http://dummyimage.com/223x341.png/ff4444/ffffff"
+      "image": "http://dummyimage.com/250x287.png/5fa2dd/ffffff"
     },
     {
-      "image": "http://dummyimage.com/446x288.png/cc0000/ffffff"
+      "image": "http://dummyimage.com/426x250.png/dddddd/000000"
     },
     {
-      "image": "http://dummyimage.com/322x431.png/dddddd/000000"
+      "image": "http://dummyimage.com/294x358.png/cc0000/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/388x297.png/cc0000/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/360x337.png/cc0000/ffffff"
     }
   ]
 }, {
-  "id": 55,
-  "name": "Island Oasis - Pina Colada",
+  "id": 36,
+  "name": "Compound - Pear",
   "characteristics": [
-    {
-      "characteristic": "curious"
-    },
-    {
-      "characteristic": "adventurous"
-    },
-    {
-      "characteristic": "friendly"
-    },
-    {
-      "characteristic": "friendly"
-    }
-  ],
-  "description": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.\n\nMaecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.\n\nNullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.",
-  "price": 226.23,
-  "quantity": 93,
-  "category": "Drones",
-  "rating": 3.0,
-  "images": [
-    {
-      "image": "http://dummyimage.com/204x346.png/cc0000/ffffff"
-    },
-    {
-      "image": "http://dummyimage.com/389x349.png/dddddd/000000"
-    },
-    {
-      "image": "http://dummyimage.com/378x292.png/dddddd/000000"
-    }
-  ]
-}, {
-  "id": 56,
-  "name": "Nut - Pecan, Pieces",
-  "characteristics": [
-    {
-      "characteristic": "friendly"
-    },
     {
       "characteristic": "playful"
     },
     {
       "characteristic": "playful"
+    },
+    {
+      "characteristic": "friendly"
     },
     {
       "characteristic": "loyal"
     }
   ],
   "description": "Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.",
-  "price": 403.21,
-  "quantity": 62,
-  "category": "Cámaras",
-  "rating": 1.0,
+  "price": 162.14,
+  "quantity": 57,
+  "category": "Audio",
+  "rating": 1.8,
   "images": [
     {
-      "image": "http://dummyimage.com/353x208.png/dddddd/000000"
+      "image": "http://dummyimage.com/286x365.png/cc0000/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/346x283.png/dddddd/000000"
+    },
+    {
+      "image": "http://dummyimage.com/270x282.png/5fa2dd/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/250x330.png/cc0000/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/440x299.png/ff4444/ffffff"
     }
   ]
 }, {
-  "id": 57,
-  "name": "Pasta - Ravioli",
+  "id": 37,
+  "name": "Sausage - Liver",
   "characteristics": [
     {
       "characteristic": "adventurous"
@@ -1905,43 +1455,127 @@
       "characteristic": "friendly"
     },
     {
-      "characteristic": "curious"
-    },
-    {
-      "characteristic": "curious"
-    },
-    {
       "characteristic": "loyal"
+    },
+    {
+      "characteristic": "intelligent"
     }
   ],
-  "description": "Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.\n\nCras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.\n\nProin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
-  "price": 258.92,
-  "quantity": 23,
-  "category": "Audio",
-  "rating": 2.3,
+  "description": "Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.",
+  "price": 176.07,
+  "quantity": 98,
+  "category": "Cámaras",
+  "rating": 2.4,
   "images": [
     {
-      "image": "http://dummyimage.com/320x290.png/cc0000/ffffff"
+      "image": "/img/camara.webp"
     },
     {
-      "image": "http://dummyimage.com/244x264.png/ff4444/ffffff"
+      "image": "http://dummyimage.com/415x271.png/ff4444/ffffff"
     },
     {
-      "image": "http://dummyimage.com/416x224.png/5fa2dd/ffffff"
+      "image": "http://dummyimage.com/356x283.png/5fa2dd/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/315x348.png/ff4444/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/320x303.png/ff4444/ffffff"
     }
   ]
 }, {
-  "id": 58,
-  "name": "Nori Sea Weed - Gold Label",
+  "id": 38,
+  "name": "Sauce - Balsamic Viniagrette",
   "characteristics": [
     {
-      "characteristic": "loyal"
+      "characteristic": "curious"
     },
     {
       "characteristic": "friendly"
     },
     {
+      "characteristic": "friendly"
+    },
+    {
+      "characteristic": "adventurous"
+    }
+  ],
+  "description": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.",
+  "price": 184.82,
+  "quantity": 35,
+  "category": "Cámaras",
+  "rating": 3.6,
+  "images": [
+    {
+      "image": "/img/camara.webp"
+    },
+    {
+      "image": "http://dummyimage.com/405x376.png/cc0000/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/278x355.png/5fa2dd/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/265x368.png/5fa2dd/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/445x256.png/ff4444/ffffff"
+    }
+  ]
+}, {
+  "id": 39,
+  "name": "Pepper - Red, Finger Hot",
+  "characteristics": [
+    {
+      "characteristic": "curious"
+    },
+    {
+      "characteristic": "loyal"
+    },
+    {
+      "characteristic": "adventurous"
+    },
+    {
+      "characteristic": "curious"
+    },
+    {
       "characteristic": "playful"
+    }
+  ],
+  "description": "In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.\n\nMaecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.\n\nMaecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.",
+  "price": 486.47,
+  "quantity": 95,
+  "category": "Computación",
+  "rating": 4.5,
+  "images": [
+    {
+      "image": "/img/monitor.webp"
+    },
+    {
+      "image": "http://dummyimage.com/283x279.png/dddddd/000000"
+    },
+    {
+      "image": "http://dummyimage.com/448x325.png/5fa2dd/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/315x273.png/cc0000/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/411x419.png/5fa2dd/ffffff"
+    }
+  ]
+}, {
+  "id": 40,
+  "name": "Asparagus - White, Fresh",
+  "characteristics": [
+    {
+      "characteristic": "intelligent"
+    },
+    {
+      "characteristic": "intelligent"
+    },
+    {
+      "characteristic": "intelligent"
     },
     {
       "characteristic": "adventurous"
@@ -1950,29 +1584,281 @@
       "characteristic": "intelligent"
     }
   ],
-  "description": "Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.\n\nSed ante. Vivamus tortor. Duis mattis egestas metus.",
-  "price": 519.73,
-  "quantity": 7,
+  "description": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.\n\nNullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.\n\nIn quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.",
+  "price": 541.04,
+  "quantity": 77,
   "category": "Drones",
-  "rating": 3.6,
+  "rating": 3.3,
   "images": [
     {
-      "image": "http://dummyimage.com/202x432.png/cc0000/ffffff"
+      "image": "http://dummyimage.com/373x261.png/dddddd/000000"
     },
     {
-      "image": "http://dummyimage.com/241x429.png/dddddd/000000"
+      "image": "http://dummyimage.com/377x355.png/dddddd/000000"
     },
     {
-      "image": "http://dummyimage.com/412x306.png/ff4444/ffffff"
+      "image": "http://dummyimage.com/324x425.png/5fa2dd/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/419x405.png/cc0000/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/265x312.png/5fa2dd/ffffff"
     }
   ]
 }, {
-  "id": 59,
-  "name": "Beef - Montreal Smoked Brisket",
+  "id": 41,
+  "name": "Lamb - Whole Head Off",
   "characteristics": [
     {
       "characteristic": "adventurous"
     },
+    {
+      "characteristic": "playful"
+    },
+    {
+      "characteristic": "adventurous"
+    },
+    {
+      "characteristic": "curious"
+    }
+  ],
+  "description": "Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n\nEtiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.",
+  "price": 410.31,
+  "quantity": 63,
+  "category": "Drones",
+  "rating": 3.0,
+  "images": [
+    {
+      "image": "http://dummyimage.com/264x251.png/cc0000/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/255x261.png/dddddd/000000"
+    },
+    {
+      "image": "http://dummyimage.com/290x383.png/5fa2dd/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/445x392.png/dddddd/000000"
+    },
+    {
+      "image": "http://dummyimage.com/293x258.png/dddddd/000000"
+    }
+  ]
+}, {
+  "id": 42,
+  "name": "Island Oasis - Sweet And Sour Mix",
+  "characteristics": [
+    {
+      "characteristic": "curious"
+    },
+    {
+      "characteristic": "intelligent"
+    },
+    {
+      "characteristic": "adventurous"
+    },
+    {
+      "characteristic": "adventurous"
+    },
+    {
+      "characteristic": "curious"
+    }
+  ],
+  "description": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.",
+  "price": 299.94,
+  "quantity": 29,
+  "category": "Drones",
+  "rating": 3.0,
+  "images": [
+    {
+      "image": "http://dummyimage.com/266x289.png/5fa2dd/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/328x363.png/ff4444/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/296x441.png/ff4444/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/256x290.png/dddddd/000000"
+    },
+    {
+      "image": "http://dummyimage.com/350x321.png/cc0000/ffffff"
+    }
+  ]
+}, {
+  "id": 43,
+  "name": "Squeeze Bottle",
+  "characteristics": [
+    {
+      "characteristic": "curious"
+    },
+    {
+      "characteristic": "friendly"
+    },
+    {
+      "characteristic": "adventurous"
+    },
+    {
+      "characteristic": "curious"
+    },
+    {
+      "characteristic": "curious"
+    }
+  ],
+  "description": "Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.",
+  "price": 502.04,
+  "quantity": 2,
+  "category": "Drones",
+  "rating": 1.5,
+  "images": [
+    {
+      "image": "http://dummyimage.com/317x381.png/cc0000/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/394x382.png/cc0000/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/340x360.png/dddddd/000000"
+    },
+    {
+      "image": "http://dummyimage.com/281x376.png/cc0000/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/436x269.png/cc0000/ffffff"
+    }
+  ]
+}, {
+  "id": 44,
+  "name": "Cocktail Napkin Blue",
+  "characteristics": [
+    {
+      "characteristic": "friendly"
+    },
+    {
+      "characteristic": "playful"
+    },
+    {
+      "characteristic": "adventurous"
+    },
+    {
+      "characteristic": "curious"
+    },
+    {
+      "characteristic": "friendly"
+    }
+  ],
+  "description": "Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.\n\nProin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.",
+  "price": 248.03,
+  "quantity": 61,
+  "category": "Computación",
+  "rating": 1.4,
+  "images": [
+    {
+      "image": "/img/monitor.webp"
+    },
+    {
+      "image": "http://dummyimage.com/290x351.png/dddddd/000000"
+    },
+    {
+      "image": "http://dummyimage.com/355x399.png/5fa2dd/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/365x274.png/ff4444/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/432x356.png/ff4444/ffffff"
+    }
+  ]
+}, {
+  "id": 45,
+  "name": "Water - Mineral, Natural",
+  "characteristics": [
+    {
+      "characteristic": "adventurous"
+    },
+    {
+      "characteristic": "curious"
+    },
+    {
+      "characteristic": "intelligent"
+    },
+    {
+      "characteristic": "friendly"
+    },
+    {
+      "characteristic": "intelligent"
+    }
+  ],
+  "description": "Sed ante. Vivamus tortor. Duis mattis egestas metus.\n\nAenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.\n\nQuisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.",
+  "price": 280.88,
+  "quantity": 84,
+  "category": "Drones",
+  "rating": 2.5,
+  "images": [
+    {
+      "image": "http://dummyimage.com/375x432.png/cc0000/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/326x443.png/dddddd/000000"
+    },
+    {
+      "image": "http://dummyimage.com/307x396.png/cc0000/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/439x405.png/ff4444/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/419x448.png/ff4444/ffffff"
+    }
+  ]
+}, {
+  "id": 46,
+  "name": "Sherry - Dry",
+  "characteristics": [
+    {
+      "characteristic": "friendly"
+    },
+    {
+      "characteristic": "curious"
+    },
+    {
+      "characteristic": "playful"
+    },
+    {
+      "characteristic": "adventurous"
+    },
+    {
+      "characteristic": "friendly"
+    }
+  ],
+  "description": "Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.\n\nIn congue. Etiam justo. Etiam pretium iaculis justo.\n\nIn hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.",
+  "price": 497.16,
+  "quantity": 63,
+  "category": "Computación",
+  "rating": 3.3,
+  "images": [
+    {
+      "image": "/img/monitor.webp"
+    },
+    {
+      "image": "http://dummyimage.com/387x266.png/dddddd/000000"
+    },
+    {
+      "image": "http://dummyimage.com/330x340.png/5fa2dd/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/250x263.png/dddddd/000000"
+    },
+    {
+      "image": "http://dummyimage.com/439x309.png/5fa2dd/ffffff"
+    }
+  ]
+}, {
+  "id": 47,
+  "name": "Wine - Chianti Classica Docg",
+  "characteristics": [
     {
       "characteristic": "loyal"
     },
@@ -1980,51 +1866,152 @@
       "characteristic": "friendly"
     },
     {
-      "characteristic": "loyal"
+      "characteristic": "playful"
+    },
+    {
+      "characteristic": "friendly"
     }
   ],
-  "description": "Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.\n\nCurabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.\n\nInteger tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.",
-  "price": 951.64,
-  "quantity": 54,
-  "category": "Drones",
-  "rating": 2.4,
+  "description": "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.\n\nMorbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.",
+  "price": 990.39,
+  "quantity": 10,
+  "category": "Cámaras",
+  "rating": 3.8,
   "images": [
-
+    {
+      "image": "/img/camara.webp"
+    },
+    {
+      "image": "http://dummyimage.com/307x344.png/ff4444/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/264x282.png/cc0000/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/435x274.png/dddddd/000000"
+    },
+    {
+      "image": "http://dummyimage.com/412x381.png/dddddd/000000"
+    }
   ]
 }, {
-  "id": 60,
-  "name": "Parsley - Dried",
+  "id": 48,
+  "name": "Beef - Baby, Liver",
   "characteristics": [
     {
       "characteristic": "playful"
     },
     {
-      "characteristic": "adventurous"
-    },
-    {
       "characteristic": "loyal"
     },
     {
+      "characteristic": "curious"
+    },
+    {
       "characteristic": "loyal"
+    }
+  ],
+  "description": "Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.",
+  "price": 132.24,
+  "quantity": 17,
+  "category": "Celulares",
+  "rating": 3.1,
+  "images": [
+    {
+      "image": "http://dummyimage.com/269x328.png/5fa2dd/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/314x362.png/5fa2dd/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/294x315.png/dddddd/000000"
+    },
+    {
+      "image": "http://dummyimage.com/387x387.png/dddddd/000000"
+    },
+    {
+      "image": "http://dummyimage.com/272x283.png/cc0000/ffffff"
+    }
+  ]
+}, {
+  "id": 49,
+  "name": "Turkey - Whole, Fresh",
+  "characteristics": [
+    {
+      "characteristic": "curious"
     },
     {
       "characteristic": "playful"
+    },
+    {
+      "characteristic": "curious"
+    },
+    {
+      "characteristic": "loyal"
+    },
+    {
+      "characteristic": "loyal"
     }
   ],
-  "description": "Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.\n\nDuis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.",
-  "price": 283.08,
-  "quantity": 92,
-  "category": "Audio",
-  "rating": 3.4,
+  "description": "Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.\n\nFusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.",
+  "price": 971.41,
+  "quantity": 18,
+  "category": "Drones",
+  "rating": 1.8,
   "images": [
     {
-      "image": "http://dummyimage.com/409x252.png/cc0000/ffffff"
+      "image": "http://dummyimage.com/277x340.png/cc0000/ffffff"
     },
     {
-      "image": "http://dummyimage.com/356x447.png/ff4444/ffffff"
+      "image": "http://dummyimage.com/348x320.png/cc0000/ffffff"
     },
     {
-      "image": "http://dummyimage.com/383x267.png/cc0000/ffffff"
+      "image": "http://dummyimage.com/298x442.png/cc0000/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/295x416.png/ff4444/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/324x322.png/dddddd/000000"
+    }
+  ]
+}, {
+  "id": 50,
+  "name": "Mushroom - Shitake, Dry",
+  "characteristics": [
+    {
+      "characteristic": "intelligent"
+    },
+    {
+      "characteristic": "intelligent"
+    },
+    {
+      "characteristic": "loyal"
+    },
+    {
+      "characteristic": "adventurous"
+    }
+  ],
+  "description": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.\n\nNullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.",
+  "price": 388.79,
+  "quantity": 30,
+  "category": "Computación",
+  "rating": 3.7,
+  "images": [
+    {
+      "image": "/img/monitor.webp"
+    },
+    {
+      "image": "http://dummyimage.com/410x265.png/cc0000/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/415x391.png/5fa2dd/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/361x312.png/cc0000/ffffff"
+    },
+    {
+      "image": "http://dummyimage.com/256x289.png/dddddd/000000"
     }
   ]
 }]

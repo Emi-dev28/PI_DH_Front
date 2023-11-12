@@ -60,7 +60,6 @@ export const AuthContextProvider = ({ children }) => {
         dispatch({ type: "CHECKING_CREDENTIALS" })
     }
 
-    console.log(state);
 
     //*******************************************/
     return (

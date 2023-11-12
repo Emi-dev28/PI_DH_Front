@@ -1,6 +1,6 @@
 import Home from "../pages/publicPages/Home";
 import { Route, Routes } from "react-router-dom";
-import { Detalle } from "@/pages/publicPages/Detalle";
+import Detalle from "@/pages/publicPages/Detalle";
 import ListadoProductos from "@/pages/privatePages/ListadoProductos";
 import ListadoCategorias from "@/pages/privatePages/ListadoCategorias";
 import { LoginPage } from "@/auth/pages/LoginPage";
@@ -14,16 +14,15 @@ import { useEffect, useState } from "react";
 import { Progress } from "@/components/ui/progress";
 
 export const AppRouter = () => {
-
   //* Función para mantener sesión iniciada si es que el token no expiró
-  const { checkAuthToken, status } = useAuthStore()
+  const { checkAuthToken, status } = useAuthStore();
 
-  const [progress, setProgress] = useState(13)
+  const [progress, setProgress] = useState(13);
 
   useEffect(() => {
-    const timer = setTimeout(() => setProgress(80), 1000)
-    return () => clearTimeout(timer)
-  }, [])
+    const timer = setTimeout(() => setProgress(80), 1000);
+    return () => clearTimeout(timer);
+  }, []);
 
   //* Comentar este effect para poder acceder a ADMIN y USER
   // useEffect(() => {
@@ -36,9 +35,8 @@ export const AppRouter = () => {
         <h3>Cargando</h3>
         <Progress value={progress} className="w-56 mt-4" />
       </div>
-    )
+    );
   }
-
 
   return (
     <Routes>

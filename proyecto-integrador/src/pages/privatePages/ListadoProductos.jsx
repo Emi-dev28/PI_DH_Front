@@ -17,7 +17,6 @@ export default function ListadoProductos() {
   const { borrarProducto } = useDataContext();
   const { state } = useDataStore()
 
-  console.log(state);
   const productKeys = [
     "Nombre",
     "Descripción",
@@ -47,28 +46,33 @@ export default function ListadoProductos() {
         </TableHeader>
 
         <TableBody>
-          {state.products.map((product) => (
-            <TableRow key={product.id}>
-              <TableCell className="p-3">{product.name} </TableCell>
-              <TableCell className="p-3">{product.description} </TableCell>
-              <TableCell className="p-3">{product.category} </TableCell>
-              <TableCell className="text-center p-3">
-                {product.price}{" "}
-              </TableCell>
-              <TableCell className="text-center p-3">
-                {product.stock}{" "}
-              </TableCell>
-              <TableCell className="text-center p-3">
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  onClick={() => borrarProducto(product.id)}
-                >
-                  <MdDelete className="h-5 w-5" />
-                </Button>
-              </TableCell>
-            </TableRow>
-          ))}
+          {
+            state.isLoading
+              ? <TableRow>
+                <TableCell className="text-2xl">Cargando...</TableCell>
+                </TableRow>
+              : state.products.map((product) => (
+                <TableRow key={product.id}>
+                  <TableCell className="p-3">{product.name} </TableCell>
+                  <TableCell className="p-3">{product.description} </TableCell>
+                  <TableCell className="p-3">{product.category} </TableCell>
+                  <TableCell className="text-center p-3">
+                    {product.price}{" "}
+                  </TableCell>
+                  <TableCell className="text-center p-3">
+                    {product.stock}{" "}
+                  </TableCell>
+                  <TableCell className="text-center p-3">
+                    <Button
+                      variant="ghost"
+                      size="icon"
+                      onClick={() => borrarProducto(product.id)}
+                    >
+                      <MdDelete className="h-5 w-5" />
+                    </Button>
+                  </TableCell>
+                </TableRow>
+              ))}
         </TableBody>
       </Table>
     </>

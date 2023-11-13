@@ -1,98 +1,94 @@
-import { useState } from "react";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-  DialogFooter,
-} from "@/components/ui/dialog";
-import { Button } from "@/components/ui/button";
-//
-import {
-  Form,
-  FormControl,
-  FormDescription,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { zodResolver } from "@hookform/resolvers/zod";
+import { useDataContext } from "@/context/dataContext/useDataContext";
+import { useDataStore } from "@/context/dataContext/hooks/useDataStore";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
-import { useDataContext } from "@/context/dataContext/useDataContext";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import {
+  Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger, DialogFooter,
+} from "@/components/ui/dialog";
+import {
+  Select, SelectContent, SelectItem, SelectTrigger, SelectValue,
+} from "@/components/ui/select"
+import {
+  Form, FormControl, FormField, FormItem, FormLabel, FormMessage,
+} from "@/components/ui/form";
+import { Label } from "@radix-ui/react-dropdown-menu";
+import { useState } from "react";
+
 
 const formSchema = z.object({
   name: z.string().min(2, {
-    message: "name must be at least 2 characters.",
+    message: "Debe tener más de dos caractéres",
   }),
   description: z.string().min(2, {
-    message: "description must be at least 2 characters.",
+    message: "Debe tener más de dos caractéres",
   }),
   price: z.string().min(2, {
-    message: "price must be at least 2 characters.",
+    message: "Debe tener más de dos caractéres",
   }),
-  category: z.string().min(2, {
-    message: "category must be at least 2 characters.",
+  categories: z.string({
+    required_error: "Seleccione una opción",
   }),
   stock: z.string().min(1, {
-    message: "stock must be at least 1 characters.",
+    message: "Debe tener al menos un dígito",
   }),
 });
 
 export const DialogCreateProduct = () => {
-  const { products, agregarProducto } = useDataContext();
-  const [newProduct, setNewProduct] = useState({});
+  const { state } = useDataContext();
+  const { onCreatingNewProduct } = useDataStore()
+  const [files, setFiles] = useState([])
 
-  //* Función para subir imágenes a Cloudinary y colocarlas en el state local para luego enviarlas al reducer
-  /*const subirImagenInput = async ({ target }) => {
-        if (target.files === 0) return;
-
-        //* Subir varias imágenes al mismo tiempo. Guardo todas las promesas en un arreglo.
-        const promesasDeImagenesParaSubir = [];
-        for (const file of target.files) {
-            promesasDeImagenesParaSubir.push(subirImagen(file));
-        }
-        //* El Promise.all viene ya ej javascript y me sirve para disparar múltiples promesas de forma simultánea
-        const imagenesUrls = await Promise.all(promesasDeImagenesParaSubir);
-
-        setNewProduct({ ...newProduct, img: imagenesUrls });
-    };*/
-
-  /*const submitAgregarProducto = (newProduct) => {
-        // Buscamos el id más alto de los productos existentes
-        const higherIdProducts = Math.max(
-            ...products.map((product) => product.id)
-        );
-
-        // Hacemos una copia del producto creado y le agregamos el id más alto + 1 para que no coincida con el id de algún producto existente.
-        const newProductWithId = { ...newProduct, id: higherIdProducts + 1 };
-
-        // Agregamos el nuevo producto con su id y reiniciamos el producto a crearse
-        agregarProducto(newProductWithId);
-        setNewProduct(initialProduct);
-    };*/
-
-  // Form Dialog create product
   const form = useForm({
     resolver: zodResolver(formSchema),
     defaultValues: {
       name: "",
       description: "",
       price: "",
-      category: "",
-      stock: "",
+      categories: "",
+      stock: ""
     },
   });
 
-  // 2. Define a submit handler.
-  function onSubmit(values) {
-    // createProduct({ email: values.email, password: values.password });
-    console.log(values);
+  const onFileInputChange = ({ target }) => {
+    if (target.files === 0) return;
+
+    const selectedFiles = target.files;
+    setFiles([...files, ...selectedFiles]);
   }
+
+  function onSubmit(values) {
+
+    const filesData = new FormData()
+
+    filesData.append("product", JSON.stringify({
+      name: values.name,
+      description: values.description,
+      price: values.price,
+      categories: [{ name: values.categories }],
+      stock: values.stock,
+    }))
+
+    filesData.append('files', files);
+
+    // for (let i = 0; i < files.length; i++) {
+    //   filesData.append('files', files[i]);
+    // }
+    // files.forEach((file, index) => {
+    //   filesData.append(`file${index + 1}`, file);
+    // });
+
+    onCreatingNewProduct(filesData);
+    // for (const obj of filesData) {
+    //   console.log(obj);
+    // }
+
+  }
+
+
+
 
   return (
     <Dialog>
@@ -147,17 +143,29 @@ export const DialogCreateProduct = () => {
             />
             <FormField
               control={form.control}
-              name="category"
+              name="categories"
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>Categoría</FormLabel>
-                  <FormControl>
-                    <Input placeholder="" {...field} />
-                  </FormControl>
+                  <Select onValueChange={field.onChange} defaultValue={field.value}>
+                    <FormControl>
+                      <SelectTrigger>
+                        <SelectValue placeholder="Seleccione una categoría" />
+                      </SelectTrigger>
+                    </FormControl>
+                    <SelectContent>
+                      {
+                        state.categories.map(category =>
+                          <SelectItem key={category.id} value={category.name}>{category.name}</SelectItem>
+                        )
+                      }
+                    </SelectContent>
+                  </Select>
                   <FormMessage />
                 </FormItem>
               )}
             />
+
             <FormField
               control={form.control}
               name="stock"
@@ -171,19 +179,15 @@ export const DialogCreateProduct = () => {
                 </FormItem>
               )}
             />
-            <FormField
-              control={form.control}
-              name="images"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Imágenes</FormLabel>
-                  <FormControl className="hover:cursor-pointer">
-                    <Input type="file" placeholder="" {...field} />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
+            <div className="grid w-full max-w-sm items-center gap-1.5">
+              <Label htmlFor="picture">Picture</Label>
+              <Input
+                id="picture"
+                type="file"
+                multiple
+                onChange={onFileInputChange}
+              />
+            </div>
           </form>
         </Form>
         <DialogFooter>

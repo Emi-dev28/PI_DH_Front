@@ -43,27 +43,38 @@ export default function Detalle() {
   }, [id, products]);
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col ">
+
+
+      
       <div className="flex justify-between items-center mb-3 mx-3">
         <span className="text-3xl">Detalle del producto</span>
 
         <Button
-          className="text-lg bg-cyan-600 text-white mt-5 hover:bg-cyan-500"
+          className="text-lg bg-cyan-600 text-white mt-4 hover:bg-cyan-500"
           onClick={() => navigate(-1)}
         >
           Regresar
         </Button>
       </div>
+      
 
-      {/* TABLA */}
-      {product ? (
-        <DetailTable product={product} />
-      ) : (
-        <div className="ml-4 mt-10 text-2xl">El producto no existe</div>
-      )}
+    
 
       {/* IMÁGENES  */}
-      <div className="flex items-center mt-4">
+      <div className=" flex w-auto mx-auto justify-items-start mt-4">
+
+        <div className=" flex flex-col min-h-40 ">
+          <h1 className="text-base sm:text-lg md:text-lg lg:text-lg xl:text-lg 2xl:text-lg font-bold mb-3 mx-3">
+            Nombre del producto 
+          </h1>
+          <div className="mt-2 sm:mt-0 items-end">
+          <span className="bg-blue-600 font-semibold px-1 text-white rounded-md w-auto">⭐{product.rating}</span>
+        
+        </div>
+          <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique fugiat veniam numquam eaque cupiditate animi alias quidem. Quia hic praesentium ab, accusamus, quod id dignissimos necessitatibus ducimus ut earum sunt.</h2>
+        </div>
+      
         <div className="w-1/2">
           <img
             src="/img/drone2.webp"
@@ -95,22 +106,35 @@ export default function Detalle() {
             className="w-[45%] border-0 rounded-lg"
           />
         </div>
+
+
       </div>
+      
 
       <Button
-        className="bg-gradient-to-b from-btnPink to-btnPinkDarker text-white 
+        className=" mx-auto w-[15%] bg-gradient-to-b from-btnPink to-btnPinkDarker text-white 
         px-4 py-2 rounded-md mr-8 hover:text-gray-300 duration-400 focus:shadow-outline-grey shadow-xl
-        place-self-end"
+        place-center"
         onClick={() => setIsOpen(true)}
       >
         Ver galería de imágenes
       </Button>
+
+        {/* TABLA */}
+
+        <div className="py-2 flex-col">
+        {product ? (
+        <DetailTable product={product} />
+      ) : (
+        <div className="ml-4 mt-10 text-2xl">El producto no existe</div>
+      )}
 
       {/* MODAL Y GALERÍA */}
       <ImgGalleryModal isOpen={isOpen} onCloseModal={onCloseModal}>
         {/* //TODO conectar con la api correctamente */}
         <Carousel images={product.images} />
       </ImgGalleryModal>
+      </div>
     </div>
   );
 }

@@ -10,7 +10,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import { useDataContext } from "@/context/dataContext/useDataContext";
-import { MdDelete } from "react-icons/md";
+import { MdDelete, MdEdit } from "react-icons/md";
 
 export default function ListadoProductos() {
   const { categories, borrarCategoria } = useDataContext();
@@ -55,6 +55,13 @@ export default function ListadoProductos() {
                   alt="Imagen categoría"
                 />
               </TableCell>
+              <TableCell className="text-center p-3">
+                {/* Botón editar */}
+                <Button variant="ghost" size="icon">
+                  <MdEdit className="h-5 w-5" />
+                </Button>
+              </TableCell>
+              {/* Botón eliminar */}
               <TableCell className="text-center p-3">
                 <Button
                   variant="ghost"

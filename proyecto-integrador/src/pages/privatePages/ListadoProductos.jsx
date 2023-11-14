@@ -9,13 +9,13 @@ import {
 } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
 import { useDataContext } from "@/context/dataContext/useDataContext";
-import { MdDelete } from "react-icons/md";
+import { MdDelete, MdEdit } from "react-icons/md";
 import { DialogCreateProduct } from "../../components/admin/DialogCreateProduct";
 import { useDataStore } from "@/context/dataContext/hooks/useDataStore";
 
 export default function ListadoProductos() {
   const { borrarProducto } = useDataContext();
-  const { state } = useDataStore()
+  const { state } = useDataStore();
 
   const productKeys = [
     "Nombre",
@@ -46,33 +46,35 @@ export default function ListadoProductos() {
         </TableHeader>
 
         <TableBody>
-          {
-            state.isLoading
-              ? <TableRow>
-                <TableCell className="text-2xl">Cargando...</TableCell>
-                </TableRow>
-              : state.products.map((product) => (
-                <TableRow key={product.id}>
-                  <TableCell className="p-3">{product.name} </TableCell>
-                  <TableCell className="p-3">{product.description} </TableCell>
-                  <TableCell className="p-3">{product.category} </TableCell>
-                  <TableCell className="text-center p-3">
-                    {product.price}{" "}
-                  </TableCell>
-                  <TableCell className="text-center p-3">
-                    {product.stock}{" "}
-                  </TableCell>
-                  <TableCell className="text-center p-3">
-                    <Button
-                      variant="ghost"
-                      size="icon"
-                      onClick={() => borrarProducto(product.id)}
-                    >
-                      <MdDelete className="h-5 w-5" />
-                    </Button>
-                  </TableCell>
-                </TableRow>
-              ))}
+          {state.products.map((product) => (
+            <TableRow key={product.id}>
+              <TableCell className="p-3">{product.name} </TableCell>
+              <TableCell className="p-3">{product.description} </TableCell>
+              <TableCell className="p-3">{product.category} </TableCell>
+              <TableCell className="text-center p-3">
+                {product.price}{" "}
+              </TableCell>
+              <TableCell className="text-center p-3">
+                {product.stock}{" "}
+              </TableCell>
+              <TableCell className="text-center p-3">
+                {/* Botón editar */}
+                <Button variant="ghost" size="icon">
+                  <MdEdit className="h-5 w-5" />
+                </Button>
+              </TableCell>
+              <TableCell className="text-center p-3">
+                {/* Botón eliminar */}
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  onClick={() => borrarProducto(product.id)}
+                >
+                  <MdDelete className="h-5 w-5" />
+                </Button>
+              </TableCell>
+            </TableRow>
+          ))}
         </TableBody>
       </Table>
     </>

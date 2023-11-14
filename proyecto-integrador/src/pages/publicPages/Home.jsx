@@ -40,6 +40,11 @@ export default function Home() {
     updateRandomProducts();
   }, []);
 
+  const elementsAmount =
+    selectedCategories.length > 0
+      ? filteredProductsByCategories.length
+      : shuffledProducts.length;
+
   const handleClickFilterProducts = (selectedCategory) => {
     // Verificar si la categoría ya está presente en selectedCategories
     const isCategorySelected = selectedCategories.includes(selectedCategory);
@@ -78,11 +83,6 @@ export default function Home() {
   };
 
   const nextHandler = () => {
-    const elementsAmount =
-      selectedCategories.length > 0
-        ? filteredProductsByCategories.length
-        : shuffledProducts.length;
-
     const nextPage = currentPage + 1;
     const index = nextPage * 10;
 
@@ -137,6 +137,9 @@ export default function Home() {
         handleClickFilterProducts={handleClickFilterProducts}
       />
 
+      <h3 className="flex justify-end mr-20 2xl:mr-56">
+        {elementsAmount} resultados
+      </h3>
       {/* PRODUCTOS */}
       <Wrapper
         products={randomProducts}

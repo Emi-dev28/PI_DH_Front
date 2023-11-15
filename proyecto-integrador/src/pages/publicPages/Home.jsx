@@ -8,6 +8,7 @@ import { MdArrowUpward } from "react-icons/md";
 // Para usar el mock:
 import products from "@/mocks/products.json";
 import categories from "@/mocks/categories.json";
+import { DateRangePicker } from "@/components/home/DateRangePicker";
 
 export default function Home() {
   const { state } = useDataStore();
@@ -129,6 +130,10 @@ export default function Home() {
             Hacemos realidad tu proyecto
           </h4>
         </div>
+      </div>
+
+      <div>
+        <DateRangePicker />
       </div>
 
       {/* CATEGORÍAS */}

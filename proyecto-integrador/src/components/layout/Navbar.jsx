@@ -8,6 +8,7 @@ import { useAuthStore } from "@/context/authContext/hooks/useAuthStore";
 import { UserSessionMenu } from "./UserSessionMenu";
 import { FaAlignJustify } from "react-icons/fa";
 import { MdSearch } from "react-icons/md";
+import { DateRangePicker } from "@/components/home/DateRangePicker";
 
 export const Navbar = () => {
   const { role, name } = useAuthStore();
@@ -31,7 +32,9 @@ export const Navbar = () => {
           />
         </Link>
       </div>
-
+      <div>
+        <DateRangePicker />
+      </div>
       {/* Input de búsqueda */}
       <div className="hidden md:flex items-center">
         <div className="relative">

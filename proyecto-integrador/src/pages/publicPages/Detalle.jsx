@@ -28,10 +28,6 @@ export default function Detalle() {
   //* guardados en la Api, pero todavía no la tenemos
   const { id } = useParams();
 
-  const onCloseModal = () => {
-    setIsOpen(false);
-  };
-
   useEffect(() => {
     const selectedProductId = parseInt(id);
 
@@ -40,13 +36,16 @@ export default function Detalle() {
     );
 
     setProduct(selectedProduct);
-  }, [id, products]);
+  }, [id]);
+
+  const onCloseModal = () => {
+    setIsOpen(false);
+  };
+
+  console.log(product);
 
   return (
     <div className="flex flex-col ">
-
-
-      
       <div className="flex justify-between items-center mb-3 mx-3">
         <span className="text-3xl">Detalle del producto</span>
 
@@ -57,24 +56,26 @@ export default function Detalle() {
           Regresar
         </Button>
       </div>
-      
-
-    
 
       {/* IMÁGENES  */}
       <div className=" flex w-auto mx-auto justify-items-start mt-4">
-
         <div className=" flex flex-col min-h-40 ">
           <h1 className="text-base sm:text-lg md:text-lg lg:text-lg xl:text-lg 2xl:text-lg font-bold mb-3 mx-3">
-            Nombre del producto 
+            Nombre del producto
           </h1>
           <div className="mt-2 sm:mt-0 items-end">
-          <span className="bg-blue-600 font-semibold px-1 text-white rounded-md w-auto">⭐{product.rating}</span>
-        
+            <span className="bg-blue-600 font-semibold px-1 text-white rounded-md w-auto">
+              ⭐{product.rating}
+            </span>
+          </div>
+          <h2>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
+            fugiat veniam numquam eaque cupiditate animi alias quidem. Quia hic
+            praesentium ab, accusamus, quod id dignissimos necessitatibus
+            ducimus ut earum sunt.
+          </h2>
         </div>
-          <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique fugiat veniam numquam eaque cupiditate animi alias quidem. Quia hic praesentium ab, accusamus, quod id dignissimos necessitatibus ducimus ut earum sunt.</h2>
-        </div>
-      
+
         <div className="w-1/2">
           <img
             src="/img/drone2.webp"
@@ -106,10 +107,13 @@ export default function Detalle() {
             className="w-[45%] border-0 rounded-lg"
           />
         </div>
-
-
       </div>
-      
+
+      <div>
+        {product.characteristics?.map((c, i) => (
+          <div key={i}>{c.characteristic}</div>
+        ))}
+      </div>
 
       <Button
         className=" mx-auto w-[15%] bg-gradient-to-b from-btnPink to-btnPinkDarker text-white 
@@ -120,20 +124,20 @@ export default function Detalle() {
         Ver galería de imágenes
       </Button>
 
-        {/* TABLA */}
+      {/* TABLA */}
 
-        <div className="py-2 flex-col">
+      <div className="py-2 flex-col">
         {product ? (
-        <DetailTable product={product} />
-      ) : (
-        <div className="ml-4 mt-10 text-2xl">El producto no existe</div>
-      )}
+          <DetailTable product={product} />
+        ) : (
+          <div className="ml-4 mt-10 text-2xl">El producto no existe</div>
+        )}
 
-      {/* MODAL Y GALERÍA */}
-      <ImgGalleryModal isOpen={isOpen} onCloseModal={onCloseModal}>
-        {/* //TODO conectar con la api correctamente */}
-        <Carousel images={product.images} />
-      </ImgGalleryModal>
+        {/* MODAL Y GALERÍA */}
+        <ImgGalleryModal isOpen={isOpen} onCloseModal={onCloseModal}>
+          {/* //TODO conectar con la api correctamente */}
+          <Carousel images={product.images} />
+        </ImgGalleryModal>
       </div>
     </div>
   );

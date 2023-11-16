@@ -46,7 +46,7 @@ export default function Detalle() {
 
   return (
     <div className="flex flex-col ">
-      <div className="flex justify-between items-center mb-3 mx-3">
+      <div className="flex justify-between items-center mb-3 mx-6 py-2">
         <span className="text-3xl">Detalle del producto</span>
 
         <Button
@@ -58,22 +58,20 @@ export default function Detalle() {
       </div>
 
       {/* IMÁGENES  */}
-      <div className=" flex w-auto mx-auto justify-items-start mt-4">
+      <div className=" flex w-auto mx-6 justify-items-start mt-4">
         <div className=" flex flex-col min-h-40 ">
-          <h1 className="text-base sm:text-lg md:text-lg lg:text-lg xl:text-lg 2xl:text-lg font-bold mb-3 mx-3">
-            Nombre del producto
+          <h1 className="text-base sm:text-lg md:text-lg lg:text-lg xl:text-lg 2xl:text-lg font-bold mb-3 mx-6">
+            {product.name}
           </h1>
-          <div className="mt-2 sm:mt-0 items-end">
-            <span className="bg-blue-600 font-semibold px-1 text-white rounded-md w-auto">
+          <div className="mx-2 sm:mt-0 items-end">
+            <span className="bg-blue-600 font-semibold mx-6 px-1 text-white rounded-md w-[10%] flex justify-center">
               ⭐{product.rating}
             </span>
           </div>
-          <h2>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
-            fugiat veniam numquam eaque cupiditate animi alias quidem. Quia hic
-            praesentium ab, accusamus, quod id dignissimos necessitatibus
-            ducimus ut earum sunt.
-          </h2>
+          
+      <h2 className="mx-6 py-4 flex w-[80%] justify-end ">{product.description}</h2>
+      <div className="mx-6 py-4 flex flex-wrap justify-start font-bold"> $ {product.price} </div>
+
         </div>
 
         <div className="w-1/2">
@@ -107,38 +105,35 @@ export default function Detalle() {
             className="w-[45%] border-0 rounded-lg"
           />
         </div>
-      </div>
 
-      <div>
-        {product.characteristics?.map((c, i) => (
-          <div key={i}>{c.characteristic}</div>
-        ))}
+        
       </div>
-
+   
+    <div className="flex justify-end items-center mb-3 mx-6 mt-8">
       <Button
         className=" mx-auto w-[15%] bg-gradient-to-b from-btnPink to-btnPinkDarker text-white 
-        px-4 py-2 rounded-md mr-8 hover:text-gray-300 duration-400 focus:shadow-outline-grey shadow-xl
+        px-4 py-4 rounded-md mr-8 hover:text-gray-300 duration-400 focus:shadow-outline-grey shadow-xl
         place-center"
         onClick={() => setIsOpen(true)}
       >
         Ver galería de imágenes
       </Button>
 
-      {/* TABLA */}
-
-      <div className="py-2 flex-col">
-        {product ? (
-          <DetailTable product={product} />
-        ) : (
-          <div className="ml-4 mt-10 text-2xl">El producto no existe</div>
-        )}
-
-        {/* MODAL Y GALERÍA */}
-        <ImgGalleryModal isOpen={isOpen} onCloseModal={onCloseModal}>
-          {/* //TODO conectar con la api correctamente */}
-          <Carousel images={product.images} />
-        </ImgGalleryModal>
       </div>
+      <div className="w-full h-full mt-10">
+        <h1 className="text-3xl border-b-2 pb-4 flex flex-col mb-4 md:mb-8 ml-4 md:ml-6">
+        Caracteristicas
+        </h1>
+
+          <div className="mx-6 py-4 flex flex-col justify-start ">
+            {product.characteristics?.map((c, i) => (
+            <div key={i}>{c.characteristic}</div>
+            ))}
+          </div>
+
+      </div>   
+
+
     </div>
   );
 }

@@ -5,9 +5,7 @@ import { useDataContext } from "@/context/dataContext/useDataContext";
 // React
 import { useNavigate, useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { ImgGalleryModal } from "@/components/detalle/ImgGalleryModal";
-import { Carousel } from "@/components/detalle/Carousel";
-import DetailTable from "@/components/detalle/DetailTable";
+
 // Para usar el mock:
 import products from "@/mocks/products.json";
 
@@ -67,6 +65,12 @@ export default function Detalle() {
             <span className="bg-blue-600 font-semibold mx-6 px-1 text-white rounded-md w-[10%] flex justify-center">
               ⭐{product.rating}
             </span>
+          </div>
+
+          <div className="flex flex-row justify-between pt-4 mx-6 sm:mt-0 items-end w-1/2">
+            <img src="/img/shop.webp" alt="Stock"/><span>En Stock</span>
+            <img className="ml-3" src="/img/verify.webp" alt="Guarantee"/><span>Garantía</span>
+            <img className="ml-3" src="/img/truck.webp" alt="Free shipping"/><span>Envío gratis</span>
           </div>
           
       <h2 className="mx-6 py-4 flex w-[80%] justify-end ">{product.description}</h2>

@@ -1,4 +1,6 @@
 import PropTypes from "prop-types";
+import { ImgGalleryModal } from "@/components/detalle/ImgGalleryModal";
+import { Carousel } from "@/components/detalle/Carousel";
 import { Button } from "@/components/ui/button";
 // Context
 import { useDataContext } from "@/context/dataContext/useDataContext";
@@ -62,19 +64,19 @@ export default function Detalle() {
             {product.name}
           </h1>
           <div className="mx-2 sm:mt-0 items-end">
-            <span className="bg-blue-600 font-semibold mx-6 px-1 text-white rounded-md w-[10%] flex justify-center">
+            <span className="bg-blue-600 font-semibold mx-6 px-1 text-white rounded-md w-[5%] flex justify-center">
               ⭐{product.rating}
             </span>
           </div>
 
-          <div className="flex flex-row justify-between pt-4 mx-6 sm:mt-0 items-end w-1/2">
+          <div className="flex flex-row justify-between pt-4 mx-6 sm:mt-0 items-end w-1/2 font-semibold text-gray-600">
             <img src="/img/shop.webp" alt="Stock"/><span>En Stock</span>
             <img className="ml-3" src="/img/verify.webp" alt="Guarantee"/><span>Garantía</span>
             <img className="ml-3" src="/img/truck.webp" alt="Free shipping"/><span>Envío gratis</span>
           </div>
           
       <h2 className="mx-6 py-4 flex w-[80%] justify-end ">{product.description}</h2>
-      <div className="mx-6 py-4 flex flex-wrap justify-start font-bold"> $ {product.price} </div>
+      <div className="mx-6 py-4 flex flex-wrap justify-start font-bold text-3xl"> $ {product.price}<span className="text-xl font-normal mx-2 py-1">/ Mensuales.</span></div>
 
         </div>
 
@@ -129,14 +131,22 @@ export default function Detalle() {
         Caracteristicas
         </h1>
 
-          <div className="mx-6 py-4 flex flex-col justify-start ">
+          <div className="mx-6 py-4 flex flex-row justify-between font-semibold list-disc">
             {product.characteristics?.map((c, i) => (
-            <div key={i}>{c.characteristic}</div>
+            <li key={i}>{c.characteristic}</li>
             ))}
           </div>
 
+
+          {/* MODAL Y GALERÍA */}
+          <ImgGalleryModal isOpen={isOpen} onCloseModal={onCloseModal}>
+          {/* //TODO conectar con la api correctamente */}
+          <Carousel images={product.images} />
+          </ImgGalleryModal> 
+
       </div>   
 
+         
 
     </div>
   );

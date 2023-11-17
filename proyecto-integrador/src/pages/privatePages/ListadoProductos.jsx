@@ -9,13 +9,13 @@ import {
 } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
 import { useDataContext } from "@/context/dataContext/useDataContext";
-import { MdDelete } from "react-icons/md";
+import { MdDelete, MdEdit } from "react-icons/md";
 import { DialogCreateProduct } from "../../components/admin/DialogCreateProduct";
 import { useDataStore } from "@/context/dataContext/hooks/useDataStore";
 
 export default function ListadoProductos() {
   const { borrarProducto } = useDataContext();
-  const { state } = useDataStore()
+  const { state } = useDataStore();
 
   console.log(state);
   const productKeys = [
@@ -59,6 +59,13 @@ export default function ListadoProductos() {
                 {product.stock}{" "}
               </TableCell>
               <TableCell className="text-center p-3">
+                {/* Botón editar */}
+                <Button variant="ghost" size="icon">
+                  <MdEdit className="h-5 w-5" />
+                </Button>
+              </TableCell>
+              <TableCell className="text-center p-3">
+                {/* Botón eliminar */}
                 <Button
                   variant="ghost"
                   size="icon"

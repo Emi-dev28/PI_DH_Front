@@ -23,9 +23,7 @@ export default function CardHome({ product }) {
     >
       <div className="flex justify-center">
         <img
-          src={
-            product.imagenes ? product.imagenes[0].imageUrl : "/img/drone2.webp"
-          }
+          src={product.images ? product.images[0].image : "/img/drone2.webp"}
           className="w-full h-[260px] object-cover"
         />
       </div>

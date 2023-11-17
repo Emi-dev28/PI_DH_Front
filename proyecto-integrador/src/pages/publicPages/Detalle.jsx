@@ -1,13 +1,13 @@
 import PropTypes from "prop-types";
+import { ImgGalleryModal } from "@/components/detalle/ImgGalleryModal";
+import { Carousel } from "@/components/detalle/Carousel";
 import { Button } from "@/components/ui/button";
 // Context
 import { useDataContext } from "@/context/dataContext/useDataContext";
 // React
 import { useNavigate, useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { ImgGalleryModal } from "@/components/detalle/ImgGalleryModal";
-import { Carousel } from "@/components/detalle/Carousel";
-import { DetailTable } from "@/components/detalle/DetailTable";
+
 // Para usar el mock:
 import products from "@/mocks/products.json";
 
@@ -28,10 +28,6 @@ export default function Detalle() {
   //* guardados en la Api, pero todavía no la tenemos
   const { id } = useParams();
 
-  const onCloseModal = () => {
-    setIsOpen(false);
-  };
-
   useEffect(() => {
     const selectedProductId = parseInt(id);
 
@@ -40,30 +36,50 @@ export default function Detalle() {
     );
 
     setProduct(selectedProduct);
-  }, [id, products]);
+  }, [id]);
+
+  const onCloseModal = () => {
+    setIsOpen(false);
+  };
+
+  console.log(product);
 
   return (
-    <div className="flex flex-col">
-      <div className="flex justify-between items-center mb-3 mx-3">
+    <div className="flex flex-col ">
+      <div className="flex justify-between items-center mb-3 mx-6 py-2">
         <span className="text-3xl">Detalle del producto</span>
 
         <Button
-          className="text-lg bg-cyan-600 text-white mt-5 hover:bg-cyan-500"
+          className="text-lg bg-cyan-600 text-white mt-4 hover:bg-cyan-500"
           onClick={() => navigate(-1)}
         >
           Regresar
         </Button>
       </div>
 
-      {/* TABLA */}
-      {product ? (
-        <DetailTable product={product} />
-      ) : (
-        <div className="ml-4 mt-10 text-2xl">El producto no existe</div>
-      )}
-
       {/* IMÁGENES  */}
-      <div className="flex items-center mt-4">
+      <div className=" flex w-auto mx-6 justify-items-start mt-4">
+        <div className=" flex flex-col min-h-40 ">
+          <h1 className="text-base sm:text-lg md:text-lg lg:text-lg xl:text-lg 2xl:text-lg font-bold mb-3 mx-6">
+            {product.name}
+          </h1>
+          <div className="mx-2 sm:mt-0 items-end">
+            <span className="bg-blue-600 font-semibold mx-6 px-1 text-white rounded-md w-[5%] flex justify-center">
+              ⭐{product.rating}
+            </span>
+          </div>
+
+          <div className="flex flex-row justify-between pt-4 mx-6 sm:mt-0 items-end w-1/2 font-semibold text-gray-600">
+            <img src="/img/shop.webp" alt="Stock"/><span>En Stock</span>
+            <img className="ml-3" src="/img/verify.webp" alt="Guarantee"/><span>Garantía</span>
+            <img className="ml-3" src="/img/truck.webp" alt="Free shipping"/><span>Envío gratis</span>
+          </div>
+          
+      <h2 className="mx-6 py-4 flex w-[80%] justify-end ">{product.description}</h2>
+      <div className="mx-6 py-4 flex flex-wrap justify-start font-bold text-3xl"> $ {product.price}<span className="text-xl font-normal mx-2 py-1">/ Mensuales.</span></div>
+
+        </div>
+
         <div className="w-1/2">
           <img
             src="/img/drone2.webp"
@@ -95,22 +111,43 @@ export default function Detalle() {
             className="w-[45%] border-0 rounded-lg"
           />
         </div>
-      </div>
 
+        
+      </div>
+   
+    <div className="flex justify-end items-center mb-3 mx-6 mt-8">
       <Button
-        className="bg-gradient-to-b from-btnPink to-btnPinkDarker text-white 
-        px-4 py-2 rounded-md mr-8 hover:text-gray-300 duration-400 focus:shadow-outline-grey shadow-xl
-        place-self-end"
+        className=" mx-auto w-[15%] bg-gradient-to-b from-btnPink to-btnPinkDarker text-white 
+        px-4 py-4 rounded-md mr-8 hover:text-gray-300 duration-400 focus:shadow-outline-grey shadow-xl
+        place-center"
         onClick={() => setIsOpen(true)}
       >
         Ver galería de imágenes
       </Button>
 
-      {/* MODAL Y GALERÍA */}
-      <ImgGalleryModal isOpen={isOpen} onCloseModal={onCloseModal}>
-        {/* //TODO conectar con la api correctamente */}
-        <Carousel images={product.images} />
-      </ImgGalleryModal>
+      </div>
+      <div className="w-full h-full mt-10">
+        <h1 className="text-3xl border-b-2 pb-4 flex flex-col mb-4 md:mb-8 ml-4 md:ml-6">
+        Caracteristicas
+        </h1>
+
+          <div className="mx-6 py-4 flex flex-row justify-between font-semibold list-disc">
+            {product.characteristics?.map((c, i) => (
+            <li key={i}>{c.characteristic}</li>
+            ))}
+          </div>
+
+
+          {/* MODAL Y GALERÍA */}
+          <ImgGalleryModal isOpen={isOpen} onCloseModal={onCloseModal}>
+          {/* //TODO conectar con la api correctamente */}
+          <Carousel images={product.images} />
+          </ImgGalleryModal> 
+
+      </div>   
+
+         
+
     </div>
   );
 }

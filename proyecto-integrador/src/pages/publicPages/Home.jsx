@@ -15,6 +15,10 @@ export default function Home() {
   const [currentPage, setCurrentPage] = useState(0);
   const [shuffledProducts, setShuffledProducts] = useState([]);
 
+  const [selectedCategories, setSelectedCategories] = useState([]);
+  const [filteredProductsByCategories, setFilteredProductsByCategories] =
+    useState([]);
+
   useEffect(() => {
     const updateRandomProducts = () => {
       // Ordenar aleatoriamente los productos
@@ -34,16 +38,67 @@ export default function Home() {
 
     // Llamamos a la función de actualización al montar el componente y cuando products cambia
     updateRandomProducts();
-  }, [state.products]);
+  }, []);
+
+  const elementsAmount =
+    selectedCategories.length > 0
+      ? filteredProductsByCategories.length
+      : shuffledProducts.length;
+
+  const handleClickFilterProducts = (selectedCategory) => {
+    // Verificar si la categoría ya está presente en selectedCategories
+    const isCategorySelected = selectedCategories.includes(selectedCategory);
+
+    // Crear un nuevo array con las categorías actualizadas
+    let updatedCategories;
+
+    if (isCategorySelected) {
+      // Si la categoría está seleccionada, quitarla del array
+      updatedCategories = selectedCategories.filter(
+        (category) => category !== selectedCategory
+      );
+    } else {
+      // Si la categoría no está seleccionada, agregarla al array
+      updatedCategories = [...selectedCategories, selectedCategory];
+    }
+
+    // Actualizar el estado con las categorías seleccionadas
+    setSelectedCategories(updatedCategories);
+
+    // Filtrar productos según las categorías seleccionadas
+    const filteredProducts =
+      updatedCategories.length > 0
+        ? shuffledProducts.filter((product) =>
+            updatedCategories.find((category) =>
+              product.category.includes(category)
+            )
+          )
+        : shuffledProducts;
+
+    setFilteredProductsByCategories(filteredProducts);
+
+    // Actualizar los productos aleatorios y la página actual
+    setRandomProducts(filteredProducts.slice(0, 10));
+    setCurrentPage(0);
+  };
 
   const nextHandler = () => {
-    const elementsAmount = state.products.length;
     const nextPage = currentPage + 1;
     const index = nextPage * 10;
 
-    if (index === elementsAmount) return;
+    if (index >= elementsAmount) return;
 
-    setRandomProducts([...shuffledProducts].splice(index, 10));
+    const remainingElements = elementsAmount - index;
+    const elementsToDisplay = remainingElements >= 10 ? 10 : remainingElements;
+
+    selectedCategories.length > 0
+      ? setRandomProducts(
+          [...filteredProductsByCategories].splice(index, elementsToDisplay)
+        )
+      : setRandomProducts(
+          [...shuffledProducts].splice(index, elementsToDisplay)
+        );
+
     setCurrentPage(nextPage);
   };
 
@@ -54,7 +109,10 @@ export default function Home() {
 
     const index = prevPage * 10;
 
-    setRandomProducts([...shuffledProducts].splice(index, 10));
+    selectedCategories.length > 0
+      ? setRandomProducts([...filteredProductsByCategories].splice(index, 10))
+      : setRandomProducts([...shuffledProducts].splice(index, 10));
+
     setCurrentPage(prevPage);
   };
 
@@ -74,8 +132,14 @@ export default function Home() {
       </div>
 
       {/* CATEGORÍAS */}
-      <Slider categories={categories} />
+      <Slider
+        categories={categories}
+        handleClickFilterProducts={handleClickFilterProducts}
+      />
 
+      <h3 className="flex justify-end mr-20 2xl:mr-56">
+        {elementsAmount} resultados
+      </h3>
       {/* PRODUCTOS */}
       <Wrapper
         products={randomProducts}

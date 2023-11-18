@@ -20,9 +20,9 @@ export default function Slider({ categories, handleClickFilterProducts }) {
   };
 
   return (
-    <div className="w-full h-full my-10">
+    <div className="w-full h-full mt-10">
       <div className="text-3xl border-b-2 pb-4 flex flex-col mb-4 md:mb-8 ml-4 md:ml-24">
-        Categorías
+        Categorias
       </div>
 
       <div className="relative flex items-center justify-center mx-2">

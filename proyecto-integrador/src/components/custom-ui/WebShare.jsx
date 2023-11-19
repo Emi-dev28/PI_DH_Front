@@ -31,10 +31,10 @@ const ShareButton = () => {
     <div className="flex">
       {isWebShareSupported && (
         <button
-          className="flex items-center text-xl bg-transparent text-black cursor-pointer"
+          className="flex items-center text-l bg-transparent text-black cursor-pointer"
           onClick={handleShare}
         >
-          <HiOutlineShare className="mr-2" />
+          <HiOutlineShare className="mr-2 text-xl" />
           Compartir
         </button>
       )}

@@ -64,7 +64,9 @@ export const Navbar = () => {
           </div>
         </div>
       </div>
+
       <ShareButton/>
+      
       {role === "USER" || role === "ADMIN" ? (
         <UserSessionMenu name={name} firstLetter={firstLetter} />
       ) : (

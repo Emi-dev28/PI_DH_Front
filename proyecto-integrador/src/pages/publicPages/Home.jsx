@@ -120,9 +120,9 @@ export default function Home() {
     <div className="flex flex-col">
       <div className="w-full relative">
         <Marquee />
-        <img src="/img/home-13.jpg" alt="Top-home-img" className="w-full" />
+        <img src="/img/Section 1.webp" alt="Top-home-img" className="w-full" />
         <div className="absolute bottom-10 md:bottom-15 lg:bottom-20 left-8">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl text-white">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl text-white underline underline-offset-8 decoration-pink-500">
             DH Technology
           </h1>
           <h4 className="text-white text-lg md:text-2xl lg:text-3xl mt-2">

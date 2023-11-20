@@ -133,7 +133,7 @@ export default function Home() {
         handleClickFilterProducts={handleClickFilterProducts}
       />
 
-      <h3 className="flex justify-end mr-20 2xl:mr-56">
+      <h3 className="flex justify-end mt-2 mr-20 2xl:mr-56">
         {elementsAmount} resultados
       </h3>
       {/* PRODUCTOS */}

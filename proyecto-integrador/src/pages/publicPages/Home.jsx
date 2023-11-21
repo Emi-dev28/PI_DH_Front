@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import { MdArrowUpward } from "react-icons/md";
 
 import categories from "@/mocks/categories.json";
+import products from "@/mocks/products.json";
 
 export default function Home() {
   const { state } = useDataStore();
@@ -21,7 +22,8 @@ export default function Home() {
   useEffect(() => {
     const updateRandomProducts = () => {
       // Ordenar aleatoriamente los productos
-      const shuffledProducts = state.products.sort(() => Math.random() - 0.5);
+      //const shuffledProducts = state.products.sort(() => Math.random() - 0.5);
+      const shuffledProducts = products.sort(() => Math.random() - 0.5);
 
       setShuffledProducts(shuffledProducts);
 

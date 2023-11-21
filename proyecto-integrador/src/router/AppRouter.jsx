@@ -12,6 +12,7 @@ import { AdminPermissionPage } from "@/pages/privatePages/AdminPermissionPage";
 import { useAuthStore } from "@/context/authContext/hooks/useAuthStore";
 import { useEffect, useState } from "react";
 import { Progress } from "@/components/ui/progress";
+import { UserFavoritesPage } from "@/pages/privatePages/UserFavoritesPage";
 
 export const AppRouter = () => {
   //* Función para mantener sesión iniciada si es que el token no expiró
@@ -70,6 +71,7 @@ export const AppRouter = () => {
           <UserPrivateRoutes>
             <Routes>
               <Route path="/edit" element={<UserEditionPage />} />
+              <Route path="/favs" element={<UserFavoritesPage />} />
             </Routes>
           </UserPrivateRoutes>
         }

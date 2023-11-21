@@ -7,8 +7,9 @@ const initialState = {
     email: null,
     name: "User",
     lastname: null,
-    role: "ADMIN",
-    terms: true
+    role: "USER",
+    terms: true,
+    favs: []
 }
 
 const reducer = (state, action) => {
@@ -36,6 +37,18 @@ const reducer = (state, action) => {
         case "CHECKING_CREDENTIALS":
             return { ...state, status: "checking" }
 
+        case "ADD_FAV":
+            return {
+                ...state,
+                favs: [...state.favs, action.payload]
+            }
+
+        case "REMOVE_FAV":
+            return {
+                ...state,
+                favs: state.favs.filter((fav) => fav.id !== action.payload)
+            }
+
         default:
             return state;
     }
@@ -60,10 +73,25 @@ export const AuthContextProvider = ({ children }) => {
         dispatch({ type: "CHECKING_CREDENTIALS" })
     }
 
+    const addToFavs = (product) => {
+        dispatch({ type: "ADD_FAV", payload: product })
+    }
+
+    const removeFromFavs = (id) => {
+        dispatch({ type: "REMOVE_FAV", payload: id })
+    }
+
 
     //*******************************************/
     return (
-        <AuthContext.Provider value={{ state, loginUser, logoutUser, checkingAuthentication }}>
+        <AuthContext.Provider value={{
+            state,
+            loginUser,
+            logoutUser,
+            checkingAuthentication,
+            addToFavs,
+            removeFromFavs
+        }}>
             {children}
         </AuthContext.Provider>
     )

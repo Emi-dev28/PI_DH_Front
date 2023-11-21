@@ -35,7 +35,7 @@ const ShareButton = () => {
           onClick={handleShare}
         >
           <HiOutlineShare className="mr-2 text-xl" />
-          Compartir
+        
         </button>
       )}
 

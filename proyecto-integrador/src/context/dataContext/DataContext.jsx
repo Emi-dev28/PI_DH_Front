@@ -144,7 +144,6 @@ export default function DataContextProvider({ children }) {
     }
   };
 
-
   return (
     <DataContext.Provider
       value={{

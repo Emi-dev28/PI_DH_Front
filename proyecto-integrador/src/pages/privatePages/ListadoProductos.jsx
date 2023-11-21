@@ -17,7 +17,6 @@ export default function ListadoProductos() {
   const { borrarProducto } = useDataContext();
   const { state } = useDataStore();
 
-  console.log(state);
   const productKeys = [
     "Nombre",
     "Descripción",

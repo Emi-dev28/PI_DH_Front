@@ -1,19 +1,15 @@
-import {
-  TableCell,
-  TableRow,
-  Table,
-  TableCaption,
-  TableHead,
-  TableHeader,
-  TableBody,
-} from "@/components/ui/table";
+import { useDataContext } from "@/context/dataContext/useDataContext";
+import { useDataStore } from "@/context/dataContext/hooks/useDataStore";
+import { TableCell, TableRow, Table, TableCaption, TableHead, TableHeader, TableBody } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
-import { useDataContext } from "@/context/dataContext/useDataContext";
+
 import { MdDelete, MdEdit } from "react-icons/md";
+
 
 export default function ListadoProductos() {
   const { categories, borrarCategoria } = useDataContext();
+  const { state } = useDataStore()
 
   const categoryKeys = ["Titulo", "Descripción", "Imagen"];
 

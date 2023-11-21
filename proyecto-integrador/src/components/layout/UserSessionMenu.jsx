@@ -24,18 +24,29 @@ export const UserSessionMenu = ({ firstLetter = "U", name = "User" }) => {
       </DropdownMenuTrigger>
 
       <DropdownMenuContent>
+
         <DropdownMenuLabel>Mi cuenta</DropdownMenuLabel>
 
         <DropdownMenuSeparator />
+
         <DropdownMenuItem onClick={() => navigate("user/edit")}>
           Editar
         </DropdownMenuItem>
 
         <DropdownMenuSeparator />
+
+        <DropdownMenuItem onClick={() => navigate("user/favs")}>
+          Favorites
+        </DropdownMenuItem>
+
+        <DropdownMenuSeparator />
+
         <DropdownMenuItem onClick={() => logoutSession()}>
           Cerrar sesión
         </DropdownMenuItem>
+
       </DropdownMenuContent>
+
     </DropdownMenu>
   );
 };

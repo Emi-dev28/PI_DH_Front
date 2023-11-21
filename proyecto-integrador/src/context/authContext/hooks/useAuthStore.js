@@ -7,7 +7,7 @@ const URL = "http://localhost:8080/api/v1"
 export const useAuthStore = () => {
 
     const { loginUser, logoutUser, checkingAuthentication, state } = useAuthContext()
-    const { status, name, role } = state
+    const { status, name, role, uid } = state
 
     const { toast } = useToast();
 
@@ -56,7 +56,7 @@ export const useAuthStore = () => {
                 lastname: lastname,
                 email: email,
                 password: password,
-                role: "USER"
+                rol: "USER"
             })
         }
 
@@ -163,6 +163,68 @@ export const useAuthStore = () => {
 
     }
 
+    //* Add to favorites
+    const onAddToFavs = async (data) => {
+
+        checkingAuthentication();
+
+        const requestBody = {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(data)
+        }
+
+        try {
+
+            const resp = await fetch(URL + `/users/favorites/${uid}`, requestBody)
+            const data = await resp.json()
+
+            //*Establecer el token que viene del back en el localStorage
+            localStorage.setItem("token", JSON.stringify(data.token))
+            console.log(data);
+
+            toast({ description: "The product is in favorites now" })
+
+        } catch (error) {
+            console.log(error);
+            logoutUser()
+            toast({ description: "Something went wrong", variant: "destructive" })
+        }
+
+    }
+    //************************************
+
+    //* Remove from favorites
+    const onRemoveFromfavs = async (id) => {
+
+        checkingAuthentication();
+
+        const requestBody = {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(id)
+        }
+
+        try {
+
+            const resp = await fetch(URL + `/users/favorites/${uid}`, requestBody)
+            const data = await resp.json()
+
+            //*Establecer el token que viene del back en el localStorage
+            localStorage.setItem("token", JSON.stringify(data.token))
+            console.log(data);
+
+            toast({ description: "The product was removed from favorites" })
+
+        } catch (error) {
+            console.log(error);
+            logoutUser()
+            toast({ description: "Something went wrong", variant: "destructive" })
+        }
+
+    }
+    //************************************
+
 
     return {
         //* state
@@ -174,7 +236,9 @@ export const useAuthStore = () => {
         logoutSession,
         checkAuthToken,
         editUserPermission,
-        editUserInfoByUser
+        editUserInfoByUser,
+        onAddToFavs,
+        onRemoveFromfavs
     }
 }
 

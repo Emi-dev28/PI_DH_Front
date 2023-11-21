@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 
 import { Button } from "@/components/ui/button";
+import { useAuthContext } from "@/context/authContext/useAuthContext";
 
 Wrapper.propTypes = {
   products: PropTypes.array,
@@ -12,15 +13,22 @@ Wrapper.propTypes = {
 };
 
 export default function Wrapper(props) {
+
+  const {state} = useAuthContext()
+
   return (
     <div className="mb-16 flex flex-col items-center mt-16">
-      <div className="text-3xl border-b-2 pb-4  flex place-self-start flex-col mb-12 ml-24">
+      <div className="text-3xl border-b-2 pb-4 flex place-self-start flex-col mb-12 ml-24">
         Recomendados
       </div>
 
       <div className="grid grid-cols-1 gap-x-32 gap-y-12 md:grid-cols-2 ">
         {props.products.map((product) => (
-          <CardHome key={product.id} product={product} />
+          <CardHome 
+          key={product.id}
+          isFav={state.favs.some(fav => fav.id === product.id)} 
+          product={product} 
+          />
         ))}
       </div>
 

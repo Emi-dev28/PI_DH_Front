@@ -5,9 +5,9 @@ import { Button } from "@/components/ui/button";
 import { useDataStore } from "@/context/dataContext/hooks/useDataStore";
 import { useEffect, useState } from "react";
 import { MdArrowUpward } from "react-icons/md";
-// Para usar el mock:
-import products from "@/mocks/products.json";
+
 import categories from "@/mocks/categories.json";
+import products from "@/mocks/products.json";
 
 export default function Home() {
   const { state } = useDataStore();
@@ -22,9 +22,7 @@ export default function Home() {
   useEffect(() => {
     const updateRandomProducts = () => {
       // Ordenar aleatoriamente los productos
-      // const shuffledProducts = state.products.sort(() => Math.random() - 0.5);
-
-      // Para usar el mock:
+      //const shuffledProducts = state.products.sort(() => Math.random() - 0.5);
       const shuffledProducts = products.sort(() => Math.random() - 0.5);
 
       setShuffledProducts(shuffledProducts);
@@ -69,10 +67,10 @@ export default function Home() {
     const filteredProducts =
       updatedCategories.length > 0
         ? shuffledProducts.filter((product) =>
-            updatedCategories.find((category) =>
-              product.category.includes(category)
-            )
+          updatedCategories.find((category) =>
+            product.category.includes(category)
           )
+        )
         : shuffledProducts;
 
     setFilteredProductsByCategories(filteredProducts);
@@ -93,11 +91,11 @@ export default function Home() {
 
     selectedCategories.length > 0
       ? setRandomProducts(
-          [...filteredProductsByCategories].splice(index, elementsToDisplay)
-        )
+        [...filteredProductsByCategories].splice(index, elementsToDisplay)
+      )
       : setRandomProducts(
-          [...shuffledProducts].splice(index, elementsToDisplay)
-        );
+        [...shuffledProducts].splice(index, elementsToDisplay)
+      );
 
     setCurrentPage(nextPage);
   };
@@ -120,9 +118,9 @@ export default function Home() {
     <div className="flex flex-col">
       <div className="w-full relative">
         <Marquee />
-        <img src="/img/home-13.jpg" alt="Top-home-img" className="w-full" />
+        <img src="/img/Section 1.webp" alt="Top-home-img" className="w-full" />
         <div className="absolute bottom-10 md:bottom-15 lg:bottom-20 left-8">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl text-white">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl text-white underline underline-offset-8 decoration-pink-500">
             DH Technology
           </h1>
           <h4 className="text-white text-lg md:text-2xl lg:text-3xl mt-2">
@@ -137,7 +135,7 @@ export default function Home() {
         handleClickFilterProducts={handleClickFilterProducts}
       />
 
-      <h3 className="flex justify-end mr-20 2xl:mr-56">
+      <h3 className="flex justify-end mt-2 mr-20 2xl:mr-56">
         {elementsAmount} resultados
       </h3>
       {/* PRODUCTOS */}

@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import { ImgGalleryModal } from "@/components/detalle/ImgGalleryModal";
 import { Carousel } from "@/components/detalle/Carousel";
 import { Button } from "@/components/ui/button";
+import ShareButton from "@/components/custom-ui/WebShare";
 // Context
 import { useDataContext } from "@/context/dataContext/useDataContext";
 // React
@@ -58,11 +59,13 @@ export default function Detalle() {
       </div>
 
       {/* IMÁGENES  */}
-      <div className=" flex w-auto mx-6 justify-items-start mt-4">
+      <div className=" flex w-auto mx-6 justify-items-start mt-4 ">
+
         <div className=" flex flex-col min-h-40 ">
           <h1 className="text-base sm:text-lg md:text-lg lg:text-lg xl:text-lg 2xl:text-lg font-bold mb-3 mx-6">
             {product.name}
           </h1>
+          
           <div className="mx-2 sm:mt-0 items-end">
             <span className="bg-blue-600 font-semibold mx-6 px-1 text-white rounded-md w-[5%] flex justify-center">
               ⭐{product.rating}
@@ -75,10 +78,14 @@ export default function Detalle() {
             <img className="ml-3" src="/img/truck.webp" alt="Free shipping"/><span>Envío gratis</span>
           </div>
           
-      <h2 className="mx-6 py-4 flex w-[80%] justify-end ">{product.description}</h2>
-      <div className="mx-6 py-4 flex flex-wrap justify-start font-bold text-3xl"> $ {product.price}<span className="text-xl font-normal mx-2 py-1">/ Mensuales.</span></div>
+          <h2 className="mx-6 py-4 flex w-[80%] justify-end ">{product.description}</h2>
+          <div className="mx-6 py-4 flex flex-wrap justify-start font-bold text-3xl"> $ {product.price}<span className="text-xl font-normal mx-2 py-1">/ Mensuales.</span></div>
 
+          <div className="mx-6 py-4 flex w-[80%] justify-end "><ShareButton/></div>
+        
         </div>
+
+        
 
         <div className="w-1/2">
           <img

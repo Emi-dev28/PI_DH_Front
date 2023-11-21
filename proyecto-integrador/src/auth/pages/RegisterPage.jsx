@@ -139,7 +139,7 @@ export const RegisterPage = () => {
                     <Button type="submit" className="">Registrar</Button>
                     <div className="text-end">
                         <span>¿Ya tenés una cuenta?</span>
-                        <Link to={"/auth/login"} className="text-blue-700 underline ml-2">Logear</Link>
+                        <Link to={"/auth/login"} className="text-blue-700 underline ml-2">Iniciar sesión</Link>
                     </div>
                 </form>
             </Form>

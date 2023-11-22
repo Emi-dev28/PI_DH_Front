@@ -1,5 +1,5 @@
 import { CalendarIcon } from "@radix-ui/react-icons";
-import { addDays, format } from "date-fns";
+import { format } from "date-fns";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Calendar } from "@/components/ui/calendar";
@@ -8,14 +8,32 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import { useState } from "react";
+import PropTypes from "prop-types";
 import { es } from "date-fns/locale";
+import { useState } from "react";
 
-export function DateRangePicker({ className }) {
-  const [date, setDate] = useState({
-    from: new Date(2023, 0, 20),
-    to: addDays(new Date(2024, 0, 20), 20),
-  });
+DateRangePicker.propTypes = {
+  className: PropTypes.string,
+  search: PropTypes.object,
+  setSearch: PropTypes.func,
+};
+
+export function DateRangePicker({ className, search, setSearch }) {
+  const [date, setDate] = useState();
+
+  function handleSelect(date) {
+    setDate(date);
+
+    const formattedDateFrom = date?.from ? format(date.from, "yyyy-MM-dd") : "";
+
+    const formattedDateTo = date?.to ? format(date.to, "yyyy-MM-dd") : "";
+
+    setSearch({
+      product: search.get("product"),
+      dateFrom: formattedDateFrom,
+      dateTo: formattedDateTo,
+    });
+  }
 
   return (
     <div className={cn("grid gap-2", className)}>
@@ -23,24 +41,24 @@ export function DateRangePicker({ className }) {
         <PopoverTrigger asChild>
           <Button
             id="date"
-            variant={"outline"}
+            variant="outline"
             className={cn(
-              "w-[300px] justify-start text-left font-normal",
-              !date && "text-muted-foreground"
+              "w-56 justify-start text-left text-muted-foreground font-normal shadow-md rounded-2xl h-10 transition-all duration-300 ease-in-out bg-gray-100 hover:border-gray-400 data-[state=open]:border-primary",
+              date && "text-black"
             )}
           >
-            <CalendarIcon className="mr-2 h-4 w-4" />
+            <CalendarIcon className="mr-3 h-4 w-4" />
             {date?.from ? (
               date.to ? (
                 <>
-                  {format(date.from, "LLL dd, y")} -{" "}
-                  {format(date.to, "LLL dd, y")}
+                  {format(date.from, "d LLL, y", { locale: es })} -{" "}
+                  {format(date.to, "d LLL, y", { locale: es })}
                 </>
               ) : (
-                format(date.from, "LLL dd, y")
+                format(date.from, "d LLL, y")
               )
             ) : (
-              <span>Pick a date</span>
+              <span>Elegí la fecha de alquiler</span>
             )}
           </Button>
         </PopoverTrigger>
@@ -51,7 +69,7 @@ export function DateRangePicker({ className }) {
             mode="range"
             defaultMonth={date?.from}
             selected={date}
-            onSelect={setDate}
+            onSelect={handleSelect}
             numberOfMonths={2}
           />
         </PopoverContent>

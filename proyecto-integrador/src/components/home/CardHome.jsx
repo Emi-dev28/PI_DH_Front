@@ -7,7 +7,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { useAuthContext } from "@/context/authContext/useAuthContext";
-import { MdBookmarkAdd, MdBookmarkAdded } from "react-icons/md";
+import { MdFavorite, MdFavoriteBorder } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 
 
@@ -47,12 +47,12 @@ export default function CardHome({ product, isFav }) {
             <span>{product.name}</span>
             {
               isFav
-                ? <MdBookmarkAdded
-                  className="text-green-600 ml-2 text-xl cursor-pointer hover:text-2xl duration-300"
+                ? <MdFavorite
+                  className="text-red-600 ml-2 text-xl cursor-pointer duration-300"
                   onClick={() => handleRemoveFromFavorites()}
                 />
-                : <MdBookmarkAdd
-                  className="text-yellow-600 ml-2 text-xl cursor-pointer hover:text-2xl duration-300"
+                : <MdFavoriteBorder
+                  className="text-yellow-600 ml-2 text-xl cursor-pointer duration-300"
                   onClick={() => handleAddToFavorites()}
                 />
             }

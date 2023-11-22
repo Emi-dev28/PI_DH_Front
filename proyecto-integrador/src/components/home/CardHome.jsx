@@ -9,6 +9,7 @@ import {
 import { useAuthContext } from "@/context/authContext/useAuthContext";
 import { MdFavorite, MdFavoriteBorder } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
+import ShareButton from "@/components/custom-ui/WebShare";
 
 
 export default function CardHome({ product, isFav }) {
@@ -28,9 +29,12 @@ export default function CardHome({ product, isFav }) {
 
   return (
     <Card
-      className="w-full sm:w-[400px] lg:w-[500px] h-[460px] flex flex-col p-6 hover:shadow-xl duration-300 "
+
+      className="w-full sm:w-[400px] lg:w-[500px] h-[460px] flex flex-col p-4 hover:shadow-xl duration-300 "
     >
+      <div className="py-0 flex flex-col items-end"><ShareButton /></div>
       <div className="flex justify-center">
+      
         <img
           src={product.images ? product.images[0].image : "/img/drone2.webp"}
           className="w-full h-[260px] object-cover cursor-pointer"
@@ -57,21 +61,29 @@ export default function CardHome({ product, isFav }) {
                 />
             }
           </CardTitle>
+          
 
           <CardDescription className="text-lg">
             {"$" + product.price + " /semanal"}
+            
           </CardDescription>
 
         </div>
-
+        
         <div className="mt-2 sm:mt-0 flex flex-col items-end">
           <span>⭐{product.rating}</span>
+          
         </div>
+        
+        
 
       </CardHeader>
+      
+      <PrimaryButton className="mt-auto ">Alquilar</PrimaryButton>
 
-      <PrimaryButton className="mt-auto">Alquilar</PrimaryButton>
+      
 
     </Card>
+    
   );
 }

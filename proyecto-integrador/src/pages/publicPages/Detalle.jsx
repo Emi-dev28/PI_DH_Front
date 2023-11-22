@@ -12,6 +12,15 @@ import { useState, useEffect } from "react";
 // Para usar el mock:
 import products from "@/mocks/products.json";
 
+// Para el desplegable de FAQ:
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
+
+
 Detalle.propTypes = {
   product: PropTypes.object,
 };
@@ -138,7 +147,7 @@ export default function Detalle() {
         Caracteristicas
         </h1>
 
-          <div className="mx-6 py-4 flex flex-row justify-between font-semibold list-disc">
+          <div className="mx-6 py-4 flex flex-col justify-between font-semibold list-disc">
             {product.characteristics?.map((c, i) => (
             <li key={i}>{c.characteristic}</li>
             ))}
@@ -152,7 +161,53 @@ export default function Detalle() {
           </ImgGalleryModal> 
 
       </div>   
+      <div className="mx-6 w-1/2 h-full mt-10">
+        <h1 className="text-3xl border-b-2 pb-4 flex flex-col mb-4 md:mb-8 ml-4 md:ml-6">
+        FAQ
+        </h1>
 
+        <Accordion type="single" collapsible>
+          <AccordionItem value="item-1">
+            <AccordionTrigger className="text-blue-600">¿Puedo comprar productos de DH Technology mediante pagos a plazos?</AccordionTrigger>
+              <AccordionContent>
+                 Sí, DH Technology ofrece la opción de comprar productos mediante pagos en efectivo y a plazos. Esto te permite elegir el método de pago que se adapte a tus necesidades y presupuesto.
+              </AccordionContent>
+          </AccordionItem>
+        </Accordion>
+        <Accordion type="single" collapsible>
+          <AccordionItem value="item-2">
+            <AccordionTrigger className="text-blue-600">¿Cómo puedo interactuar con el contenido de la revista en DH Technology?</AccordionTrigger>
+              <AccordionContent>
+                Puede interactuar activamente con el contenido de la revista dejando comentarios y participando en la sección de preguntas y respuestas. No dude en compartir sus pensamientos, hacer preguntas e interactuar con otros entusiastas de la tecnología en la comunidad.
+              </AccordionContent>
+          </AccordionItem>
+        </Accordion>
+        <Accordion type="single" collapsible>
+          <AccordionItem value="item-3">
+            <AccordionTrigger className="text-blue-600">¿DH Technology ofrece garantía sobre sus productos?</AccordionTrigger>
+              <AccordionContent>
+                Sí, DH Technology ofrece una garantía para todos los productos elegibles. Los detalles específicos de la garantía pueden variar según el fabricante y la categoría del producto. Consulte la descripción del producto o comuníquese con nuestro servicio de atención al cliente para obtener más información.
+              </AccordionContent>
+          </AccordionItem>
+        </Accordion>
+        <Accordion type="single" collapsible>
+          <AccordionItem value="item-4">
+            <AccordionTrigger className="text-blue-600">¿Es DH Technology una plataforma segura para compras online?</AccordionTrigger>
+              <AccordionContent>
+                Sí, DH Technology ofrece una garantía para todos los productos elegibles. Los detalles específicos de la garantía pueden variar según el fabricante y la categoría del producto. Consulte la descripción del producto o comuníquese con nuestro servicio de atención al cliente para obtener más información.
+              </AccordionContent>
+          </AccordionItem>
+        </Accordion>
+        <Accordion type="single" collapsible>
+          <AccordionItem value="item-5">
+            <AccordionTrigger className="text-blue-600">¿Cómo puedo obtener ayuda con mi compra o cualquier otra consulta?</AccordionTrigger>
+              <AccordionContent>
+                Si necesita ayuda con su compra o tiene alguna pregunta, nuestro dedicado equipo de atención al cliente está aquí para ayudarlo. Puede comunicarse con nosotros a través de la página de contacto en nuestro sitio web y estaremos encantados de ayudarle de inmediato.
+              </AccordionContent>
+          </AccordionItem>
+        </Accordion>
+
+      </div>   
          
 
     </div>

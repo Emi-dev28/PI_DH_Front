@@ -3,6 +3,8 @@ import { ImgGalleryModal } from "@/components/detalle/ImgGalleryModal";
 import { Carousel } from "@/components/detalle/Carousel";
 import { Button } from "@/components/ui/button";
 import ShareButton from "@/components/custom-ui/WebShare";
+import { Calendar } from "@/components/ui/calendar"
+import { addDays, format } from 'date-fns';
 // Context
 import { useDataContext } from "@/context/dataContext/useDataContext";
 // React
@@ -20,6 +22,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 import { MdControlCamera, MdCyclone, MdOutlineElectricBolt, MdOutlineMemory, MdOutlineStar, MdOutlineWater } from "react-icons/md";
+import PrimaryButton from "@/components/custom-ui/PrimaryButton";
 
 
 Detalle.propTypes = {
@@ -33,10 +36,15 @@ export default function Detalle() {
   //* State para abrir o cerrar el modal
   const [isOpen, setIsOpen] = useState(false);
 
+  const [date, setDate] = useState(new Date())
+  const disabledRange = {
+    from: new Date(),
+    to: addDays(new Date(), 4)
+  }
+
+
   const navigate = useNavigate();
 
-  //* Esto hay que utilizarlos para obtener los datos específicos de cada producto
-  //* guardados en la Api, pero todavía no la tenemos
   const { id } = useParams();
 
   useEffect(() => {
@@ -53,7 +61,8 @@ export default function Detalle() {
     setIsOpen(false);
   };
 
-  console.log(product);
+
+
 
   return (
     <div className="flex flex-col ">
@@ -68,7 +77,7 @@ export default function Detalle() {
 
       <div className=" flex justify-between mx-4 ">
 
-        <div className=" flex flex-col w-1/3 min-h-40 p-2 ">
+        <div className=" flex flex-col w-1/4 min-h-40 p-2 ">
 
           <h1 className="text-xl font-bold">
             {product.name}
@@ -112,12 +121,12 @@ export default function Detalle() {
 
 
         {/* IMÁGENES  */}
-        <div className="flex">
+        <div className="flex bg-white border-none rounded-md">
 
           <img
             src={product.images ? product.images[0].image : "/img/drone2.webp"}
             alt="product-img"
-            className="border-0 rounded-lg w-[300px]"
+            className="border-0 rounded-lg w-[350px]"
           />
 
 
@@ -148,8 +157,26 @@ export default function Detalle() {
         </div>
 
         <div
-          className="w-1/3 bg-white border-none rounded-md"
+          className="border-none rounded-md flex flex-col gap-6"
         >
+          <Calendar
+            mode="single"
+            defaultMonth={date?.from}
+            selected={date}
+            onSelect={setDate}
+            className="rounded-md border shadow"
+            numberOfMonths={2}
+            pagedNavigation
+            showOutsideDays
+            fixedWeeks
+            disabled={disabledRange}
+            modifiersStyles={{
+              disabled: { backgroundColor: "red", color: "white" },
+              selected: { backgroundColor: "rgb(37 99 235)" }
+            }}
+          />
+
+          <PrimaryButton className="">Reservar</PrimaryButton>
 
         </div>
 
@@ -157,7 +184,7 @@ export default function Detalle() {
       </div>
 
       {/* Characteristics */}
-      <div className="w-full h-full mt-10">
+      <div className="w-full h-full mt-10" >
         <h2 className="text-2xl border-b-2 pb-2 flex mb-4 md:mb-8 ml-4 md:ml-6">
           Características
         </h2>
@@ -200,12 +227,12 @@ export default function Detalle() {
         <Carousel images={product.images} />
       </ImgGalleryModal>
 
-      <div className=" mt-10 ">
-        <h1 className="text-3xl border-b-2 flex flex-col mb-4 md:mb-8 md:ml-6">
+      <div className=" mt-10 mx-4">
+        <h1 className="text-xl border-b-2 flex flex-col ">
           FAQ
         </h1>
 
-        <div className="mx-4">
+        <div >
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
               <AccordionTrigger className="text-blue-600">¿Puedo comprar productos de DH Technology mediante pagos a plazos?</AccordionTrigger>

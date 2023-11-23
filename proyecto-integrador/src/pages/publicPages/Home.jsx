@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { useDataStore } from "@/context/dataContext/hooks/useDataStore";
 import { useEffect, useState } from "react";
 import { MdArrowUpward } from "react-icons/md";
+import { useSearchParams } from "react-router-dom";
 
 import categories from "@/mocks/categories.json";
 import products from "@/mocks/products.json";
@@ -19,24 +20,43 @@ export default function Home() {
   const [filteredProductsByCategories, setFilteredProductsByCategories] =
     useState([]);
 
-  useEffect(() => {
-    const updateRandomProducts = () => {
-      // Ordenar aleatoriamente los productos
-      //const shuffledProducts = state.products.sort(() => Math.random() - 0.5);
-      const shuffledProducts = products.sort(() => Math.random() - 0.5);
+  // Para tomar tomar los searchParams que llegan del componente Search que está en el Navbar
+  const [search, setSearch] = useSearchParams();
 
-      setShuffledProducts(shuffledProducts);
+  useEffect(() => {
+    if (search.get("product")) {
+      // Si hay un valor en la búsqueda de productos, filtra los productos según ese valor
+      const filteredProductsBySearchParams = products.filter((product) =>
+        product.name.toLowerCase().includes(search.get("product").toLowerCase())
+      );
+
+      setShuffledProducts(filteredProductsBySearchParams);
 
       // Tomar solo los primeros 10 productos
-      const newSelectedProducts = shuffledProducts.slice(0, 10);
+      const newSelectedProducts = filteredProductsBySearchParams.slice(0, 10);
 
-      // Actualizar el estado con los productos aleatorios
+      // Actualizar el estado con los productos filtrados
       setRandomProducts(newSelectedProducts);
-    };
+    } else {
+      console.log("first");
+      const updateRandomProducts = () => {
+        // Ordenar aleatoriamente los productos
+        //const shuffledProducts = state.products.sort(() => Math.random() - 0.5);
+        const shuffledProducts = products.sort(() => Math.random() - 0.5);
 
-    // Llamamos a la función de actualización al montar el componente y cuando products cambia
-    updateRandomProducts();
-  }, []);
+        setShuffledProducts(shuffledProducts);
+
+        // Tomar solo los primeros 10 productos
+        const newSelectedProducts = shuffledProducts.slice(0, 10);
+
+        // Actualizar el estado con los productos aleatorios
+        setRandomProducts(newSelectedProducts);
+      };
+
+      // Llamamos a la función de actualización al montar el componente y cuando products cambia
+      updateRandomProducts();
+    }
+  }, [search]);
 
   const elementsAmount =
     selectedCategories.length > 0
@@ -67,10 +87,10 @@ export default function Home() {
     const filteredProducts =
       updatedCategories.length > 0
         ? shuffledProducts.filter((product) =>
-          updatedCategories.find((category) =>
-            product.category.includes(category)
+            updatedCategories.find((category) =>
+              product.category.includes(category)
+            )
           )
-        )
         : shuffledProducts;
 
     setFilteredProductsByCategories(filteredProducts);
@@ -91,11 +111,11 @@ export default function Home() {
 
     selectedCategories.length > 0
       ? setRandomProducts(
-        [...filteredProductsByCategories].splice(index, elementsToDisplay)
-      )
+          [...filteredProductsByCategories].splice(index, elementsToDisplay)
+        )
       : setRandomProducts(
-        [...shuffledProducts].splice(index, elementsToDisplay)
-      );
+          [...shuffledProducts].splice(index, elementsToDisplay)
+        );
 
     setCurrentPage(nextPage);
   };

@@ -112,7 +112,7 @@ export default function Detalle() {
 
           <div className="mt-4 flex items-center font-bold text-3xl">
             ${product.price}
-            <span className="text-xl font-normal ml-2">/ Mensuales.</span>
+            <span className="text-xl font-normal ml-2">/ Día.</span>
           </div>
 
           <div className=" py-4 flex justify-end "><ShareButton /></div>
@@ -261,7 +261,7 @@ export default function Detalle() {
             <AccordionItem value="item-4">
               <AccordionTrigger className="text-blue-600">¿Es DH Technology una plataforma segura para compras online?</AccordionTrigger>
               <AccordionContent>
-                Sí, DH Technology ofrece una garantía para todos los productos elegibles. Los detalles específicos de la garantía pueden variar según el fabricante y la categoría del producto. Consulte la descripción del producto o comuníquese con nuestro servicio de atención al cliente para obtener más información.
+                Sí, DH Technology ofrece una garantía para todos las compras online. Los detalles específicos de los medios de pago pueden variar según el metodo y la forma del pago. Consulte la descripción de los pagos o comuníquese con nuestro servicio de atención al cliente para obtener más información.
               </AccordionContent>
             </AccordionItem>
           </Accordion>

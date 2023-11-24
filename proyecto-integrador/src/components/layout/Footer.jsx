@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from "/img/logo/logo-letters.svg";
+import {Link} from "react-router-dom"
 import { FaSquareFacebook, FaInstagram, FaTiktok, FaYoutube } from 'react-icons/fa6';
 
 export const Footer = () => {
@@ -24,7 +25,7 @@ export const Footer = () => {
         </div>
 
         <ul className="flex flex-col md:flex-row items-center gap-y-2 gap-x-8">
-          <li style={{ cursor: 'pointer' }}>About Us</li>
+          <li><Link to="/about" style={{ cursor: 'pointer' }}>About Us</Link></li>
           <li style={{ cursor: 'pointer' }}>License</li>
           <li style={{ cursor: 'pointer' }}>Contribute</li>
           <li style={{ cursor: 'pointer' }}>Contact Us</li>

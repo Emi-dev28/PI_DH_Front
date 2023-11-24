@@ -32,31 +32,37 @@ export default function Wrapper(props) {
           ))}
         </div>
       ) : (
-        <div className="text-2xl mr-96">No se encontraron resultados.</div>
+        <div className="text-2xl mr-60 mb-16">
+          No se encontraron resultados.
+        </div>
       )}
 
-      <div className="self-center flex items-center gap-6 mt-8">
-        {props.currentPage !== 0 ? (
-          <Button variant="outline" size="icon" onClick={props.prevHandler}>
-            <MdChevronLeft className="text-3xl" />
-          </Button>
-        ) : (
-          <Button
-            variant="outline"
-            size="icon"
-            className="invisible"
-            onClick={props.prevHandler}
-          ></Button>
-        )}
+      {props.products.length > 0 && (
+        <div className="self-center flex items-center gap-6 mt-8">
+          {props.currentPage !== 0 ? (
+            <Button variant="outline" size="icon" onClick={props.prevHandler}>
+              <MdChevronLeft className="text-3xl" />
+            </Button>
+          ) : (
+            <Button
+              variant="outline"
+              size="icon"
+              className="invisible"
+              onClick={props.prevHandler}
+            ></Button>
+          )}
 
-        <span className=" h-9 w-9 border border-input inline-flex items-center justify-center rounded-md font-medium">
-          {props.currentPage + 1}
-        </span>
+          <span className=" h-9 w-9 border border-input inline-flex items-center justify-center rounded-md font-medium">
+            {props.currentPage + 1}
+          </span>
 
-        <Button variant="outline" size="icon" onClick={props.nextHandler}>
-          <MdChevronRight className="text-3xl" />
-        </Button>
-      </div>
+          {props.products.length > 9 && (
+            <Button variant="outline" size="icon" onClick={props.nextHandler}>
+              <MdChevronRight className="text-3xl" />
+            </Button>
+          )}
+        </div>
+      )}
     </div>
   );
 }

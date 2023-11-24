@@ -2,6 +2,8 @@ import { DateRangePicker } from "@/components/home/DateRangePicker";
 import { Input } from "@/components/ui/input";
 import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { MdSearch } from "react-icons/md";
 
 export default function Search() {
   const [product, setProduct] = useState("");
@@ -22,7 +24,7 @@ export default function Search() {
   }
 
   return (
-    <search className="flex items-center gap-4">
+    <search className="flex items-center gap-16 ml-96 mt-10">
       {/* Input de búsqueda */}
       <div className="hidden md:flex items-center">
         <Input
@@ -35,6 +37,9 @@ export default function Search() {
       </div>
 
       <DateRangePicker search={search} setSearch={setSearch} />
+      <Button size="icon" variant="ghost">
+        <MdSearch />
+      </Button>
     </search>
   );
 }

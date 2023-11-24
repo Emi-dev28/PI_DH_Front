@@ -6,6 +6,7 @@ import { useDataStore } from "@/context/dataContext/hooks/useDataStore";
 import { useEffect, useState } from "react";
 import { MdArrowUpward } from "react-icons/md";
 import { useSearchParams } from "react-router-dom";
+import Search from "@/components/home/Search";
 
 import categories from "@/mocks/categories.json";
 import products from "@/mocks/products.json";
@@ -25,6 +26,7 @@ export default function Home() {
 
   useEffect(() => {
     if (search.get("product")) {
+      console.log("SearchParams useEffect");
       // Si hay un valor en la búsqueda de productos, filtra los productos según ese valor
       const filteredProductsBySearchParams = products.filter((product) =>
         product.name.toLowerCase().includes(search.get("product").toLowerCase())
@@ -38,7 +40,7 @@ export default function Home() {
       // Actualizar el estado con los productos filtrados
       setRandomProducts(newSelectedProducts);
     } else {
-      console.log("first");
+      console.log("RandomProducts useEffect");
       const updateRandomProducts = () => {
         // Ordenar aleatoriamente los productos
         //const shuffledProducts = state.products.sort(() => Math.random() - 0.5);
@@ -49,7 +51,7 @@ export default function Home() {
         // Tomar solo los primeros 10 productos
         const newSelectedProducts = shuffledProducts.slice(0, 10);
 
-        // Actualizar el estado con los productos aleatorios
+        // Actualizar el estado con 10 productos aleatorios
         setRandomProducts(newSelectedProducts);
       };
 
@@ -118,6 +120,7 @@ export default function Home() {
         );
 
     setCurrentPage(nextPage);
+    window.scroll({ top: 1020, behavior: "smooth" });
   };
 
   const prevHandler = () => {
@@ -132,6 +135,7 @@ export default function Home() {
       : setRandomProducts([...shuffledProducts].splice(index, 10));
 
     setCurrentPage(prevPage);
+    window.scroll({ top: 1020, behavior: "smooth" });
   };
 
   return (
@@ -148,6 +152,8 @@ export default function Home() {
           </h4>
         </div>
       </div>
+
+      <Search />
 
       {/* CATEGORÍAS */}
       <Slider

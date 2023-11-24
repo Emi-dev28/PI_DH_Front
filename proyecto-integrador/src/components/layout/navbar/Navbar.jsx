@@ -8,7 +8,7 @@ import { useAuthStore } from "@/context/authContext/hooks/useAuthStore";
 import { UserSessionMenu } from "../UserSessionMenu";
 import { FaAlignJustify } from "react-icons/fa";
 
-import Search from "./Search";
+import Search from "../../home/Search-3";
 
 export const Navbar = () => {
   const { role, name } = useAuthStore();
@@ -30,8 +30,6 @@ export const Navbar = () => {
           />
         </Link>
       </div>
-
-      <Search />
 
       {role === "USER" || role === "ADMIN" ? (
         <UserSessionMenu name={name} firstLetter={firstLetter} />

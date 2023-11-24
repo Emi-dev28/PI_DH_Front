@@ -14,24 +14,24 @@ import { useState } from "react";
 
 DateRangePicker.propTypes = {
   className: PropTypes.string,
-  search: PropTypes.object,
-  setSearch: PropTypes.func,
+  searchDate: PropTypes.object,
+  setSearchDate: PropTypes.func,
 };
 
-export function DateRangePicker({ className, search, setSearch }) {
+export function DateRangePicker({ className, setSearchDate }) {
   const [date, setDate] = useState();
 
   function handleSelect(date) {
     setDate(date);
 
+    // Formatea las fechas antes de asignarlas a searchDate
     const formattedDateFrom = date?.from ? format(date.from, "yyyy-MM-dd") : "";
 
     const formattedDateTo = date?.to ? format(date.to, "yyyy-MM-dd") : "";
 
-    setSearch({
-      product: search.get("product"),
-      dateFrom: formattedDateFrom,
-      dateTo: formattedDateTo,
+    setSearchDate({
+      from: formattedDateFrom,
+      to: formattedDateTo,
     });
   }
 

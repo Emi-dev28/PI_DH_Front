@@ -1,5 +1,6 @@
 import React from 'react';
-
+import { Link } from "react-router-dom";
+import PrimaryButton from "../../custom-ui/PrimaryButton";
 
 
 const About = () => {
@@ -67,12 +68,36 @@ const About = () => {
             Ahora es posible gracias a DH Technology!
             </span>
         </div>
-
-      
         </div>
-          
-      
+        
 
+
+        <div className='ml-8 mt-12'>
+        <p className="text-xl">COMO <br /> ALQUILAR</p>
+        <img src="/img/arrow-right.webp" alt="arrow right" className="w-[3%]" />
+        </div>
+
+
+        <div className="mx-auto my-10 p-10 border-none rounded-md w-[80%]">
+        <img
+            src="/img/group-about.webp"
+            alt="about-img"
+            className="border-0 rounded-lg w-full h-auto"
+        />
+        </div>
+
+
+
+        <div style={{ textAlign: 'center' }}>
+            <h1 className='py-8 font-bold text-red-500 text-3xl'>¿SUENA GENIAL?, ¡ALQUILA AHORA!</h1>
+        </div>
+        
+          
+            <div className="flex justify-center items-center py-8">
+                <Link to={"/auth/login"}>
+                    <PrimaryButton>Iniciar sesión</PrimaryButton>
+                </Link>
+            </div>
 
     </>
 

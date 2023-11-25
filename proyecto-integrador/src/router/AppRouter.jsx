@@ -14,6 +14,9 @@ import { useEffect, useState } from "react";
 import { Progress } from "@/components/ui/progress";
 import { UserFavoritesPage } from "@/pages/privatePages/UserFavoritesPage";
 import About from "@/components/layout/footer/About";
+import Policy from "@/components/layout/footer/Policy";
+import Business from "@/components/layout/footer/Business";
+import Contact from "@/components/layout/footer/Contact";
 
 export const AppRouter = () => {
   //* Función para mantener sesión iniciada si es que el token no expiró
@@ -48,7 +51,13 @@ export const AppRouter = () => {
       <Route path="/auth/register" element={<RegisterPage />} />
       <Route path="/detalle/:id" element={<Detalle />} />
 
-      <Route path="/about" element={<About />} />
+
+       {/* Footer Links */}
+
+      <Route path="/about" element={<About/>} />
+      <Route path="/policy" element={<Policy/>} />
+      <Route path="/business" element={<Business/>} />
+      <Route path="/contact" element={<Contact/>} />
 
       {/* Admin private routes: solo se puede entrar si el rol es 2*/}
       <Route

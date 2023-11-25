@@ -8,7 +8,7 @@ export const UserFavoritesPage = () => {
     console.log(state.favs);
     return (
         <div className="m-4">
-            <h2 className="text-3xl ml-16">Favorites</h2>
+            <h2 className="text-3xl ml-16">Favoritos</h2>
             <div className="flex justify-center flex-wrap gap-x-32 gap-y-12 mt-6 mb-6">
                 {
                     state.favs.map(fav => <CardHome 

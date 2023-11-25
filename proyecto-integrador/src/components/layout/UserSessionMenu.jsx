@@ -36,7 +36,7 @@ export const UserSessionMenu = ({ firstLetter = "U", name = "User" }) => {
         <DropdownMenuSeparator />
 
         <DropdownMenuItem onClick={() => navigate("user/favs")}>
-          Favorites
+          Favoritos
         </DropdownMenuItem>
 
         <DropdownMenuSeparator />

@@ -24,16 +24,16 @@ export const Footer = () => {
           </a>
         </div>
 
-        <ul className="flex flex-col md:flex-row items-center gap-y-2 gap-x-8">
-          <li><Link to="/about" style={{ cursor: 'pointer' }}>About Us</Link></li>
-          <li style={{ cursor: 'pointer' }}>License</li>
-          <li style={{ cursor: 'pointer' }}>Contribute</li>
-          <li style={{ cursor: 'pointer' }}>Contact Us</li>
+        <ul className="flex flex-col md:flex-row items-center gap-y-2 gap-x-8 font-medium">
+          <li className='hover:border-b-2 hover:border-red-600 transition-width duration-100'><Link to="/about" style={{ cursor: 'pointer' }}>Nosotros</Link></li>
+          <li className='hover:border-b-2 hover:border-red-600 transition-width duration-100'><Link to="/business" style={{ cursor: 'pointer' }}>Empresas</Link></li>
+          <li className='hover:border-b-2 hover:border-red-600 transition-width duration-100'><Link to="/policy" style={{ cursor: 'pointer' }}>Políticas</Link></li>
+          <li className='hover:border-b-2 hover:border-red-600 transition-width duration-100'><Link to="/contact" style={{ cursor: 'pointer' }}>Contáctanos</Link></li>
         </ul>
       </div>
 
       <div className="flex flex-col md:flex-row justify-between border-t-2 border-red-600 mt-2 pt-2">
-        <span className="mb-2 md:mb-0">© 2023 DH Technology All Rights Reserved</span>
+        <span className="mb-2 md:mb-0">© 2023 DH Technology - Derechos Reservados</span>
         <span>Fake 123, Buenos Aires, Argentina.</span>
       </div>
     </footer>

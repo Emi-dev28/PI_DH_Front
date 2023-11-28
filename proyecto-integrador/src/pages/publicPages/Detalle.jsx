@@ -61,7 +61,10 @@ export default function Detalle() {
     setIsOpen(false);
   };
 
-
+  useEffect(() => {
+    // Scroll al inicio de la página cuando se monta el componente
+    window.scrollTo(0, 0);
+  }, []);
 
 
   return (

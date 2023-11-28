@@ -13,7 +13,7 @@ const About = () => {
   return (
     <>
         <div style={{ textAlign: 'center' }}>
-            <img src="/img/section-1about.webp" alt="Top-home-img" className="w-full" />
+            <img src="/img/section-1about.webp" alt="Top-abt-img" className="w-full" />
             <h1 className='py-8 font-bold text-red-500 text-3xl'>LA MEJOR TECNOLOGIA AL ALCANCE DE TU MANO</h1>
         </div>
 

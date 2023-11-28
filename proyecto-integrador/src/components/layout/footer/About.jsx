@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from "react-router-dom";
 import PrimaryButton from "../../custom-ui/PrimaryButton";
 
 
 const About = () => {
+
+    useEffect(() => {
+        // Scroll al inicio de la página cuando se monta el componente
+        window.scrollTo(0, 0);
+      }, []);
+
   return (
     <>
         <div style={{ textAlign: 'center' }}>

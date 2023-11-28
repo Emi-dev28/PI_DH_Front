@@ -279,7 +279,7 @@ export default function Detalle() {
 
       
       <div className="w-[100%]  py-12 pb-0 saturate-150 relative">
-                <img src="/img/detalles-footer.webp" alt="Bottom-detail-img" className="pr-2" />
+                <img src="/img/detalles-footer.webp" alt="Bottom-detail-img"  />
             </div>
             
      

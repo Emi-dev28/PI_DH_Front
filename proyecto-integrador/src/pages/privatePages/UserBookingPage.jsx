@@ -9,12 +9,13 @@ import {
     TableHeader,
     TableRow,
   } from "@/components/ui/table"
+  import { useNavigate } from "react-router-dom";
 
 
 
 export const UserBookingPage = () => {
 
-   
+    const navigate = useNavigate();  
   
    
 

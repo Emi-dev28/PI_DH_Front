@@ -41,6 +41,12 @@ export const UserSessionMenu = ({ firstLetter = "U", name = "User" }) => {
 
         <DropdownMenuSeparator />
 
+        <DropdownMenuItem onClick={() => navigate("user/booking")}>
+          Mis Reservas
+        </DropdownMenuItem>
+
+        <DropdownMenuSeparator />
+
         <DropdownMenuItem onClick={() => logoutSession()}>
           Cerrar sesión
         </DropdownMenuItem>

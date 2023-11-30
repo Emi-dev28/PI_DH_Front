@@ -6,6 +6,7 @@ import ListadoCategorias from "@/pages/privatePages/ListadoCategorias";
 import { LoginPage } from "@/auth/pages/LoginPage";
 import { RegisterPage } from "@/auth/pages/RegisterPage";
 import { UserEditionPage } from "@/pages/privatePages/UserEditionPage";
+import { UserBookingPage } from "@/pages/privatePages/UserBookingPage";
 import AdminPrivateRoutes from "./AdminPrivateRoutes";
 import { UserPrivateRoutes } from "./UserPrivateRoutes";
 import { AdminPermissionPage } from "@/pages/privatePages/AdminPermissionPage";
@@ -84,6 +85,7 @@ export const AppRouter = () => {
             <Routes>
               <Route path="/edit" element={<UserEditionPage />} />
               <Route path="/favs" element={<UserFavoritesPage />} />
+              <Route path="/booking" element={<UserBookingPage />} />
             </Routes>
           </UserPrivateRoutes>
         }

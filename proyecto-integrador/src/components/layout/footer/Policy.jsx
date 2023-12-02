@@ -10,7 +10,7 @@ const Policy = () => {
   return (
     <div>
       <div style={{ textAlign: 'center' }}>
-        <h1 className="py-8 font-bold text-black text-3xl">
+        <h1 className="py-8 text-3xl font-bold text-black">
           TERMINOS Y CONDICIONES
         </h1>
       </div>
@@ -202,12 +202,12 @@ const Policy = () => {
       </div>
 
       <div style={{ textAlign: 'center' }}>
-        <h1 className="py-8 font-bold text-red-500 text-3xl">
+        <h1 className="py-8 text-3xl font-bold text-red-500">
           ¿SUENA GENIAL?, ¡ALQUILA AHORA!
         </h1>
       </div>
 
-      <div className="flex justify-center items-center py-8">
+      <div className="flex items-center justify-center py-8">
         <Link to={'/contact'}>
           <PrimaryButton>Contáctanos</PrimaryButton>
         </Link>

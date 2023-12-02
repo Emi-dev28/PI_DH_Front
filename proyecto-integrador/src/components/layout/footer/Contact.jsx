@@ -8,11 +8,11 @@ const Contact = () => {
   }, []);
 
   return (
-    <div className="flex justify-center py-2 items-center  bg-gray-100 ">
+    <div className="flex items-center justify-center bg-gray-100  py-2 ">
       {/* Contenedor izquierdo con formulario */}
       <div className="flex-1 pl-12 pr-2">
-        <form className="bg-white p-6 rounded shadow-md">
-          <h2 className="text-2xl flex justify-center items-center font-bold text-red-500 mb-4">
+        <form className="rounded bg-white p-6 shadow-md">
+          <h2 className="mb-4 flex items-center justify-center text-2xl font-bold text-red-500">
             CONTACTANOS
           </h2>
           <div className="mb-4 text-center">
@@ -24,7 +24,7 @@ const Contact = () => {
             <div className="w-1/2 pr-2">
               <label
                 htmlFor="name"
-                className="block text-gray-700 font-bold mb-2"
+                className="mb-2 block font-bold text-gray-700"
               >
                 Nombre Completo
               </label>
@@ -32,14 +32,14 @@ const Contact = () => {
                 type="text"
                 id="name"
                 name="name"
-                className="w-full border rounded-md py-2 px-3 shadow-md focus:border-none transition-all duration-300 ease-in-out hover:border-gray-400 bg-white"
+                className="w-full rounded-md border bg-white px-3 py-2 shadow-md transition-all duration-300 ease-in-out hover:border-gray-400 focus:border-none"
                 placeholder="Tu nombre"
               />
             </div>
             <div className="w-1/2 pl-2">
               <label
                 htmlFor="email"
-                className="block text-gray-700 font-bold mb-2"
+                className="mb-2 block font-bold text-gray-700"
               >
                 E-mail
               </label>
@@ -47,7 +47,7 @@ const Contact = () => {
                 type="email"
                 id="email"
                 name="email"
-                className="w-full border rounded-md py-2 px-3 shadow-md focus:border-none transition-all duration-300 ease-in-out hover:border-gray-400 bg-white"
+                className="w-full rounded-md border bg-white px-3 py-2 shadow-md transition-all duration-300 ease-in-out hover:border-gray-400 focus:border-none"
                 placeholder="ejemplo@email.com"
               />
             </div>
@@ -55,7 +55,7 @@ const Contact = () => {
           <div className="mb-4">
             <label
               htmlFor="message"
-              className="block text-gray-700 font-bold mb-2"
+              className="mb-2 block font-bold text-gray-700"
             >
               ¿Cómo podemos ayudarte?
             </label>
@@ -63,22 +63,22 @@ const Contact = () => {
               id="message"
               name="message"
               rows="4"
-              className="w-full border rounded-md py-2 px-3 shadow-md focus:border-none transition-all duration-300 ease-in-out hover:border-gray-400 bg-white"
+              className="w-full rounded-md border bg-white px-3 py-2 shadow-md transition-all duration-300 ease-in-out hover:border-gray-400 focus:border-none"
               placeholder="Quiero saber..."
             ></textarea>
           </div>
-          <div className="flex justify-center items-center">
+          <div className="flex items-center justify-center">
             <PrimaryButton type="submit">Enviar</PrimaryButton>
           </div>
         </form>
       </div>
 
       {/* Contenedor derecho con imagen */}
-      <div className="flex-1 bottom-0 h-auto">
+      <div className="bottom-0 h-auto flex-1">
         <img
           src="/img/img-contact.webp"
           alt="bg-contact"
-          className="object-cover w-full h-full rounded"
+          className="h-full w-full rounded object-cover"
         />
       </div>
     </div>

@@ -10,15 +10,15 @@ export default function DetailTable({ product }) {
     <Table>
       <TableHeader>
         <TableRow>
-          <TableHead className="w-32 bg-slate-200 border-white border-b-[1px]">
+          <TableHead className="w-32 border-b-[1px] border-white bg-slate-200">
             Nombre
           </TableHead>
           <TableHead className="w-96">Descripción</TableHead>
-          <TableHead className="bg-slate-200 border-white border-b-[1px]">
+          <TableHead className="border-b-[1px] border-white bg-slate-200">
             Precio
           </TableHead>
           <TableHead>Categoría</TableHead>
-          <TableHead className="bg-slate-200 border-white border-b-[1px]">
+          <TableHead className="border-b-[1px] border-white bg-slate-200">
             Cantidad
           </TableHead>
           <TableHead>Puntuación</TableHead>

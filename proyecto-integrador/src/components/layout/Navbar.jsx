@@ -21,15 +21,15 @@ export const Navbar = () => {
 
   return (
     <nav
-      className="bg-navbar
-      flex items-center justify-between sticky w-full z-10 top-0 p-4 shadow-lg"
+      className="sticky
+      top-0 z-10 flex w-full items-center justify-between bg-navbar p-4 shadow-lg"
     >
       <div className="flex items-center">
         <Link to="/">
           <img
             src={size.width > 600 ? logo : icon}
             alt="Logo"
-            className="h-10 h w-auto object-contain mr-2"
+            className="h mr-2 h-10 w-auto object-contain"
           />
         </Link>
       </div>
@@ -37,18 +37,18 @@ export const Navbar = () => {
         <DateRangePicker />
       </div>
       {/* Input de búsqueda */}
-      <div className="hidden md:flex items-center">
+      <div className="hidden items-center md:flex">
         <div className="relative">
           <input
             type="text"
             placeholder="Buscar..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="p-2 px-8 border rounded-full focus:outline-none focus:border-blue-500 transition-all duration-300 ease-in-out hover:border-gray-400 bg-gray-100"
+            className="rounded-full border bg-gray-100 p-2 px-8 transition-all duration-300 ease-in-out hover:border-gray-400 focus:border-blue-500 focus:outline-none"
             style={{ width: '450px' }} // Puedes ajustar el ancho según tus necesidades
           />
           <div className="absolute inset-y-0 left-[390px] flex items-center pl-2">
-            <MdSearch className="w-5 h-5 text-gray-600" />
+            <MdSearch className="h-5 w-5 text-gray-600" />
             {/* <svg
               className="w-4 h-4 text-gray-600"
               fill="none"
@@ -67,7 +67,7 @@ export const Navbar = () => {
       {role === 'USER' || role === 'ADMIN' ? (
         <UserSessionMenu name={name} firstLetter={firstLetter} />
       ) : (
-        <div className="hidden md:flex items-center gap-5">
+        <div className="hidden items-center gap-5 md:flex">
           {' '}
           {/* Oculta en dispositivos pequeños */}
           <Link to={'/auth/register'}>

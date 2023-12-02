@@ -16,8 +16,8 @@ export default function Wrapper(props) {
   const { state } = useAuthContext();
 
   return (
-    <div className="mb-16 flex flex-col items-center mt-16">
-      <div className="text-3xl border-b-2 pb-4 flex place-self-start flex-col mb-12 ml-24">
+    <div className="mb-16 mt-16 flex flex-col items-center">
+      <div className="mb-12 ml-24 flex flex-col place-self-start border-b-2 pb-4 text-3xl">
         Productos
       </div>
 
@@ -32,13 +32,13 @@ export default function Wrapper(props) {
           ))}
         </div>
       ) : (
-        <div className="text-2xl mr-60 mb-16">
+        <div className="mb-16 mr-60 text-2xl">
           No se encontraron resultados.
         </div>
       )}
 
       {props.products.length > 0 && (
-        <div className="self-center flex items-center gap-6 mt-8">
+        <div className="mt-8 flex items-center gap-6 self-center">
           {props.currentPage !== 0 ? (
             <Button variant="outline" size="icon" onClick={props.prevHandler}>
               <MdChevronLeft className="text-3xl" />
@@ -52,7 +52,7 @@ export default function Wrapper(props) {
             ></Button>
           )}
 
-          <span className=" h-9 w-9 border border-input inline-flex items-center justify-center rounded-md font-medium">
+          <span className=" inline-flex h-9 w-9 items-center justify-center rounded-md border border-input font-medium">
             {props.currentPage + 1}
           </span>
 

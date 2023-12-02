@@ -67,7 +67,7 @@ export const LoginPage = () => {
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className="space-y-6 flex flex-col"
+          className="flex flex-col space-y-6"
         >
           <FormField
             control={form.control}
@@ -98,7 +98,7 @@ export const LoginPage = () => {
           <Button type="submit" className="">
             Login
           </Button>
-          <Link to={'/auth/register'} className="text-blue-700 text-end">
+          <Link to={'/auth/register'} className="text-end text-blue-700">
             Crear una cuenta
           </Link>
         </form>

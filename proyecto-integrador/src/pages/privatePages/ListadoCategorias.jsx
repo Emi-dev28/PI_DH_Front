@@ -24,11 +24,11 @@ export default function ListadoProductos() {
 
   return (
     <>
-      <div className="flex justify-between items-center p-5 pb-8">
+      <div className="flex items-center justify-between p-5 pb-8">
         <span className="text-2xl">Lista de categorías</span>
 
         <Button
-          className="text-base bg-primary text-white"
+          className="bg-primary text-base text-white"
           onClick={() => navigate('/admin')}
         >
           Crear
@@ -58,14 +58,14 @@ export default function ListadoProductos() {
                   alt="Imagen categoría"
                 />
               </TableCell>
-              <TableCell className="text-center p-3">
+              <TableCell className="p-3 text-center">
                 {/* Botón editar */}
                 <Button variant="ghost" size="icon">
                   <MdEdit className="h-5 w-5" />
                 </Button>
               </TableCell>
               {/* Botón eliminar */}
-              <TableCell className="text-center p-3">
+              <TableCell className="p-3 text-center">
                 <Button
                   variant="ghost"
                   size="icon"

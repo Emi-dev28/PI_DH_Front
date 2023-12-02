@@ -16,7 +16,7 @@ const About = () => {
           alt="Top-abt-img"
           className="w-full"
         />
-        <h1 className="py-8 font-bold text-red-500 text-3xl">
+        <h1 className="py-8 text-3xl font-bold text-red-500">
           LA MEJOR TECNOLOGIA AL ALCANCE DE TU MANO
         </h1>
       </div>
@@ -28,10 +28,10 @@ const About = () => {
         <img src="/img/arrow-right.webp" alt="arrow right" className="w-[3%]" />
       </div>
 
-      <div className="flex justify-between items-center  p-2">
+      <div className="flex items-center justify-between  p-2">
         {/* TEXTO */}
-        <div className="flex flex-col w-[35%] ml-6 h-[300px]">
-          <h1 className="text-3xl font-bold pb-4">
+        <div className="ml-6 flex h-[300px] w-[35%] flex-col">
+          <h1 className="pb-4 text-3xl font-bold">
             La alternativa para que estés con la última tecnología
           </h1>
           <span>
@@ -47,35 +47,35 @@ const About = () => {
         </div>
 
         {/* IMÁGENES */}
-        <div className="flex border-none rounded-md w-[50%] pr-6 ">
+        <div className="flex w-[50%] rounded-md border-none pr-6 ">
           <img
             src="/img/about1.webp"
             alt="about-img"
-            className="border-0 rounded-lg w-full h-auto"
+            className="h-auto w-full rounded-lg border-0"
           />
         </div>
       </div>
 
-      <div className="flex flex-col justify-end items-end mr-8 mt-12">
+      <div className="mr-8 mt-12 flex flex-col items-end justify-end">
         <p className="text-xl">
           TODO <br /> DIGITAL
         </p>
         <img src="/img/arrow-left.webp" alt="arrow right" className="w-[3%]" />
       </div>
 
-      <div className="flex justify-between items-center  p-2">
+      <div className="flex items-center justify-between  p-2">
         {/* IMÁGENES */}
-        <div className="flex border-none rounded-md w-[50%] pl-6 ">
+        <div className="flex w-[50%] rounded-md border-none pl-6 ">
           <img
             src="/img/about2.webp"
             alt="about-img"
-            className="border-0 rounded-lg w-full h-auto"
+            className="h-auto w-full rounded-lg border-0"
           />
         </div>
 
         {/* TEXTO */}
-        <div className="flex flex-col w-[35%] mr-6 h-[300px]">
-          <h1 className="text-3xl font-bold pb-4">
+        <div className="mr-6 flex h-[300px] w-[35%] flex-col">
+          <h1 className="pb-4 text-3xl font-bold">
             La alternativa para que estés con la última tecnología
           </h1>
           <span>
@@ -98,21 +98,21 @@ const About = () => {
         <img src="/img/arrow-right.webp" alt="arrow right" className="w-[3%]" />
       </div>
 
-      <div className="mx-auto my-10 p-10 border-none rounded-md w-[80%]">
+      <div className="mx-auto my-10 w-[80%] rounded-md border-none p-10">
         <img
           src="/img/group-about.webp"
           alt="about-img"
-          className="border-0 rounded-lg w-full h-auto"
+          className="h-auto w-full rounded-lg border-0"
         />
       </div>
 
       <div style={{ textAlign: 'center' }}>
-        <h1 className="py-8 font-bold text-red-500 text-3xl">
+        <h1 className="py-8 text-3xl font-bold text-red-500">
           ¿SUENA GENIAL?, ¡ALQUILA AHORA!
         </h1>
       </div>
 
-      <div className="flex justify-center items-center py-8">
+      <div className="flex items-center justify-center py-8">
         <Link to={'/auth/login'}>
           <PrimaryButton>Iniciar sesión</PrimaryButton>
         </Link>

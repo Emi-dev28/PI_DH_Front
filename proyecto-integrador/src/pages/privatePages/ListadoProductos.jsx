@@ -28,7 +28,7 @@ export default function ListadoProductos() {
   return (
     <>
       {/* Dialog Form Crear Producto */}
-      <div className="flex justify-between items-center p-5 pb-8">
+      <div className="flex items-center justify-between p-5 pb-8">
         <span className="text-2xl">Lista de productos</span>
         <DialogCreateProduct />
       </div>
@@ -51,19 +51,19 @@ export default function ListadoProductos() {
               <TableCell className="p-3">{product.name} </TableCell>
               <TableCell className="p-3">{product.description} </TableCell>
               <TableCell className="p-3">{product.category} </TableCell>
-              <TableCell className="text-center p-3">
+              <TableCell className="p-3 text-center">
                 {product.price}{' '}
               </TableCell>
-              <TableCell className="text-center p-3">
+              <TableCell className="p-3 text-center">
                 {product.stock}{' '}
               </TableCell>
-              <TableCell className="text-center p-3">
+              <TableCell className="p-3 text-center">
                 {/* Botón editar */}
                 <Button variant="ghost" size="icon">
                   <MdEdit className="h-5 w-5" />
                 </Button>
               </TableCell>
-              <TableCell className="text-center p-3">
+              <TableCell className="p-3 text-center">
                 {/* Botón eliminar */}
                 <Button
                   variant="ghost"

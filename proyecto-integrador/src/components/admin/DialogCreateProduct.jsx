@@ -104,7 +104,7 @@ export const DialogCreateProduct = () => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button className="text-base bg-primary text-white">Crear</Button>
+        <Button className="bg-primary text-base text-white">Crear</Button>
       </DialogTrigger>
       <DialogContent>
         <DialogHeader>

@@ -46,7 +46,7 @@ export const AdminPermissionPage = () => {
 
   return (
     <div className="p-2">
-      <h2 className="text-3xl mt-4">Usuarios registrados</h2>
+      <h2 className="mt-4 text-3xl">Usuarios registrados</h2>
 
       <Table className="mt-2">
         <TableHeader>
@@ -73,7 +73,7 @@ export const AdminPermissionPage = () => {
                 <TableCell>{user.email}</TableCell>
                 <TableCell>
                   <select
-                    className={`text-sm font-semibold px-2 border-none rounded-sm bg-rose-200`}
+                    className={`rounded-sm border-none bg-rose-200 px-2 text-sm font-semibold`}
                     name="select"
                     onChange={({ target }) => setNewRol({ rol: target.value })}
                   >
@@ -90,7 +90,7 @@ export const AdminPermissionPage = () => {
                 </TableCell>
                 <TableCell>
                   <Button
-                    className="bg-slate-100 text-green-600 hover:text-white hover:bg-green-600 h-[25px] rounded-sm"
+                    className="h-[25px] rounded-sm bg-slate-100 text-green-600 hover:bg-green-600 hover:text-white"
                     onClick={() => editUserPermission(user.email, newRol)}
                   >
                     Dar permiso

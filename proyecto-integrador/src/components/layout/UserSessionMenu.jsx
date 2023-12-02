@@ -17,7 +17,7 @@ export const UserSessionMenu = ({ firstLetter = 'U', name = 'User' }) => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger>
-        <div className="bg-blue-600 hover:bg-blue-500 px-[14px] py-[4px] border-none rounded-md">
+        <div className="rounded-md border-none bg-blue-600 px-[14px] py-[4px] hover:bg-blue-500">
           <span className="text-xl text-white"> {firstLetter} </span>
           <span className="text-white"> {name} </span>
         </div>

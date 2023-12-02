@@ -11,7 +11,7 @@ export default function CardSlider({ category, handleClickFilterProducts }) {
 
   return (
     <div
-      className={`bg-white w-[250px] cursor-pointer inline-block mx-4 p-4 md:p-6 rounded-md border border-gray-300 hover:border-gray-500 shadow-md transition-all duration-300 ease-in-out ${
+      className={`mx-4 inline-block w-[250px] cursor-pointer rounded-md border border-gray-300 bg-white p-4 shadow-md transition-all duration-300 ease-in-out hover:border-gray-500 md:p-6 ${
         selectedCategory && 'border-primary hover:border-primary'
       }`}
       onClick={() => {
@@ -19,17 +19,17 @@ export default function CardSlider({ category, handleClickFilterProducts }) {
         setSelectedCategory(!selectedCategory);
       }}
     >
-      <div className="flex justify-center items-center mb-4">
+      <div className="mb-4 flex items-center justify-center">
         <img
           src={category.image}
-          className="w-full h-[140px] object-cover rounded-t-md"
+          className="h-[140px] w-full rounded-t-md object-cover"
           alt={category.name}
         />
       </div>
 
       <div className="border"></div>
 
-      <h2 className="pt-4 text-base text-primary opacity-80 sm:text-lg md:text-lg lg:text-lg xl:text-lg 2xl:text-lg font-semibold">
+      <h2 className="pt-4 text-base font-semibold text-primary opacity-80 sm:text-lg md:text-lg lg:text-lg xl:text-lg 2xl:text-lg">
         {category.name}
       </h2>
 

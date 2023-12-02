@@ -73,24 +73,24 @@ export default function Detalle() {
 
   return (
     <div className="flex flex-col ">
-      <div className="flex justify-end items-center mb-3 mx-6 py-2">
+      <div className="mx-6 mb-3 flex items-center justify-end py-2">
         <Button
-          className="text-lg bg-cyan-600 text-white mt-4 hover:bg-cyan-500"
+          className="mt-4 bg-cyan-600 text-lg text-white hover:bg-cyan-500"
           onClick={() => navigate(-1)}
         >
           Regresar
         </Button>
       </div>
 
-      <div className=" flex justify-between mx-4 ">
-        <div className=" flex flex-col w-1/4 min-h-40 p-2 ">
+      <div className=" mx-4 flex justify-between ">
+        <div className=" min-h-40 flex w-1/4 flex-col p-2 ">
           <h1 className="text-xl font-bold">{product.name}</h1>
 
           <div
-            className="w-14 flex justify-center items-center bg-blue-600 
-                font-semibold px-1 text-white rounded-md "
+            className="flex w-14 items-center justify-center rounded-md 
+                bg-blue-600 px-1 font-semibold text-white "
           >
-            <MdOutlineStar className="text-yellow-400 mr-[3px] text-xl" />
+            <MdOutlineStar className="mr-[3px] text-xl text-yellow-400" />
             <span>{product.rating}</span>
           </div>
 
@@ -111,45 +111,45 @@ export default function Detalle() {
 
           <h2 className="py-4">{product.description}</h2>
 
-          <div className="mt-4 flex items-center font-bold text-3xl">
+          <div className="mt-4 flex items-center text-3xl font-bold">
             ${product.price}
-            <span className="text-xl font-normal ml-2">/ Día.</span>
+            <span className="ml-2 text-xl font-normal">/ Día.</span>
           </div>
 
-          <div className=" py-4 flex justify-end ">
+          <div className=" flex justify-end py-4 ">
             <ShareButton />
           </div>
         </div>
 
         {/* IMÁGENES  */}
-        <div className="flex bg-white border-none rounded-md">
+        <div className="flex rounded-md border-none bg-white">
           <img
             src={product.images ? product.images[0].image : '/img/drone2.webp'}
             alt="product-img"
-            className="border-0 rounded-lg w-[350px]"
+            className="w-[350px] rounded-lg border-0"
           />
 
-          <div className="w-full flex flex-col justify-center gap-4">
+          <div className="flex w-full flex-col justify-center gap-4">
             <img
               src={
                 product.images ? product.images[1].image : '/img/drone2.webp'
               }
               alt="product-img"
-              className="w-36 h-28 border-0 rounded-lg"
+              className="h-28 w-36 rounded-lg border-0"
             />
             <img
               src={
                 product.images ? product.images[2].image : '/img/drone2.webp'
               }
               alt="product-img"
-              className="w-36 h-28 border-0 rounded-lg"
+              className="h-28 w-36 rounded-lg border-0"
             />
             <img
               src={
                 product.images ? product.images[3].image : '/img/drone2.webp'
               }
               alt="product-img"
-              className="w-36 h-28 border-0 rounded-lg"
+              className="h-28 w-36 rounded-lg border-0"
             />
           </div>
 
@@ -161,7 +161,7 @@ export default function Detalle() {
           </span> */}
         </div>
 
-        <div className="border-none rounded-md flex flex-col gap-6">
+        <div className="flex flex-col gap-6 rounded-md border-none">
           <Calendar
             mode="single"
             defaultMonth={date?.from}
@@ -184,12 +184,12 @@ export default function Detalle() {
       </div>
 
       {/* Characteristics */}
-      <div className="w-full h-full mt-10">
-        <h2 className="text-2xl border-b-2 pb-2 flex mb-4 md:mb-8 ml-4 md:ml-6">
+      <div className="mt-10 h-full w-full">
+        <h2 className="mb-4 ml-4 flex border-b-2 pb-2 text-2xl md:mb-8 md:ml-6">
           Características
         </h2>
 
-        <div className="flex gap-10 mx-4">
+        <div className="mx-4 flex gap-10">
           <div className="flex items-center gap-2">
             <MdOutlineMemory className="text-xl" />
             <span>Dos motores</span>
@@ -225,8 +225,8 @@ export default function Detalle() {
         <Carousel images={product.images} />
       </ImgGalleryModal>
 
-      <div className=" mt-10 mx-4">
-        <h1 className="text-xl border-b-2 flex flex-col ">FAQ</h1>
+      <div className=" mx-4 mt-10">
+        <h1 className="flex flex-col border-b-2 text-xl ">FAQ</h1>
 
         <div>
           <Accordion type="single" collapsible>
@@ -303,7 +303,7 @@ export default function Detalle() {
         </div>
       </div>
 
-      <div className="w-[100%]  py-12 pb-0 saturate-150 relative">
+      <div className="relative  w-[100%] py-12 pb-0 saturate-150">
         <img src="/img/detalles-footer.webp" alt="Bottom-detail-img" />
       </div>
     </div>

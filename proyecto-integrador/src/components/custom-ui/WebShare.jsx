@@ -34,7 +34,7 @@ const ShareButton = () => {
     <div className="flex">
       {isWebShareSupported && (
         <button
-          className="flex items-center text-l bg-transparent text-black cursor-pointer"
+          className="text-l flex cursor-pointer items-center bg-transparent text-black"
           onClick={handleShare}
         >
           <HiOutlineShare className="mr-2 text-xl" />
@@ -42,24 +42,24 @@ const ShareButton = () => {
       )}
 
       <button
-        className="flex items-center text-xl cursor-pointer ml-2"
+        className="ml-2 flex cursor-pointer items-center text-xl"
         onClick={handleFacebookShare}
       >
         <img
           src="/img/facebook-icon.webp"
           alt="WhatsApp Icon"
-          className="w-6 h-6 mr-1"
+          className="mr-1 h-6 w-6"
         />
       </button>
 
       <button
-        className="flex items-center text-xl cursor-pointer ml-2"
+        className="ml-2 flex cursor-pointer items-center text-xl"
         onClick={handleWhatsappShare}
       >
         <img
           src="/img/whatsapp-icon.webp"
           alt="WhatsApp Icon"
-          className="w-8 h-8 mr-1"
+          className="mr-1 h-8 w-8"
         />
       </button>
     </div>

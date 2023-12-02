@@ -24,15 +24,15 @@ export default function Search() {
   }
 
   return (
-    <search className="flex items-center gap-16 ml-96 mt-10">
+    <search className="ml-96 mt-10 flex items-center gap-16">
       {/* Input de búsqueda */}
-      <div className="hidden md:flex items-center">
+      <div className="hidden items-center md:flex">
         <Input
           type="text"
           placeholder="¿Qué productos estás buscando?"
           value={product}
           onChange={handleChange}
-          className="px-8 w-[450px] h-10 border rounded-2xl shadow-md focus:border-none transition-all duration-300 ease-in-out hover:border-gray-400 bg-gray-100"
+          className="h-10 w-[450px] rounded-2xl border bg-gray-100 px-8 shadow-md transition-all duration-300 ease-in-out hover:border-gray-400 focus:border-none"
         />
       </div>
 

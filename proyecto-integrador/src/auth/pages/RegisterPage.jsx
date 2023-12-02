@@ -98,7 +98,7 @@ export const RegisterPage = () => {
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className="space-y-6 flex flex-col"
+          className="flex flex-col space-y-6"
         >
           <FormField
             control={form.control}
@@ -158,7 +158,7 @@ export const RegisterPage = () => {
           </Button>
           <div className="text-end">
             <span>¿Ya tenés una cuenta?</span>
-            <Link to={'/auth/login'} className="text-blue-700 underline ml-2">
+            <Link to={'/auth/login'} className="ml-2 text-blue-700 underline">
               Iniciar sesión
             </Link>
           </div>

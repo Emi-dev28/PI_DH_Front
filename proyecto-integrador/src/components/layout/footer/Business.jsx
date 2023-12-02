@@ -12,7 +12,7 @@ const Business = () => {
     <>
       <div style={{ textAlign: 'center' }}>
         <img src="/img/empresa1.webp" alt="Top-bns-img" className="w-full" />
-        <h1 className="py-8 font-bold text-red-500 text-3xl">
+        <h1 className="py-8 text-3xl font-bold text-red-500">
           ¿TENES UNA EMPRESA?, MIRA!
         </h1>
       </div>
@@ -25,28 +25,28 @@ const Business = () => {
         </p>
       </div>
 
-      <div className="flex justify-end items-end">
-        <div className="flex border-none pl-24 py-8 w-[100%] justify-end items-end">
+      <div className="flex items-end justify-end">
+        <div className="flex w-[100%] items-end justify-end border-none py-8 pl-24">
           <img
             src="/img/empresa2.webp"
             alt="bsn-img"
-            className="border-0 rounded-lg w-full h-auto"
+            className="h-auto w-full rounded-lg border-0"
           />
         </div>
       </div>
 
-      <div className="flex justify-end items-end mr-8 py-12 text-end">
+      <div className="mr-8 flex items-end justify-end py-12 text-end">
         <p className="text-2xl font-bold">
           SERVICIOS COMPLETOS <br />A TU MEDIDA
         </p>
       </div>
 
-      <div className="flex justify-start items-start">
-        <div className="flex border-none pr-24 py-8 w-[100%] justify-end items-end">
+      <div className="flex items-start justify-start">
+        <div className="flex w-[100%] items-end justify-end border-none py-8 pr-24">
           <img
             src="/img/empresa3.webp"
             alt="bsn-img"
-            className="border-0 rounded-lg w-full h-auto"
+            className="h-auto w-full rounded-lg border-0"
           />
         </div>
       </div>
@@ -55,21 +55,21 @@ const Business = () => {
         <p className="text-2xl font-bold">OPTIMIZACION ESCALABLE</p>
       </div>
 
-      <div className="flex justify-end items-end">
-        <div className="flex border-none pl-24 py-8 w-[100%] justify-end items-end">
+      <div className="flex items-end justify-end">
+        <div className="flex w-[100%] items-end justify-end border-none py-8 pl-24">
           <img
             src="/img/empresa4.webp"
             alt="bsn-img"
-            className="border-0 rounded-lg w-full h-auto"
+            className="h-auto w-full rounded-lg border-0"
           />
         </div>
       </div>
 
       <div style={{ textAlign: 'center' }}>
-        <h1 className="py-8 font-bold text-red-500 text-3xl">¿TE INTERESA?</h1>
+        <h1 className="py-8 text-3xl font-bold text-red-500">¿TE INTERESA?</h1>
       </div>
 
-      <div className="flex justify-center items-center py-8">
+      <div className="flex items-center justify-center py-8">
         <Link to={'/contact'}>
           <PrimaryButton>Contáctanos</PrimaryButton>
         </Link>

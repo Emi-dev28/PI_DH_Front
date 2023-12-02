@@ -145,14 +145,14 @@ export default function Home() {
 
   return (
     <div className="flex flex-col">
-      <div className="w-full relative">
+      <div className="relative w-full">
         <Marquee />
         <img src="/img/Section 1.webp" alt="Top-home-img" className="w-full" />
-        <div className="absolute bottom-10 md:bottom-15 lg:bottom-20 left-8">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl text-white underline underline-offset-8 decoration-pink-500">
+        <div className="md:bottom-15 absolute bottom-10 left-8 lg:bottom-20">
+          <h1 className="text-4xl text-white underline decoration-pink-500 underline-offset-8 md:text-6xl lg:text-7xl">
             DH Technology
           </h1>
-          <h4 className="text-white text-lg md:text-2xl lg:text-3xl mt-2">
+          <h4 className="mt-2 text-lg text-white md:text-2xl lg:text-3xl">
             Hacemos realidad tu proyecto
           </h4>
         </div>
@@ -166,7 +166,7 @@ export default function Home() {
         handleClickFilterProducts={handleClickFilterProducts}
       />
 
-      <h3 className="flex justify-end mt-2 mr-20 2xl:mr-56">
+      <h3 className="mr-20 mt-2 flex justify-end 2xl:mr-56">
         {elementsAmount} resultados
       </h3>
       {/* PRODUCTOS */}
@@ -177,14 +177,14 @@ export default function Home() {
         currentPage={currentPage}
       />
 
-      <div className="w-full saturate-150 relative">
+      <div className="relative w-full saturate-150">
         <img src="/img/Component.webp" alt="Bottom-home-img" className="pr-2" />
 
         <Button
           variant="outline"
           size="icon"
-          className="absolute right-8 bottom-5 bg-gradient-to-b from-lime-400 to-lime-600 
-          border-none rounded-md"
+          className="absolute bottom-5 right-8 rounded-md border-none bg-gradient-to-b 
+          from-lime-400 to-lime-600"
           onClick={() => window.scroll({ top: '0', behavior: 'smooth' })}
         >
           <MdArrowUpward className="text-xl text-white" />

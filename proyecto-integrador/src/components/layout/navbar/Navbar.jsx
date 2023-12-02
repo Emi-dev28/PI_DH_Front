@@ -18,15 +18,15 @@ export const Navbar = () => {
 
   return (
     <nav
-      className="bg-navbar
-      flex items-center justify-between sticky w-full z-10 top-0 p-4 shadow-lg"
+      className="sticky
+      top-0 z-10 flex w-full items-center justify-between bg-navbar p-4 shadow-lg"
     >
       <div className="flex items-center">
         <Link to="/" reloadDocument>
           <img
             src={size.width > 600 ? logo : icon}
             alt="Logo"
-            className="h-10 h w-auto object-contain mr-2"
+            className="h mr-2 h-10 w-auto object-contain"
           />
         </Link>
       </div>
@@ -34,7 +34,7 @@ export const Navbar = () => {
       {role === 'USER' || role === 'ADMIN' ? (
         <UserSessionMenu name={name} firstLetter={firstLetter} />
       ) : (
-        <div className="hidden md:flex items-center gap-5">
+        <div className="hidden items-center gap-5 md:flex">
           {' '}
           {/* Oculta en dispositivos pequeños */}
           <Link to={'/auth/register'}>

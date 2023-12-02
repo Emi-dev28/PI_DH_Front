@@ -21,23 +21,23 @@ export default function Slider({ categories, handleClickFilterProducts }) {
 
   return (
     <div className="mt-10 flex flex-col">
-      <div className="text-3xl border-b-2 pb-4 flex place-self-start flex-col mb-12 ml-24">
+      <div className="mb-12 ml-24 flex flex-col place-self-start border-b-2 pb-4 text-3xl">
         Categorías
       </div>
-      <div className="w-full h-full">
-        <div className="relative flex items-center justify-center mx-2">
+      <div className="h-full w-full">
+        <div className="relative mx-2 flex items-center justify-center">
           <Button
             variant="icon"
             size="icon"
             onClick={slideLeft}
-            className="opacity-50 cursor-pointer hover:opacity-100"
+            className="cursor-pointer opacity-50 hover:opacity-100"
           >
             <MdArrowCircleLeft className="text-4xl" />
           </Button>
 
           <div
             id="slider"
-            className="w-full h-full overflow-hidden whitespace-nowrap scroll-smooth max-w-[1410px]"
+            className="h-full w-full max-w-[1410px] overflow-hidden scroll-smooth whitespace-nowrap"
           >
             {categories.map((category) => (
               <CardSlider
@@ -52,7 +52,7 @@ export default function Slider({ categories, handleClickFilterProducts }) {
             variant="icon"
             size="icon"
             onClick={slideRight}
-            className="opacity-50 cursor-pointer hover:opacity-100"
+            className="cursor-pointer opacity-50 hover:opacity-100"
           >
             <MdArrowCircleRight className="text-4xl" />
           </Button>

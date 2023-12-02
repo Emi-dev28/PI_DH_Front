@@ -20,9 +20,9 @@ export const Carousel = ({ images }) => {
   };
 
   return (
-    <div className="w-full h-full flex flex-col justify-center items-center overflow-hidden">
+    <div className="flex h-full w-full flex-col items-center justify-center overflow-hidden">
       <div
-        className="w-full h-full transition-transform duration-300 whitespace-nowrap relative"
+        className="relative h-full w-full whitespace-nowrap transition-transform duration-300"
         style={{ transform: `translate(-${activeIndex * 100}%)` }}
       >
         {images.map((img) => (
@@ -30,21 +30,21 @@ export const Carousel = ({ images }) => {
             key={img.image}
             src={img.image}
             alt="drone"
-            className="w-full h-full inline-flex justify-center items-center duration-1000 whitespace-normal border-0 rounded-md"
+            className="inline-flex h-full w-full items-center justify-center whitespace-normal rounded-md border-0 duration-1000"
           />
         ))}
       </div>
 
-      <div className="flex justify-between absolute bottom-6 w-4/6">
+      <div className="absolute bottom-6 flex w-4/6 justify-between">
         <button
-          className="text-black border-none"
+          className="border-none text-black"
           variant="outline"
           onClick={() => updateIndex(activeIndex - 1)}
         >
           <MdArrowBackIos className="text-3xl text-black" />
         </button>
 
-        <div className="flex text-black border-none gap-4">
+        <div className="flex gap-4 border-none text-black">
           {images.map((item, index) => (
             <button
               key={index}
@@ -62,7 +62,7 @@ export const Carousel = ({ images }) => {
         </div>
 
         <button
-          className="text-black border-none"
+          className="border-none text-black"
           variant="outline"
           onClick={() => updateIndex(activeIndex + 1)}
         >

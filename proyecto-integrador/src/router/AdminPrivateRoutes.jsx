@@ -18,11 +18,11 @@ export default function AdminPrivateRoutes({ children }) {
     size.width > 900 ? (
       <div className="flex">
         <SidebarMenu />
-        <main className="w-screen m-5">{children}</main>
+        <main className="m-5 w-screen">{children}</main>
       </div>
     ) : (
-      <div className="flex justify-center items-center h-screen">
-        <div className="flex flex-col border-2 border-slate-100 rounded-lg	p-7">
+      <div className="flex h-screen items-center justify-center">
+        <div className="flex flex-col rounded-lg border-2 border-slate-100	p-7">
           <h2 className="text-2xl">No disponible para celular</h2>
         </div>
       </div>

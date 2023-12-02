@@ -14,11 +14,11 @@ export const UserEditionPage = () => {
   const [userData, setUserData] = useState({ id: state.uid });
 
   return (
-    <div className="flex justify-center h-screen">
-      <div className="w-1/2 flex flex-col items-center ">
-        <div className="flex justify-center items-center gap-x-2">
-          <div className="flex flex-col min-w-[330px] gap-y-4 border-2 border-slate-100 rounded-lg p-7 ">
-            <h2 className="text-2xl place-self-start">
+    <div className="flex h-screen justify-center">
+      <div className="flex w-1/2 flex-col items-center ">
+        <div className="flex items-center justify-center gap-x-2">
+          <div className="flex min-w-[330px] flex-col gap-y-4 rounded-lg border-2 border-slate-100 p-7 ">
+            <h2 className="place-self-start text-2xl">
               Editar datos de usuario
             </h2>
 
@@ -32,7 +32,7 @@ export const UserEditionPage = () => {
                   setUserData({ ...userData, name: e.target.value })
                 }
               />
-              <MdEditSquare className="text-3xl pl-2 absolute top-1 right-2" />
+              <MdEditSquare className="absolute right-2 top-1 pl-2 text-3xl" />
             </div>
 
             <div className="relative">
@@ -45,7 +45,7 @@ export const UserEditionPage = () => {
                   setUserData({ ...userData, lastname: e.target.value })
                 }
               />
-              <MdEditSquare className="text-3xl pl-2 absolute top-1 right-2" />
+              <MdEditSquare className="absolute right-2 top-1 pl-2 text-3xl" />
             </div>
 
             <div className="relative">
@@ -58,7 +58,7 @@ export const UserEditionPage = () => {
                   setUserData({ ...userData, email: e.target.value })
                 }
               />
-              <MdEditSquare className="text-3xl pl-2 absolute top-1 right-2" />
+              <MdEditSquare className="absolute right-2 top-1 pl-2 text-3xl" />
             </div>
 
             <Button
@@ -75,7 +75,7 @@ export const UserEditionPage = () => {
             <img
               src="/img/girlEdit.svg"
               alt=""
-              className="h-[420px] mt-6 border-0 rounded-xl"
+              className="mt-6 h-[420px] rounded-xl border-0"
             />
           </div>
         </div>

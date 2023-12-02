@@ -26,32 +26,32 @@ export default function CardHome({ product, isFav }) {
   };
 
   return (
-    <Card className="w-full sm:w-[400px] lg:w-[500px] h-[460px] flex flex-col p-4 hover:shadow-xl duration-300 ">
-      <div className="py-0 flex flex-col items-end">
+    <Card className="flex h-[460px] w-full flex-col p-4 duration-300 hover:shadow-xl sm:w-[400px] lg:w-[500px] ">
+      <div className="flex flex-col items-end py-0">
         <ShareButton />
       </div>
       <div className="flex justify-center">
         <img
           src={product.images ? product.images[0].image : '/img/drone2.webp'}
-          className="w-full h-[260px] object-cover cursor-pointer"
+          className="h-[260px] w-full cursor-pointer object-cover"
           onClick={() => navigate('/detalle/' + product.id)}
         />
       </div>
 
       <div className="border"></div>
 
-      <CardHeader className="flex flex-row justify-between mt-[-10px]">
+      <CardHeader className="mt-[-10px] flex flex-row justify-between">
         <div>
-          <CardTitle className="text-lg mt-[5px] flex items-center">
+          <CardTitle className="mt-[5px] flex items-center text-lg">
             <span>{product.name}</span>
             {isFav ? (
               <MdFavorite
-                className="text-red-600 ml-2 text-xl cursor-pointer duration-300"
+                className="ml-2 cursor-pointer text-xl text-red-600 duration-300"
                 onClick={() => handleRemoveFromFavorites()}
               />
             ) : (
               <MdFavoriteBorder
-                className="text-yellow-600 ml-2 text-xl cursor-pointer duration-300"
+                className="ml-2 cursor-pointer text-xl text-yellow-600 duration-300"
                 onClick={() => handleAddToFavorites()}
               />
             )}
@@ -62,7 +62,7 @@ export default function CardHome({ product, isFav }) {
           </CardDescription>
         </div>
 
-        <div className="mt-2 sm:mt-0 flex flex-col items-end">
+        <div className="mt-2 flex flex-col items-end sm:mt-0">
           <span>⭐{product.rating}</span>
         </div>
       </CardHeader>

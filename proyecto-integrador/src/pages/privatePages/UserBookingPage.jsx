@@ -15,9 +15,9 @@ export const UserBookingPage = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="flex justify-center items-center gap-x-2">
-      <div className="flex flex-col min-w-[330px] gap-y-4 border-2 border-slate-100 rounded-lg p-7 ">
-        <h2 className="text-2xl place-self-start">Historial de Reservas</h2>
+    <div className="flex items-center justify-center gap-x-2">
+      <div className="flex min-w-[330px] flex-col gap-y-4 rounded-lg border-2 border-slate-100 p-7 ">
+        <h2 className="place-self-start text-2xl">Historial de Reservas</h2>
 
         <PrimaryButton onClick={() => navigate('/')}>Salir</PrimaryButton>
       </div>

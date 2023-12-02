@@ -43,7 +43,7 @@ export function DateRangePicker({ className, setSearchDate }) {
             id="date"
             variant="outline"
             className={cn(
-              'w-56 justify-start text-left text-muted-foreground font-normal shadow-md rounded-2xl h-10 transition-all duration-300 ease-in-out bg-gray-100 hover:border-gray-400 data-[state=open]:border-primary',
+              'h-10 w-56 justify-start rounded-2xl bg-gray-100 text-left font-normal text-muted-foreground shadow-md transition-all duration-300 ease-in-out hover:border-gray-400 data-[state=open]:border-primary',
               date && 'text-black',
             )}
           >

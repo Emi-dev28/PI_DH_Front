@@ -1,4 +1,4 @@
-import { HiOutlineShare } from "react-icons/hi";
+import { HiOutlineShare } from 'react-icons/hi';
 
 const ShareButton = () => {
   const isWebShareSupported = navigator.share !== undefined;
@@ -6,28 +6,28 @@ const ShareButton = () => {
   const handleShare = async () => {
     try {
       await navigator.share({
-        title: "Título compartido",
-        text: "Descripción compartida",
-        url: "https://tupagina.com",
+        title: 'Título compartido',
+        text: 'Descripción compartida',
+        url: 'https://tupagina.com',
       });
-      console.log("Contenido compartido con éxito");
+      console.log('Contenido compartido con éxito');
     } catch (error) {
-      console.error("Error al compartir:", error);
+      console.error('Error al compartir:', error);
     }
   };
 
   const handleFacebookShare = () => {
     const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
-      "https://tupagina.com"
+      'https://tupagina.com',
     )}`;
-    window.open(facebookShareUrl, "_blank");
+    window.open(facebookShareUrl, '_blank');
   };
 
   const handleWhatsappShare = () => {
     const whatsappShareUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(
-      "https://tupagina.com"
+      'https://tupagina.com',
     )}`;
-    window.open(whatsappShareUrl, "_blank");
+    window.open(whatsappShareUrl, '_blank');
   };
 
   return (

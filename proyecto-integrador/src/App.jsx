@@ -1,21 +1,21 @@
 // Shadcn dark mode provider
-import { ThemeProvider } from "@/components/theme/ThemeProvider";
+import { ThemeProvider } from '@/components/theme/ThemeProvider';
 // Shadcn components
-import { Toaster } from "@/components/ui/toaster";
+import { Toaster } from '@/components/ui/toaster';
 // React Router
-import { useLocation } from "react-router-dom";
-import { AppRouter } from "./router/AppRouter";
-import { Navbar } from "./components/layout/navbar/Navbar";
-import { Footer } from "./components/layout/Footer";
+import { useLocation } from 'react-router-dom';
+import { AppRouter } from './router/AppRouter';
+import { Navbar } from './components/layout/navbar/Navbar';
+import { Footer } from './components/layout/Footer';
 
 export default function App() {
   const location = useLocation();
 
-  const isAdminPages = location.pathname.startsWith("/admin");
+  const isAdminPages = location.pathname.startsWith('/admin');
 
-  const isUserPages = location.pathname.startsWith("/user");
+  const isUserPages = location.pathname.startsWith('/user');
 
-  const isAuthPages = location.pathname.startsWith("/auth");
+  const isAuthPages = location.pathname.startsWith('/auth');
 
   return (
     <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">

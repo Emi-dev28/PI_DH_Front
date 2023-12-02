@@ -1,15 +1,15 @@
-import { Marquee } from "@/components/home/Marquee";
-import Slider from "@/components/home/Slider";
-import Wrapper from "@/components/home/Wrapper";
-import { Button } from "@/components/ui/button";
-import { useDataStore } from "@/context/dataContext/hooks/useDataStore";
-import { useEffect, useState } from "react";
-import { MdArrowUpward } from "react-icons/md";
-import { useSearchParams } from "react-router-dom";
-import Search from "@/components/home/Search";
+import { Marquee } from '@/components/home/Marquee';
+import Slider from '@/components/home/Slider';
+import Wrapper from '@/components/home/Wrapper';
+import { Button } from '@/components/ui/button';
+import { useDataStore } from '@/context/dataContext/hooks/useDataStore';
+import { useEffect, useState } from 'react';
+import { MdArrowUpward } from 'react-icons/md';
+import { useSearchParams } from 'react-router-dom';
+import Search from '@/components/home/Search';
 
-import categories from "@/mocks/categories.json";
-import products from "@/mocks/products.json";
+import categories from '@/mocks/categories.json';
+import products from '@/mocks/products.json';
 
 export default function Home() {
   const { state } = useDataStore();
@@ -25,11 +25,16 @@ export default function Home() {
   const [search, setSearch] = useSearchParams();
 
   useEffect(() => {
-    if (search.get("product")) {
-      console.log("SearchParams useEffect");
+    if (
+      search.get('product') ||
+      (search.get('dateFrom') && search.get('dateTo'))
+    ) {
+      console.log('SearchParams useEffect');
       // Si hay un valor en la búsqueda de productos, filtra los productos según ese valor
       const filteredProductsBySearchParams = products.filter((product) =>
-        product.name.toLowerCase().includes(search.get("product").toLowerCase())
+        product.name
+          .toLowerCase()
+          .includes(search.get('product').toLowerCase()),
       );
 
       setShuffledProducts(filteredProductsBySearchParams);
@@ -40,7 +45,7 @@ export default function Home() {
       // Actualizar el estado con los productos filtrados
       setRandomProducts(newSelectedProducts);
     } else {
-      console.log("RandomProducts useEffect");
+      console.log('RandomProducts useEffect');
       const updateRandomProducts = () => {
         // Ordenar aleatoriamente los productos
         //const shuffledProducts = state.products.sort(() => Math.random() - 0.5);
@@ -75,7 +80,7 @@ export default function Home() {
     if (isCategorySelected) {
       // Si la categoría está seleccionada, quitarla del array
       updatedCategories = selectedCategories.filter(
-        (category) => category !== selectedCategory
+        (category) => category !== selectedCategory,
       );
     } else {
       // Si la categoría no está seleccionada, agregarla al array
@@ -90,8 +95,8 @@ export default function Home() {
       updatedCategories.length > 0
         ? shuffledProducts.filter((product) =>
             updatedCategories.find((category) =>
-              product.category.includes(category)
-            )
+              product.category.includes(category),
+            ),
           )
         : shuffledProducts;
 
@@ -113,14 +118,14 @@ export default function Home() {
 
     selectedCategories.length > 0
       ? setRandomProducts(
-          [...filteredProductsByCategories].splice(index, elementsToDisplay)
+          [...filteredProductsByCategories].splice(index, elementsToDisplay),
         )
       : setRandomProducts(
-          [...shuffledProducts].splice(index, elementsToDisplay)
+          [...shuffledProducts].splice(index, elementsToDisplay),
         );
 
     setCurrentPage(nextPage);
-    window.scroll({ top: 1020, behavior: "smooth" });
+    window.scroll({ top: 1020, behavior: 'smooth' });
   };
 
   const prevHandler = () => {
@@ -135,7 +140,7 @@ export default function Home() {
       : setRandomProducts([...shuffledProducts].splice(index, 10));
 
     setCurrentPage(prevPage);
-    window.scroll({ top: 1020, behavior: "smooth" });
+    window.scroll({ top: 1020, behavior: 'smooth' });
   };
 
   return (
@@ -180,7 +185,7 @@ export default function Home() {
           size="icon"
           className="absolute right-8 bottom-5 bg-gradient-to-b from-lime-400 to-lime-600 
           border-none rounded-md"
-          onClick={() => window.scroll({ top: "0", behavior: "smooth" })}
+          onClick={() => window.scroll({ top: '0', behavior: 'smooth' })}
         >
           <MdArrowUpward className="text-xl text-white" />
         </Button>

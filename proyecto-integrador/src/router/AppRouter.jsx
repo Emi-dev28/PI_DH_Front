@@ -1,23 +1,23 @@
-import Home from "../pages/publicPages/Home";
-import { Route, Routes } from "react-router-dom";
-import Detalle from "@/pages/publicPages/Detalle";
-import ListadoProductos from "@/pages/privatePages/ListadoProductos";
-import ListadoCategorias from "@/pages/privatePages/ListadoCategorias";
-import { LoginPage } from "@/auth/pages/LoginPage";
-import { RegisterPage } from "@/auth/pages/RegisterPage";
-import { UserEditionPage } from "@/pages/privatePages/UserEditionPage";
-import { UserBookingPage } from "@/pages/privatePages/UserBookingPage";
-import AdminPrivateRoutes from "./AdminPrivateRoutes";
-import { UserPrivateRoutes } from "./UserPrivateRoutes";
-import { AdminPermissionPage } from "@/pages/privatePages/AdminPermissionPage";
-import { useAuthStore } from "@/context/authContext/hooks/useAuthStore";
-import { useEffect, useState } from "react";
-import { Progress } from "@/components/ui/progress";
-import { UserFavoritesPage } from "@/pages/privatePages/UserFavoritesPage";
-import About from "@/components/layout/footer/About";
-import Policy from "@/components/layout/footer/Policy";
-import Business from "@/components/layout/footer/Business";
-import Contact from "@/components/layout/footer/Contact";
+import Home from '../pages/publicPages/Home';
+import { Route, Routes } from 'react-router-dom';
+import Detalle from '@/pages/publicPages/Detalle';
+import ListadoProductos from '@/pages/privatePages/ListadoProductos';
+import ListadoCategorias from '@/pages/privatePages/ListadoCategorias';
+import { LoginPage } from '@/auth/pages/LoginPage';
+import { RegisterPage } from '@/auth/pages/RegisterPage';
+import { UserEditionPage } from '@/pages/privatePages/UserEditionPage';
+import { UserBookingPage } from '@/pages/privatePages/UserBookingPage';
+import AdminPrivateRoutes from './AdminPrivateRoutes';
+import { UserPrivateRoutes } from './UserPrivateRoutes';
+import { AdminPermissionPage } from '@/pages/privatePages/AdminPermissionPage';
+import { useAuthStore } from '@/context/authContext/hooks/useAuthStore';
+import { useEffect, useState } from 'react';
+import { Progress } from '@/components/ui/progress';
+import { UserFavoritesPage } from '@/pages/privatePages/UserFavoritesPage';
+import About from '@/components/layout/footer/About';
+import Policy from '@/components/layout/footer/Policy';
+import Business from '@/components/layout/footer/Business';
+import Contact from '@/components/layout/footer/Contact';
 
 export const AppRouter = () => {
   //* Función para mantener sesión iniciada si es que el token no expiró
@@ -35,7 +35,7 @@ export const AppRouter = () => {
   //   checkAuthToken()
   // }, [])
 
-  if (status === "checking") {
+  if (status === 'checking') {
     return (
       <div className="h-full flex flex-col justify-center items-center mt-[13%]">
         <h3>Cargando</h3>
@@ -52,13 +52,12 @@ export const AppRouter = () => {
       <Route path="/auth/register" element={<RegisterPage />} />
       <Route path="/detalle/:id" element={<Detalle />} />
 
+      {/* Footer Links */}
 
-       {/* Footer Links */}
-
-      <Route path="/about" element={<About/>} />
-      <Route path="/policy" element={<Policy/>} />
-      <Route path="/business" element={<Business/>} />
-      <Route path="/contact" element={<Contact/>} />
+      <Route path="/about" element={<About />} />
+      <Route path="/policy" element={<Policy />} />
+      <Route path="/business" element={<Business />} />
+      <Route path="/contact" element={<Contact />} />
 
       {/* Admin private routes: solo se puede entrar si el rol es 2*/}
       <Route

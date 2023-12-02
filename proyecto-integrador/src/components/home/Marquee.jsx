@@ -1,4 +1,4 @@
-import { MdOutlineRocketLaunch, MdStarRate } from "react-icons/md";
+import { MdOutlineRocketLaunch, MdStarRate } from 'react-icons/md';
 
 export const Marquee = () => {
   return (
@@ -8,7 +8,8 @@ export const Marquee = () => {
           - Arthur C. Clarke :
         </span>
         <span className="text-lg ml-2 text-slate-200">
-          Cualquier tecnología suficientemente avanzada es equivalente a la magia
+          Cualquier tecnología suficientemente avanzada es equivalente a la
+          magia
         </span>
         <MdStarRate className=" mx-2 text-xl text-yellow-300" />
         <span className="text-lg italic ml-2 text-rose-400">
@@ -25,7 +26,8 @@ export const Marquee = () => {
           - Arthur C. Clarke :
         </span>
         <span className="text-lg ml-2 text-slate-200">
-          Cualquier tecnología suficientemente avanzada es equivalente a la magia
+          Cualquier tecnología suficientemente avanzada es equivalente a la
+          magia
         </span>
         <MdStarRate className="text-xl text-yellow-300 mx-2" />
         <span className="text-lg italic ml-2 text-rose-400">

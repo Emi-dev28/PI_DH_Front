@@ -1,14 +1,14 @@
-import { DateRangePicker } from "@/components/home/DateRangePicker";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { useSearchParams } from "react-router-dom";
-import { useEffect, useState } from "react";
-import { parse } from "date-fns";
-import { MdSearch } from "react-icons/md";
+import { DateRangePicker } from '@/components/home/DateRangePicker';
+import { Input } from '@/components/ui/input';
+import { Button } from '@/components/ui/button';
+import { useSearchParams } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { parse } from 'date-fns';
+import { MdSearch } from 'react-icons/md';
 
 export default function Search() {
-  const [searchProduct, setSearchProduct] = useState("");
-  const [searchDate, setSearchDate] = useState({ from: "", to: "" });
+  const [searchProduct, setSearchProduct] = useState('');
+  const [searchDate, setSearchDate] = useState({ from: '', to: '' });
   // Search Params:
   const [search, setSearch] = useSearchParams();
 
@@ -19,7 +19,7 @@ export default function Search() {
       product: searchProduct,
     });
 
-    window.scroll({ top: 560, behavior: "smooth" });
+    window.scroll({ top: 560, behavior: 'smooth' });
   }
 
   useEffect(() => {
@@ -27,9 +27,9 @@ export default function Search() {
       !searchDate.from &&
       !searchDate.to &&
       setSearch({
-        product: "",
-        dateFrom: "",
-        dateTo: "",
+        product: '',
+        dateFrom: '',
+        dateTo: '',
       });
   }, [searchDate, searchProduct, setSearch]);
 

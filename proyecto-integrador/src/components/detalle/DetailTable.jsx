@@ -1,5 +1,5 @@
-import PropTypes from "prop-types";
-import { Table, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import PropTypes from 'prop-types';
+import { Table, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 
 DetailTable.propTypes = {
   product: PropTypes.object,

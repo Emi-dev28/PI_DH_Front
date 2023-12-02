@@ -1,13 +1,13 @@
-import { useState } from "react";
+import { useState } from 'react';
 import {
   MdHome,
   MdInterests,
   MdMenu,
   MdSettings,
   MdShoppingBag,
-} from "react-icons/md";
-import { Link } from "react-router-dom";
-import logo from "/img/logo/logo-letters.svg";
+} from 'react-icons/md';
+import { Link } from 'react-router-dom';
+import logo from '/img/logo/logo-letters.svg';
 
 export default function SidebarMenu() {
   const [open, setOpen] = useState(true);
@@ -16,7 +16,7 @@ export default function SidebarMenu() {
     <div className="flex">
       <div
         className={` ${
-          open ? "w-72" : "w-18"
+          open ? 'w-72' : 'w-18'
         } flex flex-col p-3 pt-6 h-screen shadow`}
       >
         <div className="space-y-6">

@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Pumpkin",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "intelligent"
@@ -43,7 +43,7 @@
   {
     "id": 2,
     "name": "Chips - Assorted",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "adventurous"
@@ -84,7 +84,7 @@
   {
     "id": 3,
     "name": "Syrup - Monin, Irish Cream",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "playful"
@@ -125,7 +125,7 @@
   {
     "id": 4,
     "name": "Cabbage Roll",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "adventurous"
@@ -166,7 +166,7 @@
   {
     "id": 5,
     "name": "Wheat - Soft Kernal Of Wheat",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "loyal"
@@ -210,7 +210,7 @@
   {
     "id": 6,
     "name": "Orange - Blood",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "adventurous"
@@ -251,7 +251,7 @@
   {
     "id": 7,
     "name": "Butter - Pod",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "intelligent"
@@ -295,7 +295,7 @@
   {
     "id": 8,
     "name": "Buffalo - Tenderloin",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "intelligent"
@@ -336,7 +336,7 @@
   {
     "id": 9,
     "name": "Bread - Rye",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "adventurous"
@@ -377,7 +377,7 @@
   {
     "id": 10,
     "name": "Soup - Campbells Beef Strogonoff",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "playful"
@@ -418,7 +418,7 @@
   {
     "id": 11,
     "name": "Bread - White, Unsliced",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "friendly"
@@ -462,7 +462,7 @@
   {
     "id": 12,
     "name": "Coconut - Shredded, Unsweet",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "adventurous"
@@ -503,7 +503,7 @@
   {
     "id": 13,
     "name": "Spice - Greek 1 Step",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "loyal"
@@ -544,7 +544,7 @@
   {
     "id": 14,
     "name": "Coke - Diet, 355 Ml",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "friendly"
@@ -588,7 +588,7 @@
   {
     "id": 15,
     "name": "Bread - Multigrain, Loaf",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "adventurous"
@@ -629,7 +629,7 @@
   {
     "id": 16,
     "name": "Sauce - Mint",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "friendly"
@@ -670,7 +670,7 @@
   {
     "id": 17,
     "name": "Tart - Lemon",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "playful"
@@ -714,7 +714,7 @@
   {
     "id": 18,
     "name": "Cranberries - Dry",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "friendly"
@@ -755,7 +755,7 @@
   {
     "id": 19,
     "name": "Sauce - Hp",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "friendly"
@@ -799,7 +799,7 @@
   {
     "id": 20,
     "name": "Cheese - Fontina",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "playful"
@@ -843,7 +843,7 @@
   {
     "id": 21,
     "name": "Cinnamon - Ground",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "curious"
@@ -887,7 +887,7 @@
   {
     "id": 22,
     "name": "Mahi Mahi",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "loyal"
@@ -928,7 +928,7 @@
   {
     "id": 23,
     "name": "Veal - Insides, Grains",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "intelligent"
@@ -969,7 +969,7 @@
   {
     "id": 24,
     "name": "Island Oasis - Banana Daiquiri",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "friendly"
@@ -1010,7 +1010,7 @@
   {
     "id": 25,
     "name": "Dehydrated Kelp Kombo",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "intelligent"
@@ -1054,7 +1054,7 @@
   {
     "id": 26,
     "name": "Sauce - Apple, Unsweetened",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "loyal"
@@ -1095,7 +1095,7 @@
   {
     "id": 27,
     "name": "Pork - Loin, Center Cut",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "curious"
@@ -1136,7 +1136,7 @@
   {
     "id": 28,
     "name": "Pork Loin Cutlets",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "loyal"
@@ -1180,7 +1180,7 @@
   {
     "id": 29,
     "name": "Sprouts - Corn",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "playful"
@@ -1224,7 +1224,7 @@
   {
     "id": 30,
     "name": "Sugar - Crumb",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "loyal"
@@ -1265,7 +1265,7 @@
   {
     "id": 31,
     "name": "Bread - Olive",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "intelligent"
@@ -1309,7 +1309,7 @@
   {
     "id": 32,
     "name": "Tea - Camomele",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "curious"
@@ -1350,7 +1350,7 @@
   {
     "id": 33,
     "name": "Crackers - Soda / Saltins",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "adventurous"
@@ -1394,7 +1394,7 @@
   {
     "id": 34,
     "name": "Water - Spring Water 500ml",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "friendly"
@@ -1435,7 +1435,7 @@
   {
     "id": 35,
     "name": "Trout Rainbow Whole",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "playful"
@@ -1479,7 +1479,7 @@
   {
     "id": 36,
     "name": "Compound - Pear",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "playful"
@@ -1520,7 +1520,7 @@
   {
     "id": 37,
     "name": "Sausage - Liver",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "adventurous"
@@ -1561,7 +1561,7 @@
   {
     "id": 38,
     "name": "Sauce - Balsamic Viniagrette",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "curious"
@@ -1602,7 +1602,7 @@
   {
     "id": 39,
     "name": "Pepper - Red, Finger Hot",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "curious"
@@ -1646,7 +1646,7 @@
   {
     "id": 40,
     "name": "Asparagus - White, Fresh",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "intelligent"
@@ -1690,7 +1690,7 @@
   {
     "id": 41,
     "name": "Lamb - Whole Head Off",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "adventurous"
@@ -1731,7 +1731,7 @@
   {
     "id": 42,
     "name": "Island Oasis - Sweet And Sour Mix",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "curious"
@@ -1775,7 +1775,7 @@
   {
     "id": 43,
     "name": "Squeeze Bottle",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "curious"
@@ -1819,7 +1819,7 @@
   {
     "id": 44,
     "name": "Cocktail Napkin Blue",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "friendly"
@@ -1863,7 +1863,7 @@
   {
     "id": 45,
     "name": "Water - Mineral, Natural",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "adventurous"
@@ -1907,7 +1907,7 @@
   {
     "id": 46,
     "name": "Sherry - Dry",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "friendly"
@@ -1951,7 +1951,7 @@
   {
     "id": 47,
     "name": "Wine - Chianti Classica Docg",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "loyal"
@@ -1992,7 +1992,7 @@
   {
     "id": 48,
     "name": "Beef - Baby, Liver",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "playful"
@@ -2033,7 +2033,7 @@
   {
     "id": 49,
     "name": "Turkey - Whole, Fresh",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-14", "to": "2023-12-26" },
     "characteristics": [
       {
         "characteristic": "curious"
@@ -2077,7 +2077,7 @@
   {
     "id": 50,
     "name": "Mushroom - Shitake, Dry",
-    "date": { "from": "2023-11-24", "to": "2023-12-10" },
+    "date": { "from": "2023-12-14", "to": "2023-12-26" },
     "characteristics": [
       {
         "characteristic": "intelligent"

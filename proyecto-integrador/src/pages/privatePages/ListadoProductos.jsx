@@ -6,23 +6,23 @@ import {
   TableHead,
   TableHeader,
   TableBody,
-} from "@/components/ui/table";
-import { Button } from "@/components/ui/button";
-import { useDataContext } from "@/context/dataContext/useDataContext";
-import { MdDelete, MdEdit } from "react-icons/md";
-import { DialogCreateProduct } from "../../components/admin/DialogCreateProduct";
-import { useDataStore } from "@/context/dataContext/hooks/useDataStore";
+} from '@/components/ui/table';
+import { Button } from '@/components/ui/button';
+import { useDataContext } from '@/context/dataContext/useDataContext';
+import { MdDelete, MdEdit } from 'react-icons/md';
+import { DialogCreateProduct } from '../../components/admin/DialogCreateProduct';
+import { useDataStore } from '@/context/dataContext/hooks/useDataStore';
 
 export default function ListadoProductos() {
   const { borrarProducto } = useDataContext();
   const { state } = useDataStore();
 
   const productKeys = [
-    "Nombre",
-    "Descripción",
-    "Categoría",
-    "Precio",
-    "Cantidad",
+    'Nombre',
+    'Descripción',
+    'Categoría',
+    'Precio',
+    'Cantidad',
   ];
 
   return (
@@ -52,10 +52,10 @@ export default function ListadoProductos() {
               <TableCell className="p-3">{product.description} </TableCell>
               <TableCell className="p-3">{product.category} </TableCell>
               <TableCell className="text-center p-3">
-                {product.price}{" "}
+                {product.price}{' '}
               </TableCell>
               <TableCell className="text-center p-3">
-                {product.stock}{" "}
+                {product.stock}{' '}
               </TableCell>
               <TableCell className="text-center p-3">
                 {/* Botón editar */}

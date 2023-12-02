@@ -1,14 +1,14 @@
-import logo from "/img/logo/logo-letters.svg";
-import icon from "/img/logo/logo-favicon.svg";
-import { Link } from "react-router-dom";
-import PrimaryButton from "../../custom-ui/PrimaryButton";
-import ShareButton from "../../custom-ui/WebShare";
-import { useWindowSize } from "@uidotdev/usehooks";
-import { useAuthStore } from "@/context/authContext/hooks/useAuthStore";
-import { UserSessionMenu } from "../UserSessionMenu";
-import { FaAlignJustify } from "react-icons/fa";
+import logo from '/img/logo/logo-letters.svg';
+import icon from '/img/logo/logo-favicon.svg';
+import { Link } from 'react-router-dom';
+import PrimaryButton from '../../custom-ui/PrimaryButton';
+import ShareButton from '../../custom-ui/WebShare';
+import { useWindowSize } from '@uidotdev/usehooks';
+import { useAuthStore } from '@/context/authContext/hooks/useAuthStore';
+import { UserSessionMenu } from '../UserSessionMenu';
+import { FaAlignJustify } from 'react-icons/fa';
 
-import Search from "../../home/Search-3";
+import Search from '../../home/Search-3';
 
 export const Navbar = () => {
   const { role, name } = useAuthStore();
@@ -31,16 +31,16 @@ export const Navbar = () => {
         </Link>
       </div>
 
-      {role === "USER" || role === "ADMIN" ? (
+      {role === 'USER' || role === 'ADMIN' ? (
         <UserSessionMenu name={name} firstLetter={firstLetter} />
       ) : (
         <div className="hidden md:flex items-center gap-5">
-          {" "}
+          {' '}
           {/* Oculta en dispositivos pequeños */}
-          <Link to={"/auth/register"}>
+          <Link to={'/auth/register'}>
             <PrimaryButton>Crear cuenta</PrimaryButton>
           </Link>
-          <Link to={"/auth/login"}>
+          <Link to={'/auth/login'}>
             <PrimaryButton>Iniciar sesión</PrimaryButton>
           </Link>
         </div>

@@ -1,16 +1,16 @@
-import { DateRangePicker } from "@/components/home/DateRangePicker";
-import { Input } from "@/components/ui/input";
-import { useEffect, useState } from "react";
-import { useSearchParams } from "react-router-dom";
-import { Button } from "@/components/ui/button";
-import { MdSearch } from "react-icons/md";
+import { DateRangePicker } from '@/components/home/DateRangePicker';
+import { Input } from '@/components/ui/input';
+import { useEffect, useState } from 'react';
+import { useSearchParams } from 'react-router-dom';
+import { Button } from '@/components/ui/button';
+import { MdSearch } from 'react-icons/md';
 
 export default function Search() {
-  const [product, setProduct] = useState("");
+  const [product, setProduct] = useState('');
   const [search, setSearch] = useSearchParams({
-    product: "",
-    dateFrom: "",
-    dateTo: "",
+    product: '',
+    dateFrom: '',
+    dateTo: '',
   });
 
   function handleChange(e) {
@@ -18,8 +18,8 @@ export default function Search() {
 
     setSearch({
       product: e.target.value,
-      dateFrom: search.get("dateFrom"),
-      dateTo: search.get("dateTo"),
+      dateFrom: search.get('dateFrom'),
+      dateTo: search.get('dateTo'),
     });
   }
 

@@ -1,9 +1,9 @@
-import CardHome from "@/components/home/CardHome";
-import PropTypes from "prop-types";
-import { MdChevronLeft, MdChevronRight } from "react-icons/md";
+import CardHome from '@/components/home/CardHome';
+import PropTypes from 'prop-types';
+import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 
-import { Button } from "@/components/ui/button";
-import { useAuthContext } from "@/context/authContext/useAuthContext";
+import { Button } from '@/components/ui/button';
+import { useAuthContext } from '@/context/authContext/useAuthContext';
 
 Wrapper.propTypes = {
   products: PropTypes.array,

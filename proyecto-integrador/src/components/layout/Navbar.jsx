@@ -1,21 +1,21 @@
-import { useState } from "react";
-import logo from "/img/logo/logo-letters.svg";
-import icon from "/img/logo/logo-favicon.svg";
-import { Link } from "react-router-dom";
-import PrimaryButton from "../custom-ui/PrimaryButton";
-import ShareButton from "../custom-ui/WebShare";
-import { useWindowSize } from "@uidotdev/usehooks";
-import { useAuthStore } from "@/context/authContext/hooks/useAuthStore";
-import { UserSessionMenu } from "./UserSessionMenu";
-import { FaAlignJustify } from "react-icons/fa";
-import { MdSearch } from "react-icons/md";
-import { DateRangePicker } from "@/components/home/DateRangePicker";
+import { useState } from 'react';
+import logo from '/img/logo/logo-letters.svg';
+import icon from '/img/logo/logo-favicon.svg';
+import { Link } from 'react-router-dom';
+import PrimaryButton from '../custom-ui/PrimaryButton';
+import ShareButton from '../custom-ui/WebShare';
+import { useWindowSize } from '@uidotdev/usehooks';
+import { useAuthStore } from '@/context/authContext/hooks/useAuthStore';
+import { UserSessionMenu } from './UserSessionMenu';
+import { FaAlignJustify } from 'react-icons/fa';
+import { MdSearch } from 'react-icons/md';
+import { DateRangePicker } from '@/components/home/DateRangePicker';
 
 export const Navbar = () => {
   const { role, name } = useAuthStore();
   const size = useWindowSize();
-  const [category, setCategory] = useState("");
-  const [search, setSearch] = useState("");
+  const [category, setCategory] = useState('');
+  const [search, setSearch] = useState('');
 
   const firstLetter = name.substring(0, 1).toUpperCase();
 
@@ -34,7 +34,6 @@ export const Navbar = () => {
         </Link>
       </div>
       <div>
-      
         <DateRangePicker />
       </div>
       {/* Input de búsqueda */}
@@ -46,7 +45,7 @@ export const Navbar = () => {
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             className="p-2 px-8 border rounded-full focus:outline-none focus:border-blue-500 transition-all duration-300 ease-in-out hover:border-gray-400 bg-gray-100"
-            style={{ width: "450px" }} // Puedes ajustar el ancho según tus necesidades
+            style={{ width: '450px' }} // Puedes ajustar el ancho según tus necesidades
           />
           <div className="absolute inset-y-0 left-[390px] flex items-center pl-2">
             <MdSearch className="w-5 h-5 text-gray-600" />
@@ -65,26 +64,20 @@ export const Navbar = () => {
         </div>
       </div>
 
-      
-      
-      {role === "USER" || role === "ADMIN" ? (
+      {role === 'USER' || role === 'ADMIN' ? (
         <UserSessionMenu name={name} firstLetter={firstLetter} />
       ) : (
         <div className="hidden md:flex items-center gap-5">
-          {" "}
+          {' '}
           {/* Oculta en dispositivos pequeños */}
-          
-          <Link to={"/auth/register"}>
+          <Link to={'/auth/register'}>
             <PrimaryButton>Crear cuenta</PrimaryButton>
           </Link>
-          <Link to={"/auth/login"}>
+          <Link to={'/auth/login'}>
             <PrimaryButton>Iniciar sesión</PrimaryButton>
           </Link>
-          
         </div>
-        
       )}
-      
 
       {/* Menú hamburguesa para dispositivos pequeños */}
       <div className="md:hidden">

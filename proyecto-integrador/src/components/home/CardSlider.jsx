@@ -1,5 +1,5 @@
-import PropTypes from "prop-types";
-import { useState } from "react";
+import PropTypes from 'prop-types';
+import { useState } from 'react';
 
 CardSlider.propTypes = {
   category: PropTypes.object,
@@ -12,7 +12,7 @@ export default function CardSlider({ category, handleClickFilterProducts }) {
   return (
     <div
       className={`bg-white w-[250px] cursor-pointer inline-block mx-4 p-4 md:p-6 rounded-md border border-gray-300 hover:border-gray-500 shadow-md transition-all duration-300 ease-in-out ${
-        selectedCategory && "border-primary hover:border-primary"
+        selectedCategory && 'border-primary hover:border-primary'
       }`}
       onClick={() => {
         handleClickFilterProducts(category.name);

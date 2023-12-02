@@ -1,7 +1,7 @@
-import PropTypes from "prop-types";
-import CardSlider from "@/components/home/CardSlider";
-import { MdArrowCircleLeft, MdArrowCircleRight } from "react-icons/md";
-import { Button } from "@/components/ui/button";
+import PropTypes from 'prop-types';
+import CardSlider from '@/components/home/CardSlider';
+import { MdArrowCircleLeft, MdArrowCircleRight } from 'react-icons/md';
+import { Button } from '@/components/ui/button';
 
 Slider.propTypes = {
   categories: PropTypes.array,
@@ -9,7 +9,7 @@ Slider.propTypes = {
 };
 
 export default function Slider({ categories, handleClickFilterProducts }) {
-  const slider = document.getElementById("slider");
+  const slider = document.getElementById('slider');
 
   const slideLeft = () => {
     slider.scrollLeft -= 300;

@@ -5,12 +5,12 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+} from '@/components/ui/dropdown-menu';
 
-import { useAuthStore } from "@/context/authContext/hooks/useAuthStore";
-import { useNavigate } from "react-router-dom";
+import { useAuthStore } from '@/context/authContext/hooks/useAuthStore';
+import { useNavigate } from 'react-router-dom';
 
-export const UserSessionMenu = ({ firstLetter = "U", name = "User" }) => {
+export const UserSessionMenu = ({ firstLetter = 'U', name = 'User' }) => {
   const { logoutSession } = useAuthStore();
   const navigate = useNavigate();
 
@@ -24,24 +24,23 @@ export const UserSessionMenu = ({ firstLetter = "U", name = "User" }) => {
       </DropdownMenuTrigger>
 
       <DropdownMenuContent>
-
         <DropdownMenuLabel>Mi cuenta</DropdownMenuLabel>
 
         <DropdownMenuSeparator />
 
-        <DropdownMenuItem onClick={() => navigate("user/edit")}>
+        <DropdownMenuItem onClick={() => navigate('user/edit')}>
           Editar
         </DropdownMenuItem>
 
         <DropdownMenuSeparator />
 
-        <DropdownMenuItem onClick={() => navigate("user/favs")}>
+        <DropdownMenuItem onClick={() => navigate('user/favs')}>
           Favoritos
         </DropdownMenuItem>
 
         <DropdownMenuSeparator />
 
-        <DropdownMenuItem onClick={() => navigate("user/booking")}>
+        <DropdownMenuItem onClick={() => navigate('user/booking')}>
           Mis Reservas
         </DropdownMenuItem>
 
@@ -50,9 +49,7 @@ export const UserSessionMenu = ({ firstLetter = "U", name = "User" }) => {
         <DropdownMenuItem onClick={() => logoutSession()}>
           Cerrar sesión
         </DropdownMenuItem>
-
       </DropdownMenuContent>
-
     </DropdownMenu>
   );
 };

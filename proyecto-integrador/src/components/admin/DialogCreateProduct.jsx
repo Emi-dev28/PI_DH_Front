@@ -1,54 +1,67 @@
-import { useDataContext } from "@/context/dataContext/useDataContext";
-import { useDataStore } from "@/context/dataContext/hooks/useDataStore";
-import { useForm } from "react-hook-form";
-import * as z from "zod";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import { useDataContext } from '@/context/dataContext/useDataContext';
+import { useDataStore } from '@/context/dataContext/hooks/useDataStore';
+import { useForm } from 'react-hook-form';
+import * as z from 'zod';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
 import {
-  Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger, DialogFooter,
-} from "@/components/ui/dialog";
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+  DialogFooter,
+} from '@/components/ui/dialog';
 import {
-  Select, SelectContent, SelectItem, SelectTrigger, SelectValue,
-} from "@/components/ui/select"
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select';
 import {
-  Form, FormControl, FormField, FormItem, FormLabel, FormMessage,
-} from "@/components/ui/form";
-import { Label } from "@radix-ui/react-dropdown-menu";
-import { useState } from "react";
-
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from '@/components/ui/form';
+import { Label } from '@radix-ui/react-dropdown-menu';
+import { useState } from 'react';
 
 const formSchema = z.object({
   name: z.string().min(2, {
-    message: "Debe tener más de dos caractéres",
+    message: 'Debe tener más de dos caractéres',
   }),
   description: z.string().min(2, {
-    message: "Debe tener más de dos caractéres",
+    message: 'Debe tener más de dos caractéres',
   }),
   price: z.string().min(2, {
-    message: "Debe tener más de dos caractéres",
+    message: 'Debe tener más de dos caractéres',
   }),
   categories: z.string({
-    required_error: "Seleccione una opción",
+    required_error: 'Seleccione una opción',
   }),
   stock: z.string().min(1, {
-    message: "Debe tener al menos un dígito",
+    message: 'Debe tener al menos un dígito',
   }),
 });
 
 export const DialogCreateProduct = () => {
   const { state } = useDataContext();
-  const { onCreatingNewProduct } = useDataStore()
-  const [files, setFiles] = useState([])
+  const { onCreatingNewProduct } = useDataStore();
+  const [files, setFiles] = useState([]);
 
   const form = useForm({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      name: "",
-      description: "",
-      price: "",
-      categories: "",
-      stock: ""
+      name: '',
+      description: '',
+      price: '',
+      categories: '',
+      stock: '',
     },
   });
 
@@ -57,19 +70,21 @@ export const DialogCreateProduct = () => {
 
     const selectedFiles = target.files;
     setFiles([...files, ...selectedFiles]);
-  }
+  };
 
   function onSubmit(values) {
+    const filesData = new FormData();
 
-    const filesData = new FormData()
-
-    filesData.append("product", JSON.stringify({
-      name: values.name,
-      description: values.description,
-      price: values.price,
-      categories: [{ name: values.categories }],
-      stock: values.stock,
-    }))
+    filesData.append(
+      'product',
+      JSON.stringify({
+        name: values.name,
+        description: values.description,
+        price: values.price,
+        categories: [{ name: values.categories }],
+        stock: values.stock,
+      }),
+    );
 
     filesData.append('files', files);
 
@@ -84,11 +99,7 @@ export const DialogCreateProduct = () => {
     // for (const obj of filesData) {
     //   console.log(obj);
     // }
-
   }
-
-
-
 
   return (
     <Dialog>
@@ -147,18 +158,21 @@ export const DialogCreateProduct = () => {
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>Categoría</FormLabel>
-                  <Select onValueChange={field.onChange} defaultValue={field.value}>
+                  <Select
+                    onValueChange={field.onChange}
+                    defaultValue={field.value}
+                  >
                     <FormControl>
                       <SelectTrigger>
                         <SelectValue placeholder="Seleccione una categoría" />
                       </SelectTrigger>
                     </FormControl>
                     <SelectContent>
-                      {
-                        state.categories.map(category =>
-                          <SelectItem key={category.id} value={category.name}>{category.name}</SelectItem>
-                        )
-                      }
+                      {state.categories.map((category) => (
+                        <SelectItem key={category.id} value={category.name}>
+                          {category.name}
+                        </SelectItem>
+                      ))}
                     </SelectContent>
                   </Select>
                   <FormMessage />

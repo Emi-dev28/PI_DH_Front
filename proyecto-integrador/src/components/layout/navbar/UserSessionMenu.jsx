@@ -17,9 +17,9 @@ export const UserSessionMenu = ({ firstLetter = 'U', name = 'User' }) => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger>
-        <div className="rounded-full border-none bg-slate-800 px-[14px] py-[4px]">
+        <div className="rounded-lg border-none bg-slate-800 px-[14px] py-[4px] hover:opacity-90">
           <span className="text-xl text-white"> {firstLetter} </span>
-          <span className="text-white"> {name} </span>
+          {/* <span className="text-white"> {name} </span> */}
         </div>
       </DropdownMenuTrigger>
 
@@ -28,25 +28,37 @@ export const UserSessionMenu = ({ firstLetter = 'U', name = 'User' }) => {
 
         <DropdownMenuSeparator />
 
-        <DropdownMenuItem onClick={() => navigate('user/edit')}>
+        <DropdownMenuItem
+          className="cursor-pointer"
+          onClick={() => navigate('user/edit')}
+        >
           Editar
         </DropdownMenuItem>
 
         <DropdownMenuSeparator />
 
-        <DropdownMenuItem onClick={() => navigate('user/favs')}>
+        <DropdownMenuItem
+          className="cursor-pointer"
+          onClick={() => navigate('user/booking')}
+        >
+          Mis Reservas
+        </DropdownMenuItem>
+
+        {/* <DropdownMenuSeparator /> */}
+
+        <DropdownMenuItem
+          className="cursor-pointer"
+          onClick={() => navigate('user/favs')}
+        >
           Favoritos
         </DropdownMenuItem>
 
         <DropdownMenuSeparator />
 
-        <DropdownMenuItem onClick={() => navigate('user/booking')}>
-          Mis Reservas
-        </DropdownMenuItem>
-
-        <DropdownMenuSeparator />
-
-        <DropdownMenuItem onClick={() => logoutSession()}>
+        <DropdownMenuItem
+          className="cursor-pointer"
+          onClick={() => logoutSession()}
+        >
           Cerrar sesión
         </DropdownMenuItem>
       </DropdownMenuContent>

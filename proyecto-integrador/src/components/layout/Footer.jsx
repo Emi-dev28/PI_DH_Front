@@ -71,7 +71,7 @@ export const Footer = () => {
           </li>
           <li className="transition-width duration-100 hover:border-b-2 hover:border-red-600">
             <Link to="/contact" style={{ cursor: 'pointer' }}>
-              Contáctanos
+              Contactanos
             </Link>
           </li>
         </ul>

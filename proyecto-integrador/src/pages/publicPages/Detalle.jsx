@@ -84,6 +84,11 @@ export default function Detalle() {
 
 
   useEffect(() => {
+    // Scroll al inicio de la página cuando se monta el componente
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     const selectedProductId = parseInt(id);
 
     const selectedProduct = products.find(
@@ -99,8 +104,7 @@ export default function Detalle() {
   }, []);
 
   return (
-    <div className="flex flex-col mx-2">
-
+    <div className="mx-2 flex flex-col">
       <div className="my-4 mr-2 flex justify-end">
         <PrimaryButton onClick={() => navigate(-1)}> <MdOutlineKeyboardReturn className='text-xl' /> </PrimaryButton>
       </div>
@@ -110,6 +114,7 @@ export default function Detalle() {
         <ProductDetail product={product} />
 
         {/* Images  */}
+
         <ImagesDetail images={product.images} setIsOpen={setIsOpen} />
 
         {/* Modal and Galery */}
@@ -153,7 +158,6 @@ export default function Detalle() {
       <div className="relative  w-[100%] py-12 pb-0 saturate-150">
         <img src="/img/detalles-footer.webp" alt="Bottom-detail-img" />
       </div>
-
-    </div >
+    </div>
   );
 }

@@ -30,17 +30,31 @@ export default function Home() {
       (search.get('dateFrom') && search.get('dateTo'))
     ) {
       console.log('SearchParams useEffect');
-      // Si hay un valor en la búsqueda de productos, filtra los productos según ese valor
-      const filteredProductsBySearchParams = products.filter((product) =>
+      // Función para filtrar productos según el nombre del producto
+      const filteredProductsByName = products.filter((product) =>
         product.name
           .toLowerCase()
           .includes(search.get('product').toLowerCase()),
       );
 
-      setShuffledProducts(filteredProductsBySearchParams);
+      console.log(filteredProductsByName);
+
+      // Función para filtrar productos según las fechas
+      const filteredProductsByDate = () => {
+        return filteredProductsByName.filter((product) => {
+          const dateFrom = new Date(product.date.from);
+          const dateTo = new Date(product.date.to);
+
+          dateFrom >= search.get('dateFrom') && dateTo <= search.get('dateTo');
+        });
+      };
+
+      console.log(filteredProductsByDate());
+
+      setShuffledProducts(filteredProductsByName);
 
       // Tomar solo los primeros 10 productos
-      const newSelectedProducts = filteredProductsBySearchParams.slice(0, 10);
+      const newSelectedProducts = filteredProductsByName.slice(0, 10);
 
       // Actualizar el estado con los productos filtrados
       setRandomProducts(newSelectedProducts);

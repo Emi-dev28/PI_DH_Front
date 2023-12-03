@@ -26,10 +26,12 @@ export default function CardHome({ product, isFav }) {
   };
 
   return (
-    <Card className="flex h-[460px] w-full flex-col p-4 duration-300 hover:shadow-xl sm:w-[400px] lg:w-[500px] ">
-      <div className="flex flex-col items-end py-0">
+    <Card className="flex w-full flex-col p-4 duration-300 hover:shadow-xl sm:w-[400px] lg:w-[500px] ">
+
+      <div className="flex flex-col items-end mb-2">
         <ShareButton />
       </div>
+
       <div className="flex justify-center">
         <img
           src={product.images ? product.images[0].image : '/img/drone2.webp'}
@@ -40,7 +42,7 @@ export default function CardHome({ product, isFav }) {
 
       <div className="border"></div>
 
-      <CardHeader className="mt-[-10px] flex flex-row justify-between">
+      <CardHeader className="flex flex-row justify-between">
         <div>
           <CardTitle className="mt-[5px] flex items-center text-lg">
             <span>{product.name}</span>
@@ -67,7 +69,11 @@ export default function CardHome({ product, isFav }) {
         </div>
       </CardHeader>
 
-      <PrimaryButton className="mt-auto ">Alquilar</PrimaryButton>
+      {/* <PrimaryButton
+        onClick={() => navigate('/detalle/' + product.id)}
+      >
+        Reservar
+      </PrimaryButton> */}
     </Card>
   );
 }

@@ -2,7 +2,7 @@ import { createContext, useReducer } from 'react';
 
 //* Si quieren entrar a /user pongan role: "USER" o "ADMIN"
 const initialState = {
-  status: 'not-authenticated', //checking, not-authenticated, authenticated
+  status: 'authenticated', //checking, not-authenticated, authenticated
   uid: null,
   email: null,
   name: 'User',
@@ -10,6 +10,7 @@ const initialState = {
   role: 'USER',
   terms: true,
   favs: [],
+  book: []
 };
 
 const reducer = (state, action) => {
@@ -48,6 +49,18 @@ const reducer = (state, action) => {
         ...state,
         favs: state.favs.filter((fav) => fav.id !== action.payload),
       };
+      
+    case 'ADD_BOOK':
+      return {
+        ...state,
+        book: [...state.book, action.payload],
+      };
+
+    case 'REMOVE_BOOK':
+      return {
+        ...state,
+        book: state.book.filter((item) => item.id !== action.payload),
+      };
 
     default:
       return state;
@@ -80,6 +93,16 @@ export const AuthContextProvider = ({ children }) => {
     dispatch({ type: 'REMOVE_FAV', payload: id });
   };
 
+  const addToBook = (product) => {
+    dispatch({ type: 'ADD_BOOK', payload: product });
+  };
+
+  const removeFromBook = (id) => {
+    dispatch({ type: 'REMOVE_BOOK', payload: id });
+  };
+
+  console.log(state.book);
+
   //*******************************************/
   return (
     <AuthContext.Provider
@@ -90,6 +113,8 @@ export const AuthContextProvider = ({ children }) => {
         checkingAuthentication,
         addToFavs,
         removeFromFavs,
+        addToBook,
+        removeFromBook
       }}
     >
       {children}

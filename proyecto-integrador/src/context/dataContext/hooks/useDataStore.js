@@ -53,7 +53,7 @@ export const useDataStore = () => {
       const data = await resp.json();
 
       if (data.ok) {
-        toast({ description: 'Se ha añadido un nuevo producto' });
+        toast({ description: 'Se ha añadido un nuevo producto', variant: 'success' });
       }
     } catch (error) {
       console.log(error);

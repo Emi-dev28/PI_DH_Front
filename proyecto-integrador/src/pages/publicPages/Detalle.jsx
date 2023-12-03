@@ -5,7 +5,9 @@ import { useState, useEffect } from 'react';
 import { ImgGalleryModal } from '@/components/detalle/ImgGalleryModal';
 import { Carousel } from '@/components/detalle/Carousel';
 import { Calendar } from '@/components/ui/calendar';
+import { useToast } from '@/components/ui/use-toast';
 import { addDays, format } from 'date-fns';
+import { es } from 'date-fns/locale';
 
 // Para usar el mock:
 import products from '@/mocks/products.json';
@@ -15,23 +17,71 @@ import { AccordionDetail } from '@/components/detalle/AccordionDetail';
 import { ImagesDetail } from '@/components/detalle/ImagesDetail';
 import { Characteristics } from '@/components/detalle/Characteristics';
 import { ProductDetail } from '@/components/detalle/ProductDetail';
+import { MdOutlineKeyboardReturn } from 'react-icons/md';
+import { useAuthContext } from '@/context/authContext/useAuthContext';
+import { ToastAction } from '@/components/ui/toast';
 
 export default function Detalle() {
   // const { products } = useDataContext();
+  const { state, addToBook } = useAuthContext()
+
   const [product, setProduct] = useState({});
+
+  const [date, setDate] = useState();
+
+  const disabledRange = {
+    from: new Date(),
+    to: addDays(new Date(), 7),
+  };
+  
+  const navigate = useNavigate();
+
+  const { id } = useParams();
+
 
   //* State para abrir o cerrar el modal
   const [isOpen, setIsOpen] = useState(false);
 
-  const [date, setDate] = useState(new Date());
-  const disabledRange = {
-    from: new Date(),
-    to: addDays(new Date(), 4),
-  };
 
-  const navigate = useNavigate();
+  const { toast } = useToast();
 
-  const { id } = useParams();
+  const onCloseModal = () => {
+    setIsOpen(false);
+  }
+
+  const formattedDateFrom = date?.from ? format(date.from, 'yyyy-MM-dd') : '';
+  const formattedDateTo = date?.to ? format(date.to, 'yyyy-MM-dd') : '';
+
+  const handleBook = () => {
+    if (state.status !== "authenticated") {
+      navigate("/auth/login")
+      toast({
+        title: "Login",
+        description: 'Debes iniciar sesión para realizar una reserva',
+        variant: "alert"
+      });
+    } else {
+      addToBook({
+        product,
+        date: {
+          from: formattedDateFrom,
+          to: formattedDateTo
+        }
+      })
+      toast({
+        title: "¡Genial!",
+        description: 'Has reservado el producto',
+        action: <ToastAction
+          altText="Ir al historial"
+          onClick={() => navigate("/user/booking")}
+        >
+          Ir al historial
+        </ToastAction>,
+        variant: "success"
+      });
+    }
+  }
+
 
   useEffect(() => {
     const selectedProductId = parseInt(id);
@@ -43,33 +93,35 @@ export default function Detalle() {
     setProduct(selectedProduct);
   }, [id]);
 
-  const onCloseModal = () => {
-    setIsOpen(false);
-  };
+  // Scroll al inicio de la página cuando se monta el componente
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="flex flex-col mx-2">
 
       <div className="my-4 mr-2 flex justify-end">
-        <PrimaryButton onClick={() => navigate(-1)}> Regresar </PrimaryButton>
+        <PrimaryButton onClick={() => navigate(-1)}> <MdOutlineKeyboardReturn className='text-xl' /> </PrimaryButton>
       </div>
 
       <div className="flex justify-center gap-6 flex-wrap">
 
-        <ProductDetail product={product}/>
+        <ProductDetail product={product} />
 
-        {/* IMÁGENES  */}
-        <ImagesDetail images={product.images} setIsOpen={setIsOpen}/>
+        {/* Images  */}
+        <ImagesDetail images={product.images} setIsOpen={setIsOpen} />
 
-        {/* MODAL Y GALERÍA */}
+        {/* Modal and Galery */}
         <ImgGalleryModal isOpen={isOpen} onCloseModal={onCloseModal}>
           <Carousel images={product.images} />
         </ImgGalleryModal>
 
-        {/* Calender */}
+        {/* Calendar */}
         <div className="flex flex-col gap-6 rounded-md border-none">
           <Calendar
-            mode="single"
+            locale={es}
+            mode="range"
             defaultMonth={date?.from}
             selected={date}
             onSelect={setDate}
@@ -81,12 +133,16 @@ export default function Detalle() {
             disabled={disabledRange}
           />
 
-          <PrimaryButton className="">Reservar</PrimaryButton>
+          <PrimaryButton
+            onClick={() => handleBook()}
+          >
+            Reservar
+          </PrimaryButton>
         </div>
       </div>
 
       {/* Characteristics */}
-      <Characteristics/>
+      <Characteristics />
 
       {/* Accordion */}
       <div className=" mx-4 mt-10">

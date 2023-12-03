@@ -97,7 +97,7 @@ export default function DataContextProvider({ children }) {
   const agregarProducto = (product) => {
     if (!state.products.some((item) => item.id === product.id)) {
       dispatch({ type: 'AGREGAR_PRODUCTO', payload: product });
-      toast({ description: 'El producto se ha guardado' });
+      toast({ description: 'El producto se ha guardado', variant: 'success' });
     } else {
       toast({ description: 'Este producto ya existe', variant: 'destructive' });
     }
@@ -109,7 +109,7 @@ export default function DataContextProvider({ children }) {
       toast({ description: 'Este producto no existe', variant: 'destructive' });
     } else {
       dispatch({ type: 'BORRAR_PRODUCTO', payload: id });
-      toast({ description: 'Producto eliminado' });
+      toast({ description: 'Producto eliminado', variant: 'success' });
     }
   };
 
@@ -122,7 +122,7 @@ export default function DataContextProvider({ children }) {
   const agregarCategoria = (category) => {
     if (!state.categories.some((item) => item.id === category.id)) {
       dispatch({ type: 'AGREGAR_CATEGORIA', payload: category });
-      toast({ description: 'La categoría se ha guardado' });
+      toast({ description: 'La categoría se ha guardado', variant: 'success' });
     } else {
       toast({
         description: 'Este categoría ya existe',
@@ -140,7 +140,7 @@ export default function DataContextProvider({ children }) {
       });
     } else {
       dispatch({ type: 'BORRAR_CATEGORIA', payload: id });
-      toast({ description: 'Categoría eliminada' });
+      toast({ description: 'Categoría eliminada', variant: 'success' });
     }
   };
 

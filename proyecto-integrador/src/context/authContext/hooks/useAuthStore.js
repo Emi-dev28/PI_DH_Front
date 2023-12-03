@@ -1,7 +1,6 @@
 import { useToast } from '@/components/ui/use-toast';
 import { useAuthContext } from '../useAuthContext';
 
-//TODO: PONER LOS ENDPOINT CORRECTAMENTE
 const URL = 'http://localhost:8080/api/v1';
 
 export const useAuthStore = () => {
@@ -27,9 +26,8 @@ export const useAuthStore = () => {
 
       //*Establecer el token que viene del back en el localStorage
       localStorage.setItem('token', JSON.stringify(data.token));
-      console.log(data);
       loginUser(data);
-      console.log('Autenticación exitosa');
+
     } catch (error) {
       console.log(error);
       logoutUser();
@@ -65,6 +63,7 @@ export const useAuthStore = () => {
       localStorage.setItem('token', JSON.stringify(data.token));
       loginUser(data);
       console.log('Se ha registrado el usuario');
+      
     } catch (error) {
       console.log(error);
       logoutUser();
@@ -120,7 +119,7 @@ export const useAuthStore = () => {
       const data = await resp.json();
 
       if (data.ok) {
-        toast({ description: 'Se han dado permisos de admin al usuario' });
+        toast({ description: 'Se han dado permisos de admin al usuario', variant: 'success' });
       }
     } catch (error) {
       console.log(error);
@@ -144,7 +143,7 @@ export const useAuthStore = () => {
       const data = await resp.json();
 
       if (data.ok) {
-        toast({ description: 'Se han modificado los datos' });
+        toast({ description: 'Se han modificado los datos', variant: 'success' });
       }
     } catch (error) {
       console.log(error);
@@ -173,7 +172,7 @@ export const useAuthStore = () => {
       localStorage.setItem('token', JSON.stringify(data.token));
       console.log(data);
 
-      toast({ description: 'The product is in favorites now' });
+      toast({ description: 'Se ha guardado en favoritos', variant: 'success' });
     } catch (error) {
       console.log(error);
       logoutUser();
@@ -200,7 +199,7 @@ export const useAuthStore = () => {
       localStorage.setItem('token', JSON.stringify(data.token));
       console.log(data);
 
-      toast({ description: 'The product was removed from favorites' });
+      toast({ description: 'Producto eliminado de favoritos', variant: 'success' });
     } catch (error) {
       console.log(error);
       logoutUser();

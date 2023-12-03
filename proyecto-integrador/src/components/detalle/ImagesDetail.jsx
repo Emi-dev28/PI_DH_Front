@@ -6,7 +6,7 @@ export const ImagesDetail = ({images, setIsOpen}) => {
             <img
                 src={images ? images[0].image : '/img/drone2.webp'}
                 alt="product-img"
-                className="w-[450px] h-full rounded-lg border-0"
+                className="w-[450px] h-full max-h-[450px] rounded-lg border-0"
             />
 
             <div className="flex gap-2 mx-2">

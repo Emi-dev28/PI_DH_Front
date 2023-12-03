@@ -34,6 +34,11 @@ export default function Detalle() {
   const { id } = useParams();
 
   useEffect(() => {
+    // Scroll al inicio de la página cuando se monta el componente
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     const selectedProductId = parseInt(id);
 
     const selectedProduct = products.find(
@@ -48,18 +53,16 @@ export default function Detalle() {
   };
 
   return (
-    <div className="flex flex-col mx-2">
-
+    <div className="mx-2 flex flex-col">
       <div className="my-4 mr-2 flex justify-end">
         <PrimaryButton onClick={() => navigate(-1)}> Regresar </PrimaryButton>
       </div>
 
-      <div className="flex justify-center gap-6 flex-wrap">
-
-        <ProductDetail product={product}/>
+      <div className="flex flex-wrap justify-center gap-6">
+        <ProductDetail product={product} />
 
         {/* IMÁGENES  */}
-        <ImagesDetail images={product.images} setIsOpen={setIsOpen}/>
+        <ImagesDetail images={product.images} setIsOpen={setIsOpen} />
 
         {/* MODAL Y GALERÍA */}
         <ImgGalleryModal isOpen={isOpen} onCloseModal={onCloseModal}>
@@ -86,7 +89,7 @@ export default function Detalle() {
       </div>
 
       {/* Characteristics */}
-      <Characteristics/>
+      <Characteristics />
 
       {/* Accordion */}
       <div className=" mx-4 mt-10">
@@ -97,7 +100,6 @@ export default function Detalle() {
       <div className="relative  w-[100%] py-12 pb-0 saturate-150">
         <img src="/img/detalles-footer.webp" alt="Bottom-detail-img" />
       </div>
-
-    </div >
+    </div>
   );
 }

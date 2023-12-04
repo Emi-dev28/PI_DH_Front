@@ -49,8 +49,6 @@ export default function Detalle() {
     (item) => item.product.id === selectedProductId,
   );
 
-  console.log(isSelectedProductInBooking);
-
   const onCloseModal = () => {
     setIsOpen(false);
   };
@@ -158,6 +156,9 @@ export default function Detalle() {
             showOutsideDays
             fixedWeeks
             disabled={disabledRange}
+            modifiersStyles={{
+              disabled: { textDecoration: "line-through", color: "red"},
+            }}
           />
 
           <PrimaryButton onClick={() => handleBook()}>Reservar</PrimaryButton>

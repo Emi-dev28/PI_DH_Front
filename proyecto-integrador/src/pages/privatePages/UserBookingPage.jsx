@@ -1,5 +1,9 @@
+import { useAuthContext } from '@/context/authContext/useAuthContext';
+import { useNavigate } from 'react-router-dom';
+
+import { CancelBookAlert } from '@/components/book/CancelBookAlert';
+import { MdOutlineKeyboardReturn } from 'react-icons/md';
 import PrimaryButton from '@/components/custom-ui/PrimaryButton';
-import { Button } from '@/components/ui/button';
 
 import {
   Table,
@@ -10,17 +14,10 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table';
-import { useAuthContext } from '@/context/authContext/useAuthContext';
-import { MdOutlineKeyboardReturn } from 'react-icons/md';
-import { useNavigate } from 'react-router-dom';
 
 export const UserBookingPage = () => {
   const navigate = useNavigate();
-  const { state, removeFromBook } = useAuthContext();
-
-  const handleDeleteBook = (id) => {
-    removeFromBook(id);
-  };
+  const { state } = useAuthContext();
 
   return (
     <div className="mx-6 my-4 flex min-h-screen gap-x-2">
@@ -41,7 +38,7 @@ export const UserBookingPage = () => {
         )}
         <TableHeader>
           <TableRow>
-            <TableHead className="min-w-12">Producto</TableHead>
+            <TableHead className="w-[300px]">Producto</TableHead>
             <TableHead>Fecha inicial</TableHead>
             <TableHead>Fecha límite</TableHead>
             <TableHead className="text-left">Precio</TableHead>
@@ -52,15 +49,15 @@ export const UserBookingPage = () => {
         <TableBody>
           {state.book.map((item) => (
             <TableRow key={item.product.id}>
-              <TableCell className="p-3">
+              <TableCell className="p-3 flex">
                 <img
                   src={
                     item.product.images
-                      ? item.product.images[1].image
-                      : '/img/drone2.webp'
+                      ? item.product.images[0].image
+                      : '/img/icons/favicon_32x32.webp'
                   }
                   alt="product-img"
-                  className="h-6 w-6 rounded-lg border-0"
+                  className="h-6 w-6 rounded-lg border-0 mr-2"
                 />
                 <span>{item.product.name}</span>
               </TableCell>
@@ -71,13 +68,7 @@ export const UserBookingPage = () => {
               </TableCell>
               <TableCell className="p-3 text-center">
                 {/* Botón eliminar */}
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  onClick={() => handleDeleteBook(item.product.id)}
-                >
-                  Cancelar
-                </Button>
+                <CancelBookAlert productId={item.product.id}/>
               </TableCell>
             </TableRow>
           ))}

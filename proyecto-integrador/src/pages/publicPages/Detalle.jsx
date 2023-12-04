@@ -154,9 +154,9 @@ export default function Detalle() {
             onSelect={setDate}
             className="rounded-md border shadow"
             numberOfMonths={2}
-            pagedNavigation
-            showOutsideDays
-            fixedWeeks
+            // pagedNavigation
+            // showOutsideDays
+            // fixedWeeks
             disabled={disabledRange}
           />
 

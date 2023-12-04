@@ -1,4 +1,5 @@
 import PrimaryButton from '@/components/custom-ui/PrimaryButton';
+import { Button } from '@/components/ui/button';
 
 import {
   Table,
@@ -10,22 +11,20 @@ import {
   TableRow,
 } from '@/components/ui/table';
 import { useAuthContext } from '@/context/authContext/useAuthContext';
-import { Button } from 'react-day-picker';
 import { MdOutlineKeyboardReturn } from 'react-icons/md';
 import { useNavigate } from 'react-router-dom';
 
 export const UserBookingPage = () => {
   const navigate = useNavigate();
-  const { state, removeFromBook } = useAuthContext()
+  const { state, removeFromBook } = useAuthContext();
 
   const handleDeleteBook = (id) => {
-    removeFromBook(id)
-  }
+    removeFromBook(id);
+  };
 
   return (
-    <div className="min-h-screen flex gap-x-2 mx-6 my-4">
-
-      <div className="flex flex-col justify-between min-w-[235px] border-r-[1px] border-r-red-200">
+    <div className="mx-6 my-4 flex min-h-screen gap-x-2">
+      <div className="flex min-w-[235px] flex-col justify-between border-r-[1px] border-r-red-200">
         <h2 className="text-2xl">Historial de Reservas</h2>
         {/* <div>
           <PrimaryButton onClick={() => navigate(-1)}> <MdOutlineKeyboardReturn className='text-xl' /> </PrimaryButton>
@@ -33,10 +32,13 @@ export const UserBookingPage = () => {
       </div>
 
       <Table>
-        {state.book.length === 0
-          ? <TableCaption className="text-2xl mt-48">No tienes ninguna reserva.</TableCaption>
-          : <TableCaption>Historial de reservas.</TableCaption>
-        }
+        {state.book.length === 0 ? (
+          <TableCaption className="mt-48 text-2xl">
+            No tienes ninguna reserva.
+          </TableCaption>
+        ) : (
+          <TableCaption>Historial de reservas.</TableCaption>
+        )}
         <TableHeader>
           <TableRow>
             <TableHead className="min-w-12">Producto</TableHead>
@@ -52,9 +54,14 @@ export const UserBookingPage = () => {
             <TableRow key={item.product.id}>
               <TableCell className="p-3">
                 <img
-                  src={item.product.images ? item.product.images[1].image : '/img/drone2.webp'}
+                  src={
+                    item.product.images
+                      ? item.product.images[1].image
+                      : '/img/drone2.webp'
+                  }
                   alt="product-img"
-                  className="w-6 h-6 rounded-lg border-0" />
+                  className="h-6 w-6 rounded-lg border-0"
+                />
                 <span>{item.product.name}</span>
               </TableCell>
               <TableCell className="p-3">{item.date.from} </TableCell>

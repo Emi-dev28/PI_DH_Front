@@ -41,7 +41,7 @@ export const UserSessionMenu = ({ firstLetter = 'U', name = 'User' }) => {
           className="cursor-pointer"
           onClick={() => navigate('user/booking')}
         >
-          Mis Reservas
+          Reservas
         </DropdownMenuItem>
 
         {/* <DropdownMenuSeparator /> */}

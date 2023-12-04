@@ -23,7 +23,7 @@ import { ToastAction } from '@/components/ui/toast';
 
 export default function Detalle() {
   // const { products } = useDataContext();
-  const { state, addToBook } = useAuthContext()
+  const { state, addToBook } = useAuthContext();
 
   const [product, setProduct] = useState({});
 
@@ -33,55 +33,77 @@ export default function Detalle() {
     from: new Date(),
     to: addDays(new Date(), 7),
   };
-  
+
   const navigate = useNavigate();
 
   const { id } = useParams();
 
+  const selectedProductId = parseInt(id);
 
   //* State para abrir o cerrar el modal
   const [isOpen, setIsOpen] = useState(false);
 
-
   const { toast } = useToast();
+
+  const isSelectedProductInBooking = state.book.some(
+    (item) => item.product.id === selectedProductId,
+  );
+
+  console.log(isSelectedProductInBooking);
 
   const onCloseModal = () => {
     setIsOpen(false);
-  }
+  };
 
   const formattedDateFrom = date?.from ? format(date.from, 'yyyy-MM-dd') : '';
   const formattedDateTo = date?.to ? format(date.to, 'yyyy-MM-dd') : '';
 
   const handleBook = () => {
-    if (state.status !== "authenticated") {
-      navigate("/auth/login")
+    if (state.status !== 'authenticated') {
+      navigate('/auth/login');
       toast({
-        title: "Login",
+        title: 'Login',
         description: 'Debes iniciar sesión para realizar una reserva',
-        variant: "alert"
+        variant: 'alert',
       });
     } else {
-      addToBook({
-        product,
-        date: {
-          from: formattedDateFrom,
-          to: formattedDateTo
-        }
-      })
-      toast({
-        title: "¡Genial!",
-        description: 'Has reservado el producto',
-        action: <ToastAction
-          altText="Ir al historial"
-          onClick={() => navigate("/user/booking")}
-        >
-          Ir al historial
-        </ToastAction>,
-        variant: "success"
-      });
+      !isSelectedProductInBooking
+        ? (addToBook({
+            product,
+            date: {
+              from: formattedDateFrom,
+              to: formattedDateTo,
+            },
+          }),
+          toast({
+            title: '¡Genial!',
+            description: 'Has reservado el producto',
+            action: (
+              <ToastAction
+                altText="Ir al historial"
+                onClick={() => navigate('/user/booking')}
+              >
+                Ir al historial
+              </ToastAction>
+            ),
+            variant: 'success',
+          }))
+        : toast({
+            title: 'Error',
+            description:
+              'Ya has reservado este producto. Si quieres cambiar la fecha de reserva, primero elimina el producto del historial',
+            action: (
+              <ToastAction
+                altText="Ir al historial"
+                onClick={() => navigate('/user/booking')}
+              >
+                Ir al historial
+              </ToastAction>
+            ),
+            variant: 'alert',
+          });
     }
-  }
-
+  };
 
   useEffect(() => {
     // Scroll al inicio de la página cuando se monta el componente
@@ -89,14 +111,12 @@ export default function Detalle() {
   }, []);
 
   useEffect(() => {
-    const selectedProductId = parseInt(id);
-
     const selectedProduct = products.find(
       (product) => product.id === selectedProductId,
     );
 
     setProduct(selectedProduct);
-  }, [id]);
+  }, [selectedProductId]);
 
   // Scroll al inicio de la página cuando se monta el componente
   useEffect(() => {
@@ -106,11 +126,13 @@ export default function Detalle() {
   return (
     <div className="mx-2 flex flex-col">
       <div className="my-4 mr-2 flex justify-end">
-        <PrimaryButton onClick={() => navigate(-1)}> <MdOutlineKeyboardReturn className='text-xl' /> </PrimaryButton>
+        <PrimaryButton onClick={() => navigate(-1)}>
+          {' '}
+          <MdOutlineKeyboardReturn className="text-xl" />{' '}
+        </PrimaryButton>
       </div>
 
-      <div className="flex justify-center gap-6 flex-wrap">
-
+      <div className="flex flex-wrap justify-center gap-6">
         <ProductDetail product={product} />
 
         {/* Images  */}
@@ -138,11 +160,7 @@ export default function Detalle() {
             disabled={disabledRange}
           />
 
-          <PrimaryButton
-            onClick={() => handleBook()}
-          >
-            Reservar
-          </PrimaryButton>
+          <PrimaryButton onClick={() => handleBook()}>Reservar</PrimaryButton>
         </div>
       </div>
 

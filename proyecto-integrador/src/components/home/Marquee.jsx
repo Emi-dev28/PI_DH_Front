@@ -1,5 +1,6 @@
 import { MdOutlineRocketLaunch, MdStarRate } from 'react-icons/md';
 
+
 export const Marquee = () => {
   return (
     <div className="relative flex overflow-x-hidden bg-slate-800">

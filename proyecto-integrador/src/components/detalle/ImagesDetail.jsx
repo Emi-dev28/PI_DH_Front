@@ -2,7 +2,7 @@ import React from 'react'
 
 export const ImagesDetail = ({images, setIsOpen}) => {
     return (
-        <div className="flex flex-col rounded-md border-none bg-white">
+        <div className="flex flex-col rounded-md border-none bg-white object-contain">
             <img
                 src={images ? images[0].image : '/img/drone2.webp'}
                 alt="product-img"

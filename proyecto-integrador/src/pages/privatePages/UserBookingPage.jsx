@@ -1,6 +1,6 @@
 import { useAuthContext } from '@/context/authContext/useAuthContext';
 import { useNavigate } from 'react-router-dom';
-
+import React, { useEffect } from 'react';
 import { CancelBookAlert } from '@/components/book/CancelBookAlert';
 import { MdOutlineKeyboardReturn } from 'react-icons/md';
 import PrimaryButton from '@/components/custom-ui/PrimaryButton';
@@ -15,9 +15,16 @@ import {
   TableRow,
 } from '@/components/ui/table';
 
+
 export const UserBookingPage = () => {
   const navigate = useNavigate();
   const { state } = useAuthContext();
+
+
+  useEffect(() => {
+    // Scroll al inicio de la página cuando se monta el componente
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="mx-6 my-4 flex min-h-screen gap-x-2">

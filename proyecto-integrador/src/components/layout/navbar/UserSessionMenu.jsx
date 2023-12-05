@@ -44,7 +44,7 @@ export const UserSessionMenu = ({ firstLetter = 'U', name = 'User' }) => {
           Reservas
         </DropdownMenuItem>
 
-        {/* <DropdownMenuSeparator /> */}
+        <DropdownMenuSeparator /> 
 
         <DropdownMenuItem
           className="cursor-pointer"

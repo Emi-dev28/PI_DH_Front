@@ -9,10 +9,11 @@ import { useSearchParams } from 'react-router-dom';
 import Search from '@/components/home/Search';
 
 import categories from '@/mocks/categories.json';
-import products from '@/mocks/products.json';
+// import products from '@/mocks/products.json';
 
 export default function Home() {
   const { state } = useDataStore();
+
   const [randomProducts, setRandomProducts] = useState([]);
   const [currentPage, setCurrentPage] = useState(0);
   const [shuffledProducts, setShuffledProducts] = useState([]);
@@ -29,15 +30,13 @@ export default function Home() {
       search.get('product') ||
       (search.get('dateFrom') && search.get('dateTo'))
     ) {
-      console.log('SearchParams useEffect');
       // Función para filtrar productos según el nombre del producto
-      const filteredProductsByName = products.filter((product) =>
+      const filteredProductsByName = state.products.filter((product) =>
         product.name
           .toLowerCase()
           .includes(search.get('product').toLowerCase()),
       );
 
-      console.log(filteredProductsByName);
 
       // Función para filtrar productos según las fechas
       const filteredProductsByDate = () => {
@@ -49,7 +48,6 @@ export default function Home() {
         });
       };
 
-      console.log(filteredProductsByDate());
 
       setShuffledProducts(filteredProductsByName);
 
@@ -59,11 +57,10 @@ export default function Home() {
       // Actualizar el estado con los productos filtrados
       setRandomProducts(newSelectedProducts);
     } else {
-      console.log('RandomProducts useEffect');
       const updateRandomProducts = () => {
         // Ordenar aleatoriamente los productos
-        //const shuffledProducts = state.products.sort(() => Math.random() - 0.5);
-        const shuffledProducts = products.sort(() => Math.random() - 0.5);
+        const shuffledProducts = state.products.sort(() => Math.random() - 0.5);
+        //const shuffledProducts = products.sort(() => Math.random() - 0.5);
 
         setShuffledProducts(shuffledProducts);
 
@@ -77,7 +74,8 @@ export default function Home() {
       // Llamamos a la función de actualización al montar el componente y cuando products cambia
       updateRandomProducts();
     }
-  }, [search]);
+  }, [search, state.products]);
+
 
   const elementsAmount =
     selectedCategories.length > 0

@@ -34,7 +34,7 @@ export default function CardHome({ product, isFav }) {
 
       <div className="flex items-center justify-center">
         <img
-          src={product.images ? product.images[0].image : '/img/drone2.webp'}
+          src={product.imagenes[0] ? product.imagenes[0].imageUrl : '/img/drone2.webp'}
           className="h-[260px] w-full cursor-pointer object-contain"
           onClick={() => navigate('/detalle/' + product.id)}
         />

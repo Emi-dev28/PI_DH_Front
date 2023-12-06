@@ -4,9 +4,8 @@ import { useAuthContext } from '../useAuthContext';
 const URL = 'http://localhost:8080/api/v1';
 
 export const useAuthStore = () => {
-  const { loginUser, logoutUser, checkingAuthentication, state } =
-    useAuthContext();
-  const { status, name, role, uid } = state;
+  const { loginUser, logoutUser, checkingAuthentication, state } = useAuthContext();
+  const { status, name, lastname, role, uid } = state;
 
   const { toast } = useToast();
 
@@ -63,7 +62,7 @@ export const useAuthStore = () => {
       localStorage.setItem('token', JSON.stringify(data.token));
       loginUser(data);
       console.log('Se ha registrado el usuario');
-      
+      toast({ description: 'Nuevo usuario registrado', variant: 'success' });
     } catch (error) {
       console.log(error);
       logoutUser();
@@ -155,7 +154,7 @@ export const useAuthStore = () => {
   };
 
   //* Add to favorites
-  const onAddToFavs = async (uid, data) => {
+  const onAddToFavs = async (data) => {
     checkingAuthentication();
 
     const requestBody = {
@@ -178,7 +177,7 @@ export const useAuthStore = () => {
   //************************************
 
   //* Remove from favorites
-  const onRemoveFromfavs = async (uid, id) => {
+  const onRemoveFromfavs = async (id) => {
     checkingAuthentication();
 
     const requestBody = {
@@ -192,7 +191,7 @@ export const useAuthStore = () => {
       const data = await resp.json();
       console.log(data);
       toast({ description: 'Producto eliminado de favoritos', variant: 'success' });
-      
+
     } catch (error) {
       console.log(error);
       toast({ description: 'Algo salió mal', variant: 'destructive' });
@@ -201,7 +200,7 @@ export const useAuthStore = () => {
   //************************************
 
   //* Add to book
-  const onAddToBook = async (uid, data) => {
+  const onAddToBook = async (data) => {
     checkingAuthentication();
 
     const requestBody = {
@@ -222,7 +221,7 @@ export const useAuthStore = () => {
   //************************************
 
   //* Remove from book
-  const onRemoveFromBook = async (uid, id) => {
+  const onRemoveFromBook = async (id) => {
     checkingAuthentication();
 
     const requestBody = {
@@ -244,6 +243,7 @@ export const useAuthStore = () => {
     //* state
     status,
     name,
+    lastname,
     state,
     role,
 

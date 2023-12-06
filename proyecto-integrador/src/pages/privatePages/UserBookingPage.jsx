@@ -66,7 +66,7 @@ export const UserBookingPage = () => {
               <TableCell className="p-3">{item.date.from} </TableCell>
               <TableCell className="p-3">{item.date.to} </TableCell>
               <TableCell className="p-3 text-center">
-                {item.product.price}{' '}
+                {item.product.price}
               </TableCell>
               <TableCell className="p-3 text-center">
                 {/* Botón eliminar */}

@@ -10,16 +10,16 @@ import {
 import { useAuthStore } from '@/context/authContext/hooks/useAuthStore';
 import { useNavigate } from 'react-router-dom';
 
-export const UserSessionMenu = ({ firstLetter = 'U', name = 'User' }) => {
+export const UserSessionMenu = ({ firstNameLetter = 'U', firstLastnameLetter = "S" }) => {
   const { logoutSession } = useAuthStore();
   const navigate = useNavigate();
 
   return (
     <DropdownMenu>
       <DropdownMenuTrigger>
-        <div className="rounded-lg border-none bg-slate-800 px-[14px] py-[4px] hover:opacity-90">
-          <span className="text-xl text-white"> {firstLetter} </span>
-          {/* <span className="text-white"> {name} </span> */}
+        <div className="rounded-xl border-none bg-slate-800 px-[14px] py-[4px] hover:opacity-90">
+          <span className="text-xl text-white"> {firstNameLetter} </span>
+          <span className="text-xl text-white"> {firstLastnameLetter} </span>
         </div>
       </DropdownMenuTrigger>
 

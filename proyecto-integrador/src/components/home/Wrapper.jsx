@@ -26,14 +26,14 @@ export default function Wrapper(props) {
           {props.products.map((product) => (
             <CardHome
               key={product.id}
-              isFav={state.favs.some((fav) => fav.id === product.id)}
+              // isFav={state.favs.some((fav) => fav.id === product.id)}
               product={product}
             />
           ))}
         </div>
       ) : (
         <div className="mb-16 mr-60 text-2xl">
-          No se encontraron resultados.
+          Cargando...
         </div>
       )}
 

@@ -8,13 +8,20 @@ import {
     AlertDialogTitle,
     AlertDialogTrigger,
 } from "@/components/ui/alert-dialog"
+import { useAuthStore } from "@/context/authContext/hooks/useAuthStore";
 import { useAuthContext } from "@/context/authContext/useAuthContext";
 
 import React from 'react'
 
-export const CancelBookAlert = ({id}) => {
+export const CancelBookAlert = ({ id }) => {
 
-    const { removeFromBook } = useAuthContext();
+    const { state, removeFromBook } = useAuthContext();
+    const { onRemoveFromBook } = useAuthStore()
+
+    handleRemove = () => {
+        removeFromBook(id)
+        //TODO onRemoveFromBook(state.uid, id)
+    }
 
     return (
         <AlertDialog>
@@ -26,7 +33,7 @@ export const CancelBookAlert = ({id}) => {
                 <AlertDialogFooter>
                     <AlertDialogCancel
                         className="bg-green-500 text-white w-12"
-                        onClick={() => removeFromBook(id)}
+                        onClick={() => handleRemove()}
                     >
                         Sí
                     </AlertDialogCancel>

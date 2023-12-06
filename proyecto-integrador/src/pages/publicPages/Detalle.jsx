@@ -20,10 +20,12 @@ import { ProductDetail } from '@/components/detalle/ProductDetail';
 import { MdOutlineKeyboardReturn } from 'react-icons/md';
 import { useAuthContext } from '@/context/authContext/useAuthContext';
 import { ToastAction } from '@/components/ui/toast';
+import { useAuthStore } from '@/context/authContext/hooks/useAuthStore';
 
 export default function Detalle() {
   // const { products } = useDataContext();
   const { state, addToBook } = useAuthContext();
+  const { onAddToBook } = useAuthStore()
 
   const [product, setProduct] = useState({});
 
@@ -66,13 +68,9 @@ export default function Detalle() {
       });
     } else {
       !isSelectedProductInBooking
-        ? (addToBook({
-            product,
-            date: {
-              from: formattedDateFrom,
-              to: formattedDateTo,
-            },
-          }),
+        ? (
+          addToBook({ product, date: { from: formattedDateFrom, to: formattedDateTo } }),
+          //TODO onAddToBook(state.uid, { product, date: { from: formattedDateFrom, to: formattedDateTo } }),
           toast({
             title: '¡Genial!',
             description: 'Has reservado el producto',
@@ -85,21 +83,22 @@ export default function Detalle() {
               </ToastAction>
             ),
             variant: 'success',
-          }))
+          })
+        )
         : toast({
-            title: 'Error',
-            description:
-              'Ya has reservado este producto. Si quieres cambiar la fecha de reserva, primero elimina el producto del historial',
-            action: (
-              <ToastAction
-                altText="Ir al historial"
-                onClick={() => navigate('/user/booking')}
-              >
-                Ir al historial
-              </ToastAction>
-            ),
-            variant: 'alert',
-          });
+          title: 'Error',
+          description:
+            'Ya has reservado este producto. Si quieres cambiar la fecha de reserva, primero elimina el producto del historial',
+          action: (
+            <ToastAction
+              altText="Ir al historial"
+              onClick={() => navigate('/user/booking')}
+            >
+              Ir al historial
+            </ToastAction>
+          ),
+          variant: 'alert',
+        });
     }
   };
 
@@ -152,12 +151,9 @@ export default function Detalle() {
             onSelect={setDate}
             className="rounded-md border shadow"
             numberOfMonths={2}
-            // pagedNavigation
-            // showOutsideDays
-            // fixedWeeks
             disabled={disabledRange}
             modifiersStyles={{
-              disabled: { textDecoration: "line-through", color: "red"},
+              disabled: { textDecoration: "line-through", color: "red" },
             }}
           />
 

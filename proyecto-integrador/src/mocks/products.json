@@ -42,7 +42,7 @@
   },
   {
     "id": 2,
-    "name": "Chips - Assorted",
+    "name": "Notebook Asus TUF FX506L Core I5 10300H",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -58,26 +58,26 @@
         "characteristic": "adventurous"
       }
     ],
-    "description": "Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.\n\nQuisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.\n\nPhasellus in felis. Donec semper sapien a libero. Nam dui.",
-    "price": 234.2,
+    "description": "Disfrutá de la perfecta combinación de rendimiento y diseño con esta notebook Asus TUF Gaming F15 FX506LHB-HN324W.\n\nSu pantalla LED de 15.6´ y 1920x1080 px de resolución te brindará colores más vivos y definidos. Su placa de video\n\nNVIDIA GeForce GTX 1650 convierte a este dispositivo en una gran herramienta de trabajo para cualquier profesional del diseño.",
+    "price": 8000,
     "quantity": 74,
     "category": "Computación",
     "rating": 3.4,
     "images": [
       {
-        "image": "/img/monitor.webp"
+        "image": "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_36805_Notebook_Gamer_Asus_TUF_FX506L_FHD_IPS_15.6__Core_I5_10300H_16GB_512GB_SSD_NVMe_GTX_1650_W11_Home_144Hz_63a3df9f-grn.jpg"
       },
       {
-        "image": "http://dummyimage.com/431x443.png/5fa2dd/ffffff"
+        "image": "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_36806_Notebook_Gamer_Asus_TUF_FX506L_FHD_IPS_15.6__Core_I5_10300H_16GB_512GB_SSD_NVMe_GTX_1650_W11_Home_144Hz_d66354a0-grn.jpg"
       },
       {
-        "image": "http://dummyimage.com/437x416.png/5fa2dd/ffffff"
+        "image": "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_36807_Notebook_Gamer_Asus_TUF_FX506L_FHD_IPS_15.6__Core_I5_10300H_16GB_512GB_SSD_NVMe_GTX_1650_W11_Home_144Hz_48aaadcc-grn.jpg"
       },
       {
-        "image": "http://dummyimage.com/276x440.png/ff4444/ffffff"
+        "image": "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_36808_Notebook_Gamer_Asus_TUF_FX506L_FHD_IPS_15.6__Core_I5_10300H_16GB_512GB_SSD_NVMe_GTX_1650_W11_Home_144Hz_613d53e8-grn.jpg"
       },
       {
-        "image": "http://dummyimage.com/353x420.png/ff4444/ffffff"
+        "image": "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_36809_Notebook_Gamer_Asus_TUF_FX506L_FHD_IPS_15.6__Core_I5_10300H_16GB_512GB_SSD_NVMe_GTX_1650_W11_Home_144Hz_6b178330-grn.jpg"
       }
     ]
   },
@@ -165,7 +165,7 @@
   },
   {
     "id": 5,
-    "name": "Wheat - Soft Kernal Of Wheat",
+    "name": "Mini Drone Plegable con Doble Cámara 360º",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -184,32 +184,32 @@
         "characteristic": "playful"
       }
     ],
-    "description": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.\n\nMaecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.",
-    "price": 841.2,
+    "description": "Lo suficientemente pequeños como para caber en la palma de tu mano. Diseñado para vivir una experiencia única.\n\nIdeales para volar en interiores, recorrer pasillos estrechos y realizar maniobras delicadas con facilidad.",
+    "price": 2500,
     "quantity": 7,
     "category": "Drones",
     "rating": 1.3,
     "images": [
       {
-        "image": "/img/drone2.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_918142-MLA72844378016_112023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/288x292.png/ff4444/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_652018-MLA72844141414_112023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/336x375.png/dddddd/000000"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_835211-MLA72921110259_112023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/442x446.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_732996-MLA72844200456_112023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/448x256.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_838838-MLA72921465243_112023-O.webp"
       }
     ]
   },
   {
     "id": 6,
-    "name": "Orange - Blood",
+    "name": "Auricular Gamer Corsair Hs80",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -225,32 +225,32 @@
         "characteristic": "friendly"
       }
     ],
-    "description": "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
-    "price": 579.13,
+    "description": "Los auriculares para juegos CORSAIR HS80 RGB USB ofrecen un sonido increíblemente rico en matices a través de los transductores de audio de neodimio de 50 mm de ajuste personalizado con sonido envolvente Dolby Audio 7.1.",
+    "price": 3000,
     "quantity": 10,
     "category": "Audio",
     "rating": 1.6,
     "images": [
       {
-        "image": "/img/altavoz.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_690986-MLA53364008990_012023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/384x445.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_929822-MLA53364033857_012023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/264x393.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_672204-MLA53364084390_012023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/274x274.png/ff4444/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_648991-MLA53364175153_012023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/388x348.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_976562-MLA53364061643_012023-O.webp"
       }
     ]
   },
   {
     "id": 7,
-    "name": "Butter - Pod",
+    "name": "iPhone 14 Pro 256 GB Negro",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -269,32 +269,32 @@
         "characteristic": "adventurous"
       }
     ],
-    "description": "Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.",
-    "price": 507.79,
+    "description": "El iPhone 14 Pro te permite captar detalles increíbles gracias a su cámara gran angular de 48 MP. Además, trae la Dynamic Island y una pantalla siempre activa, para que puedas interactuar con tu iPhone de una forma completamente nueva.",
+    "price": 7500,
     "quantity": 42,
     "category": "Celulares",
-    "rating": 1.2,
+    "rating": 4.2,
     "images": [
       {
-        "image": "/img/iphone.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_913741-MLM51559386469_092022-O.webp"
       },
       {
-        "image": "http://dummyimage.com/292x431.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_847325-MLM51559386473_092022-O.webp"
       },
       {
-        "image": "http://dummyimage.com/351x352.png/ff4444/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_982554-MLM51559386475_092022-O.webp"
       },
       {
-        "image": "http://dummyimage.com/440x431.png/dddddd/000000"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_831766-MLM51559386467_092022-O.webp"
       },
       {
-        "image": "http://dummyimage.com/450x336.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_635918-MLM51559386474_092022-O.webp"
       }
     ]
   },
   {
     "id": 8,
-    "name": "Buffalo - Tenderloin",
+    "name": "Drone Toysky S161 Cámara 4k",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -310,32 +310,32 @@
         "characteristic": "playful"
       }
     ],
-    "description": "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.\n\nIn sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.",
-    "price": 570.93,
+    "description": "Este drone aéreo te permitirá ver absolutamente todo desde las alturas. Asegurate de encontrar una plataforma de vuelo que te permita trabajar con comodidad y preparate para volar.",
+    "price": 4300,
     "quantity": 78,
     "category": "Drones",
     "rating": 2.8,
     "images": [
       {
-        "image": "/img/drone2.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_917248-MLU72612985347_112023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/444x277.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_723128-MLU70063385916_062023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/261x257.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_756530-MLU70063385920_062023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/405x250.png/ff4444/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_879483-MLU72612919501_112023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/405x296.png/dddddd/000000"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_797734-MLU70063385932_062023-O.webp"
       }
     ]
   },
   {
     "id": 9,
-    "name": "Bread - Rye",
+    "name": "Parlantes Thonet&Vander Vertrag",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -351,26 +351,26 @@
         "characteristic": "loyal"
       }
     ],
-    "description": "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.\n\nIn sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.\n\nSuspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.",
+    "description": "Thonet & Vander Vertrag BT ofrece un sonido natural, con una gran claridad y precisión, que se dispersa de manera uniforme. Un parlante que asegura potencia y calidad por igual en la reproducción de contenidos multimedia.",
     "price": 950.15,
     "quantity": 62,
     "category": "Audio",
     "rating": 4.3,
     "images": [
       {
-        "image": "/img/altavoz.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_838420-MLU72627492940_112023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/330x341.png/dddddd/000000"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_764368-MLU72627736004_112023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/267x360.png/dddddd/000000"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_704879-MLA41986370257_052020-O.webp"
       },
       {
-        "image": "http://dummyimage.com/295x265.png/ff4444/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_780368-MLA46257874035_062021-O.webp"
       },
       {
-        "image": "http://dummyimage.com/269x401.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_999527-MLU69790706872_062023-O.webp"
       }
     ]
   },

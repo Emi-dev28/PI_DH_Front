@@ -18,7 +18,7 @@ export const CancelBookAlert = ({ id }) => {
     const { state, removeFromBook } = useAuthContext();
     const { onRemoveFromBook } = useAuthStore()
 
-    handleRemove = () => {
+    const handleRemove = () => {
         removeFromBook(id)
         //TODO onRemoveFromBook(state.uid, id)
     }

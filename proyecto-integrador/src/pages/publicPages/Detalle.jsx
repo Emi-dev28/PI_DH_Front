@@ -70,7 +70,7 @@ export default function Detalle() {
       !isSelectedProductInBooking
         ? (
           addToBook({ product, date: { from: formattedDateFrom, to: formattedDateTo } }),
-          //TODO onAddToBook(state.uid, { product, date: { from: formattedDateFrom, to: formattedDateTo } }),
+          //TODO onAddToBook(state.uid, { product.id, date: { from: formattedDateFrom, to: formattedDateTo } }),
           toast({
             title: '¡Genial!',
             description: 'Has reservado el producto',

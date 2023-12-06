@@ -2,8 +2,6 @@ import { useAuthContext } from '@/context/authContext/useAuthContext';
 import { useNavigate } from 'react-router-dom';
 
 import { CancelBookAlert } from '@/components/book/CancelBookAlert';
-import { MdOutlineKeyboardReturn } from 'react-icons/md';
-import PrimaryButton from '@/components/custom-ui/PrimaryButton';
 
 import {
   Table,
@@ -16,16 +14,13 @@ import {
 } from '@/components/ui/table';
 
 export const UserBookingPage = () => {
-  const navigate = useNavigate();
+  
   const { state } = useAuthContext();
 
   return (
     <div className="mx-6 my-4 flex min-h-screen gap-x-2">
       <div className="flex min-w-[235px] flex-col justify-between border-r-[1px] border-r-red-200">
         <h2 className="text-2xl">Historial de Reservas</h2>
-        {/* <div>
-          <PrimaryButton onClick={() => navigate(-1)}> <MdOutlineKeyboardReturn className='text-xl' /> </PrimaryButton>
-        </div> */}
       </div>
 
       <Table>

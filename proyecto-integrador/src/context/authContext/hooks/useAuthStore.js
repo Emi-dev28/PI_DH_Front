@@ -155,7 +155,7 @@ export const useAuthStore = () => {
   };
 
   //* Add to favorites
-  const onAddToFavs = async (data) => {
+  const onAddToFavs = async (uid, data) => {
     checkingAuthentication();
 
     const requestBody = {
@@ -167,22 +167,18 @@ export const useAuthStore = () => {
     try {
       const resp = await fetch(URL + `/users/favorites/${uid}`, requestBody);
       const data = await resp.json();
-
-      //*Establecer el token que viene del back en el localStorage
-      localStorage.setItem('token', JSON.stringify(data.token));
       console.log(data);
 
       toast({ description: 'Se ha guardado en favoritos', variant: 'success' });
     } catch (error) {
       console.log(error);
-      logoutUser();
-      toast({ description: 'Something went wrong', variant: 'destructive' });
+      toast({ description: 'Algo salió mal', variant: 'destructive' });
     }
   };
   //************************************
 
   //* Remove from favorites
-  const onRemoveFromfavs = async (id) => {
+  const onRemoveFromfavs = async (uid, id) => {
     checkingAuthentication();
 
     const requestBody = {
@@ -194,16 +190,52 @@ export const useAuthStore = () => {
     try {
       const resp = await fetch(URL + `/users/favorites/${uid}`, requestBody);
       const data = await resp.json();
-
-      //*Establecer el token que viene del back en el localStorage
-      localStorage.setItem('token', JSON.stringify(data.token));
       console.log(data);
-
       toast({ description: 'Producto eliminado de favoritos', variant: 'success' });
+      
     } catch (error) {
       console.log(error);
-      logoutUser();
-      toast({ description: 'Something went wrong', variant: 'destructive' });
+      toast({ description: 'Algo salió mal', variant: 'destructive' });
+    }
+  };
+  //************************************
+
+  //* Add to book
+  const onAddToBook = async (uid, data) => {
+    checkingAuthentication();
+
+    const requestBody = {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    };
+
+    try {
+      const resp = await fetch(URL + `/users/reservas/${uid}`, requestBody);
+      const data = await resp.json();
+      console.log(data);
+
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  //************************************
+
+  //* Remove from book
+  const onRemoveFromBook = async (uid, id) => {
+    checkingAuthentication();
+
+    const requestBody = {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(id),
+    };
+
+    try {
+      await fetch(URL + `/users/reservas/${uid}`, requestBody);
+
+    } catch (error) {
+      console.log(error);
     }
   };
   //************************************
@@ -224,5 +256,7 @@ export const useAuthStore = () => {
     editUserInfoByUser,
     onAddToFavs,
     onRemoveFromfavs,
+    onAddToBook,
+    onRemoveFromBook
   };
 };

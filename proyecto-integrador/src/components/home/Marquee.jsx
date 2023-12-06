@@ -5,38 +5,36 @@ export const Marquee = () => {
     <div className="relative flex overflow-x-hidden bg-slate-800">
       <div className="flex animate-marquee items-center whitespace-nowrap py-2">
         <span className="ml-2 text-lg italic text-rose-400">
-          - Arthur C. Clarke :
+          ¡¡GRANDES OFERTAS EN DH!!
         </span>
         <span className="ml-2 text-lg text-slate-200">
-          Cualquier tecnología suficientemente avanzada es equivalente a la
-          magia
+          Durante todo el mes diciembre reservá con un ¡<span className='text-green-500 font-bold'>20% </span>de descuento!
         </span>
-        <MdStarRate className=" mx-2 text-xl text-yellow-300" />
-        <span className="ml-2 text-lg italic text-rose-400">
-          - Henry Ford :
+        <img src="/christmas2.png" alt="" className='w-6 h-6 ml-2' />
+        <span className="ml-2 text-lg italic text-yellow-400">
+          ¡Feliz Navidad!
         </span>
         <span className="ml-2 text-lg text-slate-200">
-          El verdadero progreso es el que pone la tecnología al alcance de todos
+          Durante todo el mes diciembre reservá con un ¡<span className='text-green-500 font-bold'>20% </span> de descuento!
         </span>
-        <MdOutlineRocketLaunch className="mx-2 text-xl text-orange-500" />
+        <img src="/christmas.png" alt="" className='w-8 h-8 ml-2' />
       </div>
 
       <div className="absolute top-0 flex animate-marquee2 items-center whitespace-nowrap py-2">
         <span className="ml-2 text-lg italic text-rose-400">
-          - Arthur C. Clarke :
+          ¡¡GRANDES OFERTAS EN DH!!
         </span>
         <span className="ml-2 text-lg text-slate-200">
-          Cualquier tecnología suficientemente avanzada es equivalente a la
-          magia
+          Durante todo el mes diciembre reservá con un ¡<span className='text-green-500 font-bold'>20% </span> de descuento!
         </span>
-        <MdStarRate className="mx-2 text-xl text-yellow-300" />
-        <span className="ml-2 text-lg italic text-rose-400">
-          - Henry Ford :
+        <img src="/christmas2.png" alt="" className='w-6 h-6 ml-2' />
+        <span className="ml-2 text-lg italic text-yellow-400">
+          ¡Feliz Navidad!
         </span>
         <span className="ml-2 text-lg text-slate-200">
-          El verdadero progreso es el que pone la tecnología al alcance de todos
+          Durante todo el mes diciembre reservá con un ¡<span className='text-green-500 font-bold'>20% </span> de descuento!
         </span>
-        <MdOutlineRocketLaunch className="mx-2 text-xl text-orange-500" />
+        <img src="/christmas.png" alt="" className='w-8 h-8 ml-2' />
       </div>
     </div>
   );

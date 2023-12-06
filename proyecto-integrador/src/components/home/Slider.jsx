@@ -21,43 +21,44 @@ export default function Slider({ categories, handleClickFilterProducts }) {
 
   return (
     <div className="mt-10 flex flex-col">
-      <div className="mb-12 ml-24 flex flex-col place-self-start border-b-2 pb-4 text-3xl">
-        Categorías
-      </div>
-      <div className="h-full w-full">
-        <div className="relative mx-2 flex items-center justify-center">
-          <Button
-            variant="icon"
-            size="icon"
-            onClick={slideLeft}
-            className="cursor-pointer opacity-50 hover:opacity-100"
-          >
-            <MdArrowCircleLeft className="text-4xl" />
-          </Button>
+  <div className="mb-6 ml-4 sm:ml-24 text-2xl sm:text-3xl">
+    Categorías
+  </div>
+  <div className="h-full w-full overflow-hidden">
+    <div className="relative mx-2 flex items-center justify-center">
+      <Button
+        variant="icon"
+        size="icon"
+        onClick={slideLeft}
+        className="cursor-pointer opacity-50 hover:opacity-100"
+      >
+        <MdArrowCircleLeft className="text-3xl sm:text-4xl" />
+      </Button>
 
-          <div
-            id="slider"
-            className="h-full w-full max-w-[1410px] overflow-hidden scroll-smooth whitespace-nowrap"
-          >
-            {categories.map((category) => (
-              <CardSlider
-                handleClickFilterProducts={handleClickFilterProducts}
-                key={category.id}
-                category={category}
-              />
-            ))}
-          </div>
-
-          <Button
-            variant="icon"
-            size="icon"
-            onClick={slideRight}
-            className="cursor-pointer opacity-50 hover:opacity-100"
-          >
-            <MdArrowCircleRight className="text-4xl" />
-          </Button>
-        </div>
+      <div
+        id="slider"
+        className="h-full w-full max-w-full overflow-x-auto scroll-smooth whitespace-nowrap"
+      >
+        {categories.map((category) => (
+          <CardSlider
+            handleClickFilterProducts={handleClickFilterProducts}
+            key={category.id}
+            category={category}
+          />
+        ))}
       </div>
+
+      <Button
+        variant="icon"
+        size="icon"
+        onClick={slideRight}
+        className="cursor-pointer opacity-50 hover:opacity-100"
+      >
+        <MdArrowCircleRight className="text-3xl sm:text-4xl" />
+      </Button>
     </div>
+  </div>
+</div>
+
   );
 }

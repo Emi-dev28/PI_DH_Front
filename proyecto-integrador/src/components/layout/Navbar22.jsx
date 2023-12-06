@@ -7,7 +7,6 @@ import ShareButton from '../custom-ui/WebShare';
 import { useWindowSize } from '@uidotdev/usehooks';
 import { useAuthStore } from '@/context/authContext/hooks/useAuthStore';
 import { UserSessionMenu } from './navbar/UserSessionMenu';
-import { FaAlignJustify } from 'react-icons/fa';
 import { MdSearch } from 'react-icons/md';
 import { DateRangePicker } from '@/components/home/DateRangePicker';
 
@@ -76,11 +75,7 @@ export const Navbar = () => {
         </div>
       )}
 
-      {/* Menú hamburguesa para dispositivos pequeños */}
-      <div className="md:hidden">
-        <FaAlignJustify />
-        {/* Agrega aquí tu código para el menú hamburguesa */}
-      </div>
+      
     </nav>
   );
 };

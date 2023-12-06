@@ -32,10 +32,10 @@ export default function CardHome({ product, isFav }) {
         <ShareButton />
       </div>
 
-      <div className="flex justify-center">
+      <div className="flex items-center justify-center">
         <img
           src={product.images ? product.images[0].image : '/img/drone2.webp'}
-          className="h-[260px] w-full cursor-pointer object-cover"
+          className="h-[260px] w-full cursor-pointer object-contain"
           onClick={() => navigate('/detalle/' + product.id)}
         />
       </div>
@@ -60,7 +60,7 @@ export default function CardHome({ product, isFav }) {
           </CardTitle>
 
           <CardDescription className="text-lg">
-            {'$' + product.price + ' /semanal'}
+            {'$' + product.price + ' /Diario'}
           </CardDescription>
         </div>
 

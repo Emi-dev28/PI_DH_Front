@@ -1,42 +1,42 @@
-import { MdOutlineRocketLaunch, MdStarRate } from 'react-icons/md';
+import { FaTree } from "react-icons/fa6";
+import { FaGift } from "react-icons/fa6";
 
 export const Marquee = () => {
   return (
     <div className="relative flex overflow-x-hidden bg-slate-800">
+
       <div className="flex animate-marquee items-center whitespace-nowrap py-2">
         <span className="ml-2 text-lg italic text-rose-400">
-          - Arthur C. Clarke :
+          ¡¡GRANDES OFERTAS EN DH!!
         </span>
+        <FaGift className="text-xl ml-2 text-red-500" />
         <span className="ml-2 text-lg text-slate-200">
-          Cualquier tecnología suficientemente avanzada es equivalente a la
-          magia
+          Durante todo el mes diciembre reservá con un ¡<span className='text-green-500 font-bold'>20% </span>de descuento! No te lo pierdas
         </span>
-        <MdStarRate className=" mx-2 text-xl text-yellow-300" />
-        <span className="ml-2 text-lg italic text-rose-400">
-          - Henry Ford :
+        <span className="ml-2 text-lg italic text-yellow-400">
+          ¡Feliz Navidad!
         </span>
+        <FaTree className="text-xl ml-2 text-green-600" />
         <span className="ml-2 text-lg text-slate-200">
-          El verdadero progreso es el que pone la tecnología al alcance de todos
+          Durante todo el mes diciembre reservá con un ¡<span className='text-green-500 font-bold'>20% </span> de descuento! No te lo pierdas
         </span>
-        <MdOutlineRocketLaunch className="mx-2 text-xl text-orange-500" />
       </div>
 
       <div className="absolute top-0 flex animate-marquee2 items-center whitespace-nowrap py-2">
         <span className="ml-2 text-lg italic text-rose-400">
-          - Arthur C. Clarke :
+          ¡¡GRANDES OFERTAS EN DH!!
         </span>
+        <FaGift className="text-xl ml-2 text-red-500" />
         <span className="ml-2 text-lg text-slate-200">
-          Cualquier tecnología suficientemente avanzada es equivalente a la
-          magia
+          Durante todo el mes diciembre reservá con un ¡<span className='text-green-500 font-bold'>20% </span> de descuento! No te lo pierdas
         </span>
-        <MdStarRate className="mx-2 text-xl text-yellow-300" />
-        <span className="ml-2 text-lg italic text-rose-400">
-          - Henry Ford :
+        <span className="ml-2 text-lg italic text-yellow-400">
+          ¡Feliz Navidad!
         </span>
+        <FaTree className="text-xl ml-2 text-green-600" />
         <span className="ml-2 text-lg text-slate-200">
-          El verdadero progreso es el que pone la tecnología al alcance de todos
+          Durante todo el mes diciembre reservá con un ¡<span className='text-green-500 font-bold'>20% </span> de descuento! No te lo pierdas
         </span>
-        <MdOutlineRocketLaunch className="mx-2 text-xl text-orange-500" />
       </div>
     </div>
   );

@@ -1,4 +1,3 @@
-import { useDataContext } from '@/context/dataContext/useDataContext';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
@@ -20,10 +19,15 @@ import { ProductDetail } from '@/components/detalle/ProductDetail';
 import { MdOutlineKeyboardReturn } from 'react-icons/md';
 import { useAuthContext } from '@/context/authContext/useAuthContext';
 import { ToastAction } from '@/components/ui/toast';
+import { useAuthStore } from '@/context/authContext/hooks/useAuthStore';
+import { useDataStore } from '@/context/dataContext/hooks/useDataStore';
+import { DialogDetail } from '@/components/detalle/DialogDetail';
 
 export default function Detalle() {
-  // const { products } = useDataContext();
+  
+  const { state: dataState } = useDataStore();
   const { state, addToBook } = useAuthContext();
+  const { onAddToBook } = useAuthStore()
 
   const [product, setProduct] = useState({});
 
@@ -45,11 +49,12 @@ export default function Detalle() {
 
   const { toast } = useToast();
 
-  const isSelectedProductInBooking = state.book.some(
+  // const isSelectedProductInBooking = state.book.some(
+  //   (item) => item.product.id === selectedProductId,
+  // );
+  const isSelectedProductInBooking = [].some(
     (item) => item.product.id === selectedProductId,
   );
-
-  console.log(isSelectedProductInBooking);
 
   const onCloseModal = () => {
     setIsOpen(false);
@@ -68,13 +73,9 @@ export default function Detalle() {
       });
     } else {
       !isSelectedProductInBooking
-        ? (addToBook({
-            product,
-            date: {
-              from: formattedDateFrom,
-              to: formattedDateTo,
-            },
-          }),
+        ? (
+          addToBook({ product, date: { from: formattedDateFrom, to: formattedDateTo } }),
+          //TODO onAddToBook(state.uid, { product.id, date: { from: formattedDateFrom, to: formattedDateTo } }),
           toast({
             title: '¡Genial!',
             description: 'Has reservado el producto',
@@ -87,21 +88,22 @@ export default function Detalle() {
               </ToastAction>
             ),
             variant: 'success',
-          }))
+          })
+        )
         : toast({
-            title: 'Error',
-            description:
-              'Ya has reservado este producto. Si quieres cambiar la fecha de reserva, primero elimina el producto del historial',
-            action: (
-              <ToastAction
-                altText="Ir al historial"
-                onClick={() => navigate('/user/booking')}
-              >
-                Ir al historial
-              </ToastAction>
-            ),
-            variant: 'alert',
-          });
+          title: 'Error',
+          description:
+            'Ya has reservado este producto. Si quieres cambiar la fecha de reserva, primero elimina el producto del historial',
+          action: (
+            <ToastAction
+              altText="Ir al historial"
+              onClick={() => navigate('/user/booking')}
+            >
+              Ir al historial
+            </ToastAction>
+          ),
+          variant: 'alert',
+        });
     }
   };
 
@@ -111,12 +113,13 @@ export default function Detalle() {
   }, []);
 
   useEffect(() => {
-    const selectedProduct = products.find(
+    const selectedProduct = dataState.products.find(
       (product) => product.id === selectedProductId,
     );
 
     setProduct(selectedProduct);
   }, [selectedProductId]);
+
 
   // Scroll al inicio de la página cuando se monta el componente
   useEffect(() => {
@@ -127,8 +130,7 @@ export default function Detalle() {
     <div className="mx-2 flex flex-col">
       <div className="my-4 mr-2 flex justify-end">
         <PrimaryButton onClick={() => navigate(-1)}>
-          {' '}
-          <MdOutlineKeyboardReturn className="text-xl" />{' '}
+          <MdOutlineKeyboardReturn className="text-xl" />
         </PrimaryButton>
       </div>
 
@@ -137,11 +139,11 @@ export default function Detalle() {
 
         {/* Images  */}
 
-        <ImagesDetail images={product.images} setIsOpen={setIsOpen} />
+        <ImagesDetail images={product.imagenes} setIsOpen={setIsOpen} />
 
         {/* Modal and Galery */}
         <ImgGalleryModal isOpen={isOpen} onCloseModal={onCloseModal}>
-          <Carousel images={product.images} />
+          <Carousel images={product.imagenes} />
         </ImgGalleryModal>
 
         {/* Calendar */}
@@ -154,13 +156,15 @@ export default function Detalle() {
             onSelect={setDate}
             className="rounded-md border shadow"
             numberOfMonths={2}
-            // pagedNavigation
-            // showOutsideDays
-            // fixedWeeks
             disabled={disabledRange}
+            modifiersStyles={{
+              disabled: { textDecoration: "line-through", color: "red" },
+            }}
           />
 
-          <PrimaryButton onClick={() => handleBook()}>Reservar</PrimaryButton>
+          
+          <DialogDetail date={{from: formattedDateFrom, to: formattedDateTo}} />
+          {/* handleBook={handleBook} */}
         </div>
       </div>
 

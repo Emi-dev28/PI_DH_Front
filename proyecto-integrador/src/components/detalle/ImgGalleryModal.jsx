@@ -3,8 +3,8 @@ import Modal from 'react-modal';
 //* Posicionamiento del modal en la pantalla
 const customStyles = {
   content: {
-    height: '70%',
-    maxWidth: '60%',
+    height: '500px',
+    maxWidth: '700px',
     top: '50%',
     left: '50%',
     right: 'auto',

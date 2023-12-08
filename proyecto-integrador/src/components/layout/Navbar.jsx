@@ -6,15 +6,17 @@ import ShareButton from '../custom-ui/WebShare';
 import { useWindowSize } from '@uidotdev/usehooks';
 import { useAuthStore } from '@/context/authContext/hooks/useAuthStore';
 import { UserSessionMenu } from './navbar/UserSessionMenu';
-import { FaAlignJustify } from 'react-icons/fa';
+
 
 import Search from '../home/Search-3';
+import { AdminSessionMenu } from './navbar/AdminSessionMenu';
 
 export const Navbar = () => {
-  const { role, name } = useAuthStore();
+  const { role, state } = useAuthStore();
   const size = useWindowSize();
 
-  const firstLetter = name.substring(0, 1).toUpperCase();
+  const firstNameLetter = state.name?.charAt(0).toUpperCase();
+  const firstLastnameLetter = state.lastname?.charAt(0).toUpperCase();
 
   return (
     <nav
@@ -31,11 +33,11 @@ export const Navbar = () => {
         </Link>
       </div>
 
-      {role === 'USER' || role === 'ADMIN' ? (
-        <UserSessionMenu name={name} firstLetter={firstLetter} />
-      ) : (
+
+      {
+        role === 'USER' && <UserSessionMenu firstNameLetter={firstNameLetter} firstLastnameLetter={firstLastnameLetter} /> ||
+        role === 'ADMIN' && <AdminSessionMenu firstNameLetter={firstNameLetter} firstLastnameLetter={firstLastnameLetter} /> ||
         <div className="hidden items-center gap-5 md:flex">
-          {' '}
           {/* Oculta en dispositivos pequeños */}
           <Link to={'/auth/register'}>
             <PrimaryButton>Crear cuenta</PrimaryButton>
@@ -44,13 +46,8 @@ export const Navbar = () => {
             <PrimaryButton>Iniciar sesión</PrimaryButton>
           </Link>
         </div>
-      )}
+      }
 
-      {/* Menú hamburguesa para dispositivos pequeños */}
-      <div className="md:hidden">
-        <FaAlignJustify />
-        {/* Agrega aquí tu código para el menú hamburguesa */}
-      </div>
     </nav>
   );
 };

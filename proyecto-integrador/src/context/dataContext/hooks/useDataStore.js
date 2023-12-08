@@ -3,10 +3,10 @@ import { useDataContext } from '../useDataContext';
 import { useToast } from '@/components/ui/use-toast';
 
 const URL = 'http://localhost:8080/api/v1';
+//const URL = 'http://18.232.138.16:8080/api/v1';
 
 export const useDataStore = () => {
-  const { state, handleFetchProducts, handleLoading, handleFetchCategories } =
-    useDataContext();
+  const { state, handleFetchProducts, handleLoading, handleFetchCategories } = useDataContext();
   const { status } = state;
   const { toast } = useToast();
 

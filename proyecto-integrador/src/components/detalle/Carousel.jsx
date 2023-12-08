@@ -27,15 +27,15 @@ export const Carousel = ({ images }) => {
       >
         {images.map((img) => (
           <img
-            key={img.image}
-            src={img.image}
+            key={img.id}
+            src={img.imageUrl}
             alt="drone"
             className="inline-flex h-full w-full items-center justify-center whitespace-normal rounded-md border-0 duration-1000"
           />
         ))}
       </div>
 
-      <div className="absolute bottom-6 flex w-4/6 justify-between">
+      <div className="absolute bottom-6 flex w-4/6 justify-between bg-white bg-opacity-40 py-[2px] px-4 rounded-full">
         <button
           className="border-none text-black"
           variant="outline"
@@ -55,7 +55,7 @@ export const Carousel = ({ images }) => {
               size="icon"
             >
               <MdBrightness1
-                className={`${index === activeIndex && 'text-amber-500'}`}
+                className={`${index === activeIndex && 'text-white'}`}
               />
             </button>
           ))}

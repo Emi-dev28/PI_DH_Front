@@ -3,14 +3,8 @@ import { createContext, useReducer } from 'react';
 //* Si quieren entrar a /user pongan role: "USER" o "ADMIN"
 const initialState = {
   status: 'authenticated', //checking, not-authenticated, authenticated
-  uid: null,
-  email: null,
   name: 'User',
-  lastname: null,
-  role: 'USER',
-  terms: true,
-  favs: [],
-  book: []
+  lastname: 'Ser',
 };
 
 const reducer = (state, action) => {
@@ -101,8 +95,7 @@ export const AuthContextProvider = ({ children }) => {
     dispatch({ type: 'REMOVE_BOOK', payload: id });
   };
 
-  console.log(state.book);
-
+  console.log(state);
   //*******************************************/
   return (
     <AuthContext.Provider

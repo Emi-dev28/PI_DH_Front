@@ -24,22 +24,24 @@ export default function Search() {
   }
 
   return (
-    <search className="ml-96 mt-10 flex items-center gap-16">
-      {/* Input de búsqueda */}
-      <div className="hidden items-center md:flex">
-        <Input
-          type="text"
-          placeholder="¿Qué productos estás buscando?"
-          value={product}
-          onChange={handleChange}
-          className="h-10 w-[450px] rounded-2xl border bg-gray-100 px-8 shadow-md transition-all duration-300 ease-in-out hover:border-gray-400 focus:border-none"
-        />
-      </div>
-
-      <DateRangePicker search={search} setSearch={setSearch} />
-      <Button size="icon" variant="ghost">
-        <MdSearch />
-      </Button>
-    </search>
+    <search className="ml-4 md:ml-96 mt-10 flex flex-col md:flex-row items-center md:gap-16">
+    {/* Input de búsqueda */}
+    <div className="hidden md:flex items-center">
+      <Input
+        type="text"
+        placeholder="¿Qué productos estás buscando?"
+        value={product}
+        onChange={handleChange}
+        className="h-10 w-full md:w-[450px] rounded-2xl border bg-gray-100 px-8 shadow-md transition-all duration-300 ease-in-out hover:border-gray-400 focus:border-none" 
+        style={{ overflow: 'hidden' }}
+      />
+    </div>
+  
+    <DateRangePicker search={search} setSearch={setSearch} />
+    <Button size="icon" variant="ghost">
+      <MdSearch />
+    </Button>
+  </search>
+  
   );
 }

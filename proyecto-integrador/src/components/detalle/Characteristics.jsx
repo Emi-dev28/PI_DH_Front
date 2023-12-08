@@ -14,7 +14,7 @@ export const Characteristics = () => {
                 Características
             </h2>
 
-            <div className="mx-4 flex gap-10">
+            <div className="mx-4 flex flex-col ml-12 gap-10">
                 <div className="flex items-center gap-2">
                     <MdOutlineMemory className="text-xl" />
                     <span>Dos motores</span>

@@ -9,10 +9,11 @@ import { useSearchParams } from 'react-router-dom';
 import Search from '@/components/home/Search';
 
 import categories from '@/mocks/categories.json';
-import products from '@/mocks/products.json';
+// import products from '@/mocks/products.json';
 
 export default function Home() {
   const { state } = useDataStore();
+
   const [randomProducts, setRandomProducts] = useState([]);
   const [currentPage, setCurrentPage] = useState(0);
   const [shuffledProducts, setShuffledProducts] = useState([]);
@@ -29,15 +30,13 @@ export default function Home() {
       search.get('product') ||
       (search.get('dateFrom') && search.get('dateTo'))
     ) {
-      console.log('SearchParams useEffect');
       // Función para filtrar productos según el nombre del producto
-      const filteredProductsByName = products.filter((product) =>
+      const filteredProductsByName = state.products.filter((product) =>
         product.name
           .toLowerCase()
           .includes(search.get('product').toLowerCase()),
       );
 
-      console.log(filteredProductsByName);
 
       // Función para filtrar productos según las fechas
       const filteredProductsByDate = () => {
@@ -49,7 +48,6 @@ export default function Home() {
         });
       };
 
-      console.log(filteredProductsByDate());
 
       setShuffledProducts(filteredProductsByName);
 
@@ -59,11 +57,10 @@ export default function Home() {
       // Actualizar el estado con los productos filtrados
       setRandomProducts(newSelectedProducts);
     } else {
-      console.log('RandomProducts useEffect');
       const updateRandomProducts = () => {
         // Ordenar aleatoriamente los productos
-        //const shuffledProducts = state.products.sort(() => Math.random() - 0.5);
-        const shuffledProducts = products.sort(() => Math.random() - 0.5);
+        const shuffledProducts = state.products.sort(() => Math.random() - 0.5);
+        //const shuffledProducts = products.sort(() => Math.random() - 0.5);
 
         setShuffledProducts(shuffledProducts);
 
@@ -77,7 +74,8 @@ export default function Home() {
       // Llamamos a la función de actualización al montar el componente y cuando products cambia
       updateRandomProducts();
     }
-  }, [search]);
+  }, [search, state.products]);
+
 
   const elementsAmount =
     selectedCategories.length > 0
@@ -161,12 +159,12 @@ export default function Home() {
     <div className="flex flex-col">
       <div className="relative w-full">
         <Marquee />
-        <img src="/img/Section 1.webp" alt="Top-home-img" className="w-full" />
+        <img src="/img/new-home-img.jpg" alt="Top-home-img" className="w-full h-full object-cover" />
         <div className="md:bottom-15 absolute bottom-10 left-8 lg:bottom-20">
-          <h1 className="text-4xl text-white underline decoration-pink-500 underline-offset-8 md:text-6xl lg:text-7xl">
+          <h1 className="hidden md:block lg:block text-4xl md:text-6xl lg:text-7xl text-black underline decoration-pink-500 underline-offset-8">
             DH Technology
           </h1>
-          <h4 className="mt-2 text-lg text-white md:text-2xl lg:text-3xl">
+          <h4 className="hidden md:block lg:block mt-2 text-lg md:text-2xl lg:text-3xl text-black">
             Hacemos realidad tu proyecto
           </h4>
         </div>

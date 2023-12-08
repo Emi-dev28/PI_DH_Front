@@ -24,7 +24,7 @@ const formSchema = z.object({
       required_error: 'Se requiere una contraseña',
     })
     .min(6, {
-      message: 'Cinco (6) caracteres mínimo',
+      message: 'Seis (6) caracteres mínimo',
     })
     .max(15, {
       message: 'Quince (15) caracteres mínimo',

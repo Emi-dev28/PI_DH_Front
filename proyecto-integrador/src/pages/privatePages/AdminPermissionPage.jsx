@@ -15,7 +15,7 @@ export const AdminPermissionPage = () => {
   const { editUserPermission } = useAuthStore();
   const [users, setUsers] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [newRol, setNewRol] = useState({});
+  const [newRol, setNewRol] = useState("");
 
   console.log(newRol);
   const handleSelectOptionValue = (user) => {
@@ -75,7 +75,7 @@ export const AdminPermissionPage = () => {
                   <select
                     className={`rounded-sm border-none bg-rose-200 px-2 text-sm font-semibold`}
                     name="select"
-                    onChange={({ target }) => setNewRol({ rol: target.value })}
+                    onChange={({ target }) => setNewRol(target.value)}
                   >
                     <option value={user.rol} className="bg-white">
                       {user.rol}

@@ -62,7 +62,7 @@ export const useAuthStore = () => {
       localStorage.setItem('token', JSON.stringify(data.token));
       loginUser(data);
       console.log('Se ha registrado el usuario');
-      toast({ description: 'Nuevo usuario registrado', variant: 'success' });
+      toast({ Title: "¡GENIAL!", description: 'Te has registrado con éxito', variant: 'success' });
     } catch (error) {
       console.log(error);
       logoutUser();
@@ -110,7 +110,7 @@ export const useAuthStore = () => {
     const requestBody = {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(rol),
+      body: JSON.stringify({rol: rol})
     };
 
     try {

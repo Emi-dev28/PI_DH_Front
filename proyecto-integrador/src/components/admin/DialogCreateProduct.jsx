@@ -83,10 +83,13 @@ export const DialogCreateProduct = () => {
         price: values.price,
         categories: [{ name: values.categories }],
         stock: values.stock,
+        isReserved: false
       }),
     );
 
     filesData.append('files', files);
+
+    onCreatingNewProduct(filesData);
 
     // for (let i = 0; i < files.length; i++) {
     //   filesData.append('files', files[i]);
@@ -94,11 +97,6 @@ export const DialogCreateProduct = () => {
     // files.forEach((file, index) => {
     //   filesData.append(`file${index + 1}`, file);
     // });
-
-    onCreatingNewProduct(filesData);
-    // for (const obj of filesData) {
-    //   console.log(obj);
-    // }
   }
 
   return (

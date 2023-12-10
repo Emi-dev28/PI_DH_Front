@@ -50,16 +50,16 @@ export default function ListadoProductos() {
             <TableRow key={product.id}>
               <TableCell className="p-3">{product.name} </TableCell>
               <TableCell className="p-3">{product.description} </TableCell>
-              <TableCell className="p-3">{product.category} </TableCell>
+              <TableCell className="p-3">{product.category || "null"} </TableCell>
               <TableCell className="p-3 text-center">
-                {product.price}{' '}
+                {product.price}
               </TableCell>
               <TableCell className="p-3 text-center">
-                {product.stock}{' '}
+                {product.stock}
               </TableCell>
               <TableCell className="p-3 text-center">
                 {/* Botón editar */}
-                <Button variant="ghost" size="icon">
+                <Button variant="ghost" size="icon" className="hover:text-green-500">
                   <MdEdit className="h-5 w-5" />
                 </Button>
               </TableCell>
@@ -69,6 +69,7 @@ export default function ListadoProductos() {
                   variant="ghost"
                   size="icon"
                   onClick={() => borrarProducto(product.id)}
+                  className="hover:text-red-500"
                 >
                   <MdDelete className="h-5 w-5" />
                 </Button>

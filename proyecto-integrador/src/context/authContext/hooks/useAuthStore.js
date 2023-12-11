@@ -154,17 +154,16 @@ export const useAuthStore = () => {
   };
 
   //* Add to favorites
-  const onAddToFavs = async (data) => {
+  const onAddToFavs = async (pid, uid) => {
     checkingAuthentication();
 
     const requestBody = {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data),
     };
 
     try {
-      const resp = await fetch(URL + `/users/favorites/${uid}`, requestBody);
+      const resp = await fetch(URL + `/users/add-favorites/${uid}/${pid}`, requestBody);
       const data = await resp.json();
       console.log(data);
 
@@ -177,17 +176,16 @@ export const useAuthStore = () => {
   //************************************
 
   //* Remove from favorites
-  const onRemoveFromfavs = async (id) => {
+  const onRemoveFromfavs = async (pid, uid) => {
     checkingAuthentication();
 
     const requestBody = {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(id),
     };
 
     try {
-      const resp = await fetch(URL + `/users/favorites/${uid}`, requestBody);
+      const resp = await fetch(URL + `/users/delete-favorites/${uid}/${pid}`, requestBody);
       const data = await resp.json();
       console.log(data);
       toast({ description: 'Producto eliminado de favoritos', variant: 'success' });
@@ -200,17 +198,16 @@ export const useAuthStore = () => {
   //************************************
 
   //* Add to book
-  const onAddToBook = async (data) => {
+  const onAddToBook = async (pid, uid) => {
     checkingAuthentication();
 
     const requestBody = {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data),
     };
 
     try {
-      const resp = await fetch(URL + `/users/reservas/${uid}`, requestBody);
+      const resp = await fetch(URL + `/users/add-reserve/${uid}/${pid}`, requestBody);
       const data = await resp.json();
       console.log(data);
 
@@ -221,17 +218,16 @@ export const useAuthStore = () => {
   //************************************
 
   //* Remove from book
-  const onRemoveFromBook = async (id) => {
+  const onRemoveFromBook = async (pid, uid) => {
     checkingAuthentication();
 
     const requestBody = {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(id),
     };
 
     try {
-      await fetch(URL + `/users/reservas/${uid}`, requestBody);
+      await fetch(URL + `/users/delete-reserve/$${uid}/${pid}`, requestBody);
 
     } catch (error) {
       console.log(error);

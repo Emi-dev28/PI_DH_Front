@@ -12,17 +12,17 @@ import { useNavigate } from 'react-router-dom';
 import ShareButton from '@/components/custom-ui/WebShare';
 
 export default function CardHome({ product, isFav }) {
-  const { removeFromFavs, addToFavs } = useAuthContext();
+  const { removeFromFavs, addToFavs, state } = useAuthContext();
   const { onRemoveFromFavs, onAddToFavs } = useAuthStore();
   const navigate = useNavigate();
 
   const handleAddToFavorites = () => {
     addToFavs(product);
-    //onAddToFavs(product)
+    //onAddToFavs(product.id, state.uid)
   };
   const handleRemoveFromFavorites = () => {
     removeFromFavs(product.id);
-    //onRemoveFromFavs(product.id)
+    //onRemoveFromFavs(product.id, state.uid)
   };
 
   return (

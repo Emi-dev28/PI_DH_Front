@@ -37,18 +37,18 @@ export const useDataStore = () => {
     }
   };
 
-  /*
+
   //* Función para crear productos
   const onCreatingNewProduct = async (product) => {
     const requestBody = {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: product,
+      body: JSON.stringify(product),
     };
 
     try {
       const resp = await fetch(
-        //TODO URL + '/productos/registrar-producto',
+        '/productos/registrar-prod-sin-img',
         requestBody,
       );
       const data = await resp.json();
@@ -66,28 +66,23 @@ export const useDataStore = () => {
   const onCreatingNewProductFiles = async (filesData) => {
     const requestBody = {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'multipart/form-data' },
       body: filesData,
     };
 
     try {
-      const resp = await fetch(
-        //TODO URL + '/productos/registrar-producto',
+      await fetch(
+        '/productos/registrar-img',
         requestBody,
-      );
-      const data = await resp.json();
+      )
 
-      if (data.ok) {
-        toast({ description: 'Se ha añadido un nuevo producto', variant: 'success' });
-      }
     } catch (error) {
       console.log(error);
-      toast({ description: 'Algo ha salido mal', variant: 'destructive' });
     }
   };
-  */
 
-  
+
+
   useEffect(() => {
     fetchForProducts();
   }, []);
@@ -104,5 +99,6 @@ export const useDataStore = () => {
     fetchForProducts,
     fetchForCategories,
     onCreatingNewProduct,
+    onCreatingNewProductFiles
   };
 };

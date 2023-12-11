@@ -51,7 +51,7 @@ const formSchema = z.object({
 
 export const DialogCreateProduct = () => {
   const { state } = useDataContext();
-  const { onCreatingNewProduct } = useDataStore();
+  const { onCreatingNewProduct, onCreatingNewProductFiles } = useDataStore();
   const [files, setFiles] = useState([]);
 
   const form = useForm({
@@ -74,31 +74,29 @@ export const DialogCreateProduct = () => {
 
   function onSubmit(values) {
     const filesData = new FormData();
+    filesData.append('files', files);
 
-    filesData.append(
-      'product',
-      JSON.stringify({
+    onCreatingNewProductFiles(filesData)
+      .then(resp => resp.json())
+      .then(data => onCreatingNewProduct({
         name: values.name,
         description: values.description,
         price: values.price,
         categories: [{ name: values.categories }],
         stock: values.stock,
+        imagenes: data.url,
         isReserved: false
-      }),
-    );
+      }))
 
-    filesData.append('files', files);
-
-    onCreatingNewProduct(filesData);
-
+    }
+    
     // for (let i = 0; i < files.length; i++) {
     //   filesData.append('files', files[i]);
     // }
     // files.forEach((file, index) => {
     //   filesData.append(`file${index + 1}`, file);
     // });
-  }
-
+    
   return (
     <Dialog>
       <DialogTrigger asChild>
@@ -107,7 +105,6 @@ export const DialogCreateProduct = () => {
       <DialogContent>
         <DialogHeader>
           <DialogTitle>Nuevo producto</DialogTitle>
-          {/* <DialogDescription></DialogDescription> */}
         </DialogHeader>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">

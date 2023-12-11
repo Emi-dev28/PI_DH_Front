@@ -31,7 +31,7 @@ export const UserBookingPage = () => {
       </div>
 
       <Table>
-        {state.book.length === 0 ? (
+        {state.reserves.length === 0 ? (
           <TableCaption className="mt-48 text-2xl">
             No tienes ninguna reserva.
           </TableCaption>
@@ -49,7 +49,7 @@ export const UserBookingPage = () => {
         </TableHeader>
 
         <TableBody>
-          {state.book.map((item) => (
+          {state.reserves.map((item) => (
             <TableRow key={item.product.id}>
               <TableCell className="p-3 flex">
                 <img

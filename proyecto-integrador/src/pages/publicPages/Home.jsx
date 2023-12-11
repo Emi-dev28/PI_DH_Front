@@ -159,12 +159,12 @@ export default function Home() {
     <div className="flex flex-col">
       <div className="relative w-full">
         <Marquee />
-        <img src="/img/new-home-img.jpg" alt="Top-home-img" className="w-full h-full object-cover" />
-        <div className="md:bottom-15 absolute bottom-10 left-8 lg:bottom-20">
-          <h1 className="hidden md:block lg:block text-4xl md:text-6xl lg:text-7xl text-black underline decoration-pink-500 underline-offset-8">
+        <img src="/img/home-bkg.webp" alt="Top-home-img" className="w-full h-full object-cover" />
+        <div className="md:bottom-15 absolute bottom-10 left-8 lg:bottom-40">
+          <h1 className="hidden md:block lg:block text-4xl md:text-6xl lg:text-7xl text-white underline decoration-pink-500 underline-offset-8">
             DH Technology
           </h1>
-          <h4 className="hidden md:block lg:block mt-2 text-lg md:text-2xl lg:text-3xl text-black">
+          <h4 className="hidden md:block lg:block mt-2 text-lg md:text-2xl lg:text-3xl text-white">
             Hacemos realidad tu proyecto
           </h4>
         </div>

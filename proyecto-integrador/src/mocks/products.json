@@ -1727,7 +1727,7 @@
   },
   {
     "id": 43,
-    "name": "Squeeze Bottle",
+    "name": "Drone Cuadricoptero",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -1746,32 +1746,26 @@
         "characteristic": "curious"
       }
     ],
-    "description": "Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.",
-    "price": 502.04,
+    "description": "Está hecho de materiales ABS ignífugos de alta calidad y respetuosos con el medio ambiente, con diseño de carcasa de alta resistencia y buen rendimiento anti-caídas y anti-colisión.",
+    "price": 6000,
     "quantity": 2,
     "category": "Drones",
-    "rating": 1.5,
+    "rating": 2.5,
     "images": [
       {
-        "image": "/img/drone2.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_616760-MLA71951322925_092023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/394x382.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_696234-MLA48067577654_102021-O.webp"
       },
       {
-        "image": "http://dummyimage.com/340x360.png/dddddd/000000"
-      },
-      {
-        "image": "http://dummyimage.com/281x376.png/cc0000/ffffff"
-      },
-      {
-        "image": "http://dummyimage.com/436x269.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_915231-MLA48067609315_102021-O.webp"
       }
     ]
   },
   {
     "id": 44,
-    "name": "Cocktail Napkin Blue",
+    "name": "Asus TUF Gaming RTX 3060 12GB",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -1790,32 +1784,32 @@
         "characteristic": "friendly"
       }
     ],
-    "description": "Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.\n\nProin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.",
-    "price": 248.03,
+    "description": "Nvidia es el fabricante líder de placas de video; su calidad asegura una experiencia positiva en el desarrollo del motor gráfico de tu computadora. Además, sus procesadores usan tecnología de punta para que puedas disfrutar de un producto veloz y duradero.",
+    "price": 6000,
     "quantity": 61,
     "category": "Computación",
-    "rating": 1.4,
+    "rating": 4.4,
     "images": [
       {
-        "image": "/img/monitor.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_824032-MLA53332866225_012023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/290x351.png/dddddd/000000"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_893892-MLA53332808711_012023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/355x399.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_611303-MLA53332770830_012023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/365x274.png/ff4444/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_759508-MLA53332808716_012023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/432x356.png/ff4444/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_893685-MLA53332808714_012023-O.webp"
       }
     ]
   },
   {
     "id": 45,
-    "name": "Water - Mineral, Natural",
+    "name": "Mini Drone Dji Mini 3",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -1834,32 +1828,29 @@
         "characteristic": "intelligent"
       }
     ],
-    "description": "Sed ante. Vivamus tortor. Duis mattis egestas metus.\n\nAenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.\n\nQuisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.",
-    "price": 280.88,
+    "description": "Los drones DJI se caracterizan por la mejor tecnología al servicio de cada tipo de usuario y escenario de disparo. Si buscas un dron para principiantes, un dron profesional o solamente quieres estar actualizado con las últimas innovaciones, es hora de elegir a esta marca.",
+    "price": 3000,
     "quantity": 84,
     "category": "Drones",
     "rating": 2.5,
     "images": [
       {
-        "image": "/img/drone2.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_820653-MLU72628857396_112023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/326x443.png/dddddd/000000"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_661847-MLU70013387091_062023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/307x396.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_861953-MLU71677401195_092023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/439x405.png/ff4444/ffffff"
-      },
-      {
-        "image": "http://dummyimage.com/419x448.png/ff4444/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_847611-MLU70013337577_062023-O.webp"
       }
     ]
   },
   {
     "id": 46,
-    "name": "Sherry - Dry",
+    "name": "Monitor Samsung Odyssey G3 24´",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -1878,32 +1869,32 @@
         "characteristic": "friendly"
       }
     ],
-    "description": "Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.\n\nIn congue. Etiam justo. Etiam pretium iaculis justo.\n\nIn hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.",
-    "price": 497.16,
+    "description": "Este monitor de 24´ te va a resultar cómodo para estudiar, trabajar o ver una película en tus tiempos de ocio. Asimismo, su resolución de 1920 x 1080 te permite disfrutar de momentos únicos gracias a una imagen de alta fidelidad.",
+    "price": 3000,
     "quantity": 63,
     "category": "Computación",
     "rating": 3.3,
     "images": [
       {
-        "image": "/img/monitor.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_667995-MLU72756710926_112023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/387x266.png/dddddd/000000"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_690240-MLU72831731623_112023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/330x340.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_660843-MLU72756730542_112023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/250x263.png/dddddd/000000"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_761496-MLU72756730548_112023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/439x309.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_775020-MLU73262541639_122023-O.webp"
       }
     ]
   },
   {
     "id": 47,
-    "name": "Wine - Chianti Classica Docg",
+    "name": "Camara Semireflex Sony H300",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -1919,32 +1910,32 @@
         "characteristic": "friendly"
       }
     ],
-    "description": "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.\n\nMorbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.",
-    "price": 990.39,
+    "description": "El sensor de imagen CCD capta con mayor claridad las luces y sombras en tus fotografías, las procesa en un chip externo que te permite guardar mayor cantidad de imágenes, y minimiza el ruido en las capturas. \n\nEl modo autofoco captura objetos y personas con naturalidad. Disfrutá el momento y guardá los mejores recuerdos en donde estés.",
+    "price": 6000,
     "quantity": 10,
     "category": "Cámaras",
     "rating": 3.8,
     "images": [
       {
-        "image": "/img/camara.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_722949-MLU72572778414_112023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/307x344.png/ff4444/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_777336-MLA40044532833_122019-O.webp"
       },
       {
-        "image": "http://dummyimage.com/264x282.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_900503-MLU69825292989_062023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/435x274.png/dddddd/000000"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_923492-MLA49434496569_032022-O.webp"
       },
       {
-        "image": "http://dummyimage.com/412x381.png/dddddd/000000"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_943458-MLU69809654388_062023-O.webp"
       }
     ]
   },
   {
     "id": 48,
-    "name": "Beef - Baby, Liver",
+    "name": "Xiaomi Redmi Note 11",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -1960,32 +1951,26 @@
         "characteristic": "loyal"
       }
     ],
-    "description": "Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.",
-    "price": 132.24,
+    "description": "Mirá tus series y películas favoritas con la mejor definición a través de su pantalla AMOLED de 6.43´. Disfrutá de colores brillantes y detalles precisos en todos tus contenidos. Su memoria RAM de 4 GB permite que tu smartphone funcione de manera fluida y sin demoras al realizar distintas tareas, jugar o navegar.",
+    "price": 3000,
     "quantity": 17,
     "category": "Celulares",
     "rating": 3.1,
     "images": [
       {
-        "image": "/img/iphone.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_641923-MLU69889783892_062023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/314x362.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_690803-MLU69889783894_062023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/294x315.png/dddddd/000000"
-      },
-      {
-        "image": "http://dummyimage.com/387x387.png/dddddd/000000"
-      },
-      {
-        "image": "http://dummyimage.com/272x283.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_955560-MLU69889783896_062023-O.webp"
       }
     ]
   },
   {
     "id": 49,
-    "name": "Turkey - Whole, Fresh",
+    "name": "Etheos DRN1080",
     "date": { "from": "2023-12-14", "to": "2023-12-26" },
     "characteristics": [
       {
@@ -2004,32 +1989,29 @@
         "characteristic": "loyal"
       }
     ],
-    "description": "Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.\n\nFusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.",
-    "price": 971.41,
+    "description": "El Drone Etheos DRN1080 es el compañero perfecto para capturar momentos increíbles desde el cielo. Con su cámara dual Full HD, podrás obtener imágenes y videos de alta calidad, tanto desde la parte frontal como desde la parte inferior del drone.",
+    "price": 5000,
     "quantity": 18,
     "category": "Drones",
     "rating": 1.8,
     "images": [
       {
-        "image": "/img/drone2.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_804621-MLA51320275698_082022-O.webp"
       },
       {
-        "image": "/img/drone2.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_841222-MLA51320255972_082022-O.webp"
       },
       {
-        "image": "http://dummyimage.com/298x442.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_775105-MLA51320255973_082022-O.webp"
       },
       {
-        "image": "http://dummyimage.com/295x416.png/ff4444/ffffff"
-      },
-      {
-        "image": "http://dummyimage.com/324x322.png/dddddd/000000"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_769080-MLA51320287567_082022-O.webp"
       }
     ]
   },
   {
     "id": 50,
-    "name": "Mushroom - Shitake, Dry",
+    "name": "Silla Gamer Dxracer",
     "date": { "from": "2023-12-14", "to": "2023-12-26" },
     "characteristics": [
       {
@@ -2045,26 +2027,26 @@
         "characteristic": "adventurous"
       }
     ],
-    "description": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.\n\nNullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.",
-    "price": 388.79,
+    "description": "Con esta silla DXRacer, vas a tener la comodidad y el bienestar que necesitás a lo largo de tu dia. Además, podés ubicarla en cualquier parte de tu casa u oficina, ya que los variados diseños que ofrecemos se adaptan a múltiples entornos. ¡Dale a tus espacios un toque más moderno!.",
+    "price": 4200,
     "quantity": 30,
     "category": "Computación",
     "rating": 3.7,
     "images": [
       {
-        "image": "/img/monitor.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_630392-MLU70778725722_082023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/410x265.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_689659-MLU70810079529_082023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/415x391.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_705475-MLU70778725720_082023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/361x312.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_651588-MLU70778480940_082023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/256x289.png/dddddd/000000"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_818002-MLU70778480946_082023-O.webp"
       }
     ]
   }

@@ -30,6 +30,7 @@ import {
 } from '@/components/ui/form';
 import { Label } from '@radix-ui/react-dropdown-menu';
 import { useState } from 'react';
+import { subirImagen } from '@/helpers/subirImagen';
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -50,7 +51,7 @@ const formSchema = z.object({
 });
 
 export const DialogCreateProduct = () => {
-  const { state } = useDataContext();
+  const { state, agregarProducto } = useDataContext();
   const { onCreatingNewProduct, onCreatingNewProductFiles } = useDataStore();
   const [files, setFiles] = useState([]);
 
@@ -65,38 +66,56 @@ export const DialogCreateProduct = () => {
     },
   });
 
-  const onFileInputChange = ({ target }) => {
+  //* Función para subir imágenes a Cloudinary y colocarlas en el state local para luego enviarlas al reducer
+  const subirImagenInput = async ({ target }) => {
     if (target.files === 0) return;
 
-    const selectedFiles = target.files;
-    setFiles([...files, ...selectedFiles]);
+    const promesasDeImagenesParaSubir = [];
+    for (const file of target.files) {
+      promesasDeImagenesParaSubir.push(subirImagen(file));
+    }
+    const imagenesUrls = await Promise.all(promesasDeImagenesParaSubir);
+
+    setFiles( imagenesUrls );
   };
 
+
+
   function onSubmit(values) {
-    const filesData = new FormData();
-    filesData.append('files', files);
+    agregarProducto({
+      id: 51,
+      name: values.name,
+      description: values.description,
+      price: values.price,
+      categories: [{ name: values.categories }],
+      stock: values.stock,
+      images: [
+        {image: files[0]},
+        {image: files[1]},
+      ],
+    })
+  }
 
-    onCreatingNewProductFiles(filesData)
-      .then(resp => resp.json())
-      .then(data => onCreatingNewProduct({
-        name: values.name,
-        description: values.description,
-        price: values.price,
-        categories: [{ name: values.categories }],
-        stock: values.stock,
-        imagenes: data.url,
-        isReserved: false
-      }))
+  // const onFileInputChange = ({ target }) => {
+  //   if (target.files === 0) return;
 
-    }
-    
-    // for (let i = 0; i < files.length; i++) {
-    //   filesData.append('files', files[i]);
-    // }
-    // files.forEach((file, index) => {
-    //   filesData.append(`file${index + 1}`, file);
-    // });
-    
+  //   const selectedFiles = target.files;
+  //   setFiles([...files, ...selectedFiles]);
+  // };
+
+  // onCreatingNewProductFiles(filesData)
+  //   .then(resp => resp.json())
+  //   .then(data => onCreatingNewProduct({
+  //     name: values.name,
+  //     description: values.description,
+  //     price: values.price,
+  //     categories: [{ name: values.categories }],
+  //     stock: values.stock,
+  //     imagenes: data.url,
+  //     isReserved: false
+  //   }))
+  // }
+
   return (
     <Dialog>
       <DialogTrigger asChild>
@@ -194,7 +213,7 @@ export const DialogCreateProduct = () => {
                 id="picture"
                 type="file"
                 multiple
-                onChange={onFileInputChange}
+                onChange={subirImagenInput}
               />
             </div>
           </form>

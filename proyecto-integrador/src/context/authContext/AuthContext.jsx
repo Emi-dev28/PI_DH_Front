@@ -2,9 +2,11 @@ import { createContext, useReducer } from 'react';
 
 
 const initialState = {
-  status: 'authenticated', //checking, not-authenticated, authenticated
+  status: 'not-authenticated', //checking, not-authenticated, authenticated
   name: 'User',
   lastname: 'Ser',
+  favorites: [],
+  reserves: [],
 };
 
 const reducer = (state, action) => {
@@ -29,8 +31,8 @@ const reducer = (state, action) => {
         name: '',
         lastname: null,
         role: null,
-        favorites: null,
-        reserves: null,
+        favorites: [],
+        reserves: [],
       };
 
     case 'CHECKING_CREDENTIALS':

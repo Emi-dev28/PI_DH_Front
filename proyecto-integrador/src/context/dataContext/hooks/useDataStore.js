@@ -87,9 +87,9 @@ export const useDataStore = () => {
 
 
 
-  useEffect(() => {
-    fetchForProducts();
-  }, []);
+  // useEffect(() => {
+  //   fetchForProducts();
+  // }, []);
   // useEffect(() => {
   //     fetchForCategories()
   // }, [state.categories])

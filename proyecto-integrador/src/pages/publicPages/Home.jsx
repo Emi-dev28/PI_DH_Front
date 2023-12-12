@@ -12,6 +12,8 @@ import categories from '@/mocks/categories.json';
 import products from '@/mocks/products.json';
 
 export default function Home() {
+  const { state } = useDataStore();
+
   const [randomProducts, setRandomProducts] = useState([]);
   const [currentPage, setCurrentPage] = useState(0);
   const [shuffledProducts, setShuffledProducts] = useState([]);
@@ -29,7 +31,7 @@ export default function Home() {
       (search.get('dateFrom') && search.get('dateTo'))
     ) {
       // Función para filtrar productos según el nombre del producto
-      const filteredProductsByName = products.filter((product) =>
+      const filteredProductsByName = state.products.filter((product) =>
         product.name
           .toLowerCase()
           .includes(search.get('product').toLowerCase()),
@@ -69,7 +71,7 @@ export default function Home() {
     } else {
       const updateRandomProducts = () => {
         // Ordenar aleatoriamente los productos
-        const shuffledProducts = products.sort(() => Math.random() - 0.5);
+        const shuffledProducts = state.products.sort(() => Math.random() - 0.5);
         //const shuffledProducts = products.sort(() => Math.random() - 0.5);
 
         setShuffledProducts(shuffledProducts);

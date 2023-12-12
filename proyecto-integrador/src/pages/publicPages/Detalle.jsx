@@ -139,11 +139,11 @@ export default function Detalle() {
 
         {/* Images  */}
 
-        <ImagesDetail images={product.imagenes} setIsOpen={setIsOpen} />
+        <ImagesDetail images={product.images} setIsOpen={setIsOpen} />
 
         {/* Modal and Galery */}
         <ImgGalleryModal isOpen={isOpen} onCloseModal={onCloseModal}>
-          <Carousel images={product.imagenes} />
+          <Carousel images={product.images} />
         </ImgGalleryModal>
 
         {/* Calendar */}

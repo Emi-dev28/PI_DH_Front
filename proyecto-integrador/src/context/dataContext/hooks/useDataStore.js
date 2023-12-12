@@ -6,7 +6,8 @@ const URL = 'http://localhost:8080/api/v1';
 //const URL = 'http://18.232.138.16:8080/api/v1';
 
 export const useDataStore = () => {
-  const { state, handleFetchProducts, handleLoading, handleFetchCategories } = useDataContext();
+  const { state, handleFetchProducts, handleLoading, handleFetchCategories } =
+    useDataContext();
   const { status } = state;
   const { toast } = useToast();
 
@@ -53,7 +54,10 @@ export const useDataStore = () => {
       const data = await resp.json();
 
       if (data.ok) {
-        toast({ description: 'Se ha añadido un nuevo producto', variant: 'success' });
+        toast({
+          description: 'Se ha añadido un nuevo producto',
+          variant: 'success',
+        });
       }
     } catch (error) {
       console.log(error);

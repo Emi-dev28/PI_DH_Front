@@ -13,11 +13,12 @@ Wrapper.propTypes = {
 };
 
 export default function Wrapper(props) {
-  const { state } = useAuthContext();
-
   return (
     <div className="mb-16 mt-16 flex flex-col items-center">
-      <div className="mb-12 ml-24 flex flex-col place-self-start border-b-2 pb-4 text-3xl">
+      <div
+        id="products-section"
+        className="mb-12 ml-24 flex flex-col place-self-start border-b-2 pb-4 text-3xl"
+      >
         Productos
       </div>
 
@@ -32,9 +33,12 @@ export default function Wrapper(props) {
           ))}
         </div>
       ) : (
-        <div className="mb-16 mr-60 text-2xl">
-          Cargando...
-        </div>
+        <>
+          <div className="mb-16 mr-60 flex flex-col  gap-4 text-2xl">
+            <p>No se encontraron productos.</p>
+            <p>Elimine los filtros ingresados y vuelva a intentarlo.</p>
+          </div>
+        </>
       )}
 
       {props.products.length > 0 && (

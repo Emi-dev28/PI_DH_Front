@@ -27,14 +27,17 @@ export default function CardHome({ product, isFav }) {
 
   return (
     <Card className="flex w-full flex-col p-4 duration-300 hover:shadow-xl sm:w-[400px] lg:w-[500px] ">
-
-      <div className="flex flex-col items-end mb-2">
+      <div className="mb-2 flex flex-col items-end">
         <ShareButton />
       </div>
 
       <div className="flex items-center justify-center">
         <img
-          src={product.imagenes[0] ? product.imagenes[0].imageUrl : '/img/drone2.webp'}
+          src={
+            product.images[0].image
+              ? product.images[0].image
+              : product.images[1].image
+          }
           className="h-[260px] w-full cursor-pointer object-contain"
           onClick={() => navigate('/detalle/' + product.id)}
         />

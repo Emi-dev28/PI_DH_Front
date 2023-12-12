@@ -4,7 +4,8 @@ import { useAuthContext } from '../useAuthContext';
 const URL = 'http://localhost:8080/api/v1';
 
 export const useAuthStore = () => {
-  const { loginUser, logoutUser, checkingAuthentication, state } = useAuthContext();
+  const { loginUser, logoutUser, checkingAuthentication, state } =
+    useAuthContext();
   const { status, name, lastname, role, uid } = state;
 
   const { toast } = useToast();
@@ -26,7 +27,6 @@ export const useAuthStore = () => {
       //*Establecer el token que viene del back en el localStorage
       localStorage.setItem('token', JSON.stringify(data.token));
       loginUser(data);
-
     } catch (error) {
       console.log(error);
       logoutUser();
@@ -118,7 +118,10 @@ export const useAuthStore = () => {
       const data = await resp.json();
 
       if (data.ok) {
-        toast({ description: 'Se han dado permisos de admin al usuario', variant: 'success' });
+        toast({
+          description: 'Se han dado permisos de admin al usuario',
+          variant: 'success',
+        });
       }
     } catch (error) {
       console.log(error);
@@ -142,7 +145,10 @@ export const useAuthStore = () => {
       const data = await resp.json();
 
       if (data.ok) {
-        toast({ description: 'Se han modificado los datos', variant: 'success' });
+        toast({
+          description: 'Se han modificado los datos',
+          variant: 'success',
+        });
       }
     } catch (error) {
       console.log(error);
@@ -190,8 +196,10 @@ export const useAuthStore = () => {
       const resp = await fetch(URL + `/users/favorites/${uid}`, requestBody);
       const data = await resp.json();
       console.log(data);
-      toast({ description: 'Producto eliminado de favoritos', variant: 'success' });
-
+      toast({
+        description: 'Producto eliminado de favoritos',
+        variant: 'success',
+      });
     } catch (error) {
       console.log(error);
       toast({ description: 'Algo salió mal', variant: 'destructive' });
@@ -213,7 +221,6 @@ export const useAuthStore = () => {
       const resp = await fetch(URL + `/users/reservas/${uid}`, requestBody);
       const data = await resp.json();
       console.log(data);
-
     } catch (error) {
       console.log(error);
     }
@@ -232,7 +239,6 @@ export const useAuthStore = () => {
 
     try {
       await fetch(URL + `/users/reservas/${uid}`, requestBody);
-
     } catch (error) {
       console.log(error);
     }
@@ -257,6 +263,6 @@ export const useAuthStore = () => {
     onAddToFavs,
     onRemoveFromfavs,
     onAddToBook,
-    onRemoveFromBook
+    onRemoveFromBook,
   };
 };

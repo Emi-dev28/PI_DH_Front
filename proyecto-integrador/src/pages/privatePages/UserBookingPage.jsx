@@ -13,16 +13,15 @@ import {
   TableRow,
 } from '@/components/ui/table';
 
-
 export const UserBookingPage = () => {
-  
   const { state } = useAuthContext();
-
 
   useEffect(() => {
     // Scroll al inicio de la página cuando se monta el componente
     window.scrollTo(0, 0);
   }, []);
+
+  console.log(state);
 
   return (
     <div className="mx-6 my-4 flex min-h-screen gap-x-2">
@@ -31,7 +30,7 @@ export const UserBookingPage = () => {
       </div>
 
       <Table>
-        {state.book.length === 0 ? (
+        {state.reserves.length === 0 ? (
           <TableCaption className="mt-48 text-2xl">
             No tienes ninguna reserva.
           </TableCaption>
@@ -49,9 +48,9 @@ export const UserBookingPage = () => {
         </TableHeader>
 
         <TableBody>
-          {state.book.map((item) => (
+          {state.reserves.map((item) => (
             <TableRow key={item.product.id}>
-              <TableCell className="p-3 flex">
+              <TableCell className="flex p-3">
                 <img
                   src={
                     item.product.images
@@ -59,7 +58,7 @@ export const UserBookingPage = () => {
                       : '/img/icons/favicon_32x32.webp'
                   }
                   alt="product-img"
-                  className="h-6 w-6 rounded-lg border-0 mr-2"
+                  className="mr-2 h-6 w-6 rounded-lg border-0"
                 />
                 <span>{item.product.name}</span>
               </TableCell>
@@ -70,7 +69,7 @@ export const UserBookingPage = () => {
               </TableCell>
               <TableCell className="p-3 text-center">
                 {/* Botón eliminar */}
-                <CancelBookAlert productId={item.product.id}/>
+                <CancelBookAlert productId={item.product.id} />
               </TableCell>
             </TableRow>
           ))}

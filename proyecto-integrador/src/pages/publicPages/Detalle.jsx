@@ -24,7 +24,7 @@ import { useDataStore } from '@/context/dataContext/hooks/useDataStore';
 import { DialogDetail } from '@/components/detalle/DialogDetail';
 
 export default function Detalle() {
-  
+
   const { state: dataState } = useDataStore();
   const { state, addToBook } = useAuthContext();
   const { onAddToBook } = useAuthStore()
@@ -49,12 +49,10 @@ export default function Detalle() {
 
   const { toast } = useToast();
 
-  // const isSelectedProductInBooking = state.book.some(
-  //   (item) => item.product.id === selectedProductId,
-  // );
-  const isSelectedProductInBooking = [].some(
+  const isSelectedProductInBooking = state.reserves.some(
     (item) => item.product.id === selectedProductId,
   );
+
 
   const onCloseModal = () => {
     setIsOpen(false);
@@ -162,8 +160,8 @@ export default function Detalle() {
             }}
           />
 
-          
-          <DialogDetail date={{from: formattedDateFrom, to: formattedDateTo}} />
+
+          <DialogDetail date={{ from: formattedDateFrom, to: formattedDateTo }} handleBook={handleBook} />
           {/* handleBook={handleBook} */}
         </div>
       </div>

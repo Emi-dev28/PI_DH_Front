@@ -46,17 +46,19 @@ export default function CardHome({ product, isFav }) {
         <div>
           <CardTitle className="mt-[5px] flex items-center text-lg">
             <span>{product.name}</span>
-            {isFav ? (
-              <MdFavorite
-                className="ml-2 cursor-pointer text-xl text-red-600 duration-300"
-                onClick={() => handleRemoveFromFavorites()}
-              />
-            ) : (
-              <MdFavoriteBorder
-                className="ml-2 cursor-pointer text-xl text-yellow-600 duration-300"
-                onClick={() => handleAddToFavorites()}
-              />
-            )}
+            {state.status === "authenticated" 
+              ? isFav 
+                ? 
+                <MdFavorite
+                  className="ml-2 cursor-pointer text-xl text-red-600 duration-300"
+                  onClick={() => handleRemoveFromFavorites()}
+                />
+               : 
+                <MdFavoriteBorder
+                  className="ml-2 cursor-pointer text-xl text-yellow-600 duration-300"
+                  onClick={() => handleAddToFavorites()}
+                />
+             : "" }
           </CardTitle>
 
           <CardDescription className="text-lg">

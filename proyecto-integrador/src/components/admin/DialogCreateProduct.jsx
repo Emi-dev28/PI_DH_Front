@@ -75,8 +75,15 @@ export const DialogCreateProduct = () => {
   function onSubmit(values) {
     const filesData = new FormData();
     filesData.append('files', files);
+    console.log(filesData);
+    const requestBody = {
+      method: 'POST',
+      headers: { 'Content-Type': 'multipart/form-data' },
+      mode: 'no-cors',
+      body: filesData,
+    };
 
-    onCreatingNewProductFiles(filesData)
+    fetch("http://localhost:8080/api/v1/productos/registrar-imagen", requestBody)
       .then(resp => resp.json())
       .then(data => onCreatingNewProduct({
         name: values.name,
@@ -84,18 +91,12 @@ export const DialogCreateProduct = () => {
         price: values.price,
         categories: [{ name: values.categories }],
         stock: values.stock,
-        imagenes: data.url,
+        imagenes: data.imageUrl,
         isReserved: false
       }))
+      .catch(error => console.log(error))
 
     }
-    
-    // for (let i = 0; i < files.length; i++) {
-    //   filesData.append('files', files[i]);
-    // }
-    // files.forEach((file, index) => {
-    //   filesData.append(`file${index + 1}`, file);
-    // });
     
   return (
     <Dialog>

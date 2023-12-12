@@ -72,8 +72,8 @@ export const useDataStore = () => {
 
     try {
       await fetch(
-        '/productos/registrar-img',
-        requestBody,
+        '/productos/registrar-imagen',
+        requestBody
       )
 
     } catch (error) {

@@ -12,10 +12,12 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table';
+import PrimaryButton from '@/components/custom-ui/PrimaryButton';
+import { MdOutlineKeyboardReturn } from 'react-icons/md';
 
 export const UserBookingPage = () => {
   const { state } = useAuthContext();
-
+  const navigate = useNavigate()
   useEffect(() => {
     // Scroll al inicio de la página cuando se monta el componente
     window.scrollTo(0, 0);
@@ -27,6 +29,11 @@ export const UserBookingPage = () => {
     <div className="mx-6 my-4 flex min-h-screen gap-x-2">
       <div className="flex min-w-[235px] flex-col justify-between border-r-[1px] border-r-red-200">
         <h2 className="text-2xl">Historial de Reservas</h2>
+      </div>
+      <div className="my-4 mr-2 flex justify-end fixed right-3 bottom-1">
+        <PrimaryButton onClick={() => navigate(-1)}>
+          <MdOutlineKeyboardReturn className="text-xl" />
+        </PrimaryButton>
       </div>
 
       <Table>

@@ -57,12 +57,12 @@ export const useAuthStore = () => {
     try {
       const resp = await fetch(URL + '/auth/register', requestBody);
       const data = await resp.json();
-
+      console.log(data);
       //*Establecer el token que viene del back en el localStorage
       localStorage.setItem('token', JSON.stringify(data.token));
       loginUser(data);
       console.log('Se ha registrado el usuario');
-      toast({ Title: "¡GENIAL!", description: 'Te has registrado con éxito', variant: 'success' });
+      toast({ title: "¡GENIAL!", description: 'Te has registrado con éxito', variant: 'success' });
     } catch (error) {
       console.log(error);
       logoutUser();

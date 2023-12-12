@@ -21,7 +21,7 @@ export default function Search() {
 
     const searchSection = document.getElementById('search-section');
     window.scroll({
-      top: searchSection.offsetTop - 116,
+      top: 1000,
       behavior: 'smooth',
     });
   }

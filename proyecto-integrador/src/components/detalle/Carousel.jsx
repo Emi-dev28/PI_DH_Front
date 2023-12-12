@@ -25,10 +25,10 @@ export const Carousel = ({ images }) => {
         className="relative h-full w-full whitespace-nowrap transition-transform duration-300"
         style={{ transform: `translate(-${activeIndex * 100}%)` }}
       >
-        {images.map((img) => (
+        {images.map((img, index) => (
           <img
-            key={img.id}
-            src={img.imageUrl}
+            key={index}
+            src={img.image}
             alt="drone"
             className="inline-flex h-full w-full items-center justify-center whitespace-normal rounded-md border-0 duration-1000"
           />

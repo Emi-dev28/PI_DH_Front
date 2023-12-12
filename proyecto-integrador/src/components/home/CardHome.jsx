@@ -49,7 +49,7 @@ export default function CardHome({ product, isFav }) {
         <div>
           <CardTitle className="mt-[5px] flex items-center text-lg">
             <span>{product.name}</span>
-            {state.status === "authenticated" 
+            {state.role === "USER"
               ? isFav 
                 ? 
                 <MdFavorite

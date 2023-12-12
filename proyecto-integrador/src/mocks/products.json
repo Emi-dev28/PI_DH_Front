@@ -376,48 +376,48 @@
   },
   {
     "id": 10,
-    "name": "Soup - Campbells Beef Strogonoff",
+    "name": "Edifier R1100",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
-        "characteristic": "playful"
+        "characteristic": "Potencia de 42W"
       },
       {
-        "characteristic": "intelligent"
+        "characteristic": "Conector de entrada: Auxiliar, RCA"
       },
       {
-        "characteristic": "playful"
+        "characteristic": "Cantidad de parlantes: 2"
       },
       {
-        "characteristic": "loyal"
+        "characteristic": "Tipo de parlante: tweeter, woofer"
       }
     ],
-    "description": "Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.",
-    "price": 669.28,
+    "description": "Edifier R1100 ofrece un sonido natural, con una gran claridad y precisión, que se dispersa de manera uniforme. Un parlante que asegura potencia y calidad por igual en la reproducción de contenidos multimedia.",
+    "price": 3000,
     "quantity": 48,
     "category": "Audio",
     "rating": 4.7,
     "images": [
       {
-        "image": "/img/altavoz.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_854001-MLA41991263349_052020-O.webp"
       },
       {
-        "image": "http://dummyimage.com/353x429.png/ff4444/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_641874-MLU72627490896_112023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/317x340.png/dddddd/000000"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_648874-MLU72627481058_112023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/417x283.png/ff4444/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_975873-MLU72627481062_112023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/438x423.png/ff4444/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_922398-MLU72699560957_112023-O.webp"
       }
     ]
   },
   {
     "id": 11,
-    "name": "Bread - White, Unsliced",
+    "name": "Mini drone Electroland",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -436,32 +436,32 @@
         "characteristic": "loyal"
       }
     ],
-    "description": "Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.\n\nQuisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.\n\nVestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.",
-    "price": 417.12,
+    "description": "A través de su cámara HD obtendrás imágenes de gran resolución y calidad, y podrás registrar todo su recorrido.\n\nEste drone aéreo te permitirá ver absolutamente todo desde las alturas. Asegurate de encontrar una plataforma de vuelo que te permita trabajar con comodidad y preparate para volar.\n\nGarantizá que tu vuelo sea seguro. Este drone viene con protectores de hélices incluidas para evitar posibles daños que afecten al equipo y lo desestabilicen durante su andar.",
+    "price": 1200,
     "quantity": 94,
     "category": "Drones",
     "rating": 2.1,
     "images": [
       {
-        "image": "/img/drone2.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_808092-MLA52219487955_102022-O.webp"
       },
       {
-        "image": "http://dummyimage.com/315x333.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_808092-MLA52219487955_102022-O.webp"
       },
       {
-        "image": "http://dummyimage.com/288x309.png/ff4444/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_618168-MLU73121981748_122023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/292x288.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_877573-MLU73205901997_122023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/276x268.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_941857-MLU73205971281_122023-O.webp"
       }
     ]
   },
   {
     "id": 12,
-    "name": "Coconut - Shredded, Unsweet",
+    "name": "Camara Ip Wifi P2p Infrarroja",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -477,32 +477,32 @@
         "characteristic": "intelligent"
       }
     ],
-    "description": "Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.",
-    "price": 436.87,
+    "description": "Esta cámara tipo domo es perfecta a la hora de combatir el vandalismo y las situaciones adversas gracias a su excelencia en cuanto a durabilidad. Su cúpula está encerrada en una carcasa resistente, lo que ayudará a mantenerla protegida de posibles golpes y sacudidas. Cuenta con resolución de 2MP, que ofrece una vigilancia clara y precisa sobre los espacios.Además, estos videos se registran a una velocidad máxima de 24 fotogramas por segundo, por lo que obtendrás una mayor fluidez en la imagen.",
+    "price": 1300,
     "quantity": 13,
     "category": "Cámaras",
     "rating": 2.0,
     "images": [
       {
-        "image": "/img/camara.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_834770-MLU72700809245_112023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/391x293.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_600369-MLA52320839226_112022-O.webp"
       },
       {
-        "image": "http://dummyimage.com/338x301.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_870082-MLA52320778404_112022-O.webp"
       },
       {
-        "image": "http://dummyimage.com/396x439.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_826094-MLU70080532937_062023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/291x339.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_982400-MLU70969815010_082023-O.webp"
       }
     ]
   },
   {
     "id": 13,
-    "name": "Spice - Greek 1 Step",
+    "name": "Aro De Luz Led 30 Cm Con Trípode",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -525,25 +525,19 @@
     "rating": 3.6,
     "images": [
       {
-        "image": "/img/iphone.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_654013-MLA71522021520_092023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/444x384.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_782483-MLA71478311940_092023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/370x374.png/ff4444/ffffff"
-      },
-      {
-        "image": "http://dummyimage.com/315x404.png/cc0000/ffffff"
-      },
-      {
-        "image": "http://dummyimage.com/339x287.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_758532-MLA71569926043_092023-O.webp"
       }
     ]
   },
   {
     "id": 14,
-    "name": "Coke - Diet, 355 Ml",
+    "name": "Drone Toysky CSJ S179",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -562,32 +556,32 @@
         "characteristic": "adventurous"
       }
     ],
-    "description": "Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.",
-    "price": 280.38,
+    "description": "El Drone Toysky CSJ S179 es el compañero perfecto para tus aventuras al aire libre y la captura de imágenes impresionantes. Con su cámara dual 6K, podrás tomar fotos y videos de alta calidad desde el cielo, mientras que su conexión Wi-Fi te permitirá controlarlo fácilmente desde tu smartphone. Además, su GPS integrado y las funciones de auto retorno y seguimiento aseguran que nunca lo perderás de vista.",
+    "price": 15000,
     "quantity": 64,
     "category": "Drones",
     "rating": 3.9,
     "images": [
       {
-        "image": "/img/drone2.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_650210-MLA48156510665_112021-O.webp"
       },
       {
-        "image": "http://dummyimage.com/279x316.png/ff4444/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_905754-MLA48156651355_112021-O.webp"
       },
       {
-        "image": "http://dummyimage.com/282x251.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_670246-MLU72827311213_112023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/435x282.png/ff4444/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_727382-MLU72827311219_112023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/402x260.png/dddddd/000000"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_610131-MLU72827311223_112023-O.webp"
       }
     ]
   },
   {
     "id": 15,
-    "name": "Bread - Multigrain, Loaf",
+    "name": "Kit Gamer Corsair K55+harpoon Rgb",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -603,32 +597,32 @@
         "characteristic": "loyal"
       }
     ],
-    "description": "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.",
-    "price": 467.4,
+    "description": "Con este kit de teclado y mouse Corsair vas a poder llevar tus partidas a otro nivel. Destinado a un público gamer, potenciá tu performance en distintos juegos. Con este combo, podrás darle un uso intensivo a estos dispositivos y disfrutar de interminables horas de diversión.",
+    "price": 4500,
     "quantity": 10,
     "category": "Computación",
     "rating": 3.4,
     "images": [
       {
-        "image": "/img/monitor.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_736274-MLU72642690467_112023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/323x278.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_914416-MLU72571546234_112023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/411x434.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_823297-MLU72571546270_112023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/257x318.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_766884-MLU72571350986_112023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/378x293.png/dddddd/000000"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_679332-MLU72571486840_112023-O.webp"
       }
     ]
   },
   {
     "id": 16,
-    "name": "Sauce - Mint",
+    "name": "iPhone 15 Pro Max (256 GB)",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -644,32 +638,32 @@
         "characteristic": "intelligent"
       }
     ],
-    "description": "Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.\n\nProin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.",
-    "price": 715.42,
+    "description": "iPhone 15 Pro Max. Forjado en titanio y equipado con el revolucionario chip A17 Pro, un Botón de Acción personalizable y el sistema de cámaras más potente en un iPhone. La pantalla Super Retina XDR de 6.7 pulgadas con ProMotion aumenta la frecuencia de actualización hasta 120 Hz cuando necesitas el máximo rendimiento gráfico.",
+    "price": 15000,
     "quantity": 95,
     "category": "Celulares",
     "rating": 4.6,
     "images": [
       {
-        "image": "/img/iphone.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_768125-MLA71783090116_092023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/268x424.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_785909-MLA71783090118_092023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/313x305.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_717149-MLA71783169710_092023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/262x331.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_669193-MLA71783169716_092023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/442x280.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_690178-MLA71783367420_092023-O.webp"
       }
     ]
   },
   {
     "id": 17,
-    "name": "Tart - Lemon",
+    "name": "Monitor Samsung Odyssey G5 Curvo",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -688,32 +682,32 @@
         "characteristic": "intelligent"
       }
     ],
-    "description": "Sed ante. Vivamus tortor. Duis mattis egestas metus.",
-    "price": 405.68,
+    "description": "Este monitor de 27´ te va a resultar cómodo para estudiar, trabajar o ver una película en tus tiempos de ocio. Asimismo, su resolución de 2560 x 1440 te permite disfrutar de momentos únicos gracias a una imagen de alta fidelidad. Su tiempo de respuesta de un milisegundo lo hace ideal para gamers y cinéfilos porque es capaz de mostrar imágenes en movimiento sin halos o bordes borrosos.",
+    "price": 2000,
     "quantity": 44,
     "category": "Computación",
     "rating": 1.6,
     "images": [
       {
-        "image": "/img/monitor.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_712790-MLU72825479961_112023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/338x433.png/ff4444/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_660660-MLU72572324650_112023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/300x318.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_869962-MLU72643886921_112023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/427x377.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_895730-MLU72643761401_112023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/298x280.png/dddddd/000000"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_694667-MLU69483143266_052023-O.webp"
       }
     ]
   },
   {
     "id": 18,
-    "name": "Cranberries - Dry",
+    "name": "Lente Zoom 12x Clip Universal",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -729,32 +723,32 @@
         "characteristic": "intelligent"
       }
     ],
-    "description": "Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.",
+    "description": "El telescopio se puede utilizar como monocular. Se adapta a la mayoría de los tipos de teléfonos móviles, incluyen teléfonos con tapa y teléfonos con barra.",
     "price": 896.16,
     "quantity": 89,
     "category": "Celulares",
     "rating": 3.3,
     "images": [
       {
-        "image": "/img/iphone.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_648380-MLA31027475627_062019-O.webp"
       },
       {
-        "image": "http://dummyimage.com/447x251.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_844059-MLA31027475628_062019-O.webp"
       },
       {
-        "image": "http://dummyimage.com/278x407.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_742899-MLA31027466370_062019-O.webp"
       },
       {
-        "image": "http://dummyimage.com/263x405.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_700177-MLA29264167117_012019-O.webp"
       },
       {
-        "image": "http://dummyimage.com/255x307.png/ff4444/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_924755-MLA31027475626_062019-O.webp"
       }
     ]
   },
   {
     "id": 19,
-    "name": "Sauce - Hp",
+    "name": "Canon EOS Rebel Kit T100",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -773,32 +767,32 @@
         "characteristic": "friendly"
       }
     ],
-    "description": "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.",
-    "price": 398.58,
+    "description": "Con la gran velocidad de obturación de tu cámara podrás congelar cualquier movimiento en milésimas de segundo, desde una gota que cae hasta un auto de fórmula 1. Por el contrario, con la velocidad de obturación lenta vas a poder captar movimientos casi imperceptibles como las luces de la ciudad o de las estrellas en la noche. Divertite jugando con tu cámara y obtené fotografías con gran dinamismo.",
+    "price": 8000,
     "quantity": 97,
     "category": "Cámaras",
-    "rating": 2.3,
+    "rating": 3.3,
     "images": [
       {
-        "image": "/img/camara.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_842574-MLA40353899541_012020-O.webp"
       },
       {
-        "image": "http://dummyimage.com/379x377.png/ff4444/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_949970-MLA40353838721_012020-O.webp"
       },
       {
-        "image": "http://dummyimage.com/257x317.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_879727-MLA40353838723_012020-O.webp"
       },
       {
-        "image": "http://dummyimage.com/406x263.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_861140-MLA40353838724_012020-O.webp"
       },
       {
-        "image": "http://dummyimage.com/262x361.png/ff4444/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_900757-MLA40353899542_012020-O.webp"
       }
     ]
   },
   {
     "id": 20,
-    "name": "Cheese - Fontina",
+    "name": "Mini Drone HandBee",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -817,32 +811,24 @@
         "characteristic": "playful"
       }
     ],
-    "description": "Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.\n\nNam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.",
-    "price": 479.57,
+    "description": "Este drone aéreo te permitirá ver absolutamente todo desde las alturas. Asegurate de encontrar una plataforma de vuelo que te permita trabajar con comodidad y preparate para volar.",
+    "price": 1500,
     "quantity": 45,
     "category": "Drones",
     "rating": 1.7,
     "images": [
       {
-        "image": "/img/drone2.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_677805-MLM40116445984_122019-O.webp"
       },
       {
-        "image": "http://dummyimage.com/349x379.png/dddddd/000000"
-      },
-      {
-        "image": "http://dummyimage.com/333x253.png/dddddd/000000"
-      },
-      {
-        "image": "http://dummyimage.com/340x410.png/5fa2dd/ffffff"
-      },
-      {
-        "image": "http://dummyimage.com/293x285.png/ff4444/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_726321-MLM40116472335_122019-O.webp"
       }
+    
     ]
   },
   {
     "id": 21,
-    "name": "Cinnamon - Ground",
+    "name": "Macbook Pro 13 M2",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -861,32 +847,32 @@
         "characteristic": "adventurous"
       }
     ],
-    "description": "Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.",
-    "price": 610.35,
+    "description": "La MacBook Pro es la notebook más poderosa de Apple. Su procesador Apple M2, te permitirá ejecutar programas variados y procesos indispensables para desenvolverte en el día a día, ya sea en tu trabajo o en los momentos de ocio en tu hogar. El disco sólido de 256 GB hace que el equipo funcione a gran velocidad y por lo tanto te brinda mayor agilidad para operar con diversos programas.",
+    "price": 20000,
     "quantity": 28,
     "category": "Computación",
     "rating": 3.9,
     "images": [
       {
-        "image": "/img/monitor.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_930926-MLU70630283369_072023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/388x358.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_759575-MLU70630283371_072023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/279x449.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_879603-MLU70630819457_072023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/396x284.png/dddddd/000000"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_953750-MLU70630283373_072023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/372x250.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_742567-MLU70630283375_072023-O.webp"
       }
     ]
   },
   {
     "id": 22,
-    "name": "Mahi Mahi",
+    "name": "Webcam Logitech C920s",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -902,32 +888,32 @@
         "characteristic": "playful"
       }
     ],
-    "description": "In congue. Etiam justo. Etiam pretium iaculis justo.\n\nIn hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.",
-    "price": 347.95,
+    "description": "Tener una videoconferencia es más sencillo que nunca. Su tecnología plug and play permite conectar la cámara a la computadora sin tener que configurar ni ofrecer parámetros a sus controladores.",
+    "price": 1000,
     "quantity": 34,
     "category": "Cámaras",
     "rating": 4.7,
     "images": [
       {
-        "image": "/img/camara.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_737910-MLU72933234251_112023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/386x282.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_671723-MLU70982340128_082023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/369x257.png/dddddd/000000"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_809021-MLA49170899093_022022-O.webp"
       },
       {
-        "image": "http://dummyimage.com/391x319.png/ff4444/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_973792-MLU70010252802_062023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/391x440.png/ff4444/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_729796-MLU70010472304_062023-O.webp"
       }
     ]
   },
   {
     "id": 23,
-    "name": "Veal - Insides, Grains",
+    "name": "Escritorio gamer GTC Gta-002",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -943,32 +929,32 @@
         "characteristic": "loyal"
       }
     ],
-    "description": "Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.",
-    "price": 651.72,
+    "description": "¡Programá tu zona de juego! Resistente y espacioso, el escritorio GTC es perfecto para quienes buscan un mueble amplio que soporte el peso de consolas, televisores, grandes pantallas y otros dispositivos requeridos para jugar largas horas. Creá el ambiente idóneo, y pasá al siguiente nivel.",
+    "price": 1300,
     "quantity": 93,
     "category": "Computación",
     "rating": 4.2,
     "images": [
       {
-        "image": "/img/monitor.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_725869-MLA49704805321_042022-O.webp"
       },
       {
-        "image": "http://dummyimage.com/313x366.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_615448-MLU73213117053_122023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/372x253.png/ff4444/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_777863-MLU73129147124_122023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/395x409.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_917407-MLU73129147152_122023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/428x294.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_709728-MLU73129166454_122023-O.webp"
       }
     ]
   },
   {
     "id": 24,
-    "name": "Island Oasis - Banana Daiquiri",
+    "name": "GoPro Hero9 Black",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -984,32 +970,32 @@
         "characteristic": "adventurous"
       }
     ],
-    "description": "Sed ante. Vivamus tortor. Duis mattis egestas metus.\n\nAenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.",
-    "price": 643.78,
+    "description": "Esta videocámara de acción es a prueba de agua, lo que te permite sumergirte en tus actividades acuáticas sin preocupaciones. Además, cuenta con visión nocturna para que puedas seguir grabando incluso en condiciones de poca luz. La pantalla táctil de 2.3 pulgadas facilita la navegación por los menús y la visualización de tus imágenes y videos.",
+    "price": 3000,
     "quantity": 17,
     "category": "Cámaras",
-    "rating": 1.2,
+    "rating": 4.2,
     "images": [
       {
-        "image": "/img/camara.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_953917-MLA51045674653_082022-O.webp"
       },
       {
-        "image": "http://dummyimage.com/438x390.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_742683-MLA45141023677_032021-O.webp"
       },
       {
-        "image": "http://dummyimage.com/354x367.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_716635-MLA51045585962_082022-O.webp"
       },
       {
-        "image": "http://dummyimage.com/402x283.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_704624-MLA45141065443_032021-O.webp"
       },
       {
-        "image": "http://dummyimage.com/330x401.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_959886-MLA45141023697_032021-O.webp"
       }
     ]
   },
   {
     "id": 25,
-    "name": "Dehydrated Kelp Kombo",
+    "name": "Drone Gadnic Control Remoto",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -1028,32 +1014,32 @@
         "characteristic": "intelligent"
       }
     ],
-    "description": "Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.\n\nDuis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.\n\nDonec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.",
-    "price": 191.26,
+    "description": "Su velocidad máxima es de 18 m/s, lo que te brindará la posibilidad de ahorrar tiempo en los desplazamientos. A través de su cámara HD obtendrás imágenes de gran resolución y calidad, y podrás registrar todo su recorrido. Gracias a su sistema GPS conseguirás alcanzar largas distancias y conquistar espacios con independencia. Incluye 2 baterías, que abastecerán al drone de la energía suficiente para funcionar. Al finalizar el trayecto, podrás recargarlas de manera fácil y cómoda.",
+    "price": 2500,
     "quantity": 39,
     "category": "Drones",
     "rating": 1.8,
     "images": [
       {
-        "image": "/img/drone2.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_743851-MLU69607883324_052023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/364x448.png/ff4444/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_988250-MLU71414612943_082023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/339x271.png/ff4444/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_616180-MLU71414612945_082023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/261x334.png/dddddd/000000"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_782097-MLU71414612949_082023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/359x425.png/ff4444/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_831030-MLU71370692238_082023-O.webp"
       }
     ]
   },
   {
     "id": 26,
-    "name": "Sauce - Apple, Unsweetened",
+    "name": "Laptop Gamer Acer Predator",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -1069,32 +1055,32 @@
         "characteristic": "loyal"
       }
     ],
-    "description": "Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.",
-    "price": 711.24,
+    "description": "Descubra la potencia de los gráficos para portátiles GeForce RTX 3060 que ofrecen altas velocidades de fotogramas junto con el último procesador Intel® Core i7 de 12.ª generación para capacidades épicas de transmisión, edición de fotos y renderizado 3D. Obtenga un juego fluido con frecuencias de actualización de hasta 165 Hz en la pantalla IPS WUXGA de 14 pulgadas",
+    "price": 5000,
     "quantity": 81,
     "category": "Computación",
-    "rating": 2.0,
+    "rating": 2.9,
     "images": [
       {
-        "image": "/img/monitor.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_844979-MLU69146133119_042023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/339x337.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_869334-MLU69141797078_042023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/418x403.png/dddddd/000000"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_912757-MLU69146529055_042023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/397x446.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_897326-MLU69146133125_042023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/323x259.png/ff4444/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_655345-MLU69141797084_042023-O.webp"
       }
     ]
   },
   {
     "id": 27,
-    "name": "Pork - Loin, Center Cut",
+    "name": "Cámara Insta360 X3",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -1110,32 +1096,32 @@
         "characteristic": "adventurous"
       }
     ],
-    "description": "Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.\n\nVestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.",
+    "description": "Si sos una persona apasionada por los videos, esta cámara Insta360 X3 te va a resultar indispensable. Todos tus momentos pueden ser grabados de forma permanente, ya seas profesional o simplemente entusiasta, este producto es intuitivo y fácil de utilizar. Con su resolución 5.7K obtenés videos de óptima calidad.",
     "price": 67.37,
     "quantity": 95,
     "category": "Cámaras",
     "rating": 1.1,
     "images": [
       {
-        "image": "/img/camara.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_944239-MLA52106418598_102022-O.webp"
       },
       {
-        "image": "http://dummyimage.com/345x402.png/ff4444/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_703328-MLU70045209176_062023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/436x300.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_812780-MLU70045245582_062023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/273x346.png/ff4444/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_976045-MLU70065178615_062023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/343x287.png/dddddd/000000"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_708928-MLU72650679415_112023-O.webp"
       }
     ]
   },
   {
     "id": 28,
-    "name": "Pork Loin Cutlets",
+    "name": "Samsung Galaxy Z Fold4",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -1154,32 +1140,32 @@
         "characteristic": "curious"
       }
     ],
-    "description": "In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.\n\nMaecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.",
+    "description": "Al plegarse, adopta un tamaño pequeño y compacto que te resultará muy cómodo para transportar. Cuando quieras disfrutar de tus contenidos favoritos se transforma desplegando su pantalla de 7.6 pulgadas.",
     "price": 201.4,
     "quantity": 34,
     "category": "Celulares",
     "rating": 1.7,
     "images": [
       {
-        "image": "/img/iphone.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_966131-MLA53264786600_012023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/417x434.png/dddddd/000000"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_716296-MLA53264776825_012023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/255x343.png/dddddd/000000"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_880323-MLA52178897927_102022-O.webp"
       },
       {
-        "image": "http://dummyimage.com/286x305.png/dddddd/000000"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_671377-MLA53264808193_012023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/447x295.png/dddddd/000000"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_713872-MLA53264776827_012023-O.webp"
       }
     ]
   },
   {
     "id": 29,
-    "name": "Sprouts - Corn",
+    "name": "Drone Dji Air 2s",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -1198,32 +1184,32 @@
         "characteristic": "loyal"
       }
     ],
-    "description": "Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.\n\nMauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.",
-    "price": 429.1,
+    "description": "Los drones DJI se caracterizan por la mejor tecnología al servicio de cada tipo de usuario y escenario de disparo. Si estás buscando un dron para principiantes, un dron profesional o solamente querés estar actualizado con las últimas innovaciones, es hora de elegir a esta marca.",
+    "price": 4800,
     "quantity": 77,
     "category": "Drones",
     "rating": 2.5,
     "images": [
       {
-        "image": "/img/drone2.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_898637-MLA46233140017_062021-O.webp"
       },
       {
-        "image": "http://dummyimage.com/295x419.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_915403-MLA46232951572_062021-O.webp"
       },
       {
-        "image": "http://dummyimage.com/448x302.png/ff4444/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_832433-MLA53044058865_122022-O.webp"
       },
       {
-        "image": "http://dummyimage.com/295x324.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_873687-MLA46232951573_062021-O.webp"
       },
       {
-        "image": "http://dummyimage.com/378x315.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_733591-MLA54815736778_042023-O.webp"
       }
     ]
   },
   {
     "id": 30,
-    "name": "Sugar - Crumb",
+    "name": "Asus ROG Phone 6",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -1239,32 +1225,23 @@
         "characteristic": "loyal"
       }
     ],
-    "description": "Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.",
-    "price": 355.99,
+    "description": "Descubrí infinitas posibilidades para tus fotos con las 3 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.",
+    "price": 3000,
     "quantity": 38,
     "category": "Celulares",
     "rating": 4.2,
     "images": [
       {
-        "image": "/img/iphone.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_724705-MLA52975122816_122022-O.webp"
       },
       {
-        "image": "http://dummyimage.com/420x293.png/cc0000/ffffff"
-      },
-      {
-        "image": "http://dummyimage.com/333x256.png/dddddd/000000"
-      },
-      {
-        "image": "http://dummyimage.com/326x252.png/dddddd/000000"
-      },
-      {
-        "image": "http://dummyimage.com/393x336.png/dddddd/000000"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_789150-MLA52975122817_122022-O.webp"
       }
     ]
   },
   {
     "id": 31,
-    "name": "Bread - Olive",
+    "name": "Sony A7 Ii A7ii",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -1283,32 +1260,29 @@
         "characteristic": "playful"
       }
     ],
-    "description": "Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.\n\nAenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.",
-    "price": 466.05,
+    "description": "Esta cámara se adapta a tu ritmo de vida y te ofrece excelentes resultados en situaciones complejas. En situaciones con poca iluminación o cuando necesitás realizar tomas de escenas rápidas, la cámara sin espejos sortea todos los obstáculos para ofrecer fotografías nítidas y videos en alta calidad. Su peso ligero y resultados increíbles la convierten en tu compañera ideal.",
+    "price": 8000,
     "quantity": 98,
     "category": "Cámaras",
-    "rating": 2.4,
+    "rating": 3.4,
     "images": [
       {
-        "image": "/img/camara.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_686501-MLA70466796021_072023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/350x427.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_975146-MLA70466589403_072023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/432x310.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_897625-MLA70466778035_072023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/392x291.png/dddddd/000000"
-      },
-      {
-        "image": "http://dummyimage.com/442x288.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_806780-MLA44793340756_022021-O.webp"
       }
     ]
   },
   {
     "id": 32,
-    "name": "Tea - Camomele",
+    "name": "Notebook Dell Alienware X15",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -1324,32 +1298,26 @@
         "characteristic": "loyal"
       }
     ],
-    "description": "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.",
-    "price": 642.79,
+    "description": "Notebook gamer cuenta con un procesador Intel i7, 16gb RAM DDR4, una tarjeta gráfica NVIDIA GeForce RTX3070 y un disco SSD de 512gb.",
+    "price": 5000,
     "quantity": 56,
     "category": "Computación",
-    "rating": 2.6,
+    "rating": 3.6,
     "images": [
       {
-        "image": "/img/monitor.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_798172-MLA69203413644_052023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/264x353.png/ff4444/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_642660-MLA54987918432_052023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/329x280.png/5fa2dd/ffffff"
-      },
-      {
-        "image": "http://dummyimage.com/295x279.png/ff4444/ffffff"
-      },
-      {
-        "image": "http://dummyimage.com/399x334.png/ff4444/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_631008-MLA69203489234_052023-O.webp"
       }
     ]
   },
   {
     "id": 33,
-    "name": "Crackers - Soda / Saltins",
+    "name": "Nikon Kit D7500",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -1368,32 +1336,32 @@
         "characteristic": "loyal"
       }
     ],
-    "description": "Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
-    "price": 859.68,
+    "description": "Nikon fabrica cámaras fotográficas con tecnología de punta y excelencia en la calidad. Sus productos permiten que explores toda tu creatividad, asegurándote calidad en los resultados.",
+    "price": 9500,
     "quantity": 94,
     "category": "Cámaras",
     "rating": 3.6,
     "images": [
       {
-        "image": "/img/camara.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_844452-MLU72637258691_112023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/432x328.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_611139-MLU72637278373_112023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/255x260.png/dddddd/000000"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_804253-MLU72637278377_112023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/382x396.png/ff4444/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_850967-MLA31993477867_082019-O.webp"
       },
       {
-        "image": "http://dummyimage.com/419x373.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_849120-MLA31993477869_082019-O.webp"
       }
     ]
   },
   {
     "id": 34,
-    "name": "Water - Spring Water 500ml",
+    "name": "Quantum Positivo Q20",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -1410,31 +1378,31 @@
       }
     ],
     "description": "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.\n\nMorbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.",
-    "price": 754.68,
+    "price": 3000,
     "quantity": 23,
     "category": "Celulares",
     "rating": 2.0,
     "images": [
       {
-        "image": "/img/iphone.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_954663-MLA47575004696_092021-O.webp"
       },
       {
-        "image": "http://dummyimage.com/429x395.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_807568-MLA47575333085_092021-O.webp"
       },
       {
-        "image": "http://dummyimage.com/326x302.png/dddddd/000000"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_774660-MLA47575158443_092021-O.webp"
       },
       {
-        "image": "http://dummyimage.com/443x367.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_667199-MLA47575120517_092021-O.webp"
       },
       {
-        "image": "http://dummyimage.com/408x268.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_799009-MLA47575158441_092021-O.webp"
       }
     ]
   },
   {
     "id": 35,
-    "name": "Trout Rainbow Whole",
+    "name": "Home Theater Logitech Z607",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -1453,32 +1421,26 @@
         "characteristic": "loyal"
       }
     ],
-    "description": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.\n\nNullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.\n\nIn quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.",
-    "price": 314.96,
+    "description": "Con tu Logitech Z607 disfrutarás de la compañía de tus canciones favoritas y vibrarás con las escenas de grandes obras maestras de la pantalla grande. En primer plano, segundo plano o con tecnología envolvente, un sistema integrado de sonido será la clave para llenar de magia tu hogar.\n\nLa configuración de canales 5.1 es la pieza fundamental de este equipo, encargada de reconstruir el audio en un sistema de múltiples altavoces.",
+    "price": 4000,
     "quantity": 82,
     "category": "Audio",
     "rating": 3.1,
     "images": [
       {
-        "image": "/img/altavoz.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_793519-MLA41462260049_042020-O.webp"
       },
       {
-        "image": "http://dummyimage.com/426x250.png/dddddd/000000"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_623026-MLA42664301605_072020-O.webp"
       },
       {
-        "image": "http://dummyimage.com/294x358.png/cc0000/ffffff"
-      },
-      {
-        "image": "http://dummyimage.com/388x297.png/cc0000/ffffff"
-      },
-      {
-        "image": "http://dummyimage.com/360x337.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_655290-MLA41462260050_042020-O.webp"
       }
     ]
   },
   {
     "id": 36,
-    "name": "Compound - Pear",
+    "name": "Parlante Genius SP-HF800A",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -1494,32 +1456,32 @@
         "characteristic": "loyal"
       }
     ],
-    "description": "Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.",
-    "price": 162.14,
+    "description": "Genius SP-HF800A ofrece un sonido natural, con una gran claridad y precisión, que se dispersa de manera uniforme. Un parlante que asegura potencia y calidad por igual en la reproducción de contenidos multimedia.",
+    "price": 2000,
     "quantity": 57,
     "category": "Audio",
-    "rating": 1.8,
+    "rating": 2.8,
     "images": [
       {
-        "image": "/img/altavoz.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_636613-MLA42000274666_052020-O.webp"
       },
       {
-        "image": "http://dummyimage.com/346x283.png/dddddd/000000"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_682298-MLA42000274685_052020-O.webp"
       },
       {
-        "image": "http://dummyimage.com/270x282.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_784002-MLU70064681001_062023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/250x330.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_625311-MLU70044827862_062023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/440x299.png/ff4444/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_978947-MLU73129293584_122023-O.webp"
       }
     ]
   },
   {
     "id": 37,
-    "name": "Sausage - Liver",
+    "name": "Webcam Full Hd 1080p",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -1535,32 +1497,32 @@
         "characteristic": "intelligent"
       }
     ],
-    "description": "Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.",
-    "price": 176.07,
+    "description": "La cámara web Phottix PC-20 FHD ofrece video Full HD 1080P de alta calidad, para mejores encuentros con videoconferencia habilitada para USB, tutorial, seminario web.",
+    "price": 850,
     "quantity": 98,
     "category": "Cámaras",
     "rating": 2.4,
     "images": [
       {
-        "image": "/img/camara.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_918866-MLA51736308834_092022-O.webp"
       },
       {
-        "image": "http://dummyimage.com/415x271.png/ff4444/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_829422-MLA51736308839_092022-O.webp"
       },
       {
-        "image": "http://dummyimage.com/356x283.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_795511-MLA51736308842_092022-O.webp"
       },
       {
-        "image": "http://dummyimage.com/315x348.png/ff4444/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_859873-MLA51736308841_092022-O.webp"
       },
       {
-        "image": "http://dummyimage.com/320x303.png/ff4444/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_859891-MLA51736308835_092022-O.webp"
       }
     ]
   },
   {
     "id": 38,
-    "name": "Sauce - Balsamic Viniagrette",
+    "name": "Camara Bushnell Prime",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -1576,32 +1538,32 @@
         "characteristic": "adventurous"
       }
     ],
-    "description": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.",
-    "price": 184.82,
+    "description": "24 megapíxeles: optimizado para imágenes más nítidas y ricas durante el día. Construido con funciones en el interior para brindarle imágenes que revelan más en el difícil mundo exterior. Alcance nocturno de 30 metros: capture imágenes nocturnas de alto contraste con una claridad cristalina, sin ningún tipo de desvanecimiento.",
+    "price": 6000,
     "quantity": 35,
     "category": "Cámaras",
     "rating": 3.6,
     "images": [
       {
-        "image": "/img/camara.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_897406-MLA43653255467_102020-O.webp"
       },
       {
-        "image": "http://dummyimage.com/405x376.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_843685-MLA43653266243_102020-O.webp"
       },
       {
-        "image": "http://dummyimage.com/278x355.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_819297-MLA47661766650_092021-O.webp"
       },
       {
-        "image": "http://dummyimage.com/265x368.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_967900-MLA47661751857_092021-O.webp"
       },
       {
-        "image": "http://dummyimage.com/445x256.png/ff4444/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_706258-MLA43653262351_102020-O.webp"
       }
     ]
   },
   {
     "id": 39,
-    "name": "Pepper - Red, Finger Hot",
+    "name": "Pc Gamer Intel, RTX",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -1620,32 +1582,32 @@
         "characteristic": "playful"
       }
     ],
-    "description": "In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.\n\nMaecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.\n\nMaecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.",
-    "price": 486.47,
+    "description": "CPU INTEL CORE I9-14900K RAPTORLAKE S1700 BOX. \n\nMotherboard Msi Mag Z790 Tomahawk Max Wifi Ddr5 Intel. Water Cooler Cpu Arctic Liquid Freezer Ii 360 Am5 Intel 1700.\n\nKit Memoria Ram Ddr5 Ram 64gb (2x32gb)black Blade Rgb 6400mhz. DISCO SSD M.2 de 2tb NVME para Sistema operativo; Disco de 4Tb SSD SATA para Back up. RTX 4060Ti Rog Strix.",
+    "price": 12000,
     "quantity": 95,
     "category": "Computación",
     "rating": 4.5,
     "images": [
       {
-        "image": "/img/monitor.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_942513-MLA70198198942_062023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/283x279.png/dddddd/000000"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_673003-MLA73022484575_112023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/448x325.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_840766-MLA73022484583_112023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/315x273.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_714621-MLA72942984222_112023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/411x419.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_813334-MLA72943013430_112023-O.webp"
       }
     ]
   },
   {
     "id": 40,
-    "name": "Asparagus - White, Fresh",
+    "name": "Drone DJI Mini 3",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -1664,32 +1626,29 @@
         "characteristic": "intelligent"
       }
     ],
-    "description": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.\n\nNullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.\n\nIn quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.",
-    "price": 541.04,
+    "description": "Ligero y compacto: Mini 3 pesa menos de 8.78 oz. Perfecto para llevar contigo en tus aventuras, desde caminatas, viajes por carretera y días de playa.\n\nDuración de la batería extendida: con hasta 38 minutos de duración de la batería, puede tomar Mini 3 en cada parada en el camino o volar vuelos largos sin preocuparse por la batería.\n\nPelícula en video HDR 4K para tomas aéreas cristalinas. Captura detalles en reflejos y sombras, tanto de día como de noche.",
+    "price": 8000,
     "quantity": 77,
     "category": "Drones",
     "rating": 3.3,
     "images": [
       {
-        "image": "/img/drone2.webp"
+        "image": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61Yoga5FJlL._AC_SL1500_.jpg"
       },
       {
-        "image": "http://dummyimage.com/377x355.png/dddddd/000000"
+        "image": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/51Plf6UGySL._AC_SL1500_.jpg"
       },
       {
-        "image": "http://dummyimage.com/324x425.png/5fa2dd/ffffff"
+        "image": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61dHfJoVaBL._AC_SL1500_.jpg"
       },
       {
-        "image": "http://dummyimage.com/419x405.png/cc0000/ffffff"
-      },
-      {
-        "image": "http://dummyimage.com/265x312.png/5fa2dd/ffffff"
+        "image": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71Bdxsf2H2L._AC_SL1500_.jpg"
       }
     ]
   },
   {
     "id": 41,
-    "name": "Lamb - Whole Head Off",
+    "name": "Drone Mini Cámara 1080p",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -1705,32 +1664,32 @@
         "characteristic": "curious"
       }
     ],
-    "description": "Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n\nEtiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.",
-    "price": 410.31,
+    "description": "Los mini drones cuentan con tecnologías exclusivas e impresionantes marcos estabilizados. Ideales para volar en interiores, recorrer pasillos estrechos y realizar maniobras delicadas con facilidad.",
+    "price": 4000,
     "quantity": 63,
     "category": "Drones",
     "rating": 3.0,
     "images": [
       {
-        "image": "/img/drone2.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_935813-MLM52965377051_122022-O.webp"
       },
       {
-        "image": "http://dummyimage.com/255x261.png/dddddd/000000"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_981313-MLM51855175080_102022-O.webp"
       },
       {
-        "image": "http://dummyimage.com/290x383.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_939873-MLM52071162625_102022-O.webp"
       },
       {
-        "image": "http://dummyimage.com/445x392.png/dddddd/000000"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_614255-MLM52071090989_102022-O.webp"
       },
       {
-        "image": "http://dummyimage.com/293x258.png/dddddd/000000"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_667595-MLM51855185022_102022-O.webp"
       }
     ]
   },
   {
     "id": 42,
-    "name": "Island Oasis - Sweet And Sour Mix",
+    "name": "Drone Daming Dm107s",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -1749,32 +1708,26 @@
         "characteristic": "curious"
       }
     ],
-    "description": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.",
-    "price": 299.94,
+    "description": "Resolución de cámara frontal HD 720 px. Cámara secundaria de 480px.\n\nRECONOCIMIENTO DE GESTOS: Párate frente al drone y haz la señal V con tus dedos, se activará el temporizador y se tomará una fotografía en 3 segundos.\n\nFUNCIONES: Tecla para despegar y aterrizar, apagado de emergencia. Giroscopio de 6 ejes. Control de altitud para vuelos estable. Headless Mode (Modo sin cabeza).",
+    "price": 5000,
     "quantity": 29,
     "category": "Drones",
     "rating": 3.0,
     "images": [
       {
-        "image": "/img/drone2.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_761835-MLA44571665927_012021-O.webp"
       },
       {
-        "image": "http://dummyimage.com/328x363.png/ff4444/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_855963-MLA40373328806_012020-O.webp"
       },
       {
-        "image": "http://dummyimage.com/296x441.png/ff4444/ffffff"
-      },
-      {
-        "image": "http://dummyimage.com/256x290.png/dddddd/000000"
-      },
-      {
-        "image": "http://dummyimage.com/350x321.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_820361-MLA40373328787_012020-O.webp"
       }
     ]
   },
   {
     "id": 43,
-    "name": "Squeeze Bottle",
+    "name": "Drone Cuadricoptero",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -1793,32 +1746,26 @@
         "characteristic": "curious"
       }
     ],
-    "description": "Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.",
-    "price": 502.04,
+    "description": "Está hecho de materiales ABS ignífugos de alta calidad y respetuosos con el medio ambiente, con diseño de carcasa de alta resistencia y buen rendimiento anti-caídas y anti-colisión.",
+    "price": 6000,
     "quantity": 2,
     "category": "Drones",
-    "rating": 1.5,
+    "rating": 2.5,
     "images": [
       {
-        "image": "/img/drone2.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_616760-MLA71951322925_092023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/394x382.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_696234-MLA48067577654_102021-O.webp"
       },
       {
-        "image": "http://dummyimage.com/340x360.png/dddddd/000000"
-      },
-      {
-        "image": "http://dummyimage.com/281x376.png/cc0000/ffffff"
-      },
-      {
-        "image": "http://dummyimage.com/436x269.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_915231-MLA48067609315_102021-O.webp"
       }
     ]
   },
   {
     "id": 44,
-    "name": "Cocktail Napkin Blue",
+    "name": "Asus TUF Gaming RTX 3060 12GB",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -1837,32 +1784,32 @@
         "characteristic": "friendly"
       }
     ],
-    "description": "Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.\n\nProin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.",
-    "price": 248.03,
+    "description": "Nvidia es el fabricante líder de placas de video; su calidad asegura una experiencia positiva en el desarrollo del motor gráfico de tu computadora. Además, sus procesadores usan tecnología de punta para que puedas disfrutar de un producto veloz y duradero.",
+    "price": 6000,
     "quantity": 61,
     "category": "Computación",
-    "rating": 1.4,
+    "rating": 4.4,
     "images": [
       {
-        "image": "/img/monitor.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_824032-MLA53332866225_012023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/290x351.png/dddddd/000000"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_893892-MLA53332808711_012023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/355x399.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_611303-MLA53332770830_012023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/365x274.png/ff4444/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_759508-MLA53332808716_012023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/432x356.png/ff4444/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_893685-MLA53332808714_012023-O.webp"
       }
     ]
   },
   {
     "id": 45,
-    "name": "Water - Mineral, Natural",
+    "name": "Mini Drone Dji Mini 3",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -1881,32 +1828,29 @@
         "characteristic": "intelligent"
       }
     ],
-    "description": "Sed ante. Vivamus tortor. Duis mattis egestas metus.\n\nAenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.\n\nQuisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.",
-    "price": 280.88,
+    "description": "Los drones DJI se caracterizan por la mejor tecnología al servicio de cada tipo de usuario y escenario de disparo. Si buscas un dron para principiantes, un dron profesional o solamente quieres estar actualizado con las últimas innovaciones, es hora de elegir a esta marca.",
+    "price": 3000,
     "quantity": 84,
     "category": "Drones",
     "rating": 2.5,
     "images": [
       {
-        "image": "/img/drone2.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_820653-MLU72628857396_112023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/326x443.png/dddddd/000000"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_661847-MLU70013387091_062023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/307x396.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_861953-MLU71677401195_092023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/439x405.png/ff4444/ffffff"
-      },
-      {
-        "image": "http://dummyimage.com/419x448.png/ff4444/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_847611-MLU70013337577_062023-O.webp"
       }
     ]
   },
   {
     "id": 46,
-    "name": "Sherry - Dry",
+    "name": "Monitor Samsung Odyssey G3 24´",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -1925,32 +1869,32 @@
         "characteristic": "friendly"
       }
     ],
-    "description": "Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.\n\nIn congue. Etiam justo. Etiam pretium iaculis justo.\n\nIn hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.",
-    "price": 497.16,
+    "description": "Este monitor de 24´ te va a resultar cómodo para estudiar, trabajar o ver una película en tus tiempos de ocio. Asimismo, su resolución de 1920 x 1080 te permite disfrutar de momentos únicos gracias a una imagen de alta fidelidad.",
+    "price": 3000,
     "quantity": 63,
     "category": "Computación",
     "rating": 3.3,
     "images": [
       {
-        "image": "/img/monitor.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_667995-MLU72756710926_112023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/387x266.png/dddddd/000000"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_690240-MLU72831731623_112023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/330x340.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_660843-MLU72756730542_112023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/250x263.png/dddddd/000000"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_761496-MLU72756730548_112023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/439x309.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_775020-MLU73262541639_122023-O.webp"
       }
     ]
   },
   {
     "id": 47,
-    "name": "Wine - Chianti Classica Docg",
+    "name": "Camara Semireflex Sony H300",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -1966,32 +1910,32 @@
         "characteristic": "friendly"
       }
     ],
-    "description": "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.\n\nMorbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.",
-    "price": 990.39,
+    "description": "El sensor de imagen CCD capta con mayor claridad las luces y sombras en tus fotografías, las procesa en un chip externo que te permite guardar mayor cantidad de imágenes, y minimiza el ruido en las capturas. \n\nEl modo autofoco captura objetos y personas con naturalidad. Disfrutá el momento y guardá los mejores recuerdos en donde estés.",
+    "price": 6000,
     "quantity": 10,
     "category": "Cámaras",
     "rating": 3.8,
     "images": [
       {
-        "image": "/img/camara.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_722949-MLU72572778414_112023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/307x344.png/ff4444/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_777336-MLA40044532833_122019-O.webp"
       },
       {
-        "image": "http://dummyimage.com/264x282.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_900503-MLU69825292989_062023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/435x274.png/dddddd/000000"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_923492-MLA49434496569_032022-O.webp"
       },
       {
-        "image": "http://dummyimage.com/412x381.png/dddddd/000000"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_943458-MLU69809654388_062023-O.webp"
       }
     ]
   },
   {
     "id": 48,
-    "name": "Beef - Baby, Liver",
+    "name": "Xiaomi Redmi Note 11",
     "date": { "from": "2023-12-17", "to": "2023-12-30" },
     "characteristics": [
       {
@@ -2007,32 +1951,26 @@
         "characteristic": "loyal"
       }
     ],
-    "description": "Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.",
-    "price": 132.24,
+    "description": "Mirá tus series y películas favoritas con la mejor definición a través de su pantalla AMOLED de 6.43´. Disfrutá de colores brillantes y detalles precisos en todos tus contenidos. Su memoria RAM de 4 GB permite que tu smartphone funcione de manera fluida y sin demoras al realizar distintas tareas, jugar o navegar.",
+    "price": 3000,
     "quantity": 17,
     "category": "Celulares",
     "rating": 3.1,
     "images": [
       {
-        "image": "/img/iphone.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_641923-MLU69889783892_062023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/314x362.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_690803-MLU69889783894_062023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/294x315.png/dddddd/000000"
-      },
-      {
-        "image": "http://dummyimage.com/387x387.png/dddddd/000000"
-      },
-      {
-        "image": "http://dummyimage.com/272x283.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_955560-MLU69889783896_062023-O.webp"
       }
     ]
   },
   {
     "id": 49,
-    "name": "Turkey - Whole, Fresh",
+    "name": "Etheos DRN1080",
     "date": { "from": "2023-12-14", "to": "2023-12-26" },
     "characteristics": [
       {
@@ -2051,32 +1989,29 @@
         "characteristic": "loyal"
       }
     ],
-    "description": "Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.\n\nFusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.",
-    "price": 971.41,
+    "description": "El Drone Etheos DRN1080 es el compañero perfecto para capturar momentos increíbles desde el cielo. Con su cámara dual Full HD, podrás obtener imágenes y videos de alta calidad, tanto desde la parte frontal como desde la parte inferior del drone.",
+    "price": 5000,
     "quantity": 18,
     "category": "Drones",
     "rating": 1.8,
     "images": [
       {
-        "image": "/img/drone2.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_804621-MLA51320275698_082022-O.webp"
       },
       {
-        "image": "/img/drone2.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_841222-MLA51320255972_082022-O.webp"
       },
       {
-        "image": "http://dummyimage.com/298x442.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_775105-MLA51320255973_082022-O.webp"
       },
       {
-        "image": "http://dummyimage.com/295x416.png/ff4444/ffffff"
-      },
-      {
-        "image": "http://dummyimage.com/324x322.png/dddddd/000000"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_769080-MLA51320287567_082022-O.webp"
       }
     ]
   },
   {
     "id": 50,
-    "name": "Mushroom - Shitake, Dry",
+    "name": "Silla Gamer Dxracer",
     "date": { "from": "2023-12-14", "to": "2023-12-26" },
     "characteristics": [
       {
@@ -2092,26 +2027,26 @@
         "characteristic": "adventurous"
       }
     ],
-    "description": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.\n\nNullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.",
-    "price": 388.79,
+    "description": "Con esta silla DXRacer, vas a tener la comodidad y el bienestar que necesitás a lo largo de tu dia. Además, podés ubicarla en cualquier parte de tu casa u oficina, ya que los variados diseños que ofrecemos se adaptan a múltiples entornos. ¡Dale a tus espacios un toque más moderno!.",
+    "price": 4200,
     "quantity": 30,
     "category": "Computación",
     "rating": 3.7,
     "images": [
       {
-        "image": "/img/monitor.webp"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_630392-MLU70778725722_082023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/410x265.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_689659-MLU70810079529_082023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/415x391.png/5fa2dd/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_705475-MLU70778725720_082023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/361x312.png/cc0000/ffffff"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_651588-MLU70778480940_082023-O.webp"
       },
       {
-        "image": "http://dummyimage.com/256x289.png/dddddd/000000"
+        "image": "https://http2.mlstatic.com/D_NQ_NP_818002-MLU70778480946_082023-O.webp"
       }
     ]
   }

@@ -29,7 +29,7 @@ export const DialogDetail = ({ handleBook, date = {} }) => {
             })
         } else {
             console.log("reserva hecha");
-            //handleBook()
+            handleBook()
         }
     }
 

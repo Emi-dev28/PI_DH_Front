@@ -1,7 +1,6 @@
 import CardHome from '@/components/home/CardHome';
 import { useAuthContext } from '@/context/authContext/useAuthContext';
 
-
 export const UserFavoritesPage = () => {
   const { state } = useAuthContext();
 

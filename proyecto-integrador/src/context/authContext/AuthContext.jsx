@@ -17,6 +17,8 @@ const reducer = (state, action) => {
         name: action.payload.name,
         lastname: action.payload.lastname,
         role: action.payload.role,
+        favorites: action.payload.favorites,
+        reserves: action.payload.reserves,
       };
 
     case 'LOGOUT':
@@ -27,6 +29,8 @@ const reducer = (state, action) => {
         name: '',
         lastname: null,
         role: null,
+        favorites: null,
+        reserves: null,
       };
 
     case 'CHECKING_CREDENTIALS':
@@ -35,25 +39,25 @@ const reducer = (state, action) => {
     case 'ADD_FAV':
       return {
         ...state,
-        favs: [...state.favs, action.payload],
+        favorites: [...state.favorites, action.payload],
       };
 
     case 'REMOVE_FAV':
       return {
         ...state,
-        favs: state.favs.filter((fav) => fav.id !== action.payload),
+        favorites: state.favorites.filter((fav) => fav.id !== action.payload),
       };
-      
+
     case 'ADD_BOOK':
       return {
         ...state,
-        book: [...state.book, action.payload],
+        reserves: [...state.reserves, action.payload],
       };
 
     case 'REMOVE_BOOK':
       return {
         ...state,
-        book: state.book.filter((item) => item.id !== action.payload),
+        reserves: state.reserves.filter((item) => item.id !== action.payload),
       };
 
     default:
@@ -106,7 +110,7 @@ export const AuthContextProvider = ({ children }) => {
         addToFavs,
         removeFromFavs,
         addToBook,
-        removeFromBook
+        removeFromBook,
       }}
     >
       {children}

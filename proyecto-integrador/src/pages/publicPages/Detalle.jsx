@@ -163,7 +163,7 @@ export default function Detalle() {
           />
 
           
-          <DialogDetail date={{from: formattedDateFrom, to: formattedDateTo}} />
+          <DialogDetail date={{from: formattedDateFrom, to: formattedDateTo}} handleBook={handleBook}/>
           {/* handleBook={handleBook} */}
         </div>
       </div>

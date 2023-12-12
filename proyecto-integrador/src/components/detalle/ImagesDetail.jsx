@@ -1,7 +1,7 @@
 import React from 'react'
 
 export const ImagesDetail = ({ images, setIsOpen }) => {
-    console.log(images);
+    
     return (
         <div className="flex flex-col rounded-md border-none bg-white ">
             <img

@@ -9,11 +9,9 @@ import { useSearchParams } from 'react-router-dom';
 import Search from '@/components/home/Search';
 
 import categories from '@/mocks/categories.json';
-// import products from '@/mocks/products.json';
+import products from '@/mocks/products.json';
 
 export default function Home() {
-  const { state } = useDataStore();
-
   const [randomProducts, setRandomProducts] = useState([]);
   const [currentPage, setCurrentPage] = useState(0);
   const [shuffledProducts, setShuffledProducts] = useState([]);
@@ -31,23 +29,35 @@ export default function Home() {
       (search.get('dateFrom') && search.get('dateTo'))
     ) {
       // Función para filtrar productos según el nombre del producto
-      const filteredProductsByName = state.products.filter((product) =>
+      const filteredProductsByName = products.filter((product) =>
         product.name
           .toLowerCase()
           .includes(search.get('product').toLowerCase()),
       );
 
-
       // Función para filtrar productos según las fechas
-      const filteredProductsByDate = () => {
-        return filteredProductsByName.filter((product) => {
+      const filteredProductsByDate = filteredProductsByName.filter(
+        (product) => {
           const dateFrom = new Date(product.date.from);
           const dateTo = new Date(product.date.to);
+          const searchDateFrom = new Date(search.get('dateFrom'));
+          const searchDateTo = new Date(search.get('dateTo'));
 
-          dateFrom >= search.get('dateFrom') && dateTo <= search.get('dateTo');
-        });
-      };
+          return searchDateFrom >= dateFrom && searchDateTo <= dateTo;
+        },
+      );
 
+      if (search.get('dateFrom') && search.get('dateTo')) {
+        setShuffledProducts(filteredProductsByDate);
+
+        // Tomar solo los primeros 10 productos
+        const newSelectedProducts = filteredProductsByDate.slice(0, 10);
+
+        // Actualizar el estado con los productos filtrados
+        setRandomProducts(newSelectedProducts);
+
+        return;
+      }
 
       setShuffledProducts(filteredProductsByName);
 
@@ -59,7 +69,7 @@ export default function Home() {
     } else {
       const updateRandomProducts = () => {
         // Ordenar aleatoriamente los productos
-        const shuffledProducts = state.products.sort(() => Math.random() - 0.5);
+        const shuffledProducts = products.sort(() => Math.random() - 0.5);
         //const shuffledProducts = products.sort(() => Math.random() - 0.5);
 
         setShuffledProducts(shuffledProducts);
@@ -74,8 +84,7 @@ export default function Home() {
       // Llamamos a la función de actualización al montar el componente y cuando products cambia
       updateRandomProducts();
     }
-  }, [search, state.products]);
-
+  }, [search]);
 
   const elementsAmount =
     selectedCategories.length > 0
@@ -137,7 +146,10 @@ export default function Home() {
         );
 
     setCurrentPage(nextPage);
-    window.scroll({ top: 1020, behavior: 'smooth' });
+
+    const productsSection = document.getElementById('products-section');
+
+    window.scroll({ top: productsSection.offsetTop - 116, behavior: 'smooth' });
   };
 
   const prevHandler = () => {
@@ -152,19 +164,26 @@ export default function Home() {
       : setRandomProducts([...shuffledProducts].splice(index, 10));
 
     setCurrentPage(prevPage);
-    window.scroll({ top: 1020, behavior: 'smooth' });
+
+    const productsSection = document.getElementById('products-section');
+
+    window.scroll({ top: productsSection.offsetTop - 116, behavior: 'smooth' });
   };
 
   return (
     <div className="flex flex-col">
       <div className="relative w-full">
         <Marquee />
-        <img src="/img/home-bkg.webp" alt="Top-home-img" className="w-full h-full object-cover" />
+        <img
+          src="/img/home-bkg.webp"
+          alt="Top-home-img"
+          className="h-full w-full object-cover"
+        />
         <div className="md:bottom-15 absolute bottom-10 left-8 lg:bottom-40">
-          <h1 className="hidden md:block lg:block text-4xl md:text-6xl lg:text-7xl text-white underline decoration-pink-500 underline-offset-8">
+          <h1 className="hidden text-4xl text-white underline decoration-pink-500 underline-offset-8 md:block md:text-6xl lg:block lg:text-7xl">
             DH Technology
           </h1>
-          <h4 className="hidden md:block lg:block mt-2 text-lg md:text-2xl lg:text-3xl text-white">
+          <h4 className="mt-2 hidden text-lg text-white md:block md:text-2xl lg:block lg:text-3xl">
             Hacemos realidad tu proyecto
           </h4>
         </div>

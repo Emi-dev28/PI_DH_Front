@@ -251,7 +251,7 @@
   {
     "id": 7,
     "name": "iPhone 14 Pro 256 GB Negro",
-    "date": { "from": "2023-12-17", "to": "2023-12-30" },
+    "date": { "from": "2023-12-13", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "intelligent"
@@ -295,7 +295,7 @@
   {
     "id": 8,
     "name": "Drone Toysky S161 Cámara 4k",
-    "date": { "from": "2023-12-17", "to": "2023-12-30" },
+    "date": { "from": "2023-12-13", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "intelligent"
@@ -336,7 +336,7 @@
   {
     "id": 9,
     "name": "Parlantes Thonet&Vander Vertrag",
-    "date": { "from": "2023-12-17", "to": "2023-12-30" },
+    "date": { "from": "2023-12-13", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "adventurous"
@@ -377,7 +377,7 @@
   {
     "id": 10,
     "name": "Edifier R1100",
-    "date": { "from": "2023-12-17", "to": "2023-12-30" },
+    "date": { "from": "2023-12-13", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "Potencia de 42W"
@@ -418,7 +418,7 @@
   {
     "id": 11,
     "name": "Mini drone Electroland",
-    "date": { "from": "2023-12-17", "to": "2023-12-30" },
+    "date": { "from": "2023-12-13", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "friendly"
@@ -462,7 +462,7 @@
   {
     "id": 12,
     "name": "Camara Ip Wifi P2p Infrarroja",
-    "date": { "from": "2023-12-17", "to": "2023-12-30" },
+    "date": { "from": "2023-12-13", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "adventurous"
@@ -503,7 +503,7 @@
   {
     "id": 13,
     "name": "Aro De Luz Led 30 Cm Con Trípode",
-    "date": { "from": "2023-12-17", "to": "2023-12-30" },
+    "date": { "from": "2023-12-13", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "loyal"
@@ -538,7 +538,7 @@
   {
     "id": 14,
     "name": "Drone Toysky CSJ S179",
-    "date": { "from": "2023-12-17", "to": "2023-12-30" },
+    "date": { "from": "2023-12-13", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "friendly"
@@ -582,7 +582,7 @@
   {
     "id": 15,
     "name": "Kit Gamer Corsair K55+harpoon Rgb",
-    "date": { "from": "2023-12-17", "to": "2023-12-30" },
+    "date": { "from": "2023-12-13", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "adventurous"
@@ -623,7 +623,7 @@
   {
     "id": 16,
     "name": "iPhone 15 Pro Max (256 GB)",
-    "date": { "from": "2023-12-17", "to": "2023-12-30" },
+    "date": { "from": "2023-12-13", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "friendly"
@@ -664,7 +664,7 @@
   {
     "id": 17,
     "name": "Monitor Samsung Odyssey G5 Curvo",
-    "date": { "from": "2023-12-17", "to": "2023-12-30" },
+    "date": { "from": "2023-12-13", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "playful"
@@ -708,7 +708,7 @@
   {
     "id": 18,
     "name": "Lente Zoom 12x Clip Universal",
-    "date": { "from": "2023-12-17", "to": "2023-12-30" },
+    "date": { "from": "2023-12-13", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "friendly"
@@ -749,7 +749,7 @@
   {
     "id": 19,
     "name": "Canon EOS Rebel Kit T100",
-    "date": { "from": "2023-12-17", "to": "2023-12-30" },
+    "date": { "from": "2023-12-13", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "friendly"
@@ -793,7 +793,7 @@
   {
     "id": 20,
     "name": "Mini Drone HandBee",
-    "date": { "from": "2023-12-17", "to": "2023-12-30" },
+    "date": { "from": "2023-12-13", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "playful"
@@ -823,13 +823,12 @@
       {
         "image": "https://http2.mlstatic.com/D_NQ_NP_726321-MLM40116472335_122019-O.webp"
       }
-    
     ]
   },
   {
     "id": 21,
     "name": "Macbook Pro 13 M2",
-    "date": { "from": "2023-12-17", "to": "2023-12-30" },
+    "date": { "from": "2023-12-13", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "curious"
@@ -873,7 +872,7 @@
   {
     "id": 22,
     "name": "Webcam Logitech C920s",
-    "date": { "from": "2023-12-17", "to": "2023-12-30" },
+    "date": { "from": "2023-12-13", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "loyal"
@@ -914,7 +913,7 @@
   {
     "id": 23,
     "name": "Escritorio gamer GTC Gta-002",
-    "date": { "from": "2023-12-17", "to": "2023-12-30" },
+    "date": { "from": "2023-12-13", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "intelligent"
@@ -955,7 +954,7 @@
   {
     "id": 24,
     "name": "GoPro Hero9 Black",
-    "date": { "from": "2023-12-17", "to": "2023-12-30" },
+    "date": { "from": "2023-12-13", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "friendly"
@@ -996,7 +995,7 @@
   {
     "id": 25,
     "name": "Drone Gadnic Control Remoto",
-    "date": { "from": "2023-12-17", "to": "2023-12-30" },
+    "date": { "from": "2023-12-13", "to": "2023-12-30" },
     "characteristics": [
       {
         "characteristic": "intelligent"

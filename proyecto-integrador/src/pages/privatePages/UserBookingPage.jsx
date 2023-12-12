@@ -30,7 +30,7 @@ export const UserBookingPage = () => {
       <div className="flex min-w-[235px] flex-col justify-between border-r-[1px] border-r-red-200">
         <h2 className="text-2xl">Historial de Reservas</h2>
       </div>
-      <div className="my-4 mr-2 flex justify-end fixed right-3 bottom-1">
+      <div className="my-4 mr-2 flex justify-end fixed right-3 bottom-1 z-10">
         <PrimaryButton onClick={() => navigate(-1)}>
           <MdOutlineKeyboardReturn className="text-xl" />
         </PrimaryButton>

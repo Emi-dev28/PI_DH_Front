@@ -17,7 +17,7 @@ export default function SidebarMenu() {
       <div
         className={` ${
           open ? 'w-72' : 'w-18'
-        } flex h-screen flex-col p-3 pt-6 shadow`}
+        } flex h-full flex-col p-3 pt-6 shadow`}
       >
         <div className="space-y-6">
           <div className="flex items-center justify-between p-2">

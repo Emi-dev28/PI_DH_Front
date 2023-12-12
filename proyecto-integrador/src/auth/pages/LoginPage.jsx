@@ -89,7 +89,7 @@ export const LoginPage = () => {
               <FormItem>
                 <FormLabel>Contraseña</FormLabel>
                 <FormControl>
-                  <Input placeholder="******" {...field} />
+                  <Input placeholder="******" {...field} type="password"/>
                 </FormControl>
                 <FormMessage />
               </FormItem>

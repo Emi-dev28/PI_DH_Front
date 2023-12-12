@@ -23,7 +23,7 @@ export const DialogDetail = ({ handleBook, date = {} }) => {
     const onHandleBook = () => {
         if (date.from === "") {
             toast({
-                title: 'Error',
+                title: 'Alerta',
                 description: 'Debes seleccionar una fecha',
                 variant: 'alert',
             })
@@ -70,12 +70,14 @@ export const DialogDetail = ({ handleBook, date = {} }) => {
                         </Button>
                     </DialogClose>
 
-                    <Button
-                        className="bg-green-500 w-14 hover:bg-green-400"
-                        onClick={() => onHandleBook()}
-                    >
-                        Sí
-                    </Button>
+                    <DialogClose>
+                        <Button
+                            className="bg-green-500 w-14 hover:bg-green-400"
+                            onClick={() => onHandleBook()}
+                        >
+                            Sí
+                        </Button>
+                    </DialogClose>
                 </DialogFooter>
             </DialogContent>
         </Dialog>

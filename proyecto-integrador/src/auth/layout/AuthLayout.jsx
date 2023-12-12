@@ -6,7 +6,7 @@ export const AuthLayout = ({ children, title = '' }) => {
   return (
     <div className="from-navColorDark to-navColor flex min-h-screen flex-col items-center justify-center bg-gradient-to-t">
       <div className="mx-4 flex flex-col">
-        <Link to={'/'} className="flex items-center justify-end">
+        <Link to={'/'} className="flex items-center justify-end mb-2">
           <span className="text-black">Regresar al inicio</span>
           <MdHome className="ml-[2px] text-xl text-black" />
         </Link>

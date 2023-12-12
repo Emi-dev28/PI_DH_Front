@@ -12,6 +12,7 @@ import {
   DialogTitle,
   DialogTrigger,
   DialogFooter,
+  DialogClose,
 } from '@/components/ui/dialog';
 import {
   Select,
@@ -76,7 +77,7 @@ export const DialogCreateProduct = () => {
     }
     const imagenesUrls = await Promise.all(promesasDeImagenesParaSubir);
 
-    setFiles( imagenesUrls );
+    setFiles(imagenesUrls);
   };
 
 
@@ -87,12 +88,14 @@ export const DialogCreateProduct = () => {
       name: values.name,
       description: values.description,
       price: values.price,
-      categories: [{ name: values.categories }],
+      category: values.categories,
       stock: values.stock,
       images: [
-        {image: files[0]},
-        {image: files[1]},
+        { image: files[0] },
+        { image: files[1] },
       ],
+      date: { "from": "2023-12-17", "to": "2023-12-30" },
+      rating: 3.2
     })
   }
 
@@ -207,8 +210,8 @@ export const DialogCreateProduct = () => {
                 </FormItem>
               )}
             />
-            <div className="grid w-full max-w-sm items-center gap-1.5">
-              <Label htmlFor="picture">Picture</Label>
+            <div className="flex flex-col items-start gap-1.5">
+              <Label htmlFor="picture" className='font-semibold'>Picture</Label>
               <Input
                 id="picture"
                 type="file"
@@ -218,8 +221,9 @@ export const DialogCreateProduct = () => {
             </div>
           </form>
         </Form>
+
         <DialogFooter>
-          <Button onClick={form.handleSubmit(onSubmit)}>Crear</Button>
+            <Button onClick={form.handleSubmit(onSubmit)}>Crear</Button>
         </DialogFooter>
       </DialogContent>
     </Dialog>

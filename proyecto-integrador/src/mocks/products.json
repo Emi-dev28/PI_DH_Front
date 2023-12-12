@@ -19,7 +19,7 @@
     ],
     "description": "Ofrece un sonido natural, con una gran claridad y precisión,\n\nque se dispersa de manera uniforme. Un parlante que asegura potencia y calidad por igual en la reproducción de contenidos multimedia.\n\nAl ser activo solo necesitarás conectarlo a la fuente de sonido y el mismo equipo se encargará de amplificar y reproducir.",
     "price": 1800,
-    "quantity": 20,
+    "stock": 20,
     "category": "Audio",
     "rating": 3.5,
     "images": [
@@ -60,7 +60,7 @@
     ],
     "description": "Disfrutá de la perfecta combinación de rendimiento y diseño con esta notebook Asus TUF Gaming F15 FX506LHB-HN324W.\n\nSu pantalla LED de 15.6´ y 1920x1080 px de resolución te brindará colores más vivos y definidos. Su placa de video\n\nNVIDIA GeForce GTX 1650 convierte a este dispositivo en una gran herramienta de trabajo para cualquier profesional del diseño.",
     "price": 8000,
-    "quantity": 74,
+    "stock": 74,
     "category": "Computación",
     "rating": 3.4,
     "images": [
@@ -101,7 +101,7 @@
     ],
     "description": "Los drones DJI se caracterizan por la mejor tecnología al servicio de cada tipo de usuario y escenario de disparo. Su velocidad máxima es de 13 m/s,\n\nlo que te brindará la posibilidad de ahorrar tiempo en los desplazamientos. A través de su cámara 2.7K obtendrás imágenes de gran resolución y calidad, y podrás registrar todo su recorrido. Gracias a su sistema GPS conseguirás alcanzar largas distancias y conquistar espacios con independencia.",
     "price": 5700,
-    "quantity": 98,
+    "stock": 98,
     "category": "Drones",
     "rating": 4.8,
     "images": [
@@ -142,7 +142,7 @@
     ],
     "description": "Mirá tus series y películas favoritas con la mejor definición a través de su pantalla Super AMOLED de 6.4'.\n\nCon su potente procesador y memoria RAM de 8 GB\n\ntu equipo alcanzará un alto rendimiento con gran velocidad de transmisión de contenidos. Desbloqueo veloz con tu huella dactilar. ¡Desenchufate! Con la súper batería de 5000 mAh tendrás energía por mucho más tiempo.",
     "price": 3000,
-    "quantity": 87,
+    "stock": 87,
     "category": "Celulares",
     "rating": 3.2,
     "images": [
@@ -186,7 +186,7 @@
     ],
     "description": "Lo suficientemente pequeños como para caber en la palma de tu mano. Diseñado para vivir una experiencia única.\n\nIdeales para volar en interiores, recorrer pasillos estrechos y realizar maniobras delicadas con facilidad.",
     "price": 2500,
-    "quantity": 7,
+    "stock": 7,
     "category": "Drones",
     "rating": 1.3,
     "images": [
@@ -227,7 +227,7 @@
     ],
     "description": "Los auriculares para juegos CORSAIR HS80 RGB USB ofrecen un sonido increíblemente rico en matices a través de los transductores de audio de neodimio de 50 mm de ajuste personalizado con sonido envolvente Dolby Audio 7.1.",
     "price": 3000,
-    "quantity": 10,
+    "stock": 10,
     "category": "Audio",
     "rating": 1.6,
     "images": [
@@ -271,7 +271,7 @@
     ],
     "description": "El iPhone 14 Pro te permite captar detalles increíbles gracias a su cámara gran angular de 48 MP. Además, trae la Dynamic Island y una pantalla siempre activa, para que puedas interactuar con tu iPhone de una forma completamente nueva.",
     "price": 7500,
-    "quantity": 42,
+    "stock": 42,
     "category": "Celulares",
     "rating": 4.2,
     "images": [
@@ -312,7 +312,7 @@
     ],
     "description": "Este drone aéreo te permitirá ver absolutamente todo desde las alturas. Asegurate de encontrar una plataforma de vuelo que te permita trabajar con comodidad y preparate para volar.",
     "price": 4300,
-    "quantity": 78,
+    "stock": 78,
     "category": "Drones",
     "rating": 2.8,
     "images": [
@@ -353,7 +353,7 @@
     ],
     "description": "Thonet & Vander Vertrag BT ofrece un sonido natural, con una gran claridad y precisión, que se dispersa de manera uniforme. Un parlante que asegura potencia y calidad por igual en la reproducción de contenidos multimedia.",
     "price": 950.15,
-    "quantity": 62,
+    "stock": 62,
     "category": "Audio",
     "rating": 4.3,
     "images": [
@@ -394,7 +394,7 @@
     ],
     "description": "Edifier R1100 ofrece un sonido natural, con una gran claridad y precisión, que se dispersa de manera uniforme. Un parlante que asegura potencia y calidad por igual en la reproducción de contenidos multimedia.",
     "price": 3000,
-    "quantity": 48,
+    "stock": 48,
     "category": "Audio",
     "rating": 4.7,
     "images": [
@@ -438,7 +438,7 @@
     ],
     "description": "A través de su cámara HD obtendrás imágenes de gran resolución y calidad, y podrás registrar todo su recorrido.\n\nEste drone aéreo te permitirá ver absolutamente todo desde las alturas. Asegurate de encontrar una plataforma de vuelo que te permita trabajar con comodidad y preparate para volar.\n\nGarantizá que tu vuelo sea seguro. Este drone viene con protectores de hélices incluidas para evitar posibles daños que afecten al equipo y lo desestabilicen durante su andar.",
     "price": 1200,
-    "quantity": 94,
+    "stock": 94,
     "category": "Drones",
     "rating": 2.1,
     "images": [
@@ -479,7 +479,7 @@
     ],
     "description": "Esta cámara tipo domo es perfecta a la hora de combatir el vandalismo y las situaciones adversas gracias a su excelencia en cuanto a durabilidad. Su cúpula está encerrada en una carcasa resistente, lo que ayudará a mantenerla protegida de posibles golpes y sacudidas. Cuenta con resolución de 2MP, que ofrece una vigilancia clara y precisa sobre los espacios.Además, estos videos se registran a una velocidad máxima de 24 fotogramas por segundo, por lo que obtendrás una mayor fluidez en la imagen.",
     "price": 1300,
-    "quantity": 13,
+    "stock": 13,
     "category": "Cámaras",
     "rating": 2.0,
     "images": [
@@ -520,7 +520,7 @@
     ],
     "description": "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.",
     "price": 694.93,
-    "quantity": 87,
+    "stock": 87,
     "category": "Celulares",
     "rating": 3.6,
     "images": [
@@ -558,7 +558,7 @@
     ],
     "description": "El Drone Toysky CSJ S179 es el compañero perfecto para tus aventuras al aire libre y la captura de imágenes impresionantes. Con su cámara dual 6K, podrás tomar fotos y videos de alta calidad desde el cielo, mientras que su conexión Wi-Fi te permitirá controlarlo fácilmente desde tu smartphone. Además, su GPS integrado y las funciones de auto retorno y seguimiento aseguran que nunca lo perderás de vista.",
     "price": 15000,
-    "quantity": 64,
+    "stock": 64,
     "category": "Drones",
     "rating": 3.9,
     "images": [
@@ -599,7 +599,7 @@
     ],
     "description": "Con este kit de teclado y mouse Corsair vas a poder llevar tus partidas a otro nivel. Destinado a un público gamer, potenciá tu performance en distintos juegos. Con este combo, podrás darle un uso intensivo a estos dispositivos y disfrutar de interminables horas de diversión.",
     "price": 4500,
-    "quantity": 10,
+    "stock": 10,
     "category": "Computación",
     "rating": 3.4,
     "images": [
@@ -640,7 +640,7 @@
     ],
     "description": "iPhone 15 Pro Max. Forjado en titanio y equipado con el revolucionario chip A17 Pro, un Botón de Acción personalizable y el sistema de cámaras más potente en un iPhone. La pantalla Super Retina XDR de 6.7 pulgadas con ProMotion aumenta la frecuencia de actualización hasta 120 Hz cuando necesitas el máximo rendimiento gráfico.",
     "price": 15000,
-    "quantity": 95,
+    "stock": 95,
     "category": "Celulares",
     "rating": 4.6,
     "images": [
@@ -684,7 +684,7 @@
     ],
     "description": "Este monitor de 27´ te va a resultar cómodo para estudiar, trabajar o ver una película en tus tiempos de ocio. Asimismo, su resolución de 2560 x 1440 te permite disfrutar de momentos únicos gracias a una imagen de alta fidelidad. Su tiempo de respuesta de un milisegundo lo hace ideal para gamers y cinéfilos porque es capaz de mostrar imágenes en movimiento sin halos o bordes borrosos.",
     "price": 2000,
-    "quantity": 44,
+    "stock": 44,
     "category": "Computación",
     "rating": 1.6,
     "images": [
@@ -725,7 +725,7 @@
     ],
     "description": "El telescopio se puede utilizar como monocular. Se adapta a la mayoría de los tipos de teléfonos móviles, incluyen teléfonos con tapa y teléfonos con barra.",
     "price": 896.16,
-    "quantity": 89,
+    "stock": 89,
     "category": "Celulares",
     "rating": 3.3,
     "images": [
@@ -769,7 +769,7 @@
     ],
     "description": "Con la gran velocidad de obturación de tu cámara podrás congelar cualquier movimiento en milésimas de segundo, desde una gota que cae hasta un auto de fórmula 1. Por el contrario, con la velocidad de obturación lenta vas a poder captar movimientos casi imperceptibles como las luces de la ciudad o de las estrellas en la noche. Divertite jugando con tu cámara y obtené fotografías con gran dinamismo.",
     "price": 8000,
-    "quantity": 97,
+    "stock": 97,
     "category": "Cámaras",
     "rating": 3.3,
     "images": [
@@ -813,7 +813,7 @@
     ],
     "description": "Este drone aéreo te permitirá ver absolutamente todo desde las alturas. Asegurate de encontrar una plataforma de vuelo que te permita trabajar con comodidad y preparate para volar.",
     "price": 1500,
-    "quantity": 45,
+    "stock": 45,
     "category": "Drones",
     "rating": 1.7,
     "images": [
@@ -848,7 +848,7 @@
     ],
     "description": "La MacBook Pro es la notebook más poderosa de Apple. Su procesador Apple M2, te permitirá ejecutar programas variados y procesos indispensables para desenvolverte en el día a día, ya sea en tu trabajo o en los momentos de ocio en tu hogar. El disco sólido de 256 GB hace que el equipo funcione a gran velocidad y por lo tanto te brinda mayor agilidad para operar con diversos programas.",
     "price": 20000,
-    "quantity": 28,
+    "stock": 28,
     "category": "Computación",
     "rating": 3.9,
     "images": [
@@ -889,7 +889,7 @@
     ],
     "description": "Tener una videoconferencia es más sencillo que nunca. Su tecnología plug and play permite conectar la cámara a la computadora sin tener que configurar ni ofrecer parámetros a sus controladores.",
     "price": 1000,
-    "quantity": 34,
+    "stock": 34,
     "category": "Cámaras",
     "rating": 4.7,
     "images": [
@@ -930,7 +930,7 @@
     ],
     "description": "¡Programá tu zona de juego! Resistente y espacioso, el escritorio GTC es perfecto para quienes buscan un mueble amplio que soporte el peso de consolas, televisores, grandes pantallas y otros dispositivos requeridos para jugar largas horas. Creá el ambiente idóneo, y pasá al siguiente nivel.",
     "price": 1300,
-    "quantity": 93,
+    "stock": 93,
     "category": "Computación",
     "rating": 4.2,
     "images": [
@@ -971,7 +971,7 @@
     ],
     "description": "Esta videocámara de acción es a prueba de agua, lo que te permite sumergirte en tus actividades acuáticas sin preocupaciones. Además, cuenta con visión nocturna para que puedas seguir grabando incluso en condiciones de poca luz. La pantalla táctil de 2.3 pulgadas facilita la navegación por los menús y la visualización de tus imágenes y videos.",
     "price": 3000,
-    "quantity": 17,
+    "stock": 17,
     "category": "Cámaras",
     "rating": 4.2,
     "images": [
@@ -1015,7 +1015,7 @@
     ],
     "description": "Su velocidad máxima es de 18 m/s, lo que te brindará la posibilidad de ahorrar tiempo en los desplazamientos. A través de su cámara HD obtendrás imágenes de gran resolución y calidad, y podrás registrar todo su recorrido. Gracias a su sistema GPS conseguirás alcanzar largas distancias y conquistar espacios con independencia. Incluye 2 baterías, que abastecerán al drone de la energía suficiente para funcionar. Al finalizar el trayecto, podrás recargarlas de manera fácil y cómoda.",
     "price": 2500,
-    "quantity": 39,
+    "stock": 39,
     "category": "Drones",
     "rating": 1.8,
     "images": [
@@ -1056,7 +1056,7 @@
     ],
     "description": "Descubra la potencia de los gráficos para portátiles GeForce RTX 3060 que ofrecen altas velocidades de fotogramas junto con el último procesador Intel® Core i7 de 12.ª generación para capacidades épicas de transmisión, edición de fotos y renderizado 3D. Obtenga un juego fluido con frecuencias de actualización de hasta 165 Hz en la pantalla IPS WUXGA de 14 pulgadas",
     "price": 5000,
-    "quantity": 81,
+    "stock": 81,
     "category": "Computación",
     "rating": 2.9,
     "images": [
@@ -1097,7 +1097,7 @@
     ],
     "description": "Si sos una persona apasionada por los videos, esta cámara Insta360 X3 te va a resultar indispensable. Todos tus momentos pueden ser grabados de forma permanente, ya seas profesional o simplemente entusiasta, este producto es intuitivo y fácil de utilizar. Con su resolución 5.7K obtenés videos de óptima calidad.",
     "price": 67.37,
-    "quantity": 95,
+    "stock": 95,
     "category": "Cámaras",
     "rating": 1.1,
     "images": [
@@ -1141,7 +1141,7 @@
     ],
     "description": "Al plegarse, adopta un tamaño pequeño y compacto que te resultará muy cómodo para transportar. Cuando quieras disfrutar de tus contenidos favoritos se transforma desplegando su pantalla de 7.6 pulgadas.",
     "price": 201.4,
-    "quantity": 34,
+    "stock": 34,
     "category": "Celulares",
     "rating": 1.7,
     "images": [
@@ -1185,7 +1185,7 @@
     ],
     "description": "Los drones DJI se caracterizan por la mejor tecnología al servicio de cada tipo de usuario y escenario de disparo. Si estás buscando un dron para principiantes, un dron profesional o solamente querés estar actualizado con las últimas innovaciones, es hora de elegir a esta marca.",
     "price": 4800,
-    "quantity": 77,
+    "stock": 77,
     "category": "Drones",
     "rating": 2.5,
     "images": [
@@ -1226,7 +1226,7 @@
     ],
     "description": "Descubrí infinitas posibilidades para tus fotos con las 3 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.",
     "price": 3000,
-    "quantity": 38,
+    "stock": 38,
     "category": "Celulares",
     "rating": 4.2,
     "images": [
@@ -1261,7 +1261,7 @@
     ],
     "description": "Esta cámara se adapta a tu ritmo de vida y te ofrece excelentes resultados en situaciones complejas. En situaciones con poca iluminación o cuando necesitás realizar tomas de escenas rápidas, la cámara sin espejos sortea todos los obstáculos para ofrecer fotografías nítidas y videos en alta calidad. Su peso ligero y resultados increíbles la convierten en tu compañera ideal.",
     "price": 8000,
-    "quantity": 98,
+    "stock": 98,
     "category": "Cámaras",
     "rating": 3.4,
     "images": [
@@ -1299,7 +1299,7 @@
     ],
     "description": "Notebook gamer cuenta con un procesador Intel i7, 16gb RAM DDR4, una tarjeta gráfica NVIDIA GeForce RTX3070 y un disco SSD de 512gb.",
     "price": 5000,
-    "quantity": 56,
+    "stock": 56,
     "category": "Computación",
     "rating": 3.6,
     "images": [
@@ -1337,7 +1337,7 @@
     ],
     "description": "Nikon fabrica cámaras fotográficas con tecnología de punta y excelencia en la calidad. Sus productos permiten que explores toda tu creatividad, asegurándote calidad en los resultados.",
     "price": 9500,
-    "quantity": 94,
+    "stock": 94,
     "category": "Cámaras",
     "rating": 3.6,
     "images": [
@@ -1378,7 +1378,7 @@
     ],
     "description": "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.\n\nMorbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.",
     "price": 3000,
-    "quantity": 23,
+    "stock": 23,
     "category": "Celulares",
     "rating": 2.0,
     "images": [
@@ -1422,7 +1422,7 @@
     ],
     "description": "Con tu Logitech Z607 disfrutarás de la compañía de tus canciones favoritas y vibrarás con las escenas de grandes obras maestras de la pantalla grande. En primer plano, segundo plano o con tecnología envolvente, un sistema integrado de sonido será la clave para llenar de magia tu hogar.\n\nLa configuración de canales 5.1 es la pieza fundamental de este equipo, encargada de reconstruir el audio en un sistema de múltiples altavoces.",
     "price": 4000,
-    "quantity": 82,
+    "stock": 82,
     "category": "Audio",
     "rating": 3.1,
     "images": [
@@ -1457,7 +1457,7 @@
     ],
     "description": "Genius SP-HF800A ofrece un sonido natural, con una gran claridad y precisión, que se dispersa de manera uniforme. Un parlante que asegura potencia y calidad por igual en la reproducción de contenidos multimedia.",
     "price": 2000,
-    "quantity": 57,
+    "stock": 57,
     "category": "Audio",
     "rating": 2.8,
     "images": [
@@ -1498,7 +1498,7 @@
     ],
     "description": "La cámara web Phottix PC-20 FHD ofrece video Full HD 1080P de alta calidad, para mejores encuentros con videoconferencia habilitada para USB, tutorial, seminario web.",
     "price": 850,
-    "quantity": 98,
+    "stock": 98,
     "category": "Cámaras",
     "rating": 2.4,
     "images": [
@@ -1539,7 +1539,7 @@
     ],
     "description": "24 megapíxeles: optimizado para imágenes más nítidas y ricas durante el día. Construido con funciones en el interior para brindarle imágenes que revelan más en el difícil mundo exterior. Alcance nocturno de 30 metros: capture imágenes nocturnas de alto contraste con una claridad cristalina, sin ningún tipo de desvanecimiento.",
     "price": 6000,
-    "quantity": 35,
+    "stock": 35,
     "category": "Cámaras",
     "rating": 3.6,
     "images": [
@@ -1583,7 +1583,7 @@
     ],
     "description": "CPU INTEL CORE I9-14900K RAPTORLAKE S1700 BOX. \n\nMotherboard Msi Mag Z790 Tomahawk Max Wifi Ddr5 Intel. Water Cooler Cpu Arctic Liquid Freezer Ii 360 Am5 Intel 1700.\n\nKit Memoria Ram Ddr5 Ram 64gb (2x32gb)black Blade Rgb 6400mhz. DISCO SSD M.2 de 2tb NVME para Sistema operativo; Disco de 4Tb SSD SATA para Back up. RTX 4060Ti Rog Strix.",
     "price": 12000,
-    "quantity": 95,
+    "stock": 95,
     "category": "Computación",
     "rating": 4.5,
     "images": [
@@ -1627,7 +1627,7 @@
     ],
     "description": "Ligero y compacto: Mini 3 pesa menos de 8.78 oz. Perfecto para llevar contigo en tus aventuras, desde caminatas, viajes por carretera y días de playa.\n\nDuración de la batería extendida: con hasta 38 minutos de duración de la batería, puede tomar Mini 3 en cada parada en el camino o volar vuelos largos sin preocuparse por la batería.\n\nPelícula en video HDR 4K para tomas aéreas cristalinas. Captura detalles en reflejos y sombras, tanto de día como de noche.",
     "price": 8000,
-    "quantity": 77,
+    "stock": 77,
     "category": "Drones",
     "rating": 3.3,
     "images": [
@@ -1665,7 +1665,7 @@
     ],
     "description": "Los mini drones cuentan con tecnologías exclusivas e impresionantes marcos estabilizados. Ideales para volar en interiores, recorrer pasillos estrechos y realizar maniobras delicadas con facilidad.",
     "price": 4000,
-    "quantity": 63,
+    "stock": 63,
     "category": "Drones",
     "rating": 3.0,
     "images": [
@@ -1709,7 +1709,7 @@
     ],
     "description": "Resolución de cámara frontal HD 720 px. Cámara secundaria de 480px.\n\nRECONOCIMIENTO DE GESTOS: Párate frente al drone y haz la señal V con tus dedos, se activará el temporizador y se tomará una fotografía en 3 segundos.\n\nFUNCIONES: Tecla para despegar y aterrizar, apagado de emergencia. Giroscopio de 6 ejes. Control de altitud para vuelos estable. Headless Mode (Modo sin cabeza).",
     "price": 5000,
-    "quantity": 29,
+    "stock": 29,
     "category": "Drones",
     "rating": 3.0,
     "images": [
@@ -1747,7 +1747,7 @@
     ],
     "description": "Está hecho de materiales ABS ignífugos de alta calidad y respetuosos con el medio ambiente, con diseño de carcasa de alta resistencia y buen rendimiento anti-caídas y anti-colisión.",
     "price": 6000,
-    "quantity": 2,
+    "stock": 2,
     "category": "Drones",
     "rating": 2.5,
     "images": [
@@ -1785,7 +1785,7 @@
     ],
     "description": "Nvidia es el fabricante líder de placas de video; su calidad asegura una experiencia positiva en el desarrollo del motor gráfico de tu computadora. Además, sus procesadores usan tecnología de punta para que puedas disfrutar de un producto veloz y duradero.",
     "price": 6000,
-    "quantity": 61,
+    "stock": 61,
     "category": "Computación",
     "rating": 4.4,
     "images": [
@@ -1829,7 +1829,7 @@
     ],
     "description": "Los drones DJI se caracterizan por la mejor tecnología al servicio de cada tipo de usuario y escenario de disparo. Si buscas un dron para principiantes, un dron profesional o solamente quieres estar actualizado con las últimas innovaciones, es hora de elegir a esta marca.",
     "price": 3000,
-    "quantity": 84,
+    "stock": 84,
     "category": "Drones",
     "rating": 2.5,
     "images": [
@@ -1870,7 +1870,7 @@
     ],
     "description": "Este monitor de 24´ te va a resultar cómodo para estudiar, trabajar o ver una película en tus tiempos de ocio. Asimismo, su resolución de 1920 x 1080 te permite disfrutar de momentos únicos gracias a una imagen de alta fidelidad.",
     "price": 3000,
-    "quantity": 63,
+    "stock": 63,
     "category": "Computación",
     "rating": 3.3,
     "images": [
@@ -1911,7 +1911,7 @@
     ],
     "description": "El sensor de imagen CCD capta con mayor claridad las luces y sombras en tus fotografías, las procesa en un chip externo que te permite guardar mayor cantidad de imágenes, y minimiza el ruido en las capturas. \n\nEl modo autofoco captura objetos y personas con naturalidad. Disfrutá el momento y guardá los mejores recuerdos en donde estés.",
     "price": 6000,
-    "quantity": 10,
+    "stock": 10,
     "category": "Cámaras",
     "rating": 3.8,
     "images": [
@@ -1952,7 +1952,7 @@
     ],
     "description": "Mirá tus series y películas favoritas con la mejor definición a través de su pantalla AMOLED de 6.43´. Disfrutá de colores brillantes y detalles precisos en todos tus contenidos. Su memoria RAM de 4 GB permite que tu smartphone funcione de manera fluida y sin demoras al realizar distintas tareas, jugar o navegar.",
     "price": 3000,
-    "quantity": 17,
+    "stock": 17,
     "category": "Celulares",
     "rating": 3.1,
     "images": [
@@ -1990,7 +1990,7 @@
     ],
     "description": "El Drone Etheos DRN1080 es el compañero perfecto para capturar momentos increíbles desde el cielo. Con su cámara dual Full HD, podrás obtener imágenes y videos de alta calidad, tanto desde la parte frontal como desde la parte inferior del drone.",
     "price": 5000,
-    "quantity": 18,
+    "stock": 18,
     "category": "Drones",
     "rating": 1.8,
     "images": [
@@ -2028,7 +2028,7 @@
     ],
     "description": "Con esta silla DXRacer, vas a tener la comodidad y el bienestar que necesitás a lo largo de tu dia. Además, podés ubicarla en cualquier parte de tu casa u oficina, ya que los variados diseños que ofrecemos se adaptan a múltiples entornos. ¡Dale a tus espacios un toque más moderno!.",
     "price": 4200,
-    "quantity": 30,
+    "stock": 30,
     "category": "Computación",
     "rating": 3.7,
     "images": [

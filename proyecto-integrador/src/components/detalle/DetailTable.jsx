@@ -31,7 +31,7 @@ export default function DetailTable({ product }) {
           <TableHead className="w-1/3">{product.description}</TableHead>
           <TableHead className="bg-slate-200">{product.price}</TableHead>
           <TableHead>{product.category}</TableHead>
-          <TableHead className="bg-slate-200">{product.quantity}</TableHead>
+          <TableHead className="bg-slate-200">{product.stock}</TableHead>
           <TableHead>{product.rating}</TableHead>
         </TableRow>
       </TableHeader>

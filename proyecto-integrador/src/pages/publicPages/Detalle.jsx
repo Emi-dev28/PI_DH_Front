@@ -52,7 +52,7 @@ export default function Detalle() {
   // const isSelectedProductInBooking = state.book.some(
   //   (item) => item.product.id === selectedProductId,
   // );
-  const isSelectedProductInBooking = [].some(
+  const isSelectedProductInBooking = state.reserves.some(
     (item) => item.product.id === selectedProductId,
   );
 
@@ -91,13 +91,14 @@ export default function Detalle() {
           })
         )
         : toast({
-          title: 'Error',
+          title: 'Alerta',
           description:
-            'Ya has reservado este producto. Si quieres cambiar la fecha de reserva, primero elimina el producto del historial',
+            'Si queres cambiar la fecha de reserva elimina el producto del historial',
           action: (
             <ToastAction
               altText="Ir al historial"
               onClick={() => navigate('/user/booking')}
+              className="text-yellow-500"
             >
               Ir al historial
             </ToastAction>

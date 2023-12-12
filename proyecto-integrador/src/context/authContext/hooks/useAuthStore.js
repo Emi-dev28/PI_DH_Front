@@ -110,14 +110,12 @@ export const useAuthStore = () => {
     const requestBody = {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({rol: rol})
     };
 
     try {
-      const resp = await fetch(URL + '/users/update/' + email, requestBody);
-      const data = await resp.json();
-
-      if (data.ok) {
+      const resp = await fetch(URL + `/users/update/${email}/${rol}`, requestBody);
+      
+      if (resp.ok) {
         toast({
           description: 'Se han dado permisos de admin al usuario',
           variant: 'success',

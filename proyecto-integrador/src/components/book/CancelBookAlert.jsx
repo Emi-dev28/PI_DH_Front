@@ -25,7 +25,7 @@ export const CancelBookAlert = ({ id }) => {
 
     return (
         <AlertDialog>
-            <AlertDialogTrigger className="text-red-500 hover:cursor-pointer">Cancelar</AlertDialogTrigger>
+            <AlertDialogTrigger className="text-red-500 hover:cursor-pointer">Cancelar reserva</AlertDialogTrigger>
             <AlertDialogContent>
                 <AlertDialogHeader>
                     <AlertDialogTitle>¿Estás seguro de que quieres cancelar la reserva?</AlertDialogTitle>

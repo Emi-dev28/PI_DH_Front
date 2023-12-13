@@ -1,7 +1,8 @@
-import { createContext, useReducer } from 'react';
+import { createContext, useEffect, useReducer } from 'react';
 
 
-const initialState = {
+const initialState = JSON.parse(localStorage.getItem("user")) 
+|| {
   status: 'not-authenticated', //checking, not-authenticated, authenticated
   name: 'User',
   lastname: 'Ser',
@@ -79,6 +80,7 @@ export const AuthContextProvider = ({ children }) => {
 
   const logoutUser = () => {
     dispatch({ type: 'LOGOUT' });
+    localStorage.clear()
   };
 
   const checkingAuthentication = () => {
@@ -100,6 +102,11 @@ export const AuthContextProvider = ({ children }) => {
   const removeFromBook = (id) => {
     dispatch({ type: 'REMOVE_BOOK', payload: id });
   };
+
+  useEffect(() => {
+    localStorage.setItem("user", JSON.stringify(state))
+  }, [state])
+  
 
   //*******************************************/
   return (

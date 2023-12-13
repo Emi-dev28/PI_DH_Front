@@ -12,7 +12,6 @@ import {
   DialogTitle,
   DialogTrigger,
   DialogFooter,
-  DialogClose,
 } from '@/components/ui/dialog';
 import {
   Select,
@@ -98,26 +97,6 @@ export const DialogCreateProduct = () => {
       rating: 3.2
     })
   }
-
-  // const onFileInputChange = ({ target }) => {
-  //   if (target.files === 0) return;
-
-  //   const selectedFiles = target.files;
-  //   setFiles([...files, ...selectedFiles]);
-  // };
-
-  // onCreatingNewProductFiles(filesData)
-  //   .then(resp => resp.json())
-  //   .then(data => onCreatingNewProduct({
-  //     name: values.name,
-  //     description: values.description,
-  //     price: values.price,
-  //     categories: [{ name: values.categories }],
-  //     stock: values.stock,
-  //     imagenes: data.url,
-  //     isReserved: false
-  //   }))
-  // }
 
   return (
     <Dialog>

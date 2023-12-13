@@ -15,6 +15,7 @@ import {
 import { Input } from '@/components/ui/input';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuthStore } from '@/context/authContext/hooks/useAuthStore';
+import { useAuthContext } from '@/context/authContext/useAuthContext';
 
 const formSchema = z.object({
   email: z.string().email('Debe ser un email válido'),
@@ -43,6 +44,7 @@ const formSchema = z.object({
 
 export const LoginPage = () => {
   const { loginWithEmailAndPassword } = useAuthStore();
+  const { loginUser } = useAuthContext();
   const navigate = useNavigate();
 
   const form = useForm({
@@ -54,9 +56,15 @@ export const LoginPage = () => {
   });
 
   const onSubmit = (values) => {
-    loginWithEmailAndPassword({
+    loginUser({
       email: values.email,
       password: values.password,
+      uid: 1,
+      name: "User",
+      lastname: "Ser",
+      role: "USER",
+      favorites: [],
+      reserves: [],
     });
     form.reset();
     navigate('/');
@@ -89,7 +97,7 @@ export const LoginPage = () => {
               <FormItem>
                 <FormLabel>Contraseña</FormLabel>
                 <FormControl>
-                  <Input placeholder="******" {...field} type="password"/>
+                  <Input placeholder="******" {...field} type="password" />
                 </FormControl>
                 <FormMessage />
               </FormItem>

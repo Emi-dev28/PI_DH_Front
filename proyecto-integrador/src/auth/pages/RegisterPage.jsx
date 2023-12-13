@@ -153,7 +153,7 @@ export const RegisterPage = () => {
               </FormItem>
             )}
           />
-          <Button type="submit" className="">
+          <Button type="submit" className="" disabled >
             Registrar
           </Button>
           <div className="text-end">
